@@ -19,24 +19,29 @@ public final class MusicGameStartReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint64 ugcGuid = 5;</code>
+     * <code>uint64 ugc_guid = 12;</code>
      * @return The ugcGuid.
      */
     long getUgcGuid();
 
     /**
-     * <code>uint32 musicBasicId = 7;</code>
+     * <code>uint32 music_basic_id = 8;</code>
      * @return The musicBasicId.
      */
     int getMusicBasicId();
 
     /**
-     * <code>bool isSaveScore = 15;</code>
+     * <code>bool is_save_score = 13;</code>
      * @return The isSaveScore.
      */
     boolean getIsSaveScore();
   }
   /**
+   * <pre>
+   * CmdId: 2690
+   * Obf: GALCIMKINBH
+   * </pre>
+   *
    * Protobuf type {@code MusicGameStartReq}
    */
   public static final class MusicGameStartReq extends
@@ -81,17 +86,17 @@ public final class MusicGameStartReqOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
-
-              ugcGuid_ = input.readUInt64();
-              break;
-            }
-            case 56: {
+            case 64: {
 
               musicBasicId_ = input.readUInt32();
               break;
             }
-            case 120: {
+            case 96: {
+
+              ugcGuid_ = input.readUInt64();
+              break;
+            }
+            case 104: {
 
               isSaveScore_ = input.readBool();
               break;
@@ -128,149 +133,10 @@ public final class MusicGameStartReqOuterClass {
               emu.grasscutter.net.proto.MusicGameStartReqOuterClass.MusicGameStartReq.class, emu.grasscutter.net.proto.MusicGameStartReqOuterClass.MusicGameStartReq.Builder.class);
     }
 
-    /**
-     * Protobuf enum {@code MusicGameStartReq.EMDPLMFEJCP}
-     */
-    public enum EMDPLMFEJCP
-        implements com.google.protobuf.ProtocolMessageEnum {
-      /**
-       * <code>NONE = 0;</code>
-       */
-      NONE(0, 0),
-      /**
-       * <code>PEPPOHPHJOJ = 8536;</code>
-       */
-      PEPPOHPHJOJ(1, 8536),
-      /**
-       * <code>NNBKOLMPOEA = 1;</code>
-       */
-      NNBKOLMPOEA(3, 1),
-      UNRECOGNIZED(-1, -1),
-      ;
-
-      /**
-       * <code>DCDNILFDFLB = 0;</code>
-       */
-      public static final EMDPLMFEJCP DCDNILFDFLB = NONE;
-      /**
-       * <code>EAJIABGAOCI = 1;</code>
-       */
-      public static final EMDPLMFEJCP EAJIABGAOCI = NNBKOLMPOEA;
-      /**
-       * <code>NONE = 0;</code>
-       */
-      public static final int NONE_VALUE = 0;
-      /**
-       * <code>PEPPOHPHJOJ = 8536;</code>
-       */
-      public static final int PEPPOHPHJOJ_VALUE = 8536;
-      /**
-       * <code>DCDNILFDFLB = 0;</code>
-       */
-      public static final int DCDNILFDFLB_VALUE = 0;
-      /**
-       * <code>NNBKOLMPOEA = 1;</code>
-       */
-      public static final int NNBKOLMPOEA_VALUE = 1;
-      /**
-       * <code>EAJIABGAOCI = 1;</code>
-       */
-      public static final int EAJIABGAOCI_VALUE = 1;
-
-
-      public final int getNumber() {
-        if (index == -1) {
-          throw new java.lang.IllegalArgumentException(
-              "Can't get the number of an unknown enum value.");
-        }
-        return value;
-      }
-
-      /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
-       * @deprecated Use {@link #forNumber(int)} instead.
-       */
-      @java.lang.Deprecated
-      public static EMDPLMFEJCP valueOf(int value) {
-        return forNumber(value);
-      }
-
-      /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
-       */
-      public static EMDPLMFEJCP forNumber(int value) {
-        switch (value) {
-          case 0: return NONE;
-          case 8536: return PEPPOHPHJOJ;
-          case 1: return NNBKOLMPOEA;
-          default: return null;
-        }
-      }
-
-      public static com.google.protobuf.Internal.EnumLiteMap<EMDPLMFEJCP>
-          internalGetValueMap() {
-        return internalValueMap;
-      }
-      private static final com.google.protobuf.Internal.EnumLiteMap<
-          EMDPLMFEJCP> internalValueMap =
-            new com.google.protobuf.Internal.EnumLiteMap<EMDPLMFEJCP>() {
-              public EMDPLMFEJCP findValueByNumber(int number) {
-                return EMDPLMFEJCP.forNumber(number);
-              }
-            };
-
-      public final com.google.protobuf.Descriptors.EnumValueDescriptor
-          getValueDescriptor() {
-        if (index == -1) {
-          throw new java.lang.IllegalStateException(
-              "Can't get the descriptor of an unrecognized enum value.");
-        }
-        return getDescriptor().getValues().get(index);
-      }
-      public final com.google.protobuf.Descriptors.EnumDescriptor
-          getDescriptorForType() {
-        return getDescriptor();
-      }
-      public static final com.google.protobuf.Descriptors.EnumDescriptor
-          getDescriptor() {
-        return emu.grasscutter.net.proto.MusicGameStartReqOuterClass.MusicGameStartReq.getDescriptor().getEnumTypes().get(0);
-      }
-
-      private static final EMDPLMFEJCP[] VALUES = getStaticValuesArray();
-      private static EMDPLMFEJCP[] getStaticValuesArray() {
-        return new EMDPLMFEJCP[] {
-          NONE, PEPPOHPHJOJ, DCDNILFDFLB, NNBKOLMPOEA, EAJIABGAOCI, 
-        };
-      }
-      public static EMDPLMFEJCP valueOf(
-          com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
-        if (desc.getType() != getDescriptor()) {
-          throw new java.lang.IllegalArgumentException(
-            "EnumValueDescriptor is not for this type.");
-        }
-        if (desc.getIndex() == -1) {
-          return UNRECOGNIZED;
-        }
-        return VALUES[desc.getIndex()];
-      }
-
-      private final int index;
-      private final int value;
-
-      private EMDPLMFEJCP(int index, int value) {
-        this.index = index;
-        this.value = value;
-      }
-
-      // @@protoc_insertion_point(enum_scope:MusicGameStartReq.EMDPLMFEJCP)
-    }
-
-    public static final int UGCGUID_FIELD_NUMBER = 5;
+    public static final int UGC_GUID_FIELD_NUMBER = 12;
     private long ugcGuid_;
     /**
-     * <code>uint64 ugcGuid = 5;</code>
+     * <code>uint64 ugc_guid = 12;</code>
      * @return The ugcGuid.
      */
     @java.lang.Override
@@ -278,10 +144,10 @@ public final class MusicGameStartReqOuterClass {
       return ugcGuid_;
     }
 
-    public static final int MUSICBASICID_FIELD_NUMBER = 7;
+    public static final int MUSIC_BASIC_ID_FIELD_NUMBER = 8;
     private int musicBasicId_;
     /**
-     * <code>uint32 musicBasicId = 7;</code>
+     * <code>uint32 music_basic_id = 8;</code>
      * @return The musicBasicId.
      */
     @java.lang.Override
@@ -289,10 +155,10 @@ public final class MusicGameStartReqOuterClass {
       return musicBasicId_;
     }
 
-    public static final int ISSAVESCORE_FIELD_NUMBER = 15;
+    public static final int IS_SAVE_SCORE_FIELD_NUMBER = 13;
     private boolean isSaveScore_;
     /**
-     * <code>bool isSaveScore = 15;</code>
+     * <code>bool is_save_score = 13;</code>
      * @return The isSaveScore.
      */
     @java.lang.Override
@@ -314,14 +180,14 @@ public final class MusicGameStartReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (ugcGuid_ != 0L) {
-        output.writeUInt64(5, ugcGuid_);
-      }
       if (musicBasicId_ != 0) {
-        output.writeUInt32(7, musicBasicId_);
+        output.writeUInt32(8, musicBasicId_);
+      }
+      if (ugcGuid_ != 0L) {
+        output.writeUInt64(12, ugcGuid_);
       }
       if (isSaveScore_ != false) {
-        output.writeBool(15, isSaveScore_);
+        output.writeBool(13, isSaveScore_);
       }
       unknownFields.writeTo(output);
     }
@@ -332,17 +198,17 @@ public final class MusicGameStartReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (ugcGuid_ != 0L) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(5, ugcGuid_);
-      }
       if (musicBasicId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, musicBasicId_);
+          .computeUInt32Size(8, musicBasicId_);
+      }
+      if (ugcGuid_ != 0L) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt64Size(12, ugcGuid_);
       }
       if (isSaveScore_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(15, isSaveScore_);
+          .computeBoolSize(13, isSaveScore_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -376,12 +242,12 @@ public final class MusicGameStartReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + UGCGUID_FIELD_NUMBER;
+      hash = (37 * hash) + UGC_GUID_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
           getUgcGuid());
-      hash = (37 * hash) + MUSICBASICID_FIELD_NUMBER;
+      hash = (37 * hash) + MUSIC_BASIC_ID_FIELD_NUMBER;
       hash = (53 * hash) + getMusicBasicId();
-      hash = (37 * hash) + ISSAVESCORE_FIELD_NUMBER;
+      hash = (37 * hash) + IS_SAVE_SCORE_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsSaveScore());
       hash = (29 * hash) + unknownFields.hashCode();
@@ -480,6 +346,11 @@ public final class MusicGameStartReqOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 2690
+     * Obf: GALCIMKINBH
+     * </pre>
+     *
      * Protobuf type {@code MusicGameStartReq}
      */
     public static final class Builder extends
@@ -640,7 +511,7 @@ public final class MusicGameStartReqOuterClass {
 
       private long ugcGuid_ ;
       /**
-       * <code>uint64 ugcGuid = 5;</code>
+       * <code>uint64 ugc_guid = 12;</code>
        * @return The ugcGuid.
        */
       @java.lang.Override
@@ -648,7 +519,7 @@ public final class MusicGameStartReqOuterClass {
         return ugcGuid_;
       }
       /**
-       * <code>uint64 ugcGuid = 5;</code>
+       * <code>uint64 ugc_guid = 12;</code>
        * @param value The ugcGuid to set.
        * @return This builder for chaining.
        */
@@ -659,7 +530,7 @@ public final class MusicGameStartReqOuterClass {
         return this;
       }
       /**
-       * <code>uint64 ugcGuid = 5;</code>
+       * <code>uint64 ugc_guid = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearUgcGuid() {
@@ -671,7 +542,7 @@ public final class MusicGameStartReqOuterClass {
 
       private int musicBasicId_ ;
       /**
-       * <code>uint32 musicBasicId = 7;</code>
+       * <code>uint32 music_basic_id = 8;</code>
        * @return The musicBasicId.
        */
       @java.lang.Override
@@ -679,7 +550,7 @@ public final class MusicGameStartReqOuterClass {
         return musicBasicId_;
       }
       /**
-       * <code>uint32 musicBasicId = 7;</code>
+       * <code>uint32 music_basic_id = 8;</code>
        * @param value The musicBasicId to set.
        * @return This builder for chaining.
        */
@@ -690,7 +561,7 @@ public final class MusicGameStartReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 musicBasicId = 7;</code>
+       * <code>uint32 music_basic_id = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearMusicBasicId() {
@@ -702,7 +573,7 @@ public final class MusicGameStartReqOuterClass {
 
       private boolean isSaveScore_ ;
       /**
-       * <code>bool isSaveScore = 15;</code>
+       * <code>bool is_save_score = 13;</code>
        * @return The isSaveScore.
        */
       @java.lang.Override
@@ -710,7 +581,7 @@ public final class MusicGameStartReqOuterClass {
         return isSaveScore_;
       }
       /**
-       * <code>bool isSaveScore = 15;</code>
+       * <code>bool is_save_score = 13;</code>
        * @param value The isSaveScore to set.
        * @return This builder for chaining.
        */
@@ -721,7 +592,7 @@ public final class MusicGameStartReqOuterClass {
         return this;
       }
       /**
-       * <code>bool isSaveScore = 15;</code>
+       * <code>bool is_save_score = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsSaveScore() {
@@ -797,13 +668,10 @@ public final class MusicGameStartReqOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\027MusicGameStartReq.proto\"\261\001\n\021MusicGameS" +
-      "tartReq\022\017\n\007ugcGuid\030\005 \001(\004\022\024\n\014musicBasicId" +
-      "\030\007 \001(\r\022\023\n\013isSaveScore\030\017 \001(\010\"`\n\013EMDPLMFEJ" +
-      "CP\022\010\n\004NONE\020\000\022\020\n\013PEPPOHPHJOJ\020\330B\022\017\n\013DCDNIL" +
-      "FDFLB\020\000\022\017\n\013NNBKOLMPOEA\020\001\022\017\n\013EAJIABGAOCI\020" +
-      "\001\032\002\020\001B\033\n\031emu.grasscutter.net.protob\006prot" +
-      "o3"
+      "\n\027MusicGameStartReq.proto\"T\n\021MusicGameSt" +
+      "artReq\022\020\n\010ugc_guid\030\014 \001(\004\022\026\n\016music_basic_" +
+      "id\030\010 \001(\r\022\025\n\ris_save_score\030\r \001(\010B\033\n\031emu.g" +
+      "rasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

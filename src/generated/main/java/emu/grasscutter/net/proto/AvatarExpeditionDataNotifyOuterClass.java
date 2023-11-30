@@ -19,11 +19,11 @@ public final class AvatarExpeditionDataNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>map&lt;uint64, .AvatarExpeditionInfo&gt; expeditionInfoMap = 4;</code>
+     * <code>map&lt;uint64, .AvatarExpeditionInfo&gt; expedition_info_map = 4;</code>
      */
     int getExpeditionInfoMapCount();
     /**
-     * <code>map&lt;uint64, .AvatarExpeditionInfo&gt; expeditionInfoMap = 4;</code>
+     * <code>map&lt;uint64, .AvatarExpeditionInfo&gt; expedition_info_map = 4;</code>
      */
     boolean containsExpeditionInfoMap(
         long key);
@@ -34,25 +34,30 @@ public final class AvatarExpeditionDataNotifyOuterClass {
     java.util.Map<java.lang.Long, emu.grasscutter.net.proto.AvatarExpeditionInfoOuterClass.AvatarExpeditionInfo>
     getExpeditionInfoMap();
     /**
-     * <code>map&lt;uint64, .AvatarExpeditionInfo&gt; expeditionInfoMap = 4;</code>
+     * <code>map&lt;uint64, .AvatarExpeditionInfo&gt; expedition_info_map = 4;</code>
      */
     java.util.Map<java.lang.Long, emu.grasscutter.net.proto.AvatarExpeditionInfoOuterClass.AvatarExpeditionInfo>
     getExpeditionInfoMapMap();
     /**
-     * <code>map&lt;uint64, .AvatarExpeditionInfo&gt; expeditionInfoMap = 4;</code>
+     * <code>map&lt;uint64, .AvatarExpeditionInfo&gt; expedition_info_map = 4;</code>
      */
 
     emu.grasscutter.net.proto.AvatarExpeditionInfoOuterClass.AvatarExpeditionInfo getExpeditionInfoMapOrDefault(
         long key,
         emu.grasscutter.net.proto.AvatarExpeditionInfoOuterClass.AvatarExpeditionInfo defaultValue);
     /**
-     * <code>map&lt;uint64, .AvatarExpeditionInfo&gt; expeditionInfoMap = 4;</code>
+     * <code>map&lt;uint64, .AvatarExpeditionInfo&gt; expedition_info_map = 4;</code>
      */
 
     emu.grasscutter.net.proto.AvatarExpeditionInfoOuterClass.AvatarExpeditionInfo getExpeditionInfoMapOrThrow(
         long key);
   }
   /**
+   * <pre>
+   * CmdId: 26803
+   * Obf: FCCLNDJAANA
+   * </pre>
+   *
    * Protobuf type {@code AvatarExpeditionDataNotify}
    */
   public static final class AvatarExpeditionDataNotify extends
@@ -155,138 +160,7 @@ public final class AvatarExpeditionDataNotifyOuterClass {
               emu.grasscutter.net.proto.AvatarExpeditionDataNotifyOuterClass.AvatarExpeditionDataNotify.class, emu.grasscutter.net.proto.AvatarExpeditionDataNotifyOuterClass.AvatarExpeditionDataNotify.Builder.class);
     }
 
-    /**
-     * Protobuf enum {@code AvatarExpeditionDataNotify.INDPMHLNJFH}
-     */
-    public enum INDPMHLNJFH
-        implements com.google.protobuf.ProtocolMessageEnum {
-      /**
-       * <code>NONE = 0;</code>
-       */
-      NONE(0, 0),
-      /**
-       * <code>PEPPOHPHJOJ = 1638;</code>
-       */
-      PEPPOHPHJOJ(1, 1638),
-      /**
-       * <code>NNBKOLMPOEA = 1;</code>
-       */
-      NNBKOLMPOEA(3, 1),
-      UNRECOGNIZED(-1, -1),
-      ;
-
-      /**
-       * <code>DCDNILFDFLB = 0;</code>
-       */
-      public static final INDPMHLNJFH DCDNILFDFLB = NONE;
-      /**
-       * <code>NONE = 0;</code>
-       */
-      public static final int NONE_VALUE = 0;
-      /**
-       * <code>PEPPOHPHJOJ = 1638;</code>
-       */
-      public static final int PEPPOHPHJOJ_VALUE = 1638;
-      /**
-       * <code>DCDNILFDFLB = 0;</code>
-       */
-      public static final int DCDNILFDFLB_VALUE = 0;
-      /**
-       * <code>NNBKOLMPOEA = 1;</code>
-       */
-      public static final int NNBKOLMPOEA_VALUE = 1;
-
-
-      public final int getNumber() {
-        if (index == -1) {
-          throw new java.lang.IllegalArgumentException(
-              "Can't get the number of an unknown enum value.");
-        }
-        return value;
-      }
-
-      /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
-       * @deprecated Use {@link #forNumber(int)} instead.
-       */
-      @java.lang.Deprecated
-      public static INDPMHLNJFH valueOf(int value) {
-        return forNumber(value);
-      }
-
-      /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
-       */
-      public static INDPMHLNJFH forNumber(int value) {
-        switch (value) {
-          case 0: return NONE;
-          case 1638: return PEPPOHPHJOJ;
-          case 1: return NNBKOLMPOEA;
-          default: return null;
-        }
-      }
-
-      public static com.google.protobuf.Internal.EnumLiteMap<INDPMHLNJFH>
-          internalGetValueMap() {
-        return internalValueMap;
-      }
-      private static final com.google.protobuf.Internal.EnumLiteMap<
-          INDPMHLNJFH> internalValueMap =
-            new com.google.protobuf.Internal.EnumLiteMap<INDPMHLNJFH>() {
-              public INDPMHLNJFH findValueByNumber(int number) {
-                return INDPMHLNJFH.forNumber(number);
-              }
-            };
-
-      public final com.google.protobuf.Descriptors.EnumValueDescriptor
-          getValueDescriptor() {
-        if (index == -1) {
-          throw new java.lang.IllegalStateException(
-              "Can't get the descriptor of an unrecognized enum value.");
-        }
-        return getDescriptor().getValues().get(index);
-      }
-      public final com.google.protobuf.Descriptors.EnumDescriptor
-          getDescriptorForType() {
-        return getDescriptor();
-      }
-      public static final com.google.protobuf.Descriptors.EnumDescriptor
-          getDescriptor() {
-        return emu.grasscutter.net.proto.AvatarExpeditionDataNotifyOuterClass.AvatarExpeditionDataNotify.getDescriptor().getEnumTypes().get(0);
-      }
-
-      private static final INDPMHLNJFH[] VALUES = getStaticValuesArray();
-      private static INDPMHLNJFH[] getStaticValuesArray() {
-        return new INDPMHLNJFH[] {
-          NONE, PEPPOHPHJOJ, DCDNILFDFLB, NNBKOLMPOEA, 
-        };
-      }
-      public static INDPMHLNJFH valueOf(
-          com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
-        if (desc.getType() != getDescriptor()) {
-          throw new java.lang.IllegalArgumentException(
-            "EnumValueDescriptor is not for this type.");
-        }
-        if (desc.getIndex() == -1) {
-          return UNRECOGNIZED;
-        }
-        return VALUES[desc.getIndex()];
-      }
-
-      private final int index;
-      private final int value;
-
-      private INDPMHLNJFH(int index, int value) {
-        this.index = index;
-        this.value = value;
-      }
-
-      // @@protoc_insertion_point(enum_scope:AvatarExpeditionDataNotify.INDPMHLNJFH)
-    }
-
-    public static final int EXPEDITIONINFOMAP_FIELD_NUMBER = 4;
+    public static final int EXPEDITION_INFO_MAP_FIELD_NUMBER = 4;
     private static final class ExpeditionInfoMapDefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
           java.lang.Long, emu.grasscutter.net.proto.AvatarExpeditionInfoOuterClass.AvatarExpeditionInfo> defaultEntry =
@@ -313,7 +187,7 @@ public final class AvatarExpeditionDataNotifyOuterClass {
       return internalGetExpeditionInfoMap().getMap().size();
     }
     /**
-     * <code>map&lt;uint64, .AvatarExpeditionInfo&gt; expeditionInfoMap = 4;</code>
+     * <code>map&lt;uint64, .AvatarExpeditionInfo&gt; expedition_info_map = 4;</code>
      */
 
     @java.lang.Override
@@ -331,7 +205,7 @@ public final class AvatarExpeditionDataNotifyOuterClass {
       return getExpeditionInfoMapMap();
     }
     /**
-     * <code>map&lt;uint64, .AvatarExpeditionInfo&gt; expeditionInfoMap = 4;</code>
+     * <code>map&lt;uint64, .AvatarExpeditionInfo&gt; expedition_info_map = 4;</code>
      */
     @java.lang.Override
 
@@ -339,7 +213,7 @@ public final class AvatarExpeditionDataNotifyOuterClass {
       return internalGetExpeditionInfoMap().getMap();
     }
     /**
-     * <code>map&lt;uint64, .AvatarExpeditionInfo&gt; expeditionInfoMap = 4;</code>
+     * <code>map&lt;uint64, .AvatarExpeditionInfo&gt; expedition_info_map = 4;</code>
      */
     @java.lang.Override
 
@@ -352,7 +226,7 @@ public final class AvatarExpeditionDataNotifyOuterClass {
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     * <code>map&lt;uint64, .AvatarExpeditionInfo&gt; expeditionInfoMap = 4;</code>
+     * <code>map&lt;uint64, .AvatarExpeditionInfo&gt; expedition_info_map = 4;</code>
      */
     @java.lang.Override
 
@@ -435,7 +309,7 @@ public final class AvatarExpeditionDataNotifyOuterClass {
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
       if (!internalGetExpeditionInfoMap().getMap().isEmpty()) {
-        hash = (37 * hash) + EXPEDITIONINFOMAP_FIELD_NUMBER;
+        hash = (37 * hash) + EXPEDITION_INFO_MAP_FIELD_NUMBER;
         hash = (53 * hash) + internalGetExpeditionInfoMap().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
@@ -534,6 +408,11 @@ public final class AvatarExpeditionDataNotifyOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 26803
+     * Obf: FCCLNDJAANA
+     * </pre>
+     *
      * Protobuf type {@code AvatarExpeditionDataNotify}
      */
     public static final class Builder extends
@@ -730,7 +609,7 @@ public final class AvatarExpeditionDataNotifyOuterClass {
         return internalGetExpeditionInfoMap().getMap().size();
       }
       /**
-       * <code>map&lt;uint64, .AvatarExpeditionInfo&gt; expeditionInfoMap = 4;</code>
+       * <code>map&lt;uint64, .AvatarExpeditionInfo&gt; expedition_info_map = 4;</code>
        */
 
       @java.lang.Override
@@ -748,7 +627,7 @@ public final class AvatarExpeditionDataNotifyOuterClass {
         return getExpeditionInfoMapMap();
       }
       /**
-       * <code>map&lt;uint64, .AvatarExpeditionInfo&gt; expeditionInfoMap = 4;</code>
+       * <code>map&lt;uint64, .AvatarExpeditionInfo&gt; expedition_info_map = 4;</code>
        */
       @java.lang.Override
 
@@ -756,7 +635,7 @@ public final class AvatarExpeditionDataNotifyOuterClass {
         return internalGetExpeditionInfoMap().getMap();
       }
       /**
-       * <code>map&lt;uint64, .AvatarExpeditionInfo&gt; expeditionInfoMap = 4;</code>
+       * <code>map&lt;uint64, .AvatarExpeditionInfo&gt; expedition_info_map = 4;</code>
        */
       @java.lang.Override
 
@@ -769,7 +648,7 @@ public final class AvatarExpeditionDataNotifyOuterClass {
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
-       * <code>map&lt;uint64, .AvatarExpeditionInfo&gt; expeditionInfoMap = 4;</code>
+       * <code>map&lt;uint64, .AvatarExpeditionInfo&gt; expedition_info_map = 4;</code>
        */
       @java.lang.Override
 
@@ -790,7 +669,7 @@ public final class AvatarExpeditionDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint64, .AvatarExpeditionInfo&gt; expeditionInfoMap = 4;</code>
+       * <code>map&lt;uint64, .AvatarExpeditionInfo&gt; expedition_info_map = 4;</code>
        */
 
       public Builder removeExpeditionInfoMap(
@@ -809,7 +688,7 @@ public final class AvatarExpeditionDataNotifyOuterClass {
         return internalGetMutableExpeditionInfoMap().getMutableMap();
       }
       /**
-       * <code>map&lt;uint64, .AvatarExpeditionInfo&gt; expeditionInfoMap = 4;</code>
+       * <code>map&lt;uint64, .AvatarExpeditionInfo&gt; expedition_info_map = 4;</code>
        */
       public Builder putExpeditionInfoMap(
           long key,
@@ -821,7 +700,7 @@ public final class AvatarExpeditionDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint64, .AvatarExpeditionInfo&gt; expeditionInfoMap = 4;</code>
+       * <code>map&lt;uint64, .AvatarExpeditionInfo&gt; expedition_info_map = 4;</code>
        */
 
       public Builder putAllExpeditionInfoMap(
@@ -903,15 +782,13 @@ public final class AvatarExpeditionDataNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n AvatarExpeditionDataNotify.proto\032\032Avat" +
-      "arExpeditionInfo.proto\"\215\002\n\032AvatarExpedit" +
-      "ionDataNotify\022M\n\021expeditionInfoMap\030\004 \003(\013" +
-      "22.AvatarExpeditionDataNotify.Expedition" +
-      "InfoMapEntry\032O\n\026ExpeditionInfoMapEntry\022\013" +
-      "\n\003key\030\001 \001(\004\022$\n\005value\030\002 \001(\0132\025.AvatarExped" +
-      "itionInfo:\0028\001\"O\n\013INDPMHLNJFH\022\010\n\004NONE\020\000\022\020" +
-      "\n\013PEPPOHPHJOJ\020\346\014\022\017\n\013DCDNILFDFLB\020\000\022\017\n\013NNB" +
-      "KOLMPOEA\020\001\032\002\020\001B\033\n\031emu.grasscutter.net.pr" +
-      "otob\006proto3"
+      "arExpeditionInfo.proto\"\276\001\n\032AvatarExpedit" +
+      "ionDataNotify\022O\n\023expedition_info_map\030\004 \003" +
+      "(\01322.AvatarExpeditionDataNotify.Expediti" +
+      "onInfoMapEntry\032O\n\026ExpeditionInfoMapEntry" +
+      "\022\013\n\003key\030\001 \001(\004\022$\n\005value\030\002 \001(\0132\025.AvatarExp" +
+      "editionInfo:\0028\001B\033\n\031emu.grasscutter.net.p" +
+      "rotob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

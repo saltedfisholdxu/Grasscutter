@@ -19,30 +19,34 @@ public final class TowerLevelStarCondDataOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 Unk3300_JGOLBFMJBCL = 5;</code>
-     * @return The unk3300JGOLBFMJBCL.
+     * <code>uint32 NGHNFHCLFBH = 12;</code>
+     * @return The nGHNFHCLFBH.
      */
-    int getUnk3300JGOLBFMJBCL();
+    int getNGHNFHCLFBH();
 
     /**
-     * <code>bool Unk3300_KBCFDFOAJMM = 1;</code>
-     * @return The unk3300KBCFDFOAJMM.
+     * <code>bool IBGHBFANCBK = 6;</code>
+     * @return The iBGHBFANCBK.
      */
-    boolean getUnk3300KBCFDFOAJMM();
+    boolean getIBGHBFANCBK();
 
     /**
-     * <code>bool Unk3300_CPBCNACKAAK = 2;</code>
-     * @return The unk3300CPBCNACKAAK.
+     * <code>bool OILLLBMMABH = 9;</code>
+     * @return The oILLLBMMABH.
      */
-    boolean getUnk3300CPBCNACKAAK();
+    boolean getOILLLBMMABH();
 
     /**
-     * <code>uint32 condValue = 8;</code>
-     * @return The condValue.
+     * <code>uint32 OMOECEGOALC = 2;</code>
+     * @return The oMOECEGOALC.
      */
-    int getCondValue();
+    int getOMOECEGOALC();
   }
   /**
+   * <pre>
+   * Obf: CJAADENOOAJ
+   * </pre>
+   *
    * Protobuf type {@code TowerLevelStarCondData}
    */
   public static final class TowerLevelStarCondData extends
@@ -87,24 +91,24 @@ public final class TowerLevelStarCondDataOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              unk3300KBCFDFOAJMM_ = input.readBool();
-              break;
-            }
             case 16: {
 
-              unk3300CPBCNACKAAK_ = input.readBool();
+              oMOECEGOALC_ = input.readUInt32();
               break;
             }
-            case 40: {
+            case 48: {
 
-              unk3300JGOLBFMJBCL_ = input.readUInt32();
+              iBGHBFANCBK_ = input.readBool();
               break;
             }
-            case 64: {
+            case 72: {
 
-              condValue_ = input.readUInt32();
+              oILLLBMMABH_ = input.readBool();
+              break;
+            }
+            case 96: {
+
+              nGHNFHCLFBH_ = input.readUInt32();
               break;
             }
             default: {
@@ -139,48 +143,48 @@ public final class TowerLevelStarCondDataOuterClass {
               emu.grasscutter.net.proto.TowerLevelStarCondDataOuterClass.TowerLevelStarCondData.class, emu.grasscutter.net.proto.TowerLevelStarCondDataOuterClass.TowerLevelStarCondData.Builder.class);
     }
 
-    public static final int UNK3300_JGOLBFMJBCL_FIELD_NUMBER = 5;
-    private int unk3300JGOLBFMJBCL_;
+    public static final int NGHNFHCLFBH_FIELD_NUMBER = 12;
+    private int nGHNFHCLFBH_;
     /**
-     * <code>uint32 Unk3300_JGOLBFMJBCL = 5;</code>
-     * @return The unk3300JGOLBFMJBCL.
+     * <code>uint32 NGHNFHCLFBH = 12;</code>
+     * @return The nGHNFHCLFBH.
      */
     @java.lang.Override
-    public int getUnk3300JGOLBFMJBCL() {
-      return unk3300JGOLBFMJBCL_;
+    public int getNGHNFHCLFBH() {
+      return nGHNFHCLFBH_;
     }
 
-    public static final int UNK3300_KBCFDFOAJMM_FIELD_NUMBER = 1;
-    private boolean unk3300KBCFDFOAJMM_;
+    public static final int IBGHBFANCBK_FIELD_NUMBER = 6;
+    private boolean iBGHBFANCBK_;
     /**
-     * <code>bool Unk3300_KBCFDFOAJMM = 1;</code>
-     * @return The unk3300KBCFDFOAJMM.
+     * <code>bool IBGHBFANCBK = 6;</code>
+     * @return The iBGHBFANCBK.
      */
     @java.lang.Override
-    public boolean getUnk3300KBCFDFOAJMM() {
-      return unk3300KBCFDFOAJMM_;
+    public boolean getIBGHBFANCBK() {
+      return iBGHBFANCBK_;
     }
 
-    public static final int UNK3300_CPBCNACKAAK_FIELD_NUMBER = 2;
-    private boolean unk3300CPBCNACKAAK_;
+    public static final int OILLLBMMABH_FIELD_NUMBER = 9;
+    private boolean oILLLBMMABH_;
     /**
-     * <code>bool Unk3300_CPBCNACKAAK = 2;</code>
-     * @return The unk3300CPBCNACKAAK.
+     * <code>bool OILLLBMMABH = 9;</code>
+     * @return The oILLLBMMABH.
      */
     @java.lang.Override
-    public boolean getUnk3300CPBCNACKAAK() {
-      return unk3300CPBCNACKAAK_;
+    public boolean getOILLLBMMABH() {
+      return oILLLBMMABH_;
     }
 
-    public static final int CONDVALUE_FIELD_NUMBER = 8;
-    private int condValue_;
+    public static final int OMOECEGOALC_FIELD_NUMBER = 2;
+    private int oMOECEGOALC_;
     /**
-     * <code>uint32 condValue = 8;</code>
-     * @return The condValue.
+     * <code>uint32 OMOECEGOALC = 2;</code>
+     * @return The oMOECEGOALC.
      */
     @java.lang.Override
-    public int getCondValue() {
-      return condValue_;
+    public int getOMOECEGOALC() {
+      return oMOECEGOALC_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -197,17 +201,17 @@ public final class TowerLevelStarCondDataOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (unk3300KBCFDFOAJMM_ != false) {
-        output.writeBool(1, unk3300KBCFDFOAJMM_);
+      if (oMOECEGOALC_ != 0) {
+        output.writeUInt32(2, oMOECEGOALC_);
       }
-      if (unk3300CPBCNACKAAK_ != false) {
-        output.writeBool(2, unk3300CPBCNACKAAK_);
+      if (iBGHBFANCBK_ != false) {
+        output.writeBool(6, iBGHBFANCBK_);
       }
-      if (unk3300JGOLBFMJBCL_ != 0) {
-        output.writeUInt32(5, unk3300JGOLBFMJBCL_);
+      if (oILLLBMMABH_ != false) {
+        output.writeBool(9, oILLLBMMABH_);
       }
-      if (condValue_ != 0) {
-        output.writeUInt32(8, condValue_);
+      if (nGHNFHCLFBH_ != 0) {
+        output.writeUInt32(12, nGHNFHCLFBH_);
       }
       unknownFields.writeTo(output);
     }
@@ -218,21 +222,21 @@ public final class TowerLevelStarCondDataOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (unk3300KBCFDFOAJMM_ != false) {
+      if (oMOECEGOALC_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(1, unk3300KBCFDFOAJMM_);
+          .computeUInt32Size(2, oMOECEGOALC_);
       }
-      if (unk3300CPBCNACKAAK_ != false) {
+      if (iBGHBFANCBK_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(2, unk3300CPBCNACKAAK_);
+          .computeBoolSize(6, iBGHBFANCBK_);
       }
-      if (unk3300JGOLBFMJBCL_ != 0) {
+      if (oILLLBMMABH_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, unk3300JGOLBFMJBCL_);
+          .computeBoolSize(9, oILLLBMMABH_);
       }
-      if (condValue_ != 0) {
+      if (nGHNFHCLFBH_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, condValue_);
+          .computeUInt32Size(12, nGHNFHCLFBH_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -249,14 +253,14 @@ public final class TowerLevelStarCondDataOuterClass {
       }
       emu.grasscutter.net.proto.TowerLevelStarCondDataOuterClass.TowerLevelStarCondData other = (emu.grasscutter.net.proto.TowerLevelStarCondDataOuterClass.TowerLevelStarCondData) obj;
 
-      if (getUnk3300JGOLBFMJBCL()
-          != other.getUnk3300JGOLBFMJBCL()) return false;
-      if (getUnk3300KBCFDFOAJMM()
-          != other.getUnk3300KBCFDFOAJMM()) return false;
-      if (getUnk3300CPBCNACKAAK()
-          != other.getUnk3300CPBCNACKAAK()) return false;
-      if (getCondValue()
-          != other.getCondValue()) return false;
+      if (getNGHNFHCLFBH()
+          != other.getNGHNFHCLFBH()) return false;
+      if (getIBGHBFANCBK()
+          != other.getIBGHBFANCBK()) return false;
+      if (getOILLLBMMABH()
+          != other.getOILLLBMMABH()) return false;
+      if (getOMOECEGOALC()
+          != other.getOMOECEGOALC()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -268,16 +272,16 @@ public final class TowerLevelStarCondDataOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + UNK3300_JGOLBFMJBCL_FIELD_NUMBER;
-      hash = (53 * hash) + getUnk3300JGOLBFMJBCL();
-      hash = (37 * hash) + UNK3300_KBCFDFOAJMM_FIELD_NUMBER;
+      hash = (37 * hash) + NGHNFHCLFBH_FIELD_NUMBER;
+      hash = (53 * hash) + getNGHNFHCLFBH();
+      hash = (37 * hash) + IBGHBFANCBK_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getUnk3300KBCFDFOAJMM());
-      hash = (37 * hash) + UNK3300_CPBCNACKAAK_FIELD_NUMBER;
+          getIBGHBFANCBK());
+      hash = (37 * hash) + OILLLBMMABH_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getUnk3300CPBCNACKAAK());
-      hash = (37 * hash) + CONDVALUE_FIELD_NUMBER;
-      hash = (53 * hash) + getCondValue();
+          getOILLLBMMABH());
+      hash = (37 * hash) + OMOECEGOALC_FIELD_NUMBER;
+      hash = (53 * hash) + getOMOECEGOALC();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -374,6 +378,10 @@ public final class TowerLevelStarCondDataOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Obf: CJAADENOOAJ
+     * </pre>
+     *
      * Protobuf type {@code TowerLevelStarCondData}
      */
     public static final class Builder extends
@@ -411,13 +419,13 @@ public final class TowerLevelStarCondDataOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        unk3300JGOLBFMJBCL_ = 0;
+        nGHNFHCLFBH_ = 0;
 
-        unk3300KBCFDFOAJMM_ = false;
+        iBGHBFANCBK_ = false;
 
-        unk3300CPBCNACKAAK_ = false;
+        oILLLBMMABH_ = false;
 
-        condValue_ = 0;
+        oMOECEGOALC_ = 0;
 
         return this;
       }
@@ -445,10 +453,10 @@ public final class TowerLevelStarCondDataOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.TowerLevelStarCondDataOuterClass.TowerLevelStarCondData buildPartial() {
         emu.grasscutter.net.proto.TowerLevelStarCondDataOuterClass.TowerLevelStarCondData result = new emu.grasscutter.net.proto.TowerLevelStarCondDataOuterClass.TowerLevelStarCondData(this);
-        result.unk3300JGOLBFMJBCL_ = unk3300JGOLBFMJBCL_;
-        result.unk3300KBCFDFOAJMM_ = unk3300KBCFDFOAJMM_;
-        result.unk3300CPBCNACKAAK_ = unk3300CPBCNACKAAK_;
-        result.condValue_ = condValue_;
+        result.nGHNFHCLFBH_ = nGHNFHCLFBH_;
+        result.iBGHBFANCBK_ = iBGHBFANCBK_;
+        result.oILLLBMMABH_ = oILLLBMMABH_;
+        result.oMOECEGOALC_ = oMOECEGOALC_;
         onBuilt();
         return result;
       }
@@ -497,17 +505,17 @@ public final class TowerLevelStarCondDataOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.TowerLevelStarCondDataOuterClass.TowerLevelStarCondData other) {
         if (other == emu.grasscutter.net.proto.TowerLevelStarCondDataOuterClass.TowerLevelStarCondData.getDefaultInstance()) return this;
-        if (other.getUnk3300JGOLBFMJBCL() != 0) {
-          setUnk3300JGOLBFMJBCL(other.getUnk3300JGOLBFMJBCL());
+        if (other.getNGHNFHCLFBH() != 0) {
+          setNGHNFHCLFBH(other.getNGHNFHCLFBH());
         }
-        if (other.getUnk3300KBCFDFOAJMM() != false) {
-          setUnk3300KBCFDFOAJMM(other.getUnk3300KBCFDFOAJMM());
+        if (other.getIBGHBFANCBK() != false) {
+          setIBGHBFANCBK(other.getIBGHBFANCBK());
         }
-        if (other.getUnk3300CPBCNACKAAK() != false) {
-          setUnk3300CPBCNACKAAK(other.getUnk3300CPBCNACKAAK());
+        if (other.getOILLLBMMABH() != false) {
+          setOILLLBMMABH(other.getOILLLBMMABH());
         }
-        if (other.getCondValue() != 0) {
-          setCondValue(other.getCondValue());
+        if (other.getOMOECEGOALC() != 0) {
+          setOMOECEGOALC(other.getOMOECEGOALC());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -538,126 +546,126 @@ public final class TowerLevelStarCondDataOuterClass {
         return this;
       }
 
-      private int unk3300JGOLBFMJBCL_ ;
+      private int nGHNFHCLFBH_ ;
       /**
-       * <code>uint32 Unk3300_JGOLBFMJBCL = 5;</code>
-       * @return The unk3300JGOLBFMJBCL.
+       * <code>uint32 NGHNFHCLFBH = 12;</code>
+       * @return The nGHNFHCLFBH.
        */
       @java.lang.Override
-      public int getUnk3300JGOLBFMJBCL() {
-        return unk3300JGOLBFMJBCL_;
+      public int getNGHNFHCLFBH() {
+        return nGHNFHCLFBH_;
       }
       /**
-       * <code>uint32 Unk3300_JGOLBFMJBCL = 5;</code>
-       * @param value The unk3300JGOLBFMJBCL to set.
+       * <code>uint32 NGHNFHCLFBH = 12;</code>
+       * @param value The nGHNFHCLFBH to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk3300JGOLBFMJBCL(int value) {
+      public Builder setNGHNFHCLFBH(int value) {
         
-        unk3300JGOLBFMJBCL_ = value;
+        nGHNFHCLFBH_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 Unk3300_JGOLBFMJBCL = 5;</code>
+       * <code>uint32 NGHNFHCLFBH = 12;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk3300JGOLBFMJBCL() {
+      public Builder clearNGHNFHCLFBH() {
         
-        unk3300JGOLBFMJBCL_ = 0;
+        nGHNFHCLFBH_ = 0;
         onChanged();
         return this;
       }
 
-      private boolean unk3300KBCFDFOAJMM_ ;
+      private boolean iBGHBFANCBK_ ;
       /**
-       * <code>bool Unk3300_KBCFDFOAJMM = 1;</code>
-       * @return The unk3300KBCFDFOAJMM.
+       * <code>bool IBGHBFANCBK = 6;</code>
+       * @return The iBGHBFANCBK.
        */
       @java.lang.Override
-      public boolean getUnk3300KBCFDFOAJMM() {
-        return unk3300KBCFDFOAJMM_;
+      public boolean getIBGHBFANCBK() {
+        return iBGHBFANCBK_;
       }
       /**
-       * <code>bool Unk3300_KBCFDFOAJMM = 1;</code>
-       * @param value The unk3300KBCFDFOAJMM to set.
+       * <code>bool IBGHBFANCBK = 6;</code>
+       * @param value The iBGHBFANCBK to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk3300KBCFDFOAJMM(boolean value) {
+      public Builder setIBGHBFANCBK(boolean value) {
         
-        unk3300KBCFDFOAJMM_ = value;
+        iBGHBFANCBK_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool Unk3300_KBCFDFOAJMM = 1;</code>
+       * <code>bool IBGHBFANCBK = 6;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk3300KBCFDFOAJMM() {
+      public Builder clearIBGHBFANCBK() {
         
-        unk3300KBCFDFOAJMM_ = false;
+        iBGHBFANCBK_ = false;
         onChanged();
         return this;
       }
 
-      private boolean unk3300CPBCNACKAAK_ ;
+      private boolean oILLLBMMABH_ ;
       /**
-       * <code>bool Unk3300_CPBCNACKAAK = 2;</code>
-       * @return The unk3300CPBCNACKAAK.
+       * <code>bool OILLLBMMABH = 9;</code>
+       * @return The oILLLBMMABH.
        */
       @java.lang.Override
-      public boolean getUnk3300CPBCNACKAAK() {
-        return unk3300CPBCNACKAAK_;
+      public boolean getOILLLBMMABH() {
+        return oILLLBMMABH_;
       }
       /**
-       * <code>bool Unk3300_CPBCNACKAAK = 2;</code>
-       * @param value The unk3300CPBCNACKAAK to set.
+       * <code>bool OILLLBMMABH = 9;</code>
+       * @param value The oILLLBMMABH to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk3300CPBCNACKAAK(boolean value) {
+      public Builder setOILLLBMMABH(boolean value) {
         
-        unk3300CPBCNACKAAK_ = value;
+        oILLLBMMABH_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool Unk3300_CPBCNACKAAK = 2;</code>
+       * <code>bool OILLLBMMABH = 9;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk3300CPBCNACKAAK() {
+      public Builder clearOILLLBMMABH() {
         
-        unk3300CPBCNACKAAK_ = false;
+        oILLLBMMABH_ = false;
         onChanged();
         return this;
       }
 
-      private int condValue_ ;
+      private int oMOECEGOALC_ ;
       /**
-       * <code>uint32 condValue = 8;</code>
-       * @return The condValue.
+       * <code>uint32 OMOECEGOALC = 2;</code>
+       * @return The oMOECEGOALC.
        */
       @java.lang.Override
-      public int getCondValue() {
-        return condValue_;
+      public int getOMOECEGOALC() {
+        return oMOECEGOALC_;
       }
       /**
-       * <code>uint32 condValue = 8;</code>
-       * @param value The condValue to set.
+       * <code>uint32 OMOECEGOALC = 2;</code>
+       * @param value The oMOECEGOALC to set.
        * @return This builder for chaining.
        */
-      public Builder setCondValue(int value) {
+      public Builder setOMOECEGOALC(int value) {
         
-        condValue_ = value;
+        oMOECEGOALC_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 condValue = 8;</code>
+       * <code>uint32 OMOECEGOALC = 2;</code>
        * @return This builder for chaining.
        */
-      public Builder clearCondValue() {
+      public Builder clearOMOECEGOALC() {
         
-        condValue_ = 0;
+        oMOECEGOALC_ = 0;
         onChanged();
         return this;
       }
@@ -728,11 +736,11 @@ public final class TowerLevelStarCondDataOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\034TowerLevelStarCondData.proto\"\202\001\n\026Tower" +
-      "LevelStarCondData\022\033\n\023Unk3300_JGOLBFMJBCL" +
-      "\030\005 \001(\r\022\033\n\023Unk3300_KBCFDFOAJMM\030\001 \001(\010\022\033\n\023U" +
-      "nk3300_CPBCNACKAAK\030\002 \001(\010\022\021\n\tcondValue\030\010 " +
-      "\001(\rB\033\n\031emu.grasscutter.net.protob\006proto3"
+      "\n\034TowerLevelStarCondData.proto\"l\n\026TowerL" +
+      "evelStarCondData\022\023\n\013NGHNFHCLFBH\030\014 \001(\r\022\023\n" +
+      "\013IBGHBFANCBK\030\006 \001(\010\022\023\n\013OILLLBMMABH\030\t \001(\010\022" +
+      "\023\n\013OMOECEGOALC\030\002 \001(\rB\033\n\031emu.grasscutter." +
+      "net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -743,7 +751,7 @@ public final class TowerLevelStarCondDataOuterClass {
     internal_static_TowerLevelStarCondData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_TowerLevelStarCondData_descriptor,
-        new java.lang.String[] { "Unk3300JGOLBFMJBCL", "Unk3300KBCFDFOAJMM", "Unk3300CPBCNACKAAK", "CondValue", });
+        new java.lang.String[] { "NGHNFHCLFBH", "IBGHBFANCBK", "OILLLBMMABH", "OMOECEGOALC", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

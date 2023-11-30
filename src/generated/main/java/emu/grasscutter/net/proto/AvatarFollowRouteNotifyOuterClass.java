@@ -19,51 +19,56 @@ public final class AvatarFollowRouteNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 startSceneTimeMs = 6;</code>
-     * @return The startSceneTimeMs.
+     * <code>uint32 entity_id = 1;</code>
+     * @return The entityId.
      */
-    int getStartSceneTimeMs();
+    int getEntityId();
 
     /**
-     * <code>uint32 templateId = 2;</code>
+     * <code>.Route route = 3;</code>
+     * @return Whether the route field is set.
+     */
+    boolean hasRoute();
+    /**
+     * <code>.Route route = 3;</code>
+     * @return The route.
+     */
+    emu.grasscutter.net.proto.RouteOuterClass.Route getRoute();
+    /**
+     * <code>.Route route = 3;</code>
+     */
+    emu.grasscutter.net.proto.RouteOuterClass.RouteOrBuilder getRouteOrBuilder();
+
+    /**
+     * <code>uint32 template_id = 14;</code>
      * @return The templateId.
      */
     int getTemplateId();
 
     /**
-     * <code>string clientParams = 10;</code>
+     * <code>uint32 start_scene_time_ms = 11;</code>
+     * @return The startSceneTimeMs.
+     */
+    int getStartSceneTimeMs();
+
+    /**
+     * <code>string client_params = 8;</code>
      * @return The clientParams.
      */
     java.lang.String getClientParams();
     /**
-     * <code>string clientParams = 10;</code>
+     * <code>string client_params = 8;</code>
      * @return The bytes for clientParams.
      */
     com.google.protobuf.ByteString
         getClientParamsBytes();
-
-    /**
-     * <code>.Route route = 4;</code>
-     * @return Whether the route field is set.
-     */
-    boolean hasRoute();
-    /**
-     * <code>.Route route = 4;</code>
-     * @return The route.
-     */
-    emu.grasscutter.net.proto.RouteOuterClass.Route getRoute();
-    /**
-     * <code>.Route route = 4;</code>
-     */
-    emu.grasscutter.net.proto.RouteOuterClass.RouteOrBuilder getRouteOrBuilder();
-
-    /**
-     * <code>uint32 entityId = 1;</code>
-     * @return The entityId.
-     */
-    int getEntityId();
   }
   /**
+   * <pre>
+   * CmdId: 6834
+   * Obf: AMKKLHPPGHJ
+   * </pre>
+   *
    * Protobuf type {@code AvatarFollowRouteNotify}
    */
   public static final class AvatarFollowRouteNotify extends
@@ -114,12 +119,7 @@ public final class AvatarFollowRouteNotifyOuterClass {
               entityId_ = input.readUInt32();
               break;
             }
-            case 16: {
-
-              templateId_ = input.readUInt32();
-              break;
-            }
-            case 34: {
+            case 26: {
               emu.grasscutter.net.proto.RouteOuterClass.Route.Builder subBuilder = null;
               if (route_ != null) {
                 subBuilder = route_.toBuilder();
@@ -132,15 +132,20 @@ public final class AvatarFollowRouteNotifyOuterClass {
 
               break;
             }
-            case 48: {
+            case 66: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              clientParams_ = s;
+              break;
+            }
+            case 88: {
 
               startSceneTimeMs_ = input.readUInt32();
               break;
             }
-            case 82: {
-              java.lang.String s = input.readStringRequireUtf8();
+            case 112: {
 
-              clientParams_ = s;
+              templateId_ = input.readUInt32();
               break;
             }
             default: {
@@ -175,152 +180,47 @@ public final class AvatarFollowRouteNotifyOuterClass {
               emu.grasscutter.net.proto.AvatarFollowRouteNotifyOuterClass.AvatarFollowRouteNotify.class, emu.grasscutter.net.proto.AvatarFollowRouteNotifyOuterClass.AvatarFollowRouteNotify.Builder.class);
     }
 
+    public static final int ENTITY_ID_FIELD_NUMBER = 1;
+    private int entityId_;
     /**
-     * Protobuf enum {@code AvatarFollowRouteNotify.PEPNPAGIKJC}
-     */
-    public enum PEPNPAGIKJC
-        implements com.google.protobuf.ProtocolMessageEnum {
-      /**
-       * <code>NONE = 0;</code>
-       */
-      NONE(0, 0),
-      /**
-       * <code>PEPPOHPHJOJ = 3097;</code>
-       */
-      PEPPOHPHJOJ(1, 3097),
-      /**
-       * <code>NNBKOLMPOEA = 1;</code>
-       */
-      NNBKOLMPOEA(3, 1),
-      UNRECOGNIZED(-1, -1),
-      ;
-
-      /**
-       * <code>DCDNILFDFLB = 0;</code>
-       */
-      public static final PEPNPAGIKJC DCDNILFDFLB = NONE;
-      /**
-       * <code>NONE = 0;</code>
-       */
-      public static final int NONE_VALUE = 0;
-      /**
-       * <code>PEPPOHPHJOJ = 3097;</code>
-       */
-      public static final int PEPPOHPHJOJ_VALUE = 3097;
-      /**
-       * <code>DCDNILFDFLB = 0;</code>
-       */
-      public static final int DCDNILFDFLB_VALUE = 0;
-      /**
-       * <code>NNBKOLMPOEA = 1;</code>
-       */
-      public static final int NNBKOLMPOEA_VALUE = 1;
-
-
-      public final int getNumber() {
-        if (index == -1) {
-          throw new java.lang.IllegalArgumentException(
-              "Can't get the number of an unknown enum value.");
-        }
-        return value;
-      }
-
-      /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
-       * @deprecated Use {@link #forNumber(int)} instead.
-       */
-      @java.lang.Deprecated
-      public static PEPNPAGIKJC valueOf(int value) {
-        return forNumber(value);
-      }
-
-      /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
-       */
-      public static PEPNPAGIKJC forNumber(int value) {
-        switch (value) {
-          case 0: return NONE;
-          case 3097: return PEPPOHPHJOJ;
-          case 1: return NNBKOLMPOEA;
-          default: return null;
-        }
-      }
-
-      public static com.google.protobuf.Internal.EnumLiteMap<PEPNPAGIKJC>
-          internalGetValueMap() {
-        return internalValueMap;
-      }
-      private static final com.google.protobuf.Internal.EnumLiteMap<
-          PEPNPAGIKJC> internalValueMap =
-            new com.google.protobuf.Internal.EnumLiteMap<PEPNPAGIKJC>() {
-              public PEPNPAGIKJC findValueByNumber(int number) {
-                return PEPNPAGIKJC.forNumber(number);
-              }
-            };
-
-      public final com.google.protobuf.Descriptors.EnumValueDescriptor
-          getValueDescriptor() {
-        if (index == -1) {
-          throw new java.lang.IllegalStateException(
-              "Can't get the descriptor of an unrecognized enum value.");
-        }
-        return getDescriptor().getValues().get(index);
-      }
-      public final com.google.protobuf.Descriptors.EnumDescriptor
-          getDescriptorForType() {
-        return getDescriptor();
-      }
-      public static final com.google.protobuf.Descriptors.EnumDescriptor
-          getDescriptor() {
-        return emu.grasscutter.net.proto.AvatarFollowRouteNotifyOuterClass.AvatarFollowRouteNotify.getDescriptor().getEnumTypes().get(0);
-      }
-
-      private static final PEPNPAGIKJC[] VALUES = getStaticValuesArray();
-      private static PEPNPAGIKJC[] getStaticValuesArray() {
-        return new PEPNPAGIKJC[] {
-          NONE, PEPPOHPHJOJ, DCDNILFDFLB, NNBKOLMPOEA, 
-        };
-      }
-      public static PEPNPAGIKJC valueOf(
-          com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
-        if (desc.getType() != getDescriptor()) {
-          throw new java.lang.IllegalArgumentException(
-            "EnumValueDescriptor is not for this type.");
-        }
-        if (desc.getIndex() == -1) {
-          return UNRECOGNIZED;
-        }
-        return VALUES[desc.getIndex()];
-      }
-
-      private final int index;
-      private final int value;
-
-      private PEPNPAGIKJC(int index, int value) {
-        this.index = index;
-        this.value = value;
-      }
-
-      // @@protoc_insertion_point(enum_scope:AvatarFollowRouteNotify.PEPNPAGIKJC)
-    }
-
-    public static final int STARTSCENETIMEMS_FIELD_NUMBER = 6;
-    private int startSceneTimeMs_;
-    /**
-     * <code>uint32 startSceneTimeMs = 6;</code>
-     * @return The startSceneTimeMs.
+     * <code>uint32 entity_id = 1;</code>
+     * @return The entityId.
      */
     @java.lang.Override
-    public int getStartSceneTimeMs() {
-      return startSceneTimeMs_;
+    public int getEntityId() {
+      return entityId_;
     }
 
-    public static final int TEMPLATEID_FIELD_NUMBER = 2;
+    public static final int ROUTE_FIELD_NUMBER = 3;
+    private emu.grasscutter.net.proto.RouteOuterClass.Route route_;
+    /**
+     * <code>.Route route = 3;</code>
+     * @return Whether the route field is set.
+     */
+    @java.lang.Override
+    public boolean hasRoute() {
+      return route_ != null;
+    }
+    /**
+     * <code>.Route route = 3;</code>
+     * @return The route.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.RouteOuterClass.Route getRoute() {
+      return route_ == null ? emu.grasscutter.net.proto.RouteOuterClass.Route.getDefaultInstance() : route_;
+    }
+    /**
+     * <code>.Route route = 3;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.RouteOuterClass.RouteOrBuilder getRouteOrBuilder() {
+      return getRoute();
+    }
+
+    public static final int TEMPLATE_ID_FIELD_NUMBER = 14;
     private int templateId_;
     /**
-     * <code>uint32 templateId = 2;</code>
+     * <code>uint32 template_id = 14;</code>
      * @return The templateId.
      */
     @java.lang.Override
@@ -328,10 +228,21 @@ public final class AvatarFollowRouteNotifyOuterClass {
       return templateId_;
     }
 
-    public static final int CLIENTPARAMS_FIELD_NUMBER = 10;
+    public static final int START_SCENE_TIME_MS_FIELD_NUMBER = 11;
+    private int startSceneTimeMs_;
+    /**
+     * <code>uint32 start_scene_time_ms = 11;</code>
+     * @return The startSceneTimeMs.
+     */
+    @java.lang.Override
+    public int getStartSceneTimeMs() {
+      return startSceneTimeMs_;
+    }
+
+    public static final int CLIENT_PARAMS_FIELD_NUMBER = 8;
     private volatile java.lang.Object clientParams_;
     /**
-     * <code>string clientParams = 10;</code>
+     * <code>string client_params = 8;</code>
      * @return The clientParams.
      */
     @java.lang.Override
@@ -348,7 +259,7 @@ public final class AvatarFollowRouteNotifyOuterClass {
       }
     }
     /**
-     * <code>string clientParams = 10;</code>
+     * <code>string client_params = 8;</code>
      * @return The bytes for clientParams.
      */
     @java.lang.Override
@@ -364,43 +275,6 @@ public final class AvatarFollowRouteNotifyOuterClass {
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
-    }
-
-    public static final int ROUTE_FIELD_NUMBER = 4;
-    private emu.grasscutter.net.proto.RouteOuterClass.Route route_;
-    /**
-     * <code>.Route route = 4;</code>
-     * @return Whether the route field is set.
-     */
-    @java.lang.Override
-    public boolean hasRoute() {
-      return route_ != null;
-    }
-    /**
-     * <code>.Route route = 4;</code>
-     * @return The route.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.RouteOuterClass.Route getRoute() {
-      return route_ == null ? emu.grasscutter.net.proto.RouteOuterClass.Route.getDefaultInstance() : route_;
-    }
-    /**
-     * <code>.Route route = 4;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.RouteOuterClass.RouteOrBuilder getRouteOrBuilder() {
-      return getRoute();
-    }
-
-    public static final int ENTITYID_FIELD_NUMBER = 1;
-    private int entityId_;
-    /**
-     * <code>uint32 entityId = 1;</code>
-     * @return The entityId.
-     */
-    @java.lang.Override
-    public int getEntityId() {
-      return entityId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -420,17 +294,17 @@ public final class AvatarFollowRouteNotifyOuterClass {
       if (entityId_ != 0) {
         output.writeUInt32(1, entityId_);
       }
-      if (templateId_ != 0) {
-        output.writeUInt32(2, templateId_);
-      }
       if (route_ != null) {
-        output.writeMessage(4, getRoute());
-      }
-      if (startSceneTimeMs_ != 0) {
-        output.writeUInt32(6, startSceneTimeMs_);
+        output.writeMessage(3, getRoute());
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(clientParams_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 10, clientParams_);
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 8, clientParams_);
+      }
+      if (startSceneTimeMs_ != 0) {
+        output.writeUInt32(11, startSceneTimeMs_);
+      }
+      if (templateId_ != 0) {
+        output.writeUInt32(14, templateId_);
       }
       unknownFields.writeTo(output);
     }
@@ -445,20 +319,20 @@ public final class AvatarFollowRouteNotifyOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(1, entityId_);
       }
-      if (templateId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, templateId_);
-      }
       if (route_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(4, getRoute());
+          .computeMessageSize(3, getRoute());
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(clientParams_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(8, clientParams_);
       }
       if (startSceneTimeMs_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, startSceneTimeMs_);
+          .computeUInt32Size(11, startSceneTimeMs_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(clientParams_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(10, clientParams_);
+      if (templateId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(14, templateId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -475,19 +349,19 @@ public final class AvatarFollowRouteNotifyOuterClass {
       }
       emu.grasscutter.net.proto.AvatarFollowRouteNotifyOuterClass.AvatarFollowRouteNotify other = (emu.grasscutter.net.proto.AvatarFollowRouteNotifyOuterClass.AvatarFollowRouteNotify) obj;
 
-      if (getStartSceneTimeMs()
-          != other.getStartSceneTimeMs()) return false;
-      if (getTemplateId()
-          != other.getTemplateId()) return false;
-      if (!getClientParams()
-          .equals(other.getClientParams())) return false;
+      if (getEntityId()
+          != other.getEntityId()) return false;
       if (hasRoute() != other.hasRoute()) return false;
       if (hasRoute()) {
         if (!getRoute()
             .equals(other.getRoute())) return false;
       }
-      if (getEntityId()
-          != other.getEntityId()) return false;
+      if (getTemplateId()
+          != other.getTemplateId()) return false;
+      if (getStartSceneTimeMs()
+          != other.getStartSceneTimeMs()) return false;
+      if (!getClientParams()
+          .equals(other.getClientParams())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -499,18 +373,18 @@ public final class AvatarFollowRouteNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + STARTSCENETIMEMS_FIELD_NUMBER;
-      hash = (53 * hash) + getStartSceneTimeMs();
-      hash = (37 * hash) + TEMPLATEID_FIELD_NUMBER;
-      hash = (53 * hash) + getTemplateId();
-      hash = (37 * hash) + CLIENTPARAMS_FIELD_NUMBER;
-      hash = (53 * hash) + getClientParams().hashCode();
+      hash = (37 * hash) + ENTITY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getEntityId();
       if (hasRoute()) {
         hash = (37 * hash) + ROUTE_FIELD_NUMBER;
         hash = (53 * hash) + getRoute().hashCode();
       }
-      hash = (37 * hash) + ENTITYID_FIELD_NUMBER;
-      hash = (53 * hash) + getEntityId();
+      hash = (37 * hash) + TEMPLATE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getTemplateId();
+      hash = (37 * hash) + START_SCENE_TIME_MS_FIELD_NUMBER;
+      hash = (53 * hash) + getStartSceneTimeMs();
+      hash = (37 * hash) + CLIENT_PARAMS_FIELD_NUMBER;
+      hash = (53 * hash) + getClientParams().hashCode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -607,6 +481,11 @@ public final class AvatarFollowRouteNotifyOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 6834
+     * Obf: AMKKLHPPGHJ
+     * </pre>
+     *
      * Protobuf type {@code AvatarFollowRouteNotify}
      */
     public static final class Builder extends
@@ -644,11 +523,7 @@ public final class AvatarFollowRouteNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        startSceneTimeMs_ = 0;
-
-        templateId_ = 0;
-
-        clientParams_ = "";
+        entityId_ = 0;
 
         if (routeBuilder_ == null) {
           route_ = null;
@@ -656,7 +531,11 @@ public final class AvatarFollowRouteNotifyOuterClass {
           route_ = null;
           routeBuilder_ = null;
         }
-        entityId_ = 0;
+        templateId_ = 0;
+
+        startSceneTimeMs_ = 0;
+
+        clientParams_ = "";
 
         return this;
       }
@@ -684,15 +563,15 @@ public final class AvatarFollowRouteNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.AvatarFollowRouteNotifyOuterClass.AvatarFollowRouteNotify buildPartial() {
         emu.grasscutter.net.proto.AvatarFollowRouteNotifyOuterClass.AvatarFollowRouteNotify result = new emu.grasscutter.net.proto.AvatarFollowRouteNotifyOuterClass.AvatarFollowRouteNotify(this);
-        result.startSceneTimeMs_ = startSceneTimeMs_;
-        result.templateId_ = templateId_;
-        result.clientParams_ = clientParams_;
+        result.entityId_ = entityId_;
         if (routeBuilder_ == null) {
           result.route_ = route_;
         } else {
           result.route_ = routeBuilder_.build();
         }
-        result.entityId_ = entityId_;
+        result.templateId_ = templateId_;
+        result.startSceneTimeMs_ = startSceneTimeMs_;
+        result.clientParams_ = clientParams_;
         onBuilt();
         return result;
       }
@@ -741,21 +620,21 @@ public final class AvatarFollowRouteNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.AvatarFollowRouteNotifyOuterClass.AvatarFollowRouteNotify other) {
         if (other == emu.grasscutter.net.proto.AvatarFollowRouteNotifyOuterClass.AvatarFollowRouteNotify.getDefaultInstance()) return this;
-        if (other.getStartSceneTimeMs() != 0) {
-          setStartSceneTimeMs(other.getStartSceneTimeMs());
-        }
-        if (other.getTemplateId() != 0) {
-          setTemplateId(other.getTemplateId());
-        }
-        if (!other.getClientParams().isEmpty()) {
-          clientParams_ = other.clientParams_;
-          onChanged();
+        if (other.getEntityId() != 0) {
+          setEntityId(other.getEntityId());
         }
         if (other.hasRoute()) {
           mergeRoute(other.getRoute());
         }
-        if (other.getEntityId() != 0) {
-          setEntityId(other.getEntityId());
+        if (other.getTemplateId() != 0) {
+          setTemplateId(other.getTemplateId());
+        }
+        if (other.getStartSceneTimeMs() != 0) {
+          setStartSceneTimeMs(other.getStartSceneTimeMs());
+        }
+        if (!other.getClientParams().isEmpty()) {
+          clientParams_ = other.clientParams_;
+          onChanged();
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -786,140 +665,33 @@ public final class AvatarFollowRouteNotifyOuterClass {
         return this;
       }
 
-      private int startSceneTimeMs_ ;
+      private int entityId_ ;
       /**
-       * <code>uint32 startSceneTimeMs = 6;</code>
-       * @return The startSceneTimeMs.
+       * <code>uint32 entity_id = 1;</code>
+       * @return The entityId.
        */
       @java.lang.Override
-      public int getStartSceneTimeMs() {
-        return startSceneTimeMs_;
+      public int getEntityId() {
+        return entityId_;
       }
       /**
-       * <code>uint32 startSceneTimeMs = 6;</code>
-       * @param value The startSceneTimeMs to set.
+       * <code>uint32 entity_id = 1;</code>
+       * @param value The entityId to set.
        * @return This builder for chaining.
        */
-      public Builder setStartSceneTimeMs(int value) {
+      public Builder setEntityId(int value) {
         
-        startSceneTimeMs_ = value;
+        entityId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 startSceneTimeMs = 6;</code>
+       * <code>uint32 entity_id = 1;</code>
        * @return This builder for chaining.
        */
-      public Builder clearStartSceneTimeMs() {
+      public Builder clearEntityId() {
         
-        startSceneTimeMs_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int templateId_ ;
-      /**
-       * <code>uint32 templateId = 2;</code>
-       * @return The templateId.
-       */
-      @java.lang.Override
-      public int getTemplateId() {
-        return templateId_;
-      }
-      /**
-       * <code>uint32 templateId = 2;</code>
-       * @param value The templateId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setTemplateId(int value) {
-        
-        templateId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 templateId = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearTemplateId() {
-        
-        templateId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private java.lang.Object clientParams_ = "";
-      /**
-       * <code>string clientParams = 10;</code>
-       * @return The clientParams.
-       */
-      public java.lang.String getClientParams() {
-        java.lang.Object ref = clientParams_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          clientParams_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <code>string clientParams = 10;</code>
-       * @return The bytes for clientParams.
-       */
-      public com.google.protobuf.ByteString
-          getClientParamsBytes() {
-        java.lang.Object ref = clientParams_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          clientParams_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <code>string clientParams = 10;</code>
-       * @param value The clientParams to set.
-       * @return This builder for chaining.
-       */
-      public Builder setClientParams(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        clientParams_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string clientParams = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearClientParams() {
-        
-        clientParams_ = getDefaultInstance().getClientParams();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string clientParams = 10;</code>
-       * @param value The bytes for clientParams to set.
-       * @return This builder for chaining.
-       */
-      public Builder setClientParamsBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        clientParams_ = value;
+        entityId_ = 0;
         onChanged();
         return this;
       }
@@ -928,14 +700,14 @@ public final class AvatarFollowRouteNotifyOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.RouteOuterClass.Route, emu.grasscutter.net.proto.RouteOuterClass.Route.Builder, emu.grasscutter.net.proto.RouteOuterClass.RouteOrBuilder> routeBuilder_;
       /**
-       * <code>.Route route = 4;</code>
+       * <code>.Route route = 3;</code>
        * @return Whether the route field is set.
        */
       public boolean hasRoute() {
         return routeBuilder_ != null || route_ != null;
       }
       /**
-       * <code>.Route route = 4;</code>
+       * <code>.Route route = 3;</code>
        * @return The route.
        */
       public emu.grasscutter.net.proto.RouteOuterClass.Route getRoute() {
@@ -946,7 +718,7 @@ public final class AvatarFollowRouteNotifyOuterClass {
         }
       }
       /**
-       * <code>.Route route = 4;</code>
+       * <code>.Route route = 3;</code>
        */
       public Builder setRoute(emu.grasscutter.net.proto.RouteOuterClass.Route value) {
         if (routeBuilder_ == null) {
@@ -962,7 +734,7 @@ public final class AvatarFollowRouteNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.Route route = 4;</code>
+       * <code>.Route route = 3;</code>
        */
       public Builder setRoute(
           emu.grasscutter.net.proto.RouteOuterClass.Route.Builder builderForValue) {
@@ -976,7 +748,7 @@ public final class AvatarFollowRouteNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.Route route = 4;</code>
+       * <code>.Route route = 3;</code>
        */
       public Builder mergeRoute(emu.grasscutter.net.proto.RouteOuterClass.Route value) {
         if (routeBuilder_ == null) {
@@ -994,7 +766,7 @@ public final class AvatarFollowRouteNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.Route route = 4;</code>
+       * <code>.Route route = 3;</code>
        */
       public Builder clearRoute() {
         if (routeBuilder_ == null) {
@@ -1008,7 +780,7 @@ public final class AvatarFollowRouteNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.Route route = 4;</code>
+       * <code>.Route route = 3;</code>
        */
       public emu.grasscutter.net.proto.RouteOuterClass.Route.Builder getRouteBuilder() {
         
@@ -1016,7 +788,7 @@ public final class AvatarFollowRouteNotifyOuterClass {
         return getRouteFieldBuilder().getBuilder();
       }
       /**
-       * <code>.Route route = 4;</code>
+       * <code>.Route route = 3;</code>
        */
       public emu.grasscutter.net.proto.RouteOuterClass.RouteOrBuilder getRouteOrBuilder() {
         if (routeBuilder_ != null) {
@@ -1027,7 +799,7 @@ public final class AvatarFollowRouteNotifyOuterClass {
         }
       }
       /**
-       * <code>.Route route = 4;</code>
+       * <code>.Route route = 3;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.RouteOuterClass.Route, emu.grasscutter.net.proto.RouteOuterClass.Route.Builder, emu.grasscutter.net.proto.RouteOuterClass.RouteOrBuilder> 
@@ -1043,33 +815,140 @@ public final class AvatarFollowRouteNotifyOuterClass {
         return routeBuilder_;
       }
 
-      private int entityId_ ;
+      private int templateId_ ;
       /**
-       * <code>uint32 entityId = 1;</code>
-       * @return The entityId.
+       * <code>uint32 template_id = 14;</code>
+       * @return The templateId.
        */
       @java.lang.Override
-      public int getEntityId() {
-        return entityId_;
+      public int getTemplateId() {
+        return templateId_;
       }
       /**
-       * <code>uint32 entityId = 1;</code>
-       * @param value The entityId to set.
+       * <code>uint32 template_id = 14;</code>
+       * @param value The templateId to set.
        * @return This builder for chaining.
        */
-      public Builder setEntityId(int value) {
+      public Builder setTemplateId(int value) {
         
-        entityId_ = value;
+        templateId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 entityId = 1;</code>
+       * <code>uint32 template_id = 14;</code>
        * @return This builder for chaining.
        */
-      public Builder clearEntityId() {
+      public Builder clearTemplateId() {
         
-        entityId_ = 0;
+        templateId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int startSceneTimeMs_ ;
+      /**
+       * <code>uint32 start_scene_time_ms = 11;</code>
+       * @return The startSceneTimeMs.
+       */
+      @java.lang.Override
+      public int getStartSceneTimeMs() {
+        return startSceneTimeMs_;
+      }
+      /**
+       * <code>uint32 start_scene_time_ms = 11;</code>
+       * @param value The startSceneTimeMs to set.
+       * @return This builder for chaining.
+       */
+      public Builder setStartSceneTimeMs(int value) {
+        
+        startSceneTimeMs_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 start_scene_time_ms = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearStartSceneTimeMs() {
+        
+        startSceneTimeMs_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object clientParams_ = "";
+      /**
+       * <code>string client_params = 8;</code>
+       * @return The clientParams.
+       */
+      public java.lang.String getClientParams() {
+        java.lang.Object ref = clientParams_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          clientParams_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>string client_params = 8;</code>
+       * @return The bytes for clientParams.
+       */
+      public com.google.protobuf.ByteString
+          getClientParamsBytes() {
+        java.lang.Object ref = clientParams_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          clientParams_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string client_params = 8;</code>
+       * @param value The clientParams to set.
+       * @return This builder for chaining.
+       */
+      public Builder setClientParams(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        clientParams_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string client_params = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearClientParams() {
+        
+        clientParams_ = getDefaultInstance().getClientParams();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string client_params = 8;</code>
+       * @param value The bytes for clientParams to set.
+       * @return This builder for chaining.
+       */
+      public Builder setClientParamsBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        clientParams_ = value;
         onChanged();
         return this;
       }
@@ -1141,13 +1020,11 @@ public final class AvatarFollowRouteNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\035AvatarFollowRouteNotify.proto\032\013Route.p" +
-      "roto\"\327\001\n\027AvatarFollowRouteNotify\022\030\n\020star" +
-      "tSceneTimeMs\030\006 \001(\r\022\022\n\ntemplateId\030\002 \001(\r\022\024" +
-      "\n\014clientParams\030\n \001(\t\022\025\n\005route\030\004 \001(\0132\006.Ro" +
-      "ute\022\020\n\010entityId\030\001 \001(\r\"O\n\013PEPNPAGIKJC\022\010\n\004" +
-      "NONE\020\000\022\020\n\013PEPPOHPHJOJ\020\231\030\022\017\n\013DCDNILFDFLB\020" +
-      "\000\022\017\n\013NNBKOLMPOEA\020\001\032\002\020\001B\033\n\031emu.grasscutte" +
-      "r.net.protob\006proto3"
+      "roto\"\214\001\n\027AvatarFollowRouteNotify\022\021\n\tenti" +
+      "ty_id\030\001 \001(\r\022\025\n\005route\030\003 \001(\0132\006.Route\022\023\n\013te" +
+      "mplate_id\030\016 \001(\r\022\033\n\023start_scene_time_ms\030\013" +
+      " \001(\r\022\025\n\rclient_params\030\010 \001(\tB\033\n\031emu.grass" +
+      "cutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1159,7 +1036,7 @@ public final class AvatarFollowRouteNotifyOuterClass {
     internal_static_AvatarFollowRouteNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_AvatarFollowRouteNotify_descriptor,
-        new java.lang.String[] { "StartSceneTimeMs", "TemplateId", "ClientParams", "Route", "EntityId", });
+        new java.lang.String[] { "EntityId", "Route", "TemplateId", "StartSceneTimeMs", "ClientParams", });
     emu.grasscutter.net.proto.RouteOuterClass.getDescriptor();
   }
 

@@ -19,98 +19,102 @@ public final class PlantFlowerActivityDetailInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 day_index = 1;</code>
-     * @return The dayIndex.
-     */
-    int getDayIndex();
-
-    /**
-     * <code>uint32 today_seed_reward_id = 15;</code>
+     * <code>uint32 today_seed_reward_id = 10;</code>
      * @return The todaySeedRewardId.
      */
     int getTodaySeedRewardId();
 
     /**
-     * <code>bool is_content_closed = 3;</code>
+     * <code>map&lt;uint32, uint32&gt; DAOOKPHJPKA = 9;</code>
+     */
+    int getDAOOKPHJPKACount();
+    /**
+     * <code>map&lt;uint32, uint32&gt; DAOOKPHJPKA = 9;</code>
+     */
+    boolean containsDAOOKPHJPKA(
+        int key);
+    /**
+     * Use {@link #getDAOOKPHJPKAMap()} instead.
+     */
+    @java.lang.Deprecated
+    java.util.Map<java.lang.Integer, java.lang.Integer>
+    getDAOOKPHJPKA();
+    /**
+     * <code>map&lt;uint32, uint32&gt; DAOOKPHJPKA = 9;</code>
+     */
+    java.util.Map<java.lang.Integer, java.lang.Integer>
+    getDAOOKPHJPKAMap();
+    /**
+     * <code>map&lt;uint32, uint32&gt; DAOOKPHJPKA = 9;</code>
+     */
+
+    int getDAOOKPHJPKAOrDefault(
+        int key,
+        int defaultValue);
+    /**
+     * <code>map&lt;uint32, uint32&gt; DAOOKPHJPKA = 9;</code>
+     */
+
+    int getDAOOKPHJPKAOrThrow(
+        int key);
+
+    /**
+     * <code>bool is_content_closed = 5;</code>
      * @return The isContentClosed.
      */
     boolean getIsContentClosed();
 
     /**
-     * <code>map&lt;uint32, uint32&gt; Unk3300_EPMKDFOBLFK = 9;</code>
-     */
-    int getUnk3300EPMKDFOBLFKCount();
-    /**
-     * <code>map&lt;uint32, uint32&gt; Unk3300_EPMKDFOBLFK = 9;</code>
-     */
-    boolean containsUnk3300EPMKDFOBLFK(
-        int key);
-    /**
-     * Use {@link #getUnk3300EPMKDFOBLFKMap()} instead.
-     */
-    @java.lang.Deprecated
-    java.util.Map<java.lang.Integer, java.lang.Integer>
-    getUnk3300EPMKDFOBLFK();
-    /**
-     * <code>map&lt;uint32, uint32&gt; Unk3300_EPMKDFOBLFK = 9;</code>
-     */
-    java.util.Map<java.lang.Integer, java.lang.Integer>
-    getUnk3300EPMKDFOBLFKMap();
-    /**
-     * <code>map&lt;uint32, uint32&gt; Unk3300_EPMKDFOBLFK = 9;</code>
-     */
-
-    int getUnk3300EPMKDFOBLFKOrDefault(
-        int key,
-        int defaultValue);
-    /**
-     * <code>map&lt;uint32, uint32&gt; Unk3300_EPMKDFOBLFK = 9;</code>
-     */
-
-    int getUnk3300EPMKDFOBLFKOrThrow(
-        int key);
-
-    /**
-     * <code>map&lt;uint32, uint32&gt; Unk3300_ELAIBMDIBFJ = 5;</code>
-     */
-    int getUnk3300ELAIBMDIBFJCount();
-    /**
-     * <code>map&lt;uint32, uint32&gt; Unk3300_ELAIBMDIBFJ = 5;</code>
-     */
-    boolean containsUnk3300ELAIBMDIBFJ(
-        int key);
-    /**
-     * Use {@link #getUnk3300ELAIBMDIBFJMap()} instead.
-     */
-    @java.lang.Deprecated
-    java.util.Map<java.lang.Integer, java.lang.Integer>
-    getUnk3300ELAIBMDIBFJ();
-    /**
-     * <code>map&lt;uint32, uint32&gt; Unk3300_ELAIBMDIBFJ = 5;</code>
-     */
-    java.util.Map<java.lang.Integer, java.lang.Integer>
-    getUnk3300ELAIBMDIBFJMap();
-    /**
-     * <code>map&lt;uint32, uint32&gt; Unk3300_ELAIBMDIBFJ = 5;</code>
-     */
-
-    int getUnk3300ELAIBMDIBFJOrDefault(
-        int key,
-        int defaultValue);
-    /**
-     * <code>map&lt;uint32, uint32&gt; Unk3300_ELAIBMDIBFJ = 5;</code>
-     */
-
-    int getUnk3300ELAIBMDIBFJOrThrow(
-        int key);
-
-    /**
-     * <code>bool is_today_has_awarded = 8;</code>
+     * <code>bool is_today_has_awarded = 2;</code>
      * @return The isTodayHasAwarded.
      */
     boolean getIsTodayHasAwarded();
+
+    /**
+     * <code>map&lt;uint32, uint32&gt; IPADJEILKIB = 4;</code>
+     */
+    int getIPADJEILKIBCount();
+    /**
+     * <code>map&lt;uint32, uint32&gt; IPADJEILKIB = 4;</code>
+     */
+    boolean containsIPADJEILKIB(
+        int key);
+    /**
+     * Use {@link #getIPADJEILKIBMap()} instead.
+     */
+    @java.lang.Deprecated
+    java.util.Map<java.lang.Integer, java.lang.Integer>
+    getIPADJEILKIB();
+    /**
+     * <code>map&lt;uint32, uint32&gt; IPADJEILKIB = 4;</code>
+     */
+    java.util.Map<java.lang.Integer, java.lang.Integer>
+    getIPADJEILKIBMap();
+    /**
+     * <code>map&lt;uint32, uint32&gt; IPADJEILKIB = 4;</code>
+     */
+
+    int getIPADJEILKIBOrDefault(
+        int key,
+        int defaultValue);
+    /**
+     * <code>map&lt;uint32, uint32&gt; IPADJEILKIB = 4;</code>
+     */
+
+    int getIPADJEILKIBOrThrow(
+        int key);
+
+    /**
+     * <code>uint32 day_index = 8;</code>
+     * @return The dayIndex.
+     */
+    int getDayIndex();
   }
   /**
+   * <pre>
+   * Obf: EFJGNELKFMH
+   * </pre>
+   *
    * Protobuf type {@code PlantFlowerActivityDetailInfo}
    */
   public static final class PlantFlowerActivityDetailInfo extends
@@ -156,48 +160,48 @@ public final class PlantFlowerActivityDetailInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              dayIndex_ = input.readUInt32();
-              break;
-            }
-            case 24: {
-
-              isContentClosed_ = input.readBool();
-              break;
-            }
-            case 42: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                unk3300ELAIBMDIBFJ_ = com.google.protobuf.MapField.newMapField(
-                    Unk3300ELAIBMDIBFJDefaultEntryHolder.defaultEntry);
-                mutable_bitField0_ |= 0x00000002;
-              }
-              com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
-              unk3300ELAIBMDIBFJ__ = input.readMessage(
-                  Unk3300ELAIBMDIBFJDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
-              unk3300ELAIBMDIBFJ_.getMutableMap().put(
-                  unk3300ELAIBMDIBFJ__.getKey(), unk3300ELAIBMDIBFJ__.getValue());
-              break;
-            }
-            case 64: {
+            case 16: {
 
               isTodayHasAwarded_ = input.readBool();
               break;
             }
+            case 34: {
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+                iPADJEILKIB_ = com.google.protobuf.MapField.newMapField(
+                    IPADJEILKIBDefaultEntryHolder.defaultEntry);
+                mutable_bitField0_ |= 0x00000002;
+              }
+              com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
+              iPADJEILKIB__ = input.readMessage(
+                  IPADJEILKIBDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
+              iPADJEILKIB_.getMutableMap().put(
+                  iPADJEILKIB__.getKey(), iPADJEILKIB__.getValue());
+              break;
+            }
+            case 40: {
+
+              isContentClosed_ = input.readBool();
+              break;
+            }
+            case 64: {
+
+              dayIndex_ = input.readUInt32();
+              break;
+            }
             case 74: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                unk3300EPMKDFOBLFK_ = com.google.protobuf.MapField.newMapField(
-                    Unk3300EPMKDFOBLFKDefaultEntryHolder.defaultEntry);
+                dAOOKPHJPKA_ = com.google.protobuf.MapField.newMapField(
+                    DAOOKPHJPKADefaultEntryHolder.defaultEntry);
                 mutable_bitField0_ |= 0x00000001;
               }
               com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
-              unk3300EPMKDFOBLFK__ = input.readMessage(
-                  Unk3300EPMKDFOBLFKDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
-              unk3300EPMKDFOBLFK_.getMutableMap().put(
-                  unk3300EPMKDFOBLFK__.getKey(), unk3300EPMKDFOBLFK__.getValue());
+              dAOOKPHJPKA__ = input.readMessage(
+                  DAOOKPHJPKADefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
+              dAOOKPHJPKA_.getMutableMap().put(
+                  dAOOKPHJPKA__.getKey(), dAOOKPHJPKA__.getValue());
               break;
             }
-            case 120: {
+            case 80: {
 
               todaySeedRewardId_ = input.readUInt32();
               break;
@@ -232,9 +236,9 @@ public final class PlantFlowerActivityDetailInfoOuterClass {
         int number) {
       switch (number) {
         case 9:
-          return internalGetUnk3300EPMKDFOBLFK();
-        case 5:
-          return internalGetUnk3300ELAIBMDIBFJ();
+          return internalGetDAOOKPHJPKA();
+        case 4:
+          return internalGetIPADJEILKIB();
         default:
           throw new RuntimeException(
               "Invalid map field number: " + number);
@@ -248,21 +252,10 @@ public final class PlantFlowerActivityDetailInfoOuterClass {
               emu.grasscutter.net.proto.PlantFlowerActivityDetailInfoOuterClass.PlantFlowerActivityDetailInfo.class, emu.grasscutter.net.proto.PlantFlowerActivityDetailInfoOuterClass.PlantFlowerActivityDetailInfo.Builder.class);
     }
 
-    public static final int DAY_INDEX_FIELD_NUMBER = 1;
-    private int dayIndex_;
-    /**
-     * <code>uint32 day_index = 1;</code>
-     * @return The dayIndex.
-     */
-    @java.lang.Override
-    public int getDayIndex() {
-      return dayIndex_;
-    }
-
-    public static final int TODAY_SEED_REWARD_ID_FIELD_NUMBER = 15;
+    public static final int TODAY_SEED_REWARD_ID_FIELD_NUMBER = 10;
     private int todaySeedRewardId_;
     /**
-     * <code>uint32 today_seed_reward_id = 15;</code>
+     * <code>uint32 today_seed_reward_id = 10;</code>
      * @return The todaySeedRewardId.
      */
     @java.lang.Override
@@ -270,10 +263,91 @@ public final class PlantFlowerActivityDetailInfoOuterClass {
       return todaySeedRewardId_;
     }
 
-    public static final int IS_CONTENT_CLOSED_FIELD_NUMBER = 3;
+    public static final int DAOOKPHJPKA_FIELD_NUMBER = 9;
+    private static final class DAOOKPHJPKADefaultEntryHolder {
+      static final com.google.protobuf.MapEntry<
+          java.lang.Integer, java.lang.Integer> defaultEntry =
+              com.google.protobuf.MapEntry
+              .<java.lang.Integer, java.lang.Integer>newDefaultInstance(
+                  emu.grasscutter.net.proto.PlantFlowerActivityDetailInfoOuterClass.internal_static_PlantFlowerActivityDetailInfo_DAOOKPHJPKAEntry_descriptor, 
+                  com.google.protobuf.WireFormat.FieldType.UINT32,
+                  0,
+                  com.google.protobuf.WireFormat.FieldType.UINT32,
+                  0);
+    }
+    private com.google.protobuf.MapField<
+        java.lang.Integer, java.lang.Integer> dAOOKPHJPKA_;
+    private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
+    internalGetDAOOKPHJPKA() {
+      if (dAOOKPHJPKA_ == null) {
+        return com.google.protobuf.MapField.emptyMapField(
+            DAOOKPHJPKADefaultEntryHolder.defaultEntry);
+      }
+      return dAOOKPHJPKA_;
+    }
+
+    public int getDAOOKPHJPKACount() {
+      return internalGetDAOOKPHJPKA().getMap().size();
+    }
+    /**
+     * <code>map&lt;uint32, uint32&gt; DAOOKPHJPKA = 9;</code>
+     */
+
+    @java.lang.Override
+    public boolean containsDAOOKPHJPKA(
+        int key) {
+      
+      return internalGetDAOOKPHJPKA().getMap().containsKey(key);
+    }
+    /**
+     * Use {@link #getDAOOKPHJPKAMap()} instead.
+     */
+    @java.lang.Override
+    @java.lang.Deprecated
+    public java.util.Map<java.lang.Integer, java.lang.Integer> getDAOOKPHJPKA() {
+      return getDAOOKPHJPKAMap();
+    }
+    /**
+     * <code>map&lt;uint32, uint32&gt; DAOOKPHJPKA = 9;</code>
+     */
+    @java.lang.Override
+
+    public java.util.Map<java.lang.Integer, java.lang.Integer> getDAOOKPHJPKAMap() {
+      return internalGetDAOOKPHJPKA().getMap();
+    }
+    /**
+     * <code>map&lt;uint32, uint32&gt; DAOOKPHJPKA = 9;</code>
+     */
+    @java.lang.Override
+
+    public int getDAOOKPHJPKAOrDefault(
+        int key,
+        int defaultValue) {
+      
+      java.util.Map<java.lang.Integer, java.lang.Integer> map =
+          internalGetDAOOKPHJPKA().getMap();
+      return map.containsKey(key) ? map.get(key) : defaultValue;
+    }
+    /**
+     * <code>map&lt;uint32, uint32&gt; DAOOKPHJPKA = 9;</code>
+     */
+    @java.lang.Override
+
+    public int getDAOOKPHJPKAOrThrow(
+        int key) {
+      
+      java.util.Map<java.lang.Integer, java.lang.Integer> map =
+          internalGetDAOOKPHJPKA().getMap();
+      if (!map.containsKey(key)) {
+        throw new java.lang.IllegalArgumentException();
+      }
+      return map.get(key);
+    }
+
+    public static final int IS_CONTENT_CLOSED_FIELD_NUMBER = 5;
     private boolean isContentClosed_;
     /**
-     * <code>bool is_content_closed = 3;</code>
+     * <code>bool is_content_closed = 5;</code>
      * @return The isContentClosed.
      */
     @java.lang.Override
@@ -281,177 +355,107 @@ public final class PlantFlowerActivityDetailInfoOuterClass {
       return isContentClosed_;
     }
 
-    public static final int UNK3300_EPMKDFOBLFK_FIELD_NUMBER = 9;
-    private static final class Unk3300EPMKDFOBLFKDefaultEntryHolder {
-      static final com.google.protobuf.MapEntry<
-          java.lang.Integer, java.lang.Integer> defaultEntry =
-              com.google.protobuf.MapEntry
-              .<java.lang.Integer, java.lang.Integer>newDefaultInstance(
-                  emu.grasscutter.net.proto.PlantFlowerActivityDetailInfoOuterClass.internal_static_PlantFlowerActivityDetailInfo_Unk3300EPMKDFOBLFKEntry_descriptor, 
-                  com.google.protobuf.WireFormat.FieldType.UINT32,
-                  0,
-                  com.google.protobuf.WireFormat.FieldType.UINT32,
-                  0);
-    }
-    private com.google.protobuf.MapField<
-        java.lang.Integer, java.lang.Integer> unk3300EPMKDFOBLFK_;
-    private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-    internalGetUnk3300EPMKDFOBLFK() {
-      if (unk3300EPMKDFOBLFK_ == null) {
-        return com.google.protobuf.MapField.emptyMapField(
-            Unk3300EPMKDFOBLFKDefaultEntryHolder.defaultEntry);
-      }
-      return unk3300EPMKDFOBLFK_;
-    }
-
-    public int getUnk3300EPMKDFOBLFKCount() {
-      return internalGetUnk3300EPMKDFOBLFK().getMap().size();
-    }
-    /**
-     * <code>map&lt;uint32, uint32&gt; Unk3300_EPMKDFOBLFK = 9;</code>
-     */
-
-    @java.lang.Override
-    public boolean containsUnk3300EPMKDFOBLFK(
-        int key) {
-      
-      return internalGetUnk3300EPMKDFOBLFK().getMap().containsKey(key);
-    }
-    /**
-     * Use {@link #getUnk3300EPMKDFOBLFKMap()} instead.
-     */
-    @java.lang.Override
-    @java.lang.Deprecated
-    public java.util.Map<java.lang.Integer, java.lang.Integer> getUnk3300EPMKDFOBLFK() {
-      return getUnk3300EPMKDFOBLFKMap();
-    }
-    /**
-     * <code>map&lt;uint32, uint32&gt; Unk3300_EPMKDFOBLFK = 9;</code>
-     */
-    @java.lang.Override
-
-    public java.util.Map<java.lang.Integer, java.lang.Integer> getUnk3300EPMKDFOBLFKMap() {
-      return internalGetUnk3300EPMKDFOBLFK().getMap();
-    }
-    /**
-     * <code>map&lt;uint32, uint32&gt; Unk3300_EPMKDFOBLFK = 9;</code>
-     */
-    @java.lang.Override
-
-    public int getUnk3300EPMKDFOBLFKOrDefault(
-        int key,
-        int defaultValue) {
-      
-      java.util.Map<java.lang.Integer, java.lang.Integer> map =
-          internalGetUnk3300EPMKDFOBLFK().getMap();
-      return map.containsKey(key) ? map.get(key) : defaultValue;
-    }
-    /**
-     * <code>map&lt;uint32, uint32&gt; Unk3300_EPMKDFOBLFK = 9;</code>
-     */
-    @java.lang.Override
-
-    public int getUnk3300EPMKDFOBLFKOrThrow(
-        int key) {
-      
-      java.util.Map<java.lang.Integer, java.lang.Integer> map =
-          internalGetUnk3300EPMKDFOBLFK().getMap();
-      if (!map.containsKey(key)) {
-        throw new java.lang.IllegalArgumentException();
-      }
-      return map.get(key);
-    }
-
-    public static final int UNK3300_ELAIBMDIBFJ_FIELD_NUMBER = 5;
-    private static final class Unk3300ELAIBMDIBFJDefaultEntryHolder {
-      static final com.google.protobuf.MapEntry<
-          java.lang.Integer, java.lang.Integer> defaultEntry =
-              com.google.protobuf.MapEntry
-              .<java.lang.Integer, java.lang.Integer>newDefaultInstance(
-                  emu.grasscutter.net.proto.PlantFlowerActivityDetailInfoOuterClass.internal_static_PlantFlowerActivityDetailInfo_Unk3300ELAIBMDIBFJEntry_descriptor, 
-                  com.google.protobuf.WireFormat.FieldType.UINT32,
-                  0,
-                  com.google.protobuf.WireFormat.FieldType.UINT32,
-                  0);
-    }
-    private com.google.protobuf.MapField<
-        java.lang.Integer, java.lang.Integer> unk3300ELAIBMDIBFJ_;
-    private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-    internalGetUnk3300ELAIBMDIBFJ() {
-      if (unk3300ELAIBMDIBFJ_ == null) {
-        return com.google.protobuf.MapField.emptyMapField(
-            Unk3300ELAIBMDIBFJDefaultEntryHolder.defaultEntry);
-      }
-      return unk3300ELAIBMDIBFJ_;
-    }
-
-    public int getUnk3300ELAIBMDIBFJCount() {
-      return internalGetUnk3300ELAIBMDIBFJ().getMap().size();
-    }
-    /**
-     * <code>map&lt;uint32, uint32&gt; Unk3300_ELAIBMDIBFJ = 5;</code>
-     */
-
-    @java.lang.Override
-    public boolean containsUnk3300ELAIBMDIBFJ(
-        int key) {
-      
-      return internalGetUnk3300ELAIBMDIBFJ().getMap().containsKey(key);
-    }
-    /**
-     * Use {@link #getUnk3300ELAIBMDIBFJMap()} instead.
-     */
-    @java.lang.Override
-    @java.lang.Deprecated
-    public java.util.Map<java.lang.Integer, java.lang.Integer> getUnk3300ELAIBMDIBFJ() {
-      return getUnk3300ELAIBMDIBFJMap();
-    }
-    /**
-     * <code>map&lt;uint32, uint32&gt; Unk3300_ELAIBMDIBFJ = 5;</code>
-     */
-    @java.lang.Override
-
-    public java.util.Map<java.lang.Integer, java.lang.Integer> getUnk3300ELAIBMDIBFJMap() {
-      return internalGetUnk3300ELAIBMDIBFJ().getMap();
-    }
-    /**
-     * <code>map&lt;uint32, uint32&gt; Unk3300_ELAIBMDIBFJ = 5;</code>
-     */
-    @java.lang.Override
-
-    public int getUnk3300ELAIBMDIBFJOrDefault(
-        int key,
-        int defaultValue) {
-      
-      java.util.Map<java.lang.Integer, java.lang.Integer> map =
-          internalGetUnk3300ELAIBMDIBFJ().getMap();
-      return map.containsKey(key) ? map.get(key) : defaultValue;
-    }
-    /**
-     * <code>map&lt;uint32, uint32&gt; Unk3300_ELAIBMDIBFJ = 5;</code>
-     */
-    @java.lang.Override
-
-    public int getUnk3300ELAIBMDIBFJOrThrow(
-        int key) {
-      
-      java.util.Map<java.lang.Integer, java.lang.Integer> map =
-          internalGetUnk3300ELAIBMDIBFJ().getMap();
-      if (!map.containsKey(key)) {
-        throw new java.lang.IllegalArgumentException();
-      }
-      return map.get(key);
-    }
-
-    public static final int IS_TODAY_HAS_AWARDED_FIELD_NUMBER = 8;
+    public static final int IS_TODAY_HAS_AWARDED_FIELD_NUMBER = 2;
     private boolean isTodayHasAwarded_;
     /**
-     * <code>bool is_today_has_awarded = 8;</code>
+     * <code>bool is_today_has_awarded = 2;</code>
      * @return The isTodayHasAwarded.
      */
     @java.lang.Override
     public boolean getIsTodayHasAwarded() {
       return isTodayHasAwarded_;
+    }
+
+    public static final int IPADJEILKIB_FIELD_NUMBER = 4;
+    private static final class IPADJEILKIBDefaultEntryHolder {
+      static final com.google.protobuf.MapEntry<
+          java.lang.Integer, java.lang.Integer> defaultEntry =
+              com.google.protobuf.MapEntry
+              .<java.lang.Integer, java.lang.Integer>newDefaultInstance(
+                  emu.grasscutter.net.proto.PlantFlowerActivityDetailInfoOuterClass.internal_static_PlantFlowerActivityDetailInfo_IPADJEILKIBEntry_descriptor, 
+                  com.google.protobuf.WireFormat.FieldType.UINT32,
+                  0,
+                  com.google.protobuf.WireFormat.FieldType.UINT32,
+                  0);
+    }
+    private com.google.protobuf.MapField<
+        java.lang.Integer, java.lang.Integer> iPADJEILKIB_;
+    private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
+    internalGetIPADJEILKIB() {
+      if (iPADJEILKIB_ == null) {
+        return com.google.protobuf.MapField.emptyMapField(
+            IPADJEILKIBDefaultEntryHolder.defaultEntry);
+      }
+      return iPADJEILKIB_;
+    }
+
+    public int getIPADJEILKIBCount() {
+      return internalGetIPADJEILKIB().getMap().size();
+    }
+    /**
+     * <code>map&lt;uint32, uint32&gt; IPADJEILKIB = 4;</code>
+     */
+
+    @java.lang.Override
+    public boolean containsIPADJEILKIB(
+        int key) {
+      
+      return internalGetIPADJEILKIB().getMap().containsKey(key);
+    }
+    /**
+     * Use {@link #getIPADJEILKIBMap()} instead.
+     */
+    @java.lang.Override
+    @java.lang.Deprecated
+    public java.util.Map<java.lang.Integer, java.lang.Integer> getIPADJEILKIB() {
+      return getIPADJEILKIBMap();
+    }
+    /**
+     * <code>map&lt;uint32, uint32&gt; IPADJEILKIB = 4;</code>
+     */
+    @java.lang.Override
+
+    public java.util.Map<java.lang.Integer, java.lang.Integer> getIPADJEILKIBMap() {
+      return internalGetIPADJEILKIB().getMap();
+    }
+    /**
+     * <code>map&lt;uint32, uint32&gt; IPADJEILKIB = 4;</code>
+     */
+    @java.lang.Override
+
+    public int getIPADJEILKIBOrDefault(
+        int key,
+        int defaultValue) {
+      
+      java.util.Map<java.lang.Integer, java.lang.Integer> map =
+          internalGetIPADJEILKIB().getMap();
+      return map.containsKey(key) ? map.get(key) : defaultValue;
+    }
+    /**
+     * <code>map&lt;uint32, uint32&gt; IPADJEILKIB = 4;</code>
+     */
+    @java.lang.Override
+
+    public int getIPADJEILKIBOrThrow(
+        int key) {
+      
+      java.util.Map<java.lang.Integer, java.lang.Integer> map =
+          internalGetIPADJEILKIB().getMap();
+      if (!map.containsKey(key)) {
+        throw new java.lang.IllegalArgumentException();
+      }
+      return map.get(key);
+    }
+
+    public static final int DAY_INDEX_FIELD_NUMBER = 8;
+    private int dayIndex_;
+    /**
+     * <code>uint32 day_index = 8;</code>
+     * @return The dayIndex.
+     */
+    @java.lang.Override
+    public int getDayIndex() {
+      return dayIndex_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -468,29 +472,29 @@ public final class PlantFlowerActivityDetailInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (dayIndex_ != 0) {
-        output.writeUInt32(1, dayIndex_);
-      }
-      if (isContentClosed_ != false) {
-        output.writeBool(3, isContentClosed_);
-      }
-      com.google.protobuf.GeneratedMessageV3
-        .serializeIntegerMapTo(
-          output,
-          internalGetUnk3300ELAIBMDIBFJ(),
-          Unk3300ELAIBMDIBFJDefaultEntryHolder.defaultEntry,
-          5);
       if (isTodayHasAwarded_ != false) {
-        output.writeBool(8, isTodayHasAwarded_);
+        output.writeBool(2, isTodayHasAwarded_);
       }
       com.google.protobuf.GeneratedMessageV3
         .serializeIntegerMapTo(
           output,
-          internalGetUnk3300EPMKDFOBLFK(),
-          Unk3300EPMKDFOBLFKDefaultEntryHolder.defaultEntry,
+          internalGetIPADJEILKIB(),
+          IPADJEILKIBDefaultEntryHolder.defaultEntry,
+          4);
+      if (isContentClosed_ != false) {
+        output.writeBool(5, isContentClosed_);
+      }
+      if (dayIndex_ != 0) {
+        output.writeUInt32(8, dayIndex_);
+      }
+      com.google.protobuf.GeneratedMessageV3
+        .serializeIntegerMapTo(
+          output,
+          internalGetDAOOKPHJPKA(),
+          DAOOKPHJPKADefaultEntryHolder.defaultEntry,
           9);
       if (todaySeedRewardId_ != 0) {
-        output.writeUInt32(15, todaySeedRewardId_);
+        output.writeUInt32(10, todaySeedRewardId_);
       }
       unknownFields.writeTo(output);
     }
@@ -501,41 +505,41 @@ public final class PlantFlowerActivityDetailInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (dayIndex_ != 0) {
+      if (isTodayHasAwarded_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, dayIndex_);
+          .computeBoolSize(2, isTodayHasAwarded_);
+      }
+      for (java.util.Map.Entry<java.lang.Integer, java.lang.Integer> entry
+           : internalGetIPADJEILKIB().getMap().entrySet()) {
+        com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
+        iPADJEILKIB__ = IPADJEILKIBDefaultEntryHolder.defaultEntry.newBuilderForType()
+            .setKey(entry.getKey())
+            .setValue(entry.getValue())
+            .build();
+        size += com.google.protobuf.CodedOutputStream
+            .computeMessageSize(4, iPADJEILKIB__);
       }
       if (isContentClosed_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(3, isContentClosed_);
+          .computeBoolSize(5, isContentClosed_);
+      }
+      if (dayIndex_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(8, dayIndex_);
       }
       for (java.util.Map.Entry<java.lang.Integer, java.lang.Integer> entry
-           : internalGetUnk3300ELAIBMDIBFJ().getMap().entrySet()) {
+           : internalGetDAOOKPHJPKA().getMap().entrySet()) {
         com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
-        unk3300ELAIBMDIBFJ__ = Unk3300ELAIBMDIBFJDefaultEntryHolder.defaultEntry.newBuilderForType()
+        dAOOKPHJPKA__ = DAOOKPHJPKADefaultEntryHolder.defaultEntry.newBuilderForType()
             .setKey(entry.getKey())
             .setValue(entry.getValue())
             .build();
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(5, unk3300ELAIBMDIBFJ__);
-      }
-      if (isTodayHasAwarded_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(8, isTodayHasAwarded_);
-      }
-      for (java.util.Map.Entry<java.lang.Integer, java.lang.Integer> entry
-           : internalGetUnk3300EPMKDFOBLFK().getMap().entrySet()) {
-        com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
-        unk3300EPMKDFOBLFK__ = Unk3300EPMKDFOBLFKDefaultEntryHolder.defaultEntry.newBuilderForType()
-            .setKey(entry.getKey())
-            .setValue(entry.getValue())
-            .build();
-        size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(9, unk3300EPMKDFOBLFK__);
+            .computeMessageSize(9, dAOOKPHJPKA__);
       }
       if (todaySeedRewardId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, todaySeedRewardId_);
+          .computeUInt32Size(10, todaySeedRewardId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -552,18 +556,18 @@ public final class PlantFlowerActivityDetailInfoOuterClass {
       }
       emu.grasscutter.net.proto.PlantFlowerActivityDetailInfoOuterClass.PlantFlowerActivityDetailInfo other = (emu.grasscutter.net.proto.PlantFlowerActivityDetailInfoOuterClass.PlantFlowerActivityDetailInfo) obj;
 
-      if (getDayIndex()
-          != other.getDayIndex()) return false;
       if (getTodaySeedRewardId()
           != other.getTodaySeedRewardId()) return false;
+      if (!internalGetDAOOKPHJPKA().equals(
+          other.internalGetDAOOKPHJPKA())) return false;
       if (getIsContentClosed()
           != other.getIsContentClosed()) return false;
-      if (!internalGetUnk3300EPMKDFOBLFK().equals(
-          other.internalGetUnk3300EPMKDFOBLFK())) return false;
-      if (!internalGetUnk3300ELAIBMDIBFJ().equals(
-          other.internalGetUnk3300ELAIBMDIBFJ())) return false;
       if (getIsTodayHasAwarded()
           != other.getIsTodayHasAwarded()) return false;
+      if (!internalGetIPADJEILKIB().equals(
+          other.internalGetIPADJEILKIB())) return false;
+      if (getDayIndex()
+          != other.getDayIndex()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -575,24 +579,24 @@ public final class PlantFlowerActivityDetailInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + DAY_INDEX_FIELD_NUMBER;
-      hash = (53 * hash) + getDayIndex();
       hash = (37 * hash) + TODAY_SEED_REWARD_ID_FIELD_NUMBER;
       hash = (53 * hash) + getTodaySeedRewardId();
+      if (!internalGetDAOOKPHJPKA().getMap().isEmpty()) {
+        hash = (37 * hash) + DAOOKPHJPKA_FIELD_NUMBER;
+        hash = (53 * hash) + internalGetDAOOKPHJPKA().hashCode();
+      }
       hash = (37 * hash) + IS_CONTENT_CLOSED_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsContentClosed());
-      if (!internalGetUnk3300EPMKDFOBLFK().getMap().isEmpty()) {
-        hash = (37 * hash) + UNK3300_EPMKDFOBLFK_FIELD_NUMBER;
-        hash = (53 * hash) + internalGetUnk3300EPMKDFOBLFK().hashCode();
-      }
-      if (!internalGetUnk3300ELAIBMDIBFJ().getMap().isEmpty()) {
-        hash = (37 * hash) + UNK3300_ELAIBMDIBFJ_FIELD_NUMBER;
-        hash = (53 * hash) + internalGetUnk3300ELAIBMDIBFJ().hashCode();
-      }
       hash = (37 * hash) + IS_TODAY_HAS_AWARDED_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsTodayHasAwarded());
+      if (!internalGetIPADJEILKIB().getMap().isEmpty()) {
+        hash = (37 * hash) + IPADJEILKIB_FIELD_NUMBER;
+        hash = (53 * hash) + internalGetIPADJEILKIB().hashCode();
+      }
+      hash = (37 * hash) + DAY_INDEX_FIELD_NUMBER;
+      hash = (53 * hash) + getDayIndex();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -689,6 +693,10 @@ public final class PlantFlowerActivityDetailInfoOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Obf: EFJGNELKFMH
+     * </pre>
+     *
      * Protobuf type {@code PlantFlowerActivityDetailInfo}
      */
     public static final class Builder extends
@@ -705,9 +713,9 @@ public final class PlantFlowerActivityDetailInfoOuterClass {
           int number) {
         switch (number) {
           case 9:
-            return internalGetUnk3300EPMKDFOBLFK();
-          case 5:
-            return internalGetUnk3300ELAIBMDIBFJ();
+            return internalGetDAOOKPHJPKA();
+          case 4:
+            return internalGetIPADJEILKIB();
           default:
             throw new RuntimeException(
                 "Invalid map field number: " + number);
@@ -718,9 +726,9 @@ public final class PlantFlowerActivityDetailInfoOuterClass {
           int number) {
         switch (number) {
           case 9:
-            return internalGetMutableUnk3300EPMKDFOBLFK();
-          case 5:
-            return internalGetMutableUnk3300ELAIBMDIBFJ();
+            return internalGetMutableDAOOKPHJPKA();
+          case 4:
+            return internalGetMutableIPADJEILKIB();
           default:
             throw new RuntimeException(
                 "Invalid map field number: " + number);
@@ -752,15 +760,15 @@ public final class PlantFlowerActivityDetailInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        dayIndex_ = 0;
-
         todaySeedRewardId_ = 0;
 
+        internalGetMutableDAOOKPHJPKA().clear();
         isContentClosed_ = false;
 
-        internalGetMutableUnk3300EPMKDFOBLFK().clear();
-        internalGetMutableUnk3300ELAIBMDIBFJ().clear();
         isTodayHasAwarded_ = false;
+
+        internalGetMutableIPADJEILKIB().clear();
+        dayIndex_ = 0;
 
         return this;
       }
@@ -789,14 +797,14 @@ public final class PlantFlowerActivityDetailInfoOuterClass {
       public emu.grasscutter.net.proto.PlantFlowerActivityDetailInfoOuterClass.PlantFlowerActivityDetailInfo buildPartial() {
         emu.grasscutter.net.proto.PlantFlowerActivityDetailInfoOuterClass.PlantFlowerActivityDetailInfo result = new emu.grasscutter.net.proto.PlantFlowerActivityDetailInfoOuterClass.PlantFlowerActivityDetailInfo(this);
         int from_bitField0_ = bitField0_;
-        result.dayIndex_ = dayIndex_;
         result.todaySeedRewardId_ = todaySeedRewardId_;
+        result.dAOOKPHJPKA_ = internalGetDAOOKPHJPKA();
+        result.dAOOKPHJPKA_.makeImmutable();
         result.isContentClosed_ = isContentClosed_;
-        result.unk3300EPMKDFOBLFK_ = internalGetUnk3300EPMKDFOBLFK();
-        result.unk3300EPMKDFOBLFK_.makeImmutable();
-        result.unk3300ELAIBMDIBFJ_ = internalGetUnk3300ELAIBMDIBFJ();
-        result.unk3300ELAIBMDIBFJ_.makeImmutable();
         result.isTodayHasAwarded_ = isTodayHasAwarded_;
+        result.iPADJEILKIB_ = internalGetIPADJEILKIB();
+        result.iPADJEILKIB_.makeImmutable();
+        result.dayIndex_ = dayIndex_;
         onBuilt();
         return result;
       }
@@ -845,21 +853,21 @@ public final class PlantFlowerActivityDetailInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.PlantFlowerActivityDetailInfoOuterClass.PlantFlowerActivityDetailInfo other) {
         if (other == emu.grasscutter.net.proto.PlantFlowerActivityDetailInfoOuterClass.PlantFlowerActivityDetailInfo.getDefaultInstance()) return this;
-        if (other.getDayIndex() != 0) {
-          setDayIndex(other.getDayIndex());
-        }
         if (other.getTodaySeedRewardId() != 0) {
           setTodaySeedRewardId(other.getTodaySeedRewardId());
         }
+        internalGetMutableDAOOKPHJPKA().mergeFrom(
+            other.internalGetDAOOKPHJPKA());
         if (other.getIsContentClosed() != false) {
           setIsContentClosed(other.getIsContentClosed());
         }
-        internalGetMutableUnk3300EPMKDFOBLFK().mergeFrom(
-            other.internalGetUnk3300EPMKDFOBLFK());
-        internalGetMutableUnk3300ELAIBMDIBFJ().mergeFrom(
-            other.internalGetUnk3300ELAIBMDIBFJ());
         if (other.getIsTodayHasAwarded() != false) {
           setIsTodayHasAwarded(other.getIsTodayHasAwarded());
+        }
+        internalGetMutableIPADJEILKIB().mergeFrom(
+            other.internalGetIPADJEILKIB());
+        if (other.getDayIndex() != 0) {
+          setDayIndex(other.getDayIndex());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -891,40 +899,9 @@ public final class PlantFlowerActivityDetailInfoOuterClass {
       }
       private int bitField0_;
 
-      private int dayIndex_ ;
-      /**
-       * <code>uint32 day_index = 1;</code>
-       * @return The dayIndex.
-       */
-      @java.lang.Override
-      public int getDayIndex() {
-        return dayIndex_;
-      }
-      /**
-       * <code>uint32 day_index = 1;</code>
-       * @param value The dayIndex to set.
-       * @return This builder for chaining.
-       */
-      public Builder setDayIndex(int value) {
-        
-        dayIndex_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 day_index = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearDayIndex() {
-        
-        dayIndex_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int todaySeedRewardId_ ;
       /**
-       * <code>uint32 today_seed_reward_id = 15;</code>
+       * <code>uint32 today_seed_reward_id = 10;</code>
        * @return The todaySeedRewardId.
        */
       @java.lang.Override
@@ -932,7 +909,7 @@ public final class PlantFlowerActivityDetailInfoOuterClass {
         return todaySeedRewardId_;
       }
       /**
-       * <code>uint32 today_seed_reward_id = 15;</code>
+       * <code>uint32 today_seed_reward_id = 10;</code>
        * @param value The todaySeedRewardId to set.
        * @return This builder for chaining.
        */
@@ -943,7 +920,7 @@ public final class PlantFlowerActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 today_seed_reward_id = 15;</code>
+       * <code>uint32 today_seed_reward_id = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearTodaySeedRewardId() {
@@ -953,9 +930,137 @@ public final class PlantFlowerActivityDetailInfoOuterClass {
         return this;
       }
 
+      private com.google.protobuf.MapField<
+          java.lang.Integer, java.lang.Integer> dAOOKPHJPKA_;
+      private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
+      internalGetDAOOKPHJPKA() {
+        if (dAOOKPHJPKA_ == null) {
+          return com.google.protobuf.MapField.emptyMapField(
+              DAOOKPHJPKADefaultEntryHolder.defaultEntry);
+        }
+        return dAOOKPHJPKA_;
+      }
+      private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
+      internalGetMutableDAOOKPHJPKA() {
+        onChanged();;
+        if (dAOOKPHJPKA_ == null) {
+          dAOOKPHJPKA_ = com.google.protobuf.MapField.newMapField(
+              DAOOKPHJPKADefaultEntryHolder.defaultEntry);
+        }
+        if (!dAOOKPHJPKA_.isMutable()) {
+          dAOOKPHJPKA_ = dAOOKPHJPKA_.copy();
+        }
+        return dAOOKPHJPKA_;
+      }
+
+      public int getDAOOKPHJPKACount() {
+        return internalGetDAOOKPHJPKA().getMap().size();
+      }
+      /**
+       * <code>map&lt;uint32, uint32&gt; DAOOKPHJPKA = 9;</code>
+       */
+
+      @java.lang.Override
+      public boolean containsDAOOKPHJPKA(
+          int key) {
+        
+        return internalGetDAOOKPHJPKA().getMap().containsKey(key);
+      }
+      /**
+       * Use {@link #getDAOOKPHJPKAMap()} instead.
+       */
+      @java.lang.Override
+      @java.lang.Deprecated
+      public java.util.Map<java.lang.Integer, java.lang.Integer> getDAOOKPHJPKA() {
+        return getDAOOKPHJPKAMap();
+      }
+      /**
+       * <code>map&lt;uint32, uint32&gt; DAOOKPHJPKA = 9;</code>
+       */
+      @java.lang.Override
+
+      public java.util.Map<java.lang.Integer, java.lang.Integer> getDAOOKPHJPKAMap() {
+        return internalGetDAOOKPHJPKA().getMap();
+      }
+      /**
+       * <code>map&lt;uint32, uint32&gt; DAOOKPHJPKA = 9;</code>
+       */
+      @java.lang.Override
+
+      public int getDAOOKPHJPKAOrDefault(
+          int key,
+          int defaultValue) {
+        
+        java.util.Map<java.lang.Integer, java.lang.Integer> map =
+            internalGetDAOOKPHJPKA().getMap();
+        return map.containsKey(key) ? map.get(key) : defaultValue;
+      }
+      /**
+       * <code>map&lt;uint32, uint32&gt; DAOOKPHJPKA = 9;</code>
+       */
+      @java.lang.Override
+
+      public int getDAOOKPHJPKAOrThrow(
+          int key) {
+        
+        java.util.Map<java.lang.Integer, java.lang.Integer> map =
+            internalGetDAOOKPHJPKA().getMap();
+        if (!map.containsKey(key)) {
+          throw new java.lang.IllegalArgumentException();
+        }
+        return map.get(key);
+      }
+
+      public Builder clearDAOOKPHJPKA() {
+        internalGetMutableDAOOKPHJPKA().getMutableMap()
+            .clear();
+        return this;
+      }
+      /**
+       * <code>map&lt;uint32, uint32&gt; DAOOKPHJPKA = 9;</code>
+       */
+
+      public Builder removeDAOOKPHJPKA(
+          int key) {
+        
+        internalGetMutableDAOOKPHJPKA().getMutableMap()
+            .remove(key);
+        return this;
+      }
+      /**
+       * Use alternate mutation accessors instead.
+       */
+      @java.lang.Deprecated
+      public java.util.Map<java.lang.Integer, java.lang.Integer>
+      getMutableDAOOKPHJPKA() {
+        return internalGetMutableDAOOKPHJPKA().getMutableMap();
+      }
+      /**
+       * <code>map&lt;uint32, uint32&gt; DAOOKPHJPKA = 9;</code>
+       */
+      public Builder putDAOOKPHJPKA(
+          int key,
+          int value) {
+        
+        
+        internalGetMutableDAOOKPHJPKA().getMutableMap()
+            .put(key, value);
+        return this;
+      }
+      /**
+       * <code>map&lt;uint32, uint32&gt; DAOOKPHJPKA = 9;</code>
+       */
+
+      public Builder putAllDAOOKPHJPKA(
+          java.util.Map<java.lang.Integer, java.lang.Integer> values) {
+        internalGetMutableDAOOKPHJPKA().getMutableMap()
+            .putAll(values);
+        return this;
+      }
+
       private boolean isContentClosed_ ;
       /**
-       * <code>bool is_content_closed = 3;</code>
+       * <code>bool is_content_closed = 5;</code>
        * @return The isContentClosed.
        */
       @java.lang.Override
@@ -963,7 +1068,7 @@ public final class PlantFlowerActivityDetailInfoOuterClass {
         return isContentClosed_;
       }
       /**
-       * <code>bool is_content_closed = 3;</code>
+       * <code>bool is_content_closed = 5;</code>
        * @param value The isContentClosed to set.
        * @return This builder for chaining.
        */
@@ -974,7 +1079,7 @@ public final class PlantFlowerActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_content_closed = 3;</code>
+       * <code>bool is_content_closed = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsContentClosed() {
@@ -984,265 +1089,9 @@ public final class PlantFlowerActivityDetailInfoOuterClass {
         return this;
       }
 
-      private com.google.protobuf.MapField<
-          java.lang.Integer, java.lang.Integer> unk3300EPMKDFOBLFK_;
-      private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-      internalGetUnk3300EPMKDFOBLFK() {
-        if (unk3300EPMKDFOBLFK_ == null) {
-          return com.google.protobuf.MapField.emptyMapField(
-              Unk3300EPMKDFOBLFKDefaultEntryHolder.defaultEntry);
-        }
-        return unk3300EPMKDFOBLFK_;
-      }
-      private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-      internalGetMutableUnk3300EPMKDFOBLFK() {
-        onChanged();;
-        if (unk3300EPMKDFOBLFK_ == null) {
-          unk3300EPMKDFOBLFK_ = com.google.protobuf.MapField.newMapField(
-              Unk3300EPMKDFOBLFKDefaultEntryHolder.defaultEntry);
-        }
-        if (!unk3300EPMKDFOBLFK_.isMutable()) {
-          unk3300EPMKDFOBLFK_ = unk3300EPMKDFOBLFK_.copy();
-        }
-        return unk3300EPMKDFOBLFK_;
-      }
-
-      public int getUnk3300EPMKDFOBLFKCount() {
-        return internalGetUnk3300EPMKDFOBLFK().getMap().size();
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; Unk3300_EPMKDFOBLFK = 9;</code>
-       */
-
-      @java.lang.Override
-      public boolean containsUnk3300EPMKDFOBLFK(
-          int key) {
-        
-        return internalGetUnk3300EPMKDFOBLFK().getMap().containsKey(key);
-      }
-      /**
-       * Use {@link #getUnk3300EPMKDFOBLFKMap()} instead.
-       */
-      @java.lang.Override
-      @java.lang.Deprecated
-      public java.util.Map<java.lang.Integer, java.lang.Integer> getUnk3300EPMKDFOBLFK() {
-        return getUnk3300EPMKDFOBLFKMap();
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; Unk3300_EPMKDFOBLFK = 9;</code>
-       */
-      @java.lang.Override
-
-      public java.util.Map<java.lang.Integer, java.lang.Integer> getUnk3300EPMKDFOBLFKMap() {
-        return internalGetUnk3300EPMKDFOBLFK().getMap();
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; Unk3300_EPMKDFOBLFK = 9;</code>
-       */
-      @java.lang.Override
-
-      public int getUnk3300EPMKDFOBLFKOrDefault(
-          int key,
-          int defaultValue) {
-        
-        java.util.Map<java.lang.Integer, java.lang.Integer> map =
-            internalGetUnk3300EPMKDFOBLFK().getMap();
-        return map.containsKey(key) ? map.get(key) : defaultValue;
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; Unk3300_EPMKDFOBLFK = 9;</code>
-       */
-      @java.lang.Override
-
-      public int getUnk3300EPMKDFOBLFKOrThrow(
-          int key) {
-        
-        java.util.Map<java.lang.Integer, java.lang.Integer> map =
-            internalGetUnk3300EPMKDFOBLFK().getMap();
-        if (!map.containsKey(key)) {
-          throw new java.lang.IllegalArgumentException();
-        }
-        return map.get(key);
-      }
-
-      public Builder clearUnk3300EPMKDFOBLFK() {
-        internalGetMutableUnk3300EPMKDFOBLFK().getMutableMap()
-            .clear();
-        return this;
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; Unk3300_EPMKDFOBLFK = 9;</code>
-       */
-
-      public Builder removeUnk3300EPMKDFOBLFK(
-          int key) {
-        
-        internalGetMutableUnk3300EPMKDFOBLFK().getMutableMap()
-            .remove(key);
-        return this;
-      }
-      /**
-       * Use alternate mutation accessors instead.
-       */
-      @java.lang.Deprecated
-      public java.util.Map<java.lang.Integer, java.lang.Integer>
-      getMutableUnk3300EPMKDFOBLFK() {
-        return internalGetMutableUnk3300EPMKDFOBLFK().getMutableMap();
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; Unk3300_EPMKDFOBLFK = 9;</code>
-       */
-      public Builder putUnk3300EPMKDFOBLFK(
-          int key,
-          int value) {
-        
-        
-        internalGetMutableUnk3300EPMKDFOBLFK().getMutableMap()
-            .put(key, value);
-        return this;
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; Unk3300_EPMKDFOBLFK = 9;</code>
-       */
-
-      public Builder putAllUnk3300EPMKDFOBLFK(
-          java.util.Map<java.lang.Integer, java.lang.Integer> values) {
-        internalGetMutableUnk3300EPMKDFOBLFK().getMutableMap()
-            .putAll(values);
-        return this;
-      }
-
-      private com.google.protobuf.MapField<
-          java.lang.Integer, java.lang.Integer> unk3300ELAIBMDIBFJ_;
-      private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-      internalGetUnk3300ELAIBMDIBFJ() {
-        if (unk3300ELAIBMDIBFJ_ == null) {
-          return com.google.protobuf.MapField.emptyMapField(
-              Unk3300ELAIBMDIBFJDefaultEntryHolder.defaultEntry);
-        }
-        return unk3300ELAIBMDIBFJ_;
-      }
-      private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-      internalGetMutableUnk3300ELAIBMDIBFJ() {
-        onChanged();;
-        if (unk3300ELAIBMDIBFJ_ == null) {
-          unk3300ELAIBMDIBFJ_ = com.google.protobuf.MapField.newMapField(
-              Unk3300ELAIBMDIBFJDefaultEntryHolder.defaultEntry);
-        }
-        if (!unk3300ELAIBMDIBFJ_.isMutable()) {
-          unk3300ELAIBMDIBFJ_ = unk3300ELAIBMDIBFJ_.copy();
-        }
-        return unk3300ELAIBMDIBFJ_;
-      }
-
-      public int getUnk3300ELAIBMDIBFJCount() {
-        return internalGetUnk3300ELAIBMDIBFJ().getMap().size();
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; Unk3300_ELAIBMDIBFJ = 5;</code>
-       */
-
-      @java.lang.Override
-      public boolean containsUnk3300ELAIBMDIBFJ(
-          int key) {
-        
-        return internalGetUnk3300ELAIBMDIBFJ().getMap().containsKey(key);
-      }
-      /**
-       * Use {@link #getUnk3300ELAIBMDIBFJMap()} instead.
-       */
-      @java.lang.Override
-      @java.lang.Deprecated
-      public java.util.Map<java.lang.Integer, java.lang.Integer> getUnk3300ELAIBMDIBFJ() {
-        return getUnk3300ELAIBMDIBFJMap();
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; Unk3300_ELAIBMDIBFJ = 5;</code>
-       */
-      @java.lang.Override
-
-      public java.util.Map<java.lang.Integer, java.lang.Integer> getUnk3300ELAIBMDIBFJMap() {
-        return internalGetUnk3300ELAIBMDIBFJ().getMap();
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; Unk3300_ELAIBMDIBFJ = 5;</code>
-       */
-      @java.lang.Override
-
-      public int getUnk3300ELAIBMDIBFJOrDefault(
-          int key,
-          int defaultValue) {
-        
-        java.util.Map<java.lang.Integer, java.lang.Integer> map =
-            internalGetUnk3300ELAIBMDIBFJ().getMap();
-        return map.containsKey(key) ? map.get(key) : defaultValue;
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; Unk3300_ELAIBMDIBFJ = 5;</code>
-       */
-      @java.lang.Override
-
-      public int getUnk3300ELAIBMDIBFJOrThrow(
-          int key) {
-        
-        java.util.Map<java.lang.Integer, java.lang.Integer> map =
-            internalGetUnk3300ELAIBMDIBFJ().getMap();
-        if (!map.containsKey(key)) {
-          throw new java.lang.IllegalArgumentException();
-        }
-        return map.get(key);
-      }
-
-      public Builder clearUnk3300ELAIBMDIBFJ() {
-        internalGetMutableUnk3300ELAIBMDIBFJ().getMutableMap()
-            .clear();
-        return this;
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; Unk3300_ELAIBMDIBFJ = 5;</code>
-       */
-
-      public Builder removeUnk3300ELAIBMDIBFJ(
-          int key) {
-        
-        internalGetMutableUnk3300ELAIBMDIBFJ().getMutableMap()
-            .remove(key);
-        return this;
-      }
-      /**
-       * Use alternate mutation accessors instead.
-       */
-      @java.lang.Deprecated
-      public java.util.Map<java.lang.Integer, java.lang.Integer>
-      getMutableUnk3300ELAIBMDIBFJ() {
-        return internalGetMutableUnk3300ELAIBMDIBFJ().getMutableMap();
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; Unk3300_ELAIBMDIBFJ = 5;</code>
-       */
-      public Builder putUnk3300ELAIBMDIBFJ(
-          int key,
-          int value) {
-        
-        
-        internalGetMutableUnk3300ELAIBMDIBFJ().getMutableMap()
-            .put(key, value);
-        return this;
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; Unk3300_ELAIBMDIBFJ = 5;</code>
-       */
-
-      public Builder putAllUnk3300ELAIBMDIBFJ(
-          java.util.Map<java.lang.Integer, java.lang.Integer> values) {
-        internalGetMutableUnk3300ELAIBMDIBFJ().getMutableMap()
-            .putAll(values);
-        return this;
-      }
-
       private boolean isTodayHasAwarded_ ;
       /**
-       * <code>bool is_today_has_awarded = 8;</code>
+       * <code>bool is_today_has_awarded = 2;</code>
        * @return The isTodayHasAwarded.
        */
       @java.lang.Override
@@ -1250,7 +1099,7 @@ public final class PlantFlowerActivityDetailInfoOuterClass {
         return isTodayHasAwarded_;
       }
       /**
-       * <code>bool is_today_has_awarded = 8;</code>
+       * <code>bool is_today_has_awarded = 2;</code>
        * @param value The isTodayHasAwarded to set.
        * @return This builder for chaining.
        */
@@ -1261,12 +1110,171 @@ public final class PlantFlowerActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_today_has_awarded = 8;</code>
+       * <code>bool is_today_has_awarded = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsTodayHasAwarded() {
         
         isTodayHasAwarded_ = false;
+        onChanged();
+        return this;
+      }
+
+      private com.google.protobuf.MapField<
+          java.lang.Integer, java.lang.Integer> iPADJEILKIB_;
+      private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
+      internalGetIPADJEILKIB() {
+        if (iPADJEILKIB_ == null) {
+          return com.google.protobuf.MapField.emptyMapField(
+              IPADJEILKIBDefaultEntryHolder.defaultEntry);
+        }
+        return iPADJEILKIB_;
+      }
+      private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
+      internalGetMutableIPADJEILKIB() {
+        onChanged();;
+        if (iPADJEILKIB_ == null) {
+          iPADJEILKIB_ = com.google.protobuf.MapField.newMapField(
+              IPADJEILKIBDefaultEntryHolder.defaultEntry);
+        }
+        if (!iPADJEILKIB_.isMutable()) {
+          iPADJEILKIB_ = iPADJEILKIB_.copy();
+        }
+        return iPADJEILKIB_;
+      }
+
+      public int getIPADJEILKIBCount() {
+        return internalGetIPADJEILKIB().getMap().size();
+      }
+      /**
+       * <code>map&lt;uint32, uint32&gt; IPADJEILKIB = 4;</code>
+       */
+
+      @java.lang.Override
+      public boolean containsIPADJEILKIB(
+          int key) {
+        
+        return internalGetIPADJEILKIB().getMap().containsKey(key);
+      }
+      /**
+       * Use {@link #getIPADJEILKIBMap()} instead.
+       */
+      @java.lang.Override
+      @java.lang.Deprecated
+      public java.util.Map<java.lang.Integer, java.lang.Integer> getIPADJEILKIB() {
+        return getIPADJEILKIBMap();
+      }
+      /**
+       * <code>map&lt;uint32, uint32&gt; IPADJEILKIB = 4;</code>
+       */
+      @java.lang.Override
+
+      public java.util.Map<java.lang.Integer, java.lang.Integer> getIPADJEILKIBMap() {
+        return internalGetIPADJEILKIB().getMap();
+      }
+      /**
+       * <code>map&lt;uint32, uint32&gt; IPADJEILKIB = 4;</code>
+       */
+      @java.lang.Override
+
+      public int getIPADJEILKIBOrDefault(
+          int key,
+          int defaultValue) {
+        
+        java.util.Map<java.lang.Integer, java.lang.Integer> map =
+            internalGetIPADJEILKIB().getMap();
+        return map.containsKey(key) ? map.get(key) : defaultValue;
+      }
+      /**
+       * <code>map&lt;uint32, uint32&gt; IPADJEILKIB = 4;</code>
+       */
+      @java.lang.Override
+
+      public int getIPADJEILKIBOrThrow(
+          int key) {
+        
+        java.util.Map<java.lang.Integer, java.lang.Integer> map =
+            internalGetIPADJEILKIB().getMap();
+        if (!map.containsKey(key)) {
+          throw new java.lang.IllegalArgumentException();
+        }
+        return map.get(key);
+      }
+
+      public Builder clearIPADJEILKIB() {
+        internalGetMutableIPADJEILKIB().getMutableMap()
+            .clear();
+        return this;
+      }
+      /**
+       * <code>map&lt;uint32, uint32&gt; IPADJEILKIB = 4;</code>
+       */
+
+      public Builder removeIPADJEILKIB(
+          int key) {
+        
+        internalGetMutableIPADJEILKIB().getMutableMap()
+            .remove(key);
+        return this;
+      }
+      /**
+       * Use alternate mutation accessors instead.
+       */
+      @java.lang.Deprecated
+      public java.util.Map<java.lang.Integer, java.lang.Integer>
+      getMutableIPADJEILKIB() {
+        return internalGetMutableIPADJEILKIB().getMutableMap();
+      }
+      /**
+       * <code>map&lt;uint32, uint32&gt; IPADJEILKIB = 4;</code>
+       */
+      public Builder putIPADJEILKIB(
+          int key,
+          int value) {
+        
+        
+        internalGetMutableIPADJEILKIB().getMutableMap()
+            .put(key, value);
+        return this;
+      }
+      /**
+       * <code>map&lt;uint32, uint32&gt; IPADJEILKIB = 4;</code>
+       */
+
+      public Builder putAllIPADJEILKIB(
+          java.util.Map<java.lang.Integer, java.lang.Integer> values) {
+        internalGetMutableIPADJEILKIB().getMutableMap()
+            .putAll(values);
+        return this;
+      }
+
+      private int dayIndex_ ;
+      /**
+       * <code>uint32 day_index = 8;</code>
+       * @return The dayIndex.
+       */
+      @java.lang.Override
+      public int getDayIndex() {
+        return dayIndex_;
+      }
+      /**
+       * <code>uint32 day_index = 8;</code>
+       * @param value The dayIndex to set.
+       * @return This builder for chaining.
+       */
+      public Builder setDayIndex(int value) {
+        
+        dayIndex_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 day_index = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearDayIndex() {
+        
+        dayIndex_ = 0;
         onChanged();
         return this;
       }
@@ -1329,15 +1337,15 @@ public final class PlantFlowerActivityDetailInfoOuterClass {
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_PlantFlowerActivityDetailInfo_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_PlantFlowerActivityDetailInfo_Unk3300EPMKDFOBLFKEntry_descriptor;
+    internal_static_PlantFlowerActivityDetailInfo_DAOOKPHJPKAEntry_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_PlantFlowerActivityDetailInfo_Unk3300EPMKDFOBLFKEntry_fieldAccessorTable;
+      internal_static_PlantFlowerActivityDetailInfo_DAOOKPHJPKAEntry_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_PlantFlowerActivityDetailInfo_Unk3300ELAIBMDIBFJEntry_descriptor;
+    internal_static_PlantFlowerActivityDetailInfo_IPADJEILKIBEntry_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_PlantFlowerActivityDetailInfo_Unk3300ELAIBMDIBFJEntry_fieldAccessorTable;
+      internal_static_PlantFlowerActivityDetailInfo_IPADJEILKIBEntry_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -1347,19 +1355,18 @@ public final class PlantFlowerActivityDetailInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n#PlantFlowerActivityDetailInfo.proto\"\251\003" +
-      "\n\035PlantFlowerActivityDetailInfo\022\021\n\tday_i" +
-      "ndex\030\001 \001(\r\022\034\n\024today_seed_reward_id\030\017 \001(\r" +
-      "\022\031\n\021is_content_closed\030\003 \001(\010\022S\n\023Unk3300_E" +
-      "PMKDFOBLFK\030\t \003(\01326.PlantFlowerActivityDe" +
-      "tailInfo.Unk3300EPMKDFOBLFKEntry\022S\n\023Unk3" +
-      "300_ELAIBMDIBFJ\030\005 \003(\01326.PlantFlowerActiv" +
-      "ityDetailInfo.Unk3300ELAIBMDIBFJEntry\022\034\n" +
-      "\024is_today_has_awarded\030\010 \001(\010\0329\n\027Unk3300EP" +
-      "MKDFOBLFKEntry\022\013\n\003key\030\001 \001(\r\022\r\n\005value\030\002 \001" +
-      "(\r:\0028\001\0329\n\027Unk3300ELAIBMDIBFJEntry\022\013\n\003key" +
-      "\030\001 \001(\r\022\r\n\005value\030\002 \001(\r:\0028\001B\033\n\031emu.grasscu" +
-      "tter.net.protob\006proto3"
+      "\n#PlantFlowerActivityDetailInfo.proto\"\375\002" +
+      "\n\035PlantFlowerActivityDetailInfo\022\034\n\024today" +
+      "_seed_reward_id\030\n \001(\r\022D\n\013DAOOKPHJPKA\030\t \003" +
+      "(\0132/.PlantFlowerActivityDetailInfo.DAOOK" +
+      "PHJPKAEntry\022\031\n\021is_content_closed\030\005 \001(\010\022\034" +
+      "\n\024is_today_has_awarded\030\002 \001(\010\022D\n\013IPADJEIL" +
+      "KIB\030\004 \003(\0132/.PlantFlowerActivityDetailInf" +
+      "o.IPADJEILKIBEntry\022\021\n\tday_index\030\010 \001(\r\0322\n" +
+      "\020DAOOKPHJPKAEntry\022\013\n\003key\030\001 \001(\r\022\r\n\005value\030" +
+      "\002 \001(\r:\0028\001\0322\n\020IPADJEILKIBEntry\022\013\n\003key\030\001 \001" +
+      "(\r\022\r\n\005value\030\002 \001(\r:\0028\001B\033\n\031emu.grasscutter" +
+      ".net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1370,18 +1377,18 @@ public final class PlantFlowerActivityDetailInfoOuterClass {
     internal_static_PlantFlowerActivityDetailInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_PlantFlowerActivityDetailInfo_descriptor,
-        new java.lang.String[] { "DayIndex", "TodaySeedRewardId", "IsContentClosed", "Unk3300EPMKDFOBLFK", "Unk3300ELAIBMDIBFJ", "IsTodayHasAwarded", });
-    internal_static_PlantFlowerActivityDetailInfo_Unk3300EPMKDFOBLFKEntry_descriptor =
+        new java.lang.String[] { "TodaySeedRewardId", "DAOOKPHJPKA", "IsContentClosed", "IsTodayHasAwarded", "IPADJEILKIB", "DayIndex", });
+    internal_static_PlantFlowerActivityDetailInfo_DAOOKPHJPKAEntry_descriptor =
       internal_static_PlantFlowerActivityDetailInfo_descriptor.getNestedTypes().get(0);
-    internal_static_PlantFlowerActivityDetailInfo_Unk3300EPMKDFOBLFKEntry_fieldAccessorTable = new
+    internal_static_PlantFlowerActivityDetailInfo_DAOOKPHJPKAEntry_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_PlantFlowerActivityDetailInfo_Unk3300EPMKDFOBLFKEntry_descriptor,
+        internal_static_PlantFlowerActivityDetailInfo_DAOOKPHJPKAEntry_descriptor,
         new java.lang.String[] { "Key", "Value", });
-    internal_static_PlantFlowerActivityDetailInfo_Unk3300ELAIBMDIBFJEntry_descriptor =
+    internal_static_PlantFlowerActivityDetailInfo_IPADJEILKIBEntry_descriptor =
       internal_static_PlantFlowerActivityDetailInfo_descriptor.getNestedTypes().get(1);
-    internal_static_PlantFlowerActivityDetailInfo_Unk3300ELAIBMDIBFJEntry_fieldAccessorTable = new
+    internal_static_PlantFlowerActivityDetailInfo_IPADJEILKIBEntry_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_PlantFlowerActivityDetailInfo_Unk3300ELAIBMDIBFJEntry_descriptor,
+        internal_static_PlantFlowerActivityDetailInfo_IPADJEILKIBEntry_descriptor,
         new java.lang.String[] { "Key", "Value", });
   }
 

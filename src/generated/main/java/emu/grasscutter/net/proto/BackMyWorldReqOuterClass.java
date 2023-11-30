@@ -20,14 +20,8 @@ public final class BackMyWorldReqOuterClass {
   }
   /**
    * <pre>
-   *enum LKDIGIDFBMK {
-   *	option allow_alias= true;
-   *	NONE = 0;
-   *	PEPPOHPHJOJ = 231;
-   *	DCDNILFDFLB = 0;
-   *	NNBKOLMPOEA = 1;
-   *	EAJIABGAOCI = 1;
-   *}
+   * CmdId: 7284
+   * Obf: KMDLHONLMJH
    * </pre>
    *
    * Protobuf type {@code BackMyWorldReq}
@@ -252,14 +246,8 @@ public final class BackMyWorldReqOuterClass {
     }
     /**
      * <pre>
-     *enum LKDIGIDFBMK {
-     *	option allow_alias= true;
-     *	NONE = 0;
-     *	PEPPOHPHJOJ = 231;
-     *	DCDNILFDFLB = 0;
-     *	NNBKOLMPOEA = 1;
-     *	EAJIABGAOCI = 1;
-     *}
+     * CmdId: 7284
+     * Obf: KMDLHONLMJH
      * </pre>
      *
      * Protobuf type {@code BackMyWorldReq}

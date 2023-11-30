@@ -19,24 +19,29 @@ public final class PingRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 seq = 4;</code>
+     * <code>uint32 seq = 6;</code>
      * @return The seq.
      */
     int getSeq();
 
     /**
-     * <code>int32 retcode = 11;</code>
+     * <code>int32 retcode = 2;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>uint32 clientTime = 1;</code>
+     * <code>uint32 client_time = 12;</code>
      * @return The clientTime.
      */
     int getClientTime();
   }
   /**
+   * <pre>
+   * CmdId: 8231
+   * Obf: BLIJCEANDPM
+   * </pre>
+   *
    * Protobuf type {@code PingRsp}
    */
   public static final class PingRsp extends
@@ -81,19 +86,19 @@ public final class PingRspOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 16: {
 
-              clientTime_ = input.readUInt32();
+              retcode_ = input.readInt32();
               break;
             }
-            case 32: {
+            case 48: {
 
               seq_ = input.readUInt32();
               break;
             }
-            case 88: {
+            case 96: {
 
-              retcode_ = input.readInt32();
+              clientTime_ = input.readUInt32();
               break;
             }
             default: {
@@ -128,141 +133,10 @@ public final class PingRspOuterClass {
               emu.grasscutter.net.proto.PingRspOuterClass.PingRsp.class, emu.grasscutter.net.proto.PingRspOuterClass.PingRsp.Builder.class);
     }
 
-    /**
-     * Protobuf enum {@code PingRsp.LOPAMPBPBIL}
-     */
-    public enum LOPAMPBPBIL
-        implements com.google.protobuf.ProtocolMessageEnum {
-      /**
-       * <code>NONE = 0;</code>
-       */
-      NONE(0, 0),
-      /**
-       * <code>PEPPOHPHJOJ = 74;</code>
-       */
-      PEPPOHPHJOJ(1, 74),
-      /**
-       * <code>NNBKOLMPOEA = 1;</code>
-       */
-      NNBKOLMPOEA(3, 1),
-      UNRECOGNIZED(-1, -1),
-      ;
-
-      /**
-       * <code>DCDNILFDFLB = 0;</code>
-       */
-      public static final LOPAMPBPBIL DCDNILFDFLB = NONE;
-      /**
-       * <code>NONE = 0;</code>
-       */
-      public static final int NONE_VALUE = 0;
-      /**
-       * <code>PEPPOHPHJOJ = 74;</code>
-       */
-      public static final int PEPPOHPHJOJ_VALUE = 74;
-      /**
-       * <code>DCDNILFDFLB = 0;</code>
-       */
-      public static final int DCDNILFDFLB_VALUE = 0;
-      /**
-       * <code>NNBKOLMPOEA = 1;</code>
-       */
-      public static final int NNBKOLMPOEA_VALUE = 1;
-
-
-      public final int getNumber() {
-        if (index == -1) {
-          throw new java.lang.IllegalArgumentException(
-              "Can't get the number of an unknown enum value.");
-        }
-        return value;
-      }
-
-      /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
-       * @deprecated Use {@link #forNumber(int)} instead.
-       */
-      @java.lang.Deprecated
-      public static LOPAMPBPBIL valueOf(int value) {
-        return forNumber(value);
-      }
-
-      /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
-       */
-      public static LOPAMPBPBIL forNumber(int value) {
-        switch (value) {
-          case 0: return NONE;
-          case 74: return PEPPOHPHJOJ;
-          case 1: return NNBKOLMPOEA;
-          default: return null;
-        }
-      }
-
-      public static com.google.protobuf.Internal.EnumLiteMap<LOPAMPBPBIL>
-          internalGetValueMap() {
-        return internalValueMap;
-      }
-      private static final com.google.protobuf.Internal.EnumLiteMap<
-          LOPAMPBPBIL> internalValueMap =
-            new com.google.protobuf.Internal.EnumLiteMap<LOPAMPBPBIL>() {
-              public LOPAMPBPBIL findValueByNumber(int number) {
-                return LOPAMPBPBIL.forNumber(number);
-              }
-            };
-
-      public final com.google.protobuf.Descriptors.EnumValueDescriptor
-          getValueDescriptor() {
-        if (index == -1) {
-          throw new java.lang.IllegalStateException(
-              "Can't get the descriptor of an unrecognized enum value.");
-        }
-        return getDescriptor().getValues().get(index);
-      }
-      public final com.google.protobuf.Descriptors.EnumDescriptor
-          getDescriptorForType() {
-        return getDescriptor();
-      }
-      public static final com.google.protobuf.Descriptors.EnumDescriptor
-          getDescriptor() {
-        return emu.grasscutter.net.proto.PingRspOuterClass.PingRsp.getDescriptor().getEnumTypes().get(0);
-      }
-
-      private static final LOPAMPBPBIL[] VALUES = getStaticValuesArray();
-      private static LOPAMPBPBIL[] getStaticValuesArray() {
-        return new LOPAMPBPBIL[] {
-          NONE, PEPPOHPHJOJ, DCDNILFDFLB, NNBKOLMPOEA, 
-        };
-      }
-      public static LOPAMPBPBIL valueOf(
-          com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
-        if (desc.getType() != getDescriptor()) {
-          throw new java.lang.IllegalArgumentException(
-            "EnumValueDescriptor is not for this type.");
-        }
-        if (desc.getIndex() == -1) {
-          return UNRECOGNIZED;
-        }
-        return VALUES[desc.getIndex()];
-      }
-
-      private final int index;
-      private final int value;
-
-      private LOPAMPBPBIL(int index, int value) {
-        this.index = index;
-        this.value = value;
-      }
-
-      // @@protoc_insertion_point(enum_scope:PingRsp.LOPAMPBPBIL)
-    }
-
-    public static final int SEQ_FIELD_NUMBER = 4;
+    public static final int SEQ_FIELD_NUMBER = 6;
     private int seq_;
     /**
-     * <code>uint32 seq = 4;</code>
+     * <code>uint32 seq = 6;</code>
      * @return The seq.
      */
     @java.lang.Override
@@ -270,10 +144,10 @@ public final class PingRspOuterClass {
       return seq_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 11;
+    public static final int RETCODE_FIELD_NUMBER = 2;
     private int retcode_;
     /**
-     * <code>int32 retcode = 11;</code>
+     * <code>int32 retcode = 2;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -281,10 +155,10 @@ public final class PingRspOuterClass {
       return retcode_;
     }
 
-    public static final int CLIENTTIME_FIELD_NUMBER = 1;
+    public static final int CLIENT_TIME_FIELD_NUMBER = 12;
     private int clientTime_;
     /**
-     * <code>uint32 clientTime = 1;</code>
+     * <code>uint32 client_time = 12;</code>
      * @return The clientTime.
      */
     @java.lang.Override
@@ -306,14 +180,14 @@ public final class PingRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (clientTime_ != 0) {
-        output.writeUInt32(1, clientTime_);
+      if (retcode_ != 0) {
+        output.writeInt32(2, retcode_);
       }
       if (seq_ != 0) {
-        output.writeUInt32(4, seq_);
+        output.writeUInt32(6, seq_);
       }
-      if (retcode_ != 0) {
-        output.writeInt32(11, retcode_);
+      if (clientTime_ != 0) {
+        output.writeUInt32(12, clientTime_);
       }
       unknownFields.writeTo(output);
     }
@@ -324,17 +198,17 @@ public final class PingRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (clientTime_ != 0) {
+      if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, clientTime_);
+          .computeInt32Size(2, retcode_);
       }
       if (seq_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, seq_);
+          .computeUInt32Size(6, seq_);
       }
-      if (retcode_ != 0) {
+      if (clientTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(11, retcode_);
+          .computeUInt32Size(12, clientTime_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -372,7 +246,7 @@ public final class PingRspOuterClass {
       hash = (53 * hash) + getSeq();
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
-      hash = (37 * hash) + CLIENTTIME_FIELD_NUMBER;
+      hash = (37 * hash) + CLIENT_TIME_FIELD_NUMBER;
       hash = (53 * hash) + getClientTime();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -470,6 +344,11 @@ public final class PingRspOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 8231
+     * Obf: BLIJCEANDPM
+     * </pre>
+     *
      * Protobuf type {@code PingRsp}
      */
     public static final class Builder extends
@@ -630,7 +509,7 @@ public final class PingRspOuterClass {
 
       private int seq_ ;
       /**
-       * <code>uint32 seq = 4;</code>
+       * <code>uint32 seq = 6;</code>
        * @return The seq.
        */
       @java.lang.Override
@@ -638,7 +517,7 @@ public final class PingRspOuterClass {
         return seq_;
       }
       /**
-       * <code>uint32 seq = 4;</code>
+       * <code>uint32 seq = 6;</code>
        * @param value The seq to set.
        * @return This builder for chaining.
        */
@@ -649,7 +528,7 @@ public final class PingRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 seq = 4;</code>
+       * <code>uint32 seq = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearSeq() {
@@ -661,7 +540,7 @@ public final class PingRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 11;</code>
+       * <code>int32 retcode = 2;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -669,7 +548,7 @@ public final class PingRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 11;</code>
+       * <code>int32 retcode = 2;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -680,7 +559,7 @@ public final class PingRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 11;</code>
+       * <code>int32 retcode = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -692,7 +571,7 @@ public final class PingRspOuterClass {
 
       private int clientTime_ ;
       /**
-       * <code>uint32 clientTime = 1;</code>
+       * <code>uint32 client_time = 12;</code>
        * @return The clientTime.
        */
       @java.lang.Override
@@ -700,7 +579,7 @@ public final class PingRspOuterClass {
         return clientTime_;
       }
       /**
-       * <code>uint32 clientTime = 1;</code>
+       * <code>uint32 client_time = 12;</code>
        * @param value The clientTime to set.
        * @return This builder for chaining.
        */
@@ -711,7 +590,7 @@ public final class PingRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 clientTime = 1;</code>
+       * <code>uint32 client_time = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearClientTime() {
@@ -787,10 +666,8 @@ public final class PingRspOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\rPingRsp.proto\"\213\001\n\007PingRsp\022\013\n\003seq\030\004 \001(\r" +
-      "\022\017\n\007retcode\030\013 \001(\005\022\022\n\nclientTime\030\001 \001(\r\"N\n" +
-      "\013LOPAMPBPBIL\022\010\n\004NONE\020\000\022\017\n\013PEPPOHPHJOJ\020J\022" +
-      "\017\n\013DCDNILFDFLB\020\000\022\017\n\013NNBKOLMPOEA\020\001\032\002\020\001B\033\n" +
+      "\n\rPingRsp.proto\"<\n\007PingRsp\022\013\n\003seq\030\006 \001(\r\022" +
+      "\017\n\007retcode\030\002 \001(\005\022\023\n\013client_time\030\014 \001(\rB\033\n" +
       "\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

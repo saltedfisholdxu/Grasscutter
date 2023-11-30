@@ -43,6 +43,10 @@ public final class TrialAvatarActivityDetailInfoOuterClass {
         int index);
   }
   /**
+   * <pre>
+   * Obf: ALGLMCJHKGN
+   * </pre>
+   *
    * Protobuf type {@code TrialAvatarActivityDetailInfo}
    */
   public static final class TrialAvatarActivityDetailInfo extends
@@ -331,6 +335,10 @@ public final class TrialAvatarActivityDetailInfoOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Obf: ALGLMCJHKGN
+     * </pre>
+     *
      * Protobuf type {@code TrialAvatarActivityDetailInfo}
      */
     public static final class Builder extends

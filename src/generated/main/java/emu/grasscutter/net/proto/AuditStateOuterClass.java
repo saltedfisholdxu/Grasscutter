@@ -15,37 +15,41 @@ public final class AuditStateOuterClass {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   /**
+   * <pre>
+   * Obf: MDIBKDBOAAO
+   * </pre>
+   *
    * Protobuf enum {@code AuditState}
    */
   public enum AuditState
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>AUDIT_STATE_NONE = 0;</code>
+     * <code>AUDIT_NONE = 0;</code>
      */
-    AUDIT_STATE_NONE(0),
+    AUDIT_NONE(0),
     /**
-     * <code>AUDIT_STATE_WAITING = 1;</code>
+     * <code>AUDIT_WAITING = 1;</code>
      */
-    AUDIT_STATE_WAITING(1),
+    AUDIT_WAITING(1),
     /**
-     * <code>AUDIT_STATE_FAILED = 2;</code>
+     * <code>AUDIT_FAILED = 2;</code>
      */
-    AUDIT_STATE_FAILED(2),
+    AUDIT_FAILED(2),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>AUDIT_STATE_NONE = 0;</code>
+     * <code>AUDIT_NONE = 0;</code>
      */
-    public static final int AUDIT_STATE_NONE_VALUE = 0;
+    public static final int AUDIT_NONE_VALUE = 0;
     /**
-     * <code>AUDIT_STATE_WAITING = 1;</code>
+     * <code>AUDIT_WAITING = 1;</code>
      */
-    public static final int AUDIT_STATE_WAITING_VALUE = 1;
+    public static final int AUDIT_WAITING_VALUE = 1;
     /**
-     * <code>AUDIT_STATE_FAILED = 2;</code>
+     * <code>AUDIT_FAILED = 2;</code>
      */
-    public static final int AUDIT_STATE_FAILED_VALUE = 2;
+    public static final int AUDIT_FAILED_VALUE = 2;
 
 
     public final int getNumber() {
@@ -72,9 +76,9 @@ public final class AuditStateOuterClass {
      */
     public static AuditState forNumber(int value) {
       switch (value) {
-        case 0: return AUDIT_STATE_NONE;
-        case 1: return AUDIT_STATE_WAITING;
-        case 2: return AUDIT_STATE_FAILED;
+        case 0: return AUDIT_NONE;
+        case 1: return AUDIT_WAITING;
+        case 2: return AUDIT_FAILED;
         default: return null;
       }
     }
@@ -140,10 +144,10 @@ public final class AuditStateOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\020AuditState.proto*S\n\nAuditState\022\024\n\020AUDI" +
-      "T_STATE_NONE\020\000\022\027\n\023AUDIT_STATE_WAITING\020\001\022" +
-      "\026\n\022AUDIT_STATE_FAILED\020\002B\033\n\031emu.grasscutt" +
-      "er.net.protob\006proto3"
+      "\n\020AuditState.proto*A\n\nAuditState\022\016\n\nAUDI" +
+      "T_NONE\020\000\022\021\n\rAUDIT_WAITING\020\001\022\020\n\014AUDIT_FAI" +
+      "LED\020\002B\033\n\031emu.grasscutter.net.protob\006prot" +
+      "o3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

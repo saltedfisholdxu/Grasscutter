@@ -19,24 +19,29 @@ public final class ActivityTakeWatcherRewardRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 9;</code>
-     * @return The retcode.
-     */
-    int getRetcode();
-
-    /**
-     * <code>uint32 watcherId = 5;</code>
+     * <code>uint32 watcher_id = 2;</code>
      * @return The watcherId.
      */
     int getWatcherId();
 
     /**
-     * <code>uint32 activityId = 3;</code>
+     * <code>int32 retcode = 13;</code>
+     * @return The retcode.
+     */
+    int getRetcode();
+
+    /**
+     * <code>uint32 activity_id = 9;</code>
      * @return The activityId.
      */
     int getActivityId();
   }
   /**
+   * <pre>
+   * CmdId: 2165
+   * Obf: PJMLLMMGELO
+   * </pre>
+   *
    * Protobuf type {@code ActivityTakeWatcherRewardRsp}
    */
   public static final class ActivityTakeWatcherRewardRsp extends
@@ -81,17 +86,17 @@ public final class ActivityTakeWatcherRewardRspOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
-
-              activityId_ = input.readUInt32();
-              break;
-            }
-            case 40: {
+            case 16: {
 
               watcherId_ = input.readUInt32();
               break;
             }
             case 72: {
+
+              activityId_ = input.readUInt32();
+              break;
+            }
+            case 104: {
 
               retcode_ = input.readInt32();
               break;
@@ -128,152 +133,10 @@ public final class ActivityTakeWatcherRewardRspOuterClass {
               emu.grasscutter.net.proto.ActivityTakeWatcherRewardRspOuterClass.ActivityTakeWatcherRewardRsp.class, emu.grasscutter.net.proto.ActivityTakeWatcherRewardRspOuterClass.ActivityTakeWatcherRewardRsp.Builder.class);
     }
 
-    /**
-     * Protobuf enum {@code ActivityTakeWatcherRewardRsp.JIMPALCEJKB}
-     */
-    public enum JIMPALCEJKB
-        implements com.google.protobuf.ProtocolMessageEnum {
-      /**
-       * <code>NONE = 0;</code>
-       */
-      NONE(0, 0),
-      /**
-       * <code>PEPPOHPHJOJ = 2009;</code>
-       */
-      PEPPOHPHJOJ(1, 2009),
-      /**
-       * <code>NNBKOLMPOEA = 1;</code>
-       */
-      NNBKOLMPOEA(3, 1),
-      UNRECOGNIZED(-1, -1),
-      ;
-
-      /**
-       * <code>DCDNILFDFLB = 0;</code>
-       */
-      public static final JIMPALCEJKB DCDNILFDFLB = NONE;
-      /**
-       * <code>NONE = 0;</code>
-       */
-      public static final int NONE_VALUE = 0;
-      /**
-       * <code>PEPPOHPHJOJ = 2009;</code>
-       */
-      public static final int PEPPOHPHJOJ_VALUE = 2009;
-      /**
-       * <code>DCDNILFDFLB = 0;</code>
-       */
-      public static final int DCDNILFDFLB_VALUE = 0;
-      /**
-       * <code>NNBKOLMPOEA = 1;</code>
-       */
-      public static final int NNBKOLMPOEA_VALUE = 1;
-
-
-      public final int getNumber() {
-        if (index == -1) {
-          throw new java.lang.IllegalArgumentException(
-              "Can't get the number of an unknown enum value.");
-        }
-        return value;
-      }
-
-      /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
-       * @deprecated Use {@link #forNumber(int)} instead.
-       */
-      @java.lang.Deprecated
-      public static JIMPALCEJKB valueOf(int value) {
-        return forNumber(value);
-      }
-
-      /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
-       */
-      public static JIMPALCEJKB forNumber(int value) {
-        switch (value) {
-          case 0: return NONE;
-          case 2009: return PEPPOHPHJOJ;
-          case 1: return NNBKOLMPOEA;
-          default: return null;
-        }
-      }
-
-      public static com.google.protobuf.Internal.EnumLiteMap<JIMPALCEJKB>
-          internalGetValueMap() {
-        return internalValueMap;
-      }
-      private static final com.google.protobuf.Internal.EnumLiteMap<
-          JIMPALCEJKB> internalValueMap =
-            new com.google.protobuf.Internal.EnumLiteMap<JIMPALCEJKB>() {
-              public JIMPALCEJKB findValueByNumber(int number) {
-                return JIMPALCEJKB.forNumber(number);
-              }
-            };
-
-      public final com.google.protobuf.Descriptors.EnumValueDescriptor
-          getValueDescriptor() {
-        if (index == -1) {
-          throw new java.lang.IllegalStateException(
-              "Can't get the descriptor of an unrecognized enum value.");
-        }
-        return getDescriptor().getValues().get(index);
-      }
-      public final com.google.protobuf.Descriptors.EnumDescriptor
-          getDescriptorForType() {
-        return getDescriptor();
-      }
-      public static final com.google.protobuf.Descriptors.EnumDescriptor
-          getDescriptor() {
-        return emu.grasscutter.net.proto.ActivityTakeWatcherRewardRspOuterClass.ActivityTakeWatcherRewardRsp.getDescriptor().getEnumTypes().get(0);
-      }
-
-      private static final JIMPALCEJKB[] VALUES = getStaticValuesArray();
-      private static JIMPALCEJKB[] getStaticValuesArray() {
-        return new JIMPALCEJKB[] {
-          NONE, PEPPOHPHJOJ, DCDNILFDFLB, NNBKOLMPOEA, 
-        };
-      }
-      public static JIMPALCEJKB valueOf(
-          com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
-        if (desc.getType() != getDescriptor()) {
-          throw new java.lang.IllegalArgumentException(
-            "EnumValueDescriptor is not for this type.");
-        }
-        if (desc.getIndex() == -1) {
-          return UNRECOGNIZED;
-        }
-        return VALUES[desc.getIndex()];
-      }
-
-      private final int index;
-      private final int value;
-
-      private JIMPALCEJKB(int index, int value) {
-        this.index = index;
-        this.value = value;
-      }
-
-      // @@protoc_insertion_point(enum_scope:ActivityTakeWatcherRewardRsp.JIMPALCEJKB)
-    }
-
-    public static final int RETCODE_FIELD_NUMBER = 9;
-    private int retcode_;
-    /**
-     * <code>int32 retcode = 9;</code>
-     * @return The retcode.
-     */
-    @java.lang.Override
-    public int getRetcode() {
-      return retcode_;
-    }
-
-    public static final int WATCHERID_FIELD_NUMBER = 5;
+    public static final int WATCHER_ID_FIELD_NUMBER = 2;
     private int watcherId_;
     /**
-     * <code>uint32 watcherId = 5;</code>
+     * <code>uint32 watcher_id = 2;</code>
      * @return The watcherId.
      */
     @java.lang.Override
@@ -281,10 +144,21 @@ public final class ActivityTakeWatcherRewardRspOuterClass {
       return watcherId_;
     }
 
-    public static final int ACTIVITYID_FIELD_NUMBER = 3;
+    public static final int RETCODE_FIELD_NUMBER = 13;
+    private int retcode_;
+    /**
+     * <code>int32 retcode = 13;</code>
+     * @return The retcode.
+     */
+    @java.lang.Override
+    public int getRetcode() {
+      return retcode_;
+    }
+
+    public static final int ACTIVITY_ID_FIELD_NUMBER = 9;
     private int activityId_;
     /**
-     * <code>uint32 activityId = 3;</code>
+     * <code>uint32 activity_id = 9;</code>
      * @return The activityId.
      */
     @java.lang.Override
@@ -306,14 +180,14 @@ public final class ActivityTakeWatcherRewardRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (activityId_ != 0) {
-        output.writeUInt32(3, activityId_);
-      }
       if (watcherId_ != 0) {
-        output.writeUInt32(5, watcherId_);
+        output.writeUInt32(2, watcherId_);
+      }
+      if (activityId_ != 0) {
+        output.writeUInt32(9, activityId_);
       }
       if (retcode_ != 0) {
-        output.writeInt32(9, retcode_);
+        output.writeInt32(13, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -324,17 +198,17 @@ public final class ActivityTakeWatcherRewardRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (activityId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, activityId_);
-      }
       if (watcherId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, watcherId_);
+          .computeUInt32Size(2, watcherId_);
+      }
+      if (activityId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(9, activityId_);
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(9, retcode_);
+          .computeInt32Size(13, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -351,10 +225,10 @@ public final class ActivityTakeWatcherRewardRspOuterClass {
       }
       emu.grasscutter.net.proto.ActivityTakeWatcherRewardRspOuterClass.ActivityTakeWatcherRewardRsp other = (emu.grasscutter.net.proto.ActivityTakeWatcherRewardRspOuterClass.ActivityTakeWatcherRewardRsp) obj;
 
-      if (getRetcode()
-          != other.getRetcode()) return false;
       if (getWatcherId()
           != other.getWatcherId()) return false;
+      if (getRetcode()
+          != other.getRetcode()) return false;
       if (getActivityId()
           != other.getActivityId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -368,11 +242,11 @@ public final class ActivityTakeWatcherRewardRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + WATCHER_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getWatcherId();
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
-      hash = (37 * hash) + WATCHERID_FIELD_NUMBER;
-      hash = (53 * hash) + getWatcherId();
-      hash = (37 * hash) + ACTIVITYID_FIELD_NUMBER;
+      hash = (37 * hash) + ACTIVITY_ID_FIELD_NUMBER;
       hash = (53 * hash) + getActivityId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -470,6 +344,11 @@ public final class ActivityTakeWatcherRewardRspOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 2165
+     * Obf: PJMLLMMGELO
+     * </pre>
+     *
      * Protobuf type {@code ActivityTakeWatcherRewardRsp}
      */
     public static final class Builder extends
@@ -507,9 +386,9 @@ public final class ActivityTakeWatcherRewardRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        retcode_ = 0;
-
         watcherId_ = 0;
+
+        retcode_ = 0;
 
         activityId_ = 0;
 
@@ -539,8 +418,8 @@ public final class ActivityTakeWatcherRewardRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.ActivityTakeWatcherRewardRspOuterClass.ActivityTakeWatcherRewardRsp buildPartial() {
         emu.grasscutter.net.proto.ActivityTakeWatcherRewardRspOuterClass.ActivityTakeWatcherRewardRsp result = new emu.grasscutter.net.proto.ActivityTakeWatcherRewardRspOuterClass.ActivityTakeWatcherRewardRsp(this);
-        result.retcode_ = retcode_;
         result.watcherId_ = watcherId_;
+        result.retcode_ = retcode_;
         result.activityId_ = activityId_;
         onBuilt();
         return result;
@@ -590,11 +469,11 @@ public final class ActivityTakeWatcherRewardRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ActivityTakeWatcherRewardRspOuterClass.ActivityTakeWatcherRewardRsp other) {
         if (other == emu.grasscutter.net.proto.ActivityTakeWatcherRewardRspOuterClass.ActivityTakeWatcherRewardRsp.getDefaultInstance()) return this;
-        if (other.getRetcode() != 0) {
-          setRetcode(other.getRetcode());
-        }
         if (other.getWatcherId() != 0) {
           setWatcherId(other.getWatcherId());
+        }
+        if (other.getRetcode() != 0) {
+          setRetcode(other.getRetcode());
         }
         if (other.getActivityId() != 0) {
           setActivityId(other.getActivityId());
@@ -628,40 +507,9 @@ public final class ActivityTakeWatcherRewardRspOuterClass {
         return this;
       }
 
-      private int retcode_ ;
-      /**
-       * <code>int32 retcode = 9;</code>
-       * @return The retcode.
-       */
-      @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
-      }
-      /**
-       * <code>int32 retcode = 9;</code>
-       * @param value The retcode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRetcode(int value) {
-        
-        retcode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 retcode = 9;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRetcode() {
-        
-        retcode_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int watcherId_ ;
       /**
-       * <code>uint32 watcherId = 5;</code>
+       * <code>uint32 watcher_id = 2;</code>
        * @return The watcherId.
        */
       @java.lang.Override
@@ -669,7 +517,7 @@ public final class ActivityTakeWatcherRewardRspOuterClass {
         return watcherId_;
       }
       /**
-       * <code>uint32 watcherId = 5;</code>
+       * <code>uint32 watcher_id = 2;</code>
        * @param value The watcherId to set.
        * @return This builder for chaining.
        */
@@ -680,7 +528,7 @@ public final class ActivityTakeWatcherRewardRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 watcherId = 5;</code>
+       * <code>uint32 watcher_id = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearWatcherId() {
@@ -690,9 +538,40 @@ public final class ActivityTakeWatcherRewardRspOuterClass {
         return this;
       }
 
+      private int retcode_ ;
+      /**
+       * <code>int32 retcode = 13;</code>
+       * @return The retcode.
+       */
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
+      }
+      /**
+       * <code>int32 retcode = 13;</code>
+       * @param value The retcode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRetcode(int value) {
+        
+        retcode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 retcode = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        
+        retcode_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int activityId_ ;
       /**
-       * <code>uint32 activityId = 3;</code>
+       * <code>uint32 activity_id = 9;</code>
        * @return The activityId.
        */
       @java.lang.Override
@@ -700,7 +579,7 @@ public final class ActivityTakeWatcherRewardRspOuterClass {
         return activityId_;
       }
       /**
-       * <code>uint32 activityId = 3;</code>
+       * <code>uint32 activity_id = 9;</code>
        * @param value The activityId to set.
        * @return This builder for chaining.
        */
@@ -711,7 +590,7 @@ public final class ActivityTakeWatcherRewardRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 activityId = 3;</code>
+       * <code>uint32 activity_id = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearActivityId() {
@@ -787,12 +666,10 @@ public final class ActivityTakeWatcherRewardRspOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\"ActivityTakeWatcherRewardRsp.proto\"\247\001\n" +
-      "\034ActivityTakeWatcherRewardRsp\022\017\n\007retcode" +
-      "\030\t \001(\005\022\021\n\twatcherId\030\005 \001(\r\022\022\n\nactivityId\030" +
-      "\003 \001(\r\"O\n\013JIMPALCEJKB\022\010\n\004NONE\020\000\022\020\n\013PEPPOH" +
-      "PHJOJ\020\331\017\022\017\n\013DCDNILFDFLB\020\000\022\017\n\013NNBKOLMPOEA" +
-      "\020\001\032\002\020\001B\033\n\031emu.grasscutter.net.protob\006pro" +
+      "\n\"ActivityTakeWatcherRewardRsp.proto\"X\n\034" +
+      "ActivityTakeWatcherRewardRsp\022\022\n\nwatcher_" +
+      "id\030\002 \001(\r\022\017\n\007retcode\030\r \001(\005\022\023\n\013activity_id" +
+      "\030\t \001(\rB\033\n\031emu.grasscutter.net.protob\006pro" +
       "to3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -804,7 +681,7 @@ public final class ActivityTakeWatcherRewardRspOuterClass {
     internal_static_ActivityTakeWatcherRewardRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ActivityTakeWatcherRewardRsp_descriptor,
-        new java.lang.String[] { "Retcode", "WatcherId", "ActivityId", });
+        new java.lang.String[] { "WatcherId", "Retcode", "ActivityId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

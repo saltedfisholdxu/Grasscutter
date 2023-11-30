@@ -43,13 +43,13 @@ public final class FriendBriefOuterClass {
     int getLevel();
 
     /**
-     * <code>uint32 avatarId = 4;</code>
+     * <code>uint32 avatar_id = 4;</code>
      * @return The avatarId.
      */
     int getAvatarId();
 
     /**
-     * <code>uint32 worldLevel = 5;</code>
+     * <code>uint32 world_level = 5;</code>
      * @return The worldLevel.
      */
     int getWorldLevel();
@@ -67,12 +67,12 @@ public final class FriendBriefOuterClass {
         getSignatureBytes();
 
     /**
-     * <code>.FriendOnlineState onlineState = 7;</code>
+     * <code>.FriendOnlineState online_state = 7;</code>
      * @return The enum numeric value on the wire for onlineState.
      */
     int getOnlineStateValue();
     /**
-     * <code>.FriendOnlineState onlineState = 7;</code>
+     * <code>.FriendOnlineState online_state = 7;</code>
      * @return The onlineState.
      */
     emu.grasscutter.net.proto.FriendOnlineStateOuterClass.FriendOnlineState getOnlineState();
@@ -84,139 +84,155 @@ public final class FriendBriefOuterClass {
     int getParam();
 
     /**
-     * <code>bool isMpModeAvailable = 10;</code>
+     * <code>bool is_mp_mode_available = 10;</code>
      * @return The isMpModeAvailable.
      */
     boolean getIsMpModeAvailable();
 
     /**
-     * <code>string onlineId = 11;</code>
+     * <code>string online_id = 11;</code>
      * @return The onlineId.
      */
     java.lang.String getOnlineId();
     /**
-     * <code>string onlineId = 11;</code>
+     * <code>string online_id = 11;</code>
      * @return The bytes for onlineId.
      */
     com.google.protobuf.ByteString
         getOnlineIdBytes();
 
     /**
-     * <code>uint32 lastActiveTime = 12;</code>
+     * <code>uint32 last_active_time = 12;</code>
      * @return The lastActiveTime.
      */
     int getLastActiveTime();
 
     /**
-     * <code>uint32 nameCardId = 13;</code>
+     * <code>uint32 name_card_id = 13;</code>
      * @return The nameCardId.
      */
     int getNameCardId();
 
     /**
-     * <code>uint32 mpPlayerNum = 14;</code>
+     * <code>uint32 mp_player_num = 14;</code>
      * @return The mpPlayerNum.
      */
     int getMpPlayerNum();
 
     /**
-     * <code>bool isChatNoDisturb = 15;</code>
+     * <code>bool is_chat_no_disturb = 15;</code>
      * @return The isChatNoDisturb.
      */
     boolean getIsChatNoDisturb();
 
     /**
-     * <code>uint32 chatSequence = 16;</code>
+     * <code>uint32 chat_sequence = 16;</code>
      * @return The chatSequence.
      */
     int getChatSequence();
 
     /**
-     * <code>string remarkName = 17;</code>
+     * <code>string remark_name = 17;</code>
      * @return The remarkName.
      */
     java.lang.String getRemarkName();
     /**
-     * <code>string remarkName = 17;</code>
+     * <code>string remark_name = 17;</code>
      * @return The bytes for remarkName.
      */
     com.google.protobuf.ByteString
         getRemarkNameBytes();
 
     /**
-     * <code>repeated .SocialShowAvatarInfo showAvatarInfoList = 22;</code>
+     * <code>repeated .SocialShowAvatarInfo show_avatar_info_list = 22;</code>
      */
     java.util.List<emu.grasscutter.net.proto.SocialShowAvatarInfoOuterClass.SocialShowAvatarInfo> 
         getShowAvatarInfoListList();
     /**
-     * <code>repeated .SocialShowAvatarInfo showAvatarInfoList = 22;</code>
+     * <code>repeated .SocialShowAvatarInfo show_avatar_info_list = 22;</code>
      */
     emu.grasscutter.net.proto.SocialShowAvatarInfoOuterClass.SocialShowAvatarInfo getShowAvatarInfoList(int index);
     /**
-     * <code>repeated .SocialShowAvatarInfo showAvatarInfoList = 22;</code>
+     * <code>repeated .SocialShowAvatarInfo show_avatar_info_list = 22;</code>
      */
     int getShowAvatarInfoListCount();
     /**
-     * <code>repeated .SocialShowAvatarInfo showAvatarInfoList = 22;</code>
+     * <code>repeated .SocialShowAvatarInfo show_avatar_info_list = 22;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.SocialShowAvatarInfoOuterClass.SocialShowAvatarInfoOrBuilder> 
         getShowAvatarInfoListOrBuilderList();
     /**
-     * <code>repeated .SocialShowAvatarInfo showAvatarInfoList = 22;</code>
+     * <code>repeated .SocialShowAvatarInfo show_avatar_info_list = 22;</code>
      */
     emu.grasscutter.net.proto.SocialShowAvatarInfoOuterClass.SocialShowAvatarInfoOrBuilder getShowAvatarInfoListOrBuilder(
         int index);
 
     /**
-     * <code>.FriendEnterHomeOption friendEnterHomeOption = 23;</code>
+     * <code>.FriendEnterHomeOption friend_enter_home_option = 23;</code>
      * @return The enum numeric value on the wire for friendEnterHomeOption.
      */
     int getFriendEnterHomeOptionValue();
     /**
-     * <code>.FriendEnterHomeOption friendEnterHomeOption = 23;</code>
+     * <code>.FriendEnterHomeOption friend_enter_home_option = 23;</code>
      * @return The friendEnterHomeOption.
      */
     emu.grasscutter.net.proto.FriendEnterHomeOptionOuterClass.FriendEnterHomeOption getFriendEnterHomeOption();
 
     /**
-     * <code>.ProfilePicture profilePicture = 24;</code>
+     * <code>.ProfilePicture profile_picture = 24;</code>
      * @return Whether the profilePicture field is set.
      */
     boolean hasProfilePicture();
     /**
-     * <code>.ProfilePicture profilePicture = 24;</code>
+     * <code>.ProfilePicture profile_picture = 24;</code>
      * @return The profilePicture.
      */
     emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture getProfilePicture();
     /**
-     * <code>.ProfilePicture profilePicture = 24;</code>
+     * <code>.ProfilePicture profile_picture = 24;</code>
      */
     emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder getProfilePictureOrBuilder();
 
     /**
-     * <code>bool isGameSource = 25;</code>
+     * <code>bool is_game_source = 25;</code>
      * @return The isGameSource.
      */
     boolean getIsGameSource();
 
     /**
-     * <code>bool isPsnSource = 26;</code>
+     * <code>bool is_psn_source = 26;</code>
      * @return The isPsnSource.
      */
     boolean getIsPsnSource();
 
     /**
-     * <code>.PlatformType platformType = 27;</code>
+     * <code>.PlatformType platform_type = 27;</code>
      * @return The enum numeric value on the wire for platformType.
      */
     int getPlatformTypeValue();
     /**
-     * <code>.PlatformType platformType = 27;</code>
+     * <code>.PlatformType platform_type = 27;</code>
      * @return The platformType.
      */
     emu.grasscutter.net.proto.PlatformTypeOuterClass.PlatformType getPlatformType();
+
+    /**
+     * <code>bool is_in_duel = 28;</code>
+     * @return The isInDuel.
+     */
+    boolean getIsInDuel();
+
+    /**
+     * <code>bool is_duel_observable = 29;</code>
+     * @return The isDuelObservable.
+     */
+    boolean getIsDuelObservable();
   }
   /**
+   * <pre>
+   * Obf: JIFKJKFNBFF
+   * </pre>
+   *
    * Protobuf type {@code FriendBrief}
    */
   public static final class FriendBrief extends
@@ -399,6 +415,16 @@ public final class FriendBriefOuterClass {
               platformType_ = rawValue;
               break;
             }
+            case 224: {
+
+              isInDuel_ = input.readBool();
+              break;
+            }
+            case 232: {
+
+              isDuelObservable_ = input.readBool();
+              break;
+            }
             default: {
               if (!parseUnknownField(
                   input, unknownFields, extensionRegistry, tag)) {
@@ -494,10 +520,10 @@ public final class FriendBriefOuterClass {
       return level_;
     }
 
-    public static final int AVATARID_FIELD_NUMBER = 4;
+    public static final int AVATAR_ID_FIELD_NUMBER = 4;
     private int avatarId_;
     /**
-     * <code>uint32 avatarId = 4;</code>
+     * <code>uint32 avatar_id = 4;</code>
      * @return The avatarId.
      */
     @java.lang.Override
@@ -505,10 +531,10 @@ public final class FriendBriefOuterClass {
       return avatarId_;
     }
 
-    public static final int WORLDLEVEL_FIELD_NUMBER = 5;
+    public static final int WORLD_LEVEL_FIELD_NUMBER = 5;
     private int worldLevel_;
     /**
-     * <code>uint32 worldLevel = 5;</code>
+     * <code>uint32 world_level = 5;</code>
      * @return The worldLevel.
      */
     @java.lang.Override
@@ -554,17 +580,17 @@ public final class FriendBriefOuterClass {
       }
     }
 
-    public static final int ONLINESTATE_FIELD_NUMBER = 7;
+    public static final int ONLINE_STATE_FIELD_NUMBER = 7;
     private int onlineState_;
     /**
-     * <code>.FriendOnlineState onlineState = 7;</code>
+     * <code>.FriendOnlineState online_state = 7;</code>
      * @return The enum numeric value on the wire for onlineState.
      */
     @java.lang.Override public int getOnlineStateValue() {
       return onlineState_;
     }
     /**
-     * <code>.FriendOnlineState onlineState = 7;</code>
+     * <code>.FriendOnlineState online_state = 7;</code>
      * @return The onlineState.
      */
     @java.lang.Override public emu.grasscutter.net.proto.FriendOnlineStateOuterClass.FriendOnlineState getOnlineState() {
@@ -584,10 +610,10 @@ public final class FriendBriefOuterClass {
       return param_;
     }
 
-    public static final int ISMPMODEAVAILABLE_FIELD_NUMBER = 10;
+    public static final int IS_MP_MODE_AVAILABLE_FIELD_NUMBER = 10;
     private boolean isMpModeAvailable_;
     /**
-     * <code>bool isMpModeAvailable = 10;</code>
+     * <code>bool is_mp_mode_available = 10;</code>
      * @return The isMpModeAvailable.
      */
     @java.lang.Override
@@ -595,10 +621,10 @@ public final class FriendBriefOuterClass {
       return isMpModeAvailable_;
     }
 
-    public static final int ONLINEID_FIELD_NUMBER = 11;
+    public static final int ONLINE_ID_FIELD_NUMBER = 11;
     private volatile java.lang.Object onlineId_;
     /**
-     * <code>string onlineId = 11;</code>
+     * <code>string online_id = 11;</code>
      * @return The onlineId.
      */
     @java.lang.Override
@@ -615,7 +641,7 @@ public final class FriendBriefOuterClass {
       }
     }
     /**
-     * <code>string onlineId = 11;</code>
+     * <code>string online_id = 11;</code>
      * @return The bytes for onlineId.
      */
     @java.lang.Override
@@ -633,10 +659,10 @@ public final class FriendBriefOuterClass {
       }
     }
 
-    public static final int LASTACTIVETIME_FIELD_NUMBER = 12;
+    public static final int LAST_ACTIVE_TIME_FIELD_NUMBER = 12;
     private int lastActiveTime_;
     /**
-     * <code>uint32 lastActiveTime = 12;</code>
+     * <code>uint32 last_active_time = 12;</code>
      * @return The lastActiveTime.
      */
     @java.lang.Override
@@ -644,10 +670,10 @@ public final class FriendBriefOuterClass {
       return lastActiveTime_;
     }
 
-    public static final int NAMECARDID_FIELD_NUMBER = 13;
+    public static final int NAME_CARD_ID_FIELD_NUMBER = 13;
     private int nameCardId_;
     /**
-     * <code>uint32 nameCardId = 13;</code>
+     * <code>uint32 name_card_id = 13;</code>
      * @return The nameCardId.
      */
     @java.lang.Override
@@ -655,10 +681,10 @@ public final class FriendBriefOuterClass {
       return nameCardId_;
     }
 
-    public static final int MPPLAYERNUM_FIELD_NUMBER = 14;
+    public static final int MP_PLAYER_NUM_FIELD_NUMBER = 14;
     private int mpPlayerNum_;
     /**
-     * <code>uint32 mpPlayerNum = 14;</code>
+     * <code>uint32 mp_player_num = 14;</code>
      * @return The mpPlayerNum.
      */
     @java.lang.Override
@@ -666,10 +692,10 @@ public final class FriendBriefOuterClass {
       return mpPlayerNum_;
     }
 
-    public static final int ISCHATNODISTURB_FIELD_NUMBER = 15;
+    public static final int IS_CHAT_NO_DISTURB_FIELD_NUMBER = 15;
     private boolean isChatNoDisturb_;
     /**
-     * <code>bool isChatNoDisturb = 15;</code>
+     * <code>bool is_chat_no_disturb = 15;</code>
      * @return The isChatNoDisturb.
      */
     @java.lang.Override
@@ -677,10 +703,10 @@ public final class FriendBriefOuterClass {
       return isChatNoDisturb_;
     }
 
-    public static final int CHATSEQUENCE_FIELD_NUMBER = 16;
+    public static final int CHAT_SEQUENCE_FIELD_NUMBER = 16;
     private int chatSequence_;
     /**
-     * <code>uint32 chatSequence = 16;</code>
+     * <code>uint32 chat_sequence = 16;</code>
      * @return The chatSequence.
      */
     @java.lang.Override
@@ -688,10 +714,10 @@ public final class FriendBriefOuterClass {
       return chatSequence_;
     }
 
-    public static final int REMARKNAME_FIELD_NUMBER = 17;
+    public static final int REMARK_NAME_FIELD_NUMBER = 17;
     private volatile java.lang.Object remarkName_;
     /**
-     * <code>string remarkName = 17;</code>
+     * <code>string remark_name = 17;</code>
      * @return The remarkName.
      */
     @java.lang.Override
@@ -708,7 +734,7 @@ public final class FriendBriefOuterClass {
       }
     }
     /**
-     * <code>string remarkName = 17;</code>
+     * <code>string remark_name = 17;</code>
      * @return The bytes for remarkName.
      */
     @java.lang.Override
@@ -726,17 +752,17 @@ public final class FriendBriefOuterClass {
       }
     }
 
-    public static final int SHOWAVATARINFOLIST_FIELD_NUMBER = 22;
+    public static final int SHOW_AVATAR_INFO_LIST_FIELD_NUMBER = 22;
     private java.util.List<emu.grasscutter.net.proto.SocialShowAvatarInfoOuterClass.SocialShowAvatarInfo> showAvatarInfoList_;
     /**
-     * <code>repeated .SocialShowAvatarInfo showAvatarInfoList = 22;</code>
+     * <code>repeated .SocialShowAvatarInfo show_avatar_info_list = 22;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.SocialShowAvatarInfoOuterClass.SocialShowAvatarInfo> getShowAvatarInfoListList() {
       return showAvatarInfoList_;
     }
     /**
-     * <code>repeated .SocialShowAvatarInfo showAvatarInfoList = 22;</code>
+     * <code>repeated .SocialShowAvatarInfo show_avatar_info_list = 22;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.SocialShowAvatarInfoOuterClass.SocialShowAvatarInfoOrBuilder> 
@@ -744,21 +770,21 @@ public final class FriendBriefOuterClass {
       return showAvatarInfoList_;
     }
     /**
-     * <code>repeated .SocialShowAvatarInfo showAvatarInfoList = 22;</code>
+     * <code>repeated .SocialShowAvatarInfo show_avatar_info_list = 22;</code>
      */
     @java.lang.Override
     public int getShowAvatarInfoListCount() {
       return showAvatarInfoList_.size();
     }
     /**
-     * <code>repeated .SocialShowAvatarInfo showAvatarInfoList = 22;</code>
+     * <code>repeated .SocialShowAvatarInfo show_avatar_info_list = 22;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.SocialShowAvatarInfoOuterClass.SocialShowAvatarInfo getShowAvatarInfoList(int index) {
       return showAvatarInfoList_.get(index);
     }
     /**
-     * <code>repeated .SocialShowAvatarInfo showAvatarInfoList = 22;</code>
+     * <code>repeated .SocialShowAvatarInfo show_avatar_info_list = 22;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.SocialShowAvatarInfoOuterClass.SocialShowAvatarInfoOrBuilder getShowAvatarInfoListOrBuilder(
@@ -766,17 +792,17 @@ public final class FriendBriefOuterClass {
       return showAvatarInfoList_.get(index);
     }
 
-    public static final int FRIENDENTERHOMEOPTION_FIELD_NUMBER = 23;
+    public static final int FRIEND_ENTER_HOME_OPTION_FIELD_NUMBER = 23;
     private int friendEnterHomeOption_;
     /**
-     * <code>.FriendEnterHomeOption friendEnterHomeOption = 23;</code>
+     * <code>.FriendEnterHomeOption friend_enter_home_option = 23;</code>
      * @return The enum numeric value on the wire for friendEnterHomeOption.
      */
     @java.lang.Override public int getFriendEnterHomeOptionValue() {
       return friendEnterHomeOption_;
     }
     /**
-     * <code>.FriendEnterHomeOption friendEnterHomeOption = 23;</code>
+     * <code>.FriendEnterHomeOption friend_enter_home_option = 23;</code>
      * @return The friendEnterHomeOption.
      */
     @java.lang.Override public emu.grasscutter.net.proto.FriendEnterHomeOptionOuterClass.FriendEnterHomeOption getFriendEnterHomeOption() {
@@ -785,10 +811,10 @@ public final class FriendBriefOuterClass {
       return result == null ? emu.grasscutter.net.proto.FriendEnterHomeOptionOuterClass.FriendEnterHomeOption.UNRECOGNIZED : result;
     }
 
-    public static final int PROFILEPICTURE_FIELD_NUMBER = 24;
+    public static final int PROFILE_PICTURE_FIELD_NUMBER = 24;
     private emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture profilePicture_;
     /**
-     * <code>.ProfilePicture profilePicture = 24;</code>
+     * <code>.ProfilePicture profile_picture = 24;</code>
      * @return Whether the profilePicture field is set.
      */
     @java.lang.Override
@@ -796,7 +822,7 @@ public final class FriendBriefOuterClass {
       return profilePicture_ != null;
     }
     /**
-     * <code>.ProfilePicture profilePicture = 24;</code>
+     * <code>.ProfilePicture profile_picture = 24;</code>
      * @return The profilePicture.
      */
     @java.lang.Override
@@ -804,17 +830,17 @@ public final class FriendBriefOuterClass {
       return profilePicture_ == null ? emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.getDefaultInstance() : profilePicture_;
     }
     /**
-     * <code>.ProfilePicture profilePicture = 24;</code>
+     * <code>.ProfilePicture profile_picture = 24;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder getProfilePictureOrBuilder() {
       return getProfilePicture();
     }
 
-    public static final int ISGAMESOURCE_FIELD_NUMBER = 25;
+    public static final int IS_GAME_SOURCE_FIELD_NUMBER = 25;
     private boolean isGameSource_;
     /**
-     * <code>bool isGameSource = 25;</code>
+     * <code>bool is_game_source = 25;</code>
      * @return The isGameSource.
      */
     @java.lang.Override
@@ -822,10 +848,10 @@ public final class FriendBriefOuterClass {
       return isGameSource_;
     }
 
-    public static final int ISPSNSOURCE_FIELD_NUMBER = 26;
+    public static final int IS_PSN_SOURCE_FIELD_NUMBER = 26;
     private boolean isPsnSource_;
     /**
-     * <code>bool isPsnSource = 26;</code>
+     * <code>bool is_psn_source = 26;</code>
      * @return The isPsnSource.
      */
     @java.lang.Override
@@ -833,23 +859,45 @@ public final class FriendBriefOuterClass {
       return isPsnSource_;
     }
 
-    public static final int PLATFORMTYPE_FIELD_NUMBER = 27;
+    public static final int PLATFORM_TYPE_FIELD_NUMBER = 27;
     private int platformType_;
     /**
-     * <code>.PlatformType platformType = 27;</code>
+     * <code>.PlatformType platform_type = 27;</code>
      * @return The enum numeric value on the wire for platformType.
      */
     @java.lang.Override public int getPlatformTypeValue() {
       return platformType_;
     }
     /**
-     * <code>.PlatformType platformType = 27;</code>
+     * <code>.PlatformType platform_type = 27;</code>
      * @return The platformType.
      */
     @java.lang.Override public emu.grasscutter.net.proto.PlatformTypeOuterClass.PlatformType getPlatformType() {
       @SuppressWarnings("deprecation")
       emu.grasscutter.net.proto.PlatformTypeOuterClass.PlatformType result = emu.grasscutter.net.proto.PlatformTypeOuterClass.PlatformType.valueOf(platformType_);
       return result == null ? emu.grasscutter.net.proto.PlatformTypeOuterClass.PlatformType.UNRECOGNIZED : result;
+    }
+
+    public static final int IS_IN_DUEL_FIELD_NUMBER = 28;
+    private boolean isInDuel_;
+    /**
+     * <code>bool is_in_duel = 28;</code>
+     * @return The isInDuel.
+     */
+    @java.lang.Override
+    public boolean getIsInDuel() {
+      return isInDuel_;
+    }
+
+    public static final int IS_DUEL_OBSERVABLE_FIELD_NUMBER = 29;
+    private boolean isDuelObservable_;
+    /**
+     * <code>bool is_duel_observable = 29;</code>
+     * @return The isDuelObservable.
+     */
+    @java.lang.Override
+    public boolean getIsDuelObservable() {
+      return isDuelObservable_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -931,6 +979,12 @@ public final class FriendBriefOuterClass {
       }
       if (platformType_ != emu.grasscutter.net.proto.PlatformTypeOuterClass.PlatformType.PLATFORM_TYPE_EDITOR.getNumber()) {
         output.writeEnum(27, platformType_);
+      }
+      if (isInDuel_ != false) {
+        output.writeBool(28, isInDuel_);
+      }
+      if (isDuelObservable_ != false) {
+        output.writeBool(29, isDuelObservable_);
       }
       unknownFields.writeTo(output);
     }
@@ -1025,6 +1079,14 @@ public final class FriendBriefOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeEnumSize(27, platformType_);
       }
+      if (isInDuel_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(28, isInDuel_);
+      }
+      if (isDuelObservable_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(29, isDuelObservable_);
+      }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
       return size;
@@ -1084,6 +1146,10 @@ public final class FriendBriefOuterClass {
       if (getIsPsnSource()
           != other.getIsPsnSource()) return false;
       if (platformType_ != other.platformType_) return false;
+      if (getIsInDuel()
+          != other.getIsInDuel()) return false;
+      if (getIsDuelObservable()
+          != other.getIsDuelObservable()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -1101,52 +1167,58 @@ public final class FriendBriefOuterClass {
       hash = (53 * hash) + getNickname().hashCode();
       hash = (37 * hash) + LEVEL_FIELD_NUMBER;
       hash = (53 * hash) + getLevel();
-      hash = (37 * hash) + AVATARID_FIELD_NUMBER;
+      hash = (37 * hash) + AVATAR_ID_FIELD_NUMBER;
       hash = (53 * hash) + getAvatarId();
-      hash = (37 * hash) + WORLDLEVEL_FIELD_NUMBER;
+      hash = (37 * hash) + WORLD_LEVEL_FIELD_NUMBER;
       hash = (53 * hash) + getWorldLevel();
       hash = (37 * hash) + SIGNATURE_FIELD_NUMBER;
       hash = (53 * hash) + getSignature().hashCode();
-      hash = (37 * hash) + ONLINESTATE_FIELD_NUMBER;
+      hash = (37 * hash) + ONLINE_STATE_FIELD_NUMBER;
       hash = (53 * hash) + onlineState_;
       hash = (37 * hash) + PARAM_FIELD_NUMBER;
       hash = (53 * hash) + getParam();
-      hash = (37 * hash) + ISMPMODEAVAILABLE_FIELD_NUMBER;
+      hash = (37 * hash) + IS_MP_MODE_AVAILABLE_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsMpModeAvailable());
-      hash = (37 * hash) + ONLINEID_FIELD_NUMBER;
+      hash = (37 * hash) + ONLINE_ID_FIELD_NUMBER;
       hash = (53 * hash) + getOnlineId().hashCode();
-      hash = (37 * hash) + LASTACTIVETIME_FIELD_NUMBER;
+      hash = (37 * hash) + LAST_ACTIVE_TIME_FIELD_NUMBER;
       hash = (53 * hash) + getLastActiveTime();
-      hash = (37 * hash) + NAMECARDID_FIELD_NUMBER;
+      hash = (37 * hash) + NAME_CARD_ID_FIELD_NUMBER;
       hash = (53 * hash) + getNameCardId();
-      hash = (37 * hash) + MPPLAYERNUM_FIELD_NUMBER;
+      hash = (37 * hash) + MP_PLAYER_NUM_FIELD_NUMBER;
       hash = (53 * hash) + getMpPlayerNum();
-      hash = (37 * hash) + ISCHATNODISTURB_FIELD_NUMBER;
+      hash = (37 * hash) + IS_CHAT_NO_DISTURB_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsChatNoDisturb());
-      hash = (37 * hash) + CHATSEQUENCE_FIELD_NUMBER;
+      hash = (37 * hash) + CHAT_SEQUENCE_FIELD_NUMBER;
       hash = (53 * hash) + getChatSequence();
-      hash = (37 * hash) + REMARKNAME_FIELD_NUMBER;
+      hash = (37 * hash) + REMARK_NAME_FIELD_NUMBER;
       hash = (53 * hash) + getRemarkName().hashCode();
       if (getShowAvatarInfoListCount() > 0) {
-        hash = (37 * hash) + SHOWAVATARINFOLIST_FIELD_NUMBER;
+        hash = (37 * hash) + SHOW_AVATAR_INFO_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getShowAvatarInfoListList().hashCode();
       }
-      hash = (37 * hash) + FRIENDENTERHOMEOPTION_FIELD_NUMBER;
+      hash = (37 * hash) + FRIEND_ENTER_HOME_OPTION_FIELD_NUMBER;
       hash = (53 * hash) + friendEnterHomeOption_;
       if (hasProfilePicture()) {
-        hash = (37 * hash) + PROFILEPICTURE_FIELD_NUMBER;
+        hash = (37 * hash) + PROFILE_PICTURE_FIELD_NUMBER;
         hash = (53 * hash) + getProfilePicture().hashCode();
       }
-      hash = (37 * hash) + ISGAMESOURCE_FIELD_NUMBER;
+      hash = (37 * hash) + IS_GAME_SOURCE_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsGameSource());
-      hash = (37 * hash) + ISPSNSOURCE_FIELD_NUMBER;
+      hash = (37 * hash) + IS_PSN_SOURCE_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsPsnSource());
-      hash = (37 * hash) + PLATFORMTYPE_FIELD_NUMBER;
+      hash = (37 * hash) + PLATFORM_TYPE_FIELD_NUMBER;
       hash = (53 * hash) + platformType_;
+      hash = (37 * hash) + IS_IN_DUEL_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsInDuel());
+      hash = (37 * hash) + IS_DUEL_OBSERVABLE_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsDuelObservable());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -1243,6 +1315,10 @@ public final class FriendBriefOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Obf: JIFKJKFNBFF
+     * </pre>
+     *
      * Protobuf type {@code FriendBrief}
      */
     public static final class Builder extends
@@ -1333,6 +1409,10 @@ public final class FriendBriefOuterClass {
 
         platformType_ = 0;
 
+        isInDuel_ = false;
+
+        isDuelObservable_ = false;
+
         return this;
       }
 
@@ -1394,6 +1474,8 @@ public final class FriendBriefOuterClass {
         result.isGameSource_ = isGameSource_;
         result.isPsnSource_ = isPsnSource_;
         result.platformType_ = platformType_;
+        result.isInDuel_ = isInDuel_;
+        result.isDuelObservable_ = isDuelObservable_;
         onBuilt();
         return result;
       }
@@ -1534,6 +1616,12 @@ public final class FriendBriefOuterClass {
         }
         if (other.platformType_ != 0) {
           setPlatformTypeValue(other.getPlatformTypeValue());
+        }
+        if (other.getIsInDuel() != false) {
+          setIsInDuel(other.getIsInDuel());
+        }
+        if (other.getIsDuelObservable() != false) {
+          setIsDuelObservable(other.getIsDuelObservable());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -1705,7 +1793,7 @@ public final class FriendBriefOuterClass {
 
       private int avatarId_ ;
       /**
-       * <code>uint32 avatarId = 4;</code>
+       * <code>uint32 avatar_id = 4;</code>
        * @return The avatarId.
        */
       @java.lang.Override
@@ -1713,7 +1801,7 @@ public final class FriendBriefOuterClass {
         return avatarId_;
       }
       /**
-       * <code>uint32 avatarId = 4;</code>
+       * <code>uint32 avatar_id = 4;</code>
        * @param value The avatarId to set.
        * @return This builder for chaining.
        */
@@ -1724,7 +1812,7 @@ public final class FriendBriefOuterClass {
         return this;
       }
       /**
-       * <code>uint32 avatarId = 4;</code>
+       * <code>uint32 avatar_id = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearAvatarId() {
@@ -1736,7 +1824,7 @@ public final class FriendBriefOuterClass {
 
       private int worldLevel_ ;
       /**
-       * <code>uint32 worldLevel = 5;</code>
+       * <code>uint32 world_level = 5;</code>
        * @return The worldLevel.
        */
       @java.lang.Override
@@ -1744,7 +1832,7 @@ public final class FriendBriefOuterClass {
         return worldLevel_;
       }
       /**
-       * <code>uint32 worldLevel = 5;</code>
+       * <code>uint32 world_level = 5;</code>
        * @param value The worldLevel to set.
        * @return This builder for chaining.
        */
@@ -1755,7 +1843,7 @@ public final class FriendBriefOuterClass {
         return this;
       }
       /**
-       * <code>uint32 worldLevel = 5;</code>
+       * <code>uint32 world_level = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearWorldLevel() {
@@ -1843,14 +1931,14 @@ public final class FriendBriefOuterClass {
 
       private int onlineState_ = 0;
       /**
-       * <code>.FriendOnlineState onlineState = 7;</code>
+       * <code>.FriendOnlineState online_state = 7;</code>
        * @return The enum numeric value on the wire for onlineState.
        */
       @java.lang.Override public int getOnlineStateValue() {
         return onlineState_;
       }
       /**
-       * <code>.FriendOnlineState onlineState = 7;</code>
+       * <code>.FriendOnlineState online_state = 7;</code>
        * @param value The enum numeric value on the wire for onlineState to set.
        * @return This builder for chaining.
        */
@@ -1861,7 +1949,7 @@ public final class FriendBriefOuterClass {
         return this;
       }
       /**
-       * <code>.FriendOnlineState onlineState = 7;</code>
+       * <code>.FriendOnlineState online_state = 7;</code>
        * @return The onlineState.
        */
       @java.lang.Override
@@ -1871,7 +1959,7 @@ public final class FriendBriefOuterClass {
         return result == null ? emu.grasscutter.net.proto.FriendOnlineStateOuterClass.FriendOnlineState.UNRECOGNIZED : result;
       }
       /**
-       * <code>.FriendOnlineState onlineState = 7;</code>
+       * <code>.FriendOnlineState online_state = 7;</code>
        * @param value The onlineState to set.
        * @return This builder for chaining.
        */
@@ -1885,7 +1973,7 @@ public final class FriendBriefOuterClass {
         return this;
       }
       /**
-       * <code>.FriendOnlineState onlineState = 7;</code>
+       * <code>.FriendOnlineState online_state = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearOnlineState() {
@@ -1928,7 +2016,7 @@ public final class FriendBriefOuterClass {
 
       private boolean isMpModeAvailable_ ;
       /**
-       * <code>bool isMpModeAvailable = 10;</code>
+       * <code>bool is_mp_mode_available = 10;</code>
        * @return The isMpModeAvailable.
        */
       @java.lang.Override
@@ -1936,7 +2024,7 @@ public final class FriendBriefOuterClass {
         return isMpModeAvailable_;
       }
       /**
-       * <code>bool isMpModeAvailable = 10;</code>
+       * <code>bool is_mp_mode_available = 10;</code>
        * @param value The isMpModeAvailable to set.
        * @return This builder for chaining.
        */
@@ -1947,7 +2035,7 @@ public final class FriendBriefOuterClass {
         return this;
       }
       /**
-       * <code>bool isMpModeAvailable = 10;</code>
+       * <code>bool is_mp_mode_available = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsMpModeAvailable() {
@@ -1959,7 +2047,7 @@ public final class FriendBriefOuterClass {
 
       private java.lang.Object onlineId_ = "";
       /**
-       * <code>string onlineId = 11;</code>
+       * <code>string online_id = 11;</code>
        * @return The onlineId.
        */
       public java.lang.String getOnlineId() {
@@ -1975,7 +2063,7 @@ public final class FriendBriefOuterClass {
         }
       }
       /**
-       * <code>string onlineId = 11;</code>
+       * <code>string online_id = 11;</code>
        * @return The bytes for onlineId.
        */
       public com.google.protobuf.ByteString
@@ -1992,7 +2080,7 @@ public final class FriendBriefOuterClass {
         }
       }
       /**
-       * <code>string onlineId = 11;</code>
+       * <code>string online_id = 11;</code>
        * @param value The onlineId to set.
        * @return This builder for chaining.
        */
@@ -2007,7 +2095,7 @@ public final class FriendBriefOuterClass {
         return this;
       }
       /**
-       * <code>string onlineId = 11;</code>
+       * <code>string online_id = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearOnlineId() {
@@ -2017,7 +2105,7 @@ public final class FriendBriefOuterClass {
         return this;
       }
       /**
-       * <code>string onlineId = 11;</code>
+       * <code>string online_id = 11;</code>
        * @param value The bytes for onlineId to set.
        * @return This builder for chaining.
        */
@@ -2035,7 +2123,7 @@ public final class FriendBriefOuterClass {
 
       private int lastActiveTime_ ;
       /**
-       * <code>uint32 lastActiveTime = 12;</code>
+       * <code>uint32 last_active_time = 12;</code>
        * @return The lastActiveTime.
        */
       @java.lang.Override
@@ -2043,7 +2131,7 @@ public final class FriendBriefOuterClass {
         return lastActiveTime_;
       }
       /**
-       * <code>uint32 lastActiveTime = 12;</code>
+       * <code>uint32 last_active_time = 12;</code>
        * @param value The lastActiveTime to set.
        * @return This builder for chaining.
        */
@@ -2054,7 +2142,7 @@ public final class FriendBriefOuterClass {
         return this;
       }
       /**
-       * <code>uint32 lastActiveTime = 12;</code>
+       * <code>uint32 last_active_time = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearLastActiveTime() {
@@ -2066,7 +2154,7 @@ public final class FriendBriefOuterClass {
 
       private int nameCardId_ ;
       /**
-       * <code>uint32 nameCardId = 13;</code>
+       * <code>uint32 name_card_id = 13;</code>
        * @return The nameCardId.
        */
       @java.lang.Override
@@ -2074,7 +2162,7 @@ public final class FriendBriefOuterClass {
         return nameCardId_;
       }
       /**
-       * <code>uint32 nameCardId = 13;</code>
+       * <code>uint32 name_card_id = 13;</code>
        * @param value The nameCardId to set.
        * @return This builder for chaining.
        */
@@ -2085,7 +2173,7 @@ public final class FriendBriefOuterClass {
         return this;
       }
       /**
-       * <code>uint32 nameCardId = 13;</code>
+       * <code>uint32 name_card_id = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearNameCardId() {
@@ -2097,7 +2185,7 @@ public final class FriendBriefOuterClass {
 
       private int mpPlayerNum_ ;
       /**
-       * <code>uint32 mpPlayerNum = 14;</code>
+       * <code>uint32 mp_player_num = 14;</code>
        * @return The mpPlayerNum.
        */
       @java.lang.Override
@@ -2105,7 +2193,7 @@ public final class FriendBriefOuterClass {
         return mpPlayerNum_;
       }
       /**
-       * <code>uint32 mpPlayerNum = 14;</code>
+       * <code>uint32 mp_player_num = 14;</code>
        * @param value The mpPlayerNum to set.
        * @return This builder for chaining.
        */
@@ -2116,7 +2204,7 @@ public final class FriendBriefOuterClass {
         return this;
       }
       /**
-       * <code>uint32 mpPlayerNum = 14;</code>
+       * <code>uint32 mp_player_num = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearMpPlayerNum() {
@@ -2128,7 +2216,7 @@ public final class FriendBriefOuterClass {
 
       private boolean isChatNoDisturb_ ;
       /**
-       * <code>bool isChatNoDisturb = 15;</code>
+       * <code>bool is_chat_no_disturb = 15;</code>
        * @return The isChatNoDisturb.
        */
       @java.lang.Override
@@ -2136,7 +2224,7 @@ public final class FriendBriefOuterClass {
         return isChatNoDisturb_;
       }
       /**
-       * <code>bool isChatNoDisturb = 15;</code>
+       * <code>bool is_chat_no_disturb = 15;</code>
        * @param value The isChatNoDisturb to set.
        * @return This builder for chaining.
        */
@@ -2147,7 +2235,7 @@ public final class FriendBriefOuterClass {
         return this;
       }
       /**
-       * <code>bool isChatNoDisturb = 15;</code>
+       * <code>bool is_chat_no_disturb = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsChatNoDisturb() {
@@ -2159,7 +2247,7 @@ public final class FriendBriefOuterClass {
 
       private int chatSequence_ ;
       /**
-       * <code>uint32 chatSequence = 16;</code>
+       * <code>uint32 chat_sequence = 16;</code>
        * @return The chatSequence.
        */
       @java.lang.Override
@@ -2167,7 +2255,7 @@ public final class FriendBriefOuterClass {
         return chatSequence_;
       }
       /**
-       * <code>uint32 chatSequence = 16;</code>
+       * <code>uint32 chat_sequence = 16;</code>
        * @param value The chatSequence to set.
        * @return This builder for chaining.
        */
@@ -2178,7 +2266,7 @@ public final class FriendBriefOuterClass {
         return this;
       }
       /**
-       * <code>uint32 chatSequence = 16;</code>
+       * <code>uint32 chat_sequence = 16;</code>
        * @return This builder for chaining.
        */
       public Builder clearChatSequence() {
@@ -2190,7 +2278,7 @@ public final class FriendBriefOuterClass {
 
       private java.lang.Object remarkName_ = "";
       /**
-       * <code>string remarkName = 17;</code>
+       * <code>string remark_name = 17;</code>
        * @return The remarkName.
        */
       public java.lang.String getRemarkName() {
@@ -2206,7 +2294,7 @@ public final class FriendBriefOuterClass {
         }
       }
       /**
-       * <code>string remarkName = 17;</code>
+       * <code>string remark_name = 17;</code>
        * @return The bytes for remarkName.
        */
       public com.google.protobuf.ByteString
@@ -2223,7 +2311,7 @@ public final class FriendBriefOuterClass {
         }
       }
       /**
-       * <code>string remarkName = 17;</code>
+       * <code>string remark_name = 17;</code>
        * @param value The remarkName to set.
        * @return This builder for chaining.
        */
@@ -2238,7 +2326,7 @@ public final class FriendBriefOuterClass {
         return this;
       }
       /**
-       * <code>string remarkName = 17;</code>
+       * <code>string remark_name = 17;</code>
        * @return This builder for chaining.
        */
       public Builder clearRemarkName() {
@@ -2248,7 +2336,7 @@ public final class FriendBriefOuterClass {
         return this;
       }
       /**
-       * <code>string remarkName = 17;</code>
+       * <code>string remark_name = 17;</code>
        * @param value The bytes for remarkName to set.
        * @return This builder for chaining.
        */
@@ -2277,7 +2365,7 @@ public final class FriendBriefOuterClass {
           emu.grasscutter.net.proto.SocialShowAvatarInfoOuterClass.SocialShowAvatarInfo, emu.grasscutter.net.proto.SocialShowAvatarInfoOuterClass.SocialShowAvatarInfo.Builder, emu.grasscutter.net.proto.SocialShowAvatarInfoOuterClass.SocialShowAvatarInfoOrBuilder> showAvatarInfoListBuilder_;
 
       /**
-       * <code>repeated .SocialShowAvatarInfo showAvatarInfoList = 22;</code>
+       * <code>repeated .SocialShowAvatarInfo show_avatar_info_list = 22;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.SocialShowAvatarInfoOuterClass.SocialShowAvatarInfo> getShowAvatarInfoListList() {
         if (showAvatarInfoListBuilder_ == null) {
@@ -2287,7 +2375,7 @@ public final class FriendBriefOuterClass {
         }
       }
       /**
-       * <code>repeated .SocialShowAvatarInfo showAvatarInfoList = 22;</code>
+       * <code>repeated .SocialShowAvatarInfo show_avatar_info_list = 22;</code>
        */
       public int getShowAvatarInfoListCount() {
         if (showAvatarInfoListBuilder_ == null) {
@@ -2297,7 +2385,7 @@ public final class FriendBriefOuterClass {
         }
       }
       /**
-       * <code>repeated .SocialShowAvatarInfo showAvatarInfoList = 22;</code>
+       * <code>repeated .SocialShowAvatarInfo show_avatar_info_list = 22;</code>
        */
       public emu.grasscutter.net.proto.SocialShowAvatarInfoOuterClass.SocialShowAvatarInfo getShowAvatarInfoList(int index) {
         if (showAvatarInfoListBuilder_ == null) {
@@ -2307,7 +2395,7 @@ public final class FriendBriefOuterClass {
         }
       }
       /**
-       * <code>repeated .SocialShowAvatarInfo showAvatarInfoList = 22;</code>
+       * <code>repeated .SocialShowAvatarInfo show_avatar_info_list = 22;</code>
        */
       public Builder setShowAvatarInfoList(
           int index, emu.grasscutter.net.proto.SocialShowAvatarInfoOuterClass.SocialShowAvatarInfo value) {
@@ -2324,7 +2412,7 @@ public final class FriendBriefOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SocialShowAvatarInfo showAvatarInfoList = 22;</code>
+       * <code>repeated .SocialShowAvatarInfo show_avatar_info_list = 22;</code>
        */
       public Builder setShowAvatarInfoList(
           int index, emu.grasscutter.net.proto.SocialShowAvatarInfoOuterClass.SocialShowAvatarInfo.Builder builderForValue) {
@@ -2338,7 +2426,7 @@ public final class FriendBriefOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SocialShowAvatarInfo showAvatarInfoList = 22;</code>
+       * <code>repeated .SocialShowAvatarInfo show_avatar_info_list = 22;</code>
        */
       public Builder addShowAvatarInfoList(emu.grasscutter.net.proto.SocialShowAvatarInfoOuterClass.SocialShowAvatarInfo value) {
         if (showAvatarInfoListBuilder_ == null) {
@@ -2354,7 +2442,7 @@ public final class FriendBriefOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SocialShowAvatarInfo showAvatarInfoList = 22;</code>
+       * <code>repeated .SocialShowAvatarInfo show_avatar_info_list = 22;</code>
        */
       public Builder addShowAvatarInfoList(
           int index, emu.grasscutter.net.proto.SocialShowAvatarInfoOuterClass.SocialShowAvatarInfo value) {
@@ -2371,7 +2459,7 @@ public final class FriendBriefOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SocialShowAvatarInfo showAvatarInfoList = 22;</code>
+       * <code>repeated .SocialShowAvatarInfo show_avatar_info_list = 22;</code>
        */
       public Builder addShowAvatarInfoList(
           emu.grasscutter.net.proto.SocialShowAvatarInfoOuterClass.SocialShowAvatarInfo.Builder builderForValue) {
@@ -2385,7 +2473,7 @@ public final class FriendBriefOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SocialShowAvatarInfo showAvatarInfoList = 22;</code>
+       * <code>repeated .SocialShowAvatarInfo show_avatar_info_list = 22;</code>
        */
       public Builder addShowAvatarInfoList(
           int index, emu.grasscutter.net.proto.SocialShowAvatarInfoOuterClass.SocialShowAvatarInfo.Builder builderForValue) {
@@ -2399,7 +2487,7 @@ public final class FriendBriefOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SocialShowAvatarInfo showAvatarInfoList = 22;</code>
+       * <code>repeated .SocialShowAvatarInfo show_avatar_info_list = 22;</code>
        */
       public Builder addAllShowAvatarInfoList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.SocialShowAvatarInfoOuterClass.SocialShowAvatarInfo> values) {
@@ -2414,7 +2502,7 @@ public final class FriendBriefOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SocialShowAvatarInfo showAvatarInfoList = 22;</code>
+       * <code>repeated .SocialShowAvatarInfo show_avatar_info_list = 22;</code>
        */
       public Builder clearShowAvatarInfoList() {
         if (showAvatarInfoListBuilder_ == null) {
@@ -2427,7 +2515,7 @@ public final class FriendBriefOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SocialShowAvatarInfo showAvatarInfoList = 22;</code>
+       * <code>repeated .SocialShowAvatarInfo show_avatar_info_list = 22;</code>
        */
       public Builder removeShowAvatarInfoList(int index) {
         if (showAvatarInfoListBuilder_ == null) {
@@ -2440,14 +2528,14 @@ public final class FriendBriefOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SocialShowAvatarInfo showAvatarInfoList = 22;</code>
+       * <code>repeated .SocialShowAvatarInfo show_avatar_info_list = 22;</code>
        */
       public emu.grasscutter.net.proto.SocialShowAvatarInfoOuterClass.SocialShowAvatarInfo.Builder getShowAvatarInfoListBuilder(
           int index) {
         return getShowAvatarInfoListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .SocialShowAvatarInfo showAvatarInfoList = 22;</code>
+       * <code>repeated .SocialShowAvatarInfo show_avatar_info_list = 22;</code>
        */
       public emu.grasscutter.net.proto.SocialShowAvatarInfoOuterClass.SocialShowAvatarInfoOrBuilder getShowAvatarInfoListOrBuilder(
           int index) {
@@ -2457,7 +2545,7 @@ public final class FriendBriefOuterClass {
         }
       }
       /**
-       * <code>repeated .SocialShowAvatarInfo showAvatarInfoList = 22;</code>
+       * <code>repeated .SocialShowAvatarInfo show_avatar_info_list = 22;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.SocialShowAvatarInfoOuterClass.SocialShowAvatarInfoOrBuilder> 
            getShowAvatarInfoListOrBuilderList() {
@@ -2468,14 +2556,14 @@ public final class FriendBriefOuterClass {
         }
       }
       /**
-       * <code>repeated .SocialShowAvatarInfo showAvatarInfoList = 22;</code>
+       * <code>repeated .SocialShowAvatarInfo show_avatar_info_list = 22;</code>
        */
       public emu.grasscutter.net.proto.SocialShowAvatarInfoOuterClass.SocialShowAvatarInfo.Builder addShowAvatarInfoListBuilder() {
         return getShowAvatarInfoListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.SocialShowAvatarInfoOuterClass.SocialShowAvatarInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .SocialShowAvatarInfo showAvatarInfoList = 22;</code>
+       * <code>repeated .SocialShowAvatarInfo show_avatar_info_list = 22;</code>
        */
       public emu.grasscutter.net.proto.SocialShowAvatarInfoOuterClass.SocialShowAvatarInfo.Builder addShowAvatarInfoListBuilder(
           int index) {
@@ -2483,7 +2571,7 @@ public final class FriendBriefOuterClass {
             index, emu.grasscutter.net.proto.SocialShowAvatarInfoOuterClass.SocialShowAvatarInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .SocialShowAvatarInfo showAvatarInfoList = 22;</code>
+       * <code>repeated .SocialShowAvatarInfo show_avatar_info_list = 22;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.SocialShowAvatarInfoOuterClass.SocialShowAvatarInfo.Builder> 
            getShowAvatarInfoListBuilderList() {
@@ -2506,14 +2594,14 @@ public final class FriendBriefOuterClass {
 
       private int friendEnterHomeOption_ = 0;
       /**
-       * <code>.FriendEnterHomeOption friendEnterHomeOption = 23;</code>
+       * <code>.FriendEnterHomeOption friend_enter_home_option = 23;</code>
        * @return The enum numeric value on the wire for friendEnterHomeOption.
        */
       @java.lang.Override public int getFriendEnterHomeOptionValue() {
         return friendEnterHomeOption_;
       }
       /**
-       * <code>.FriendEnterHomeOption friendEnterHomeOption = 23;</code>
+       * <code>.FriendEnterHomeOption friend_enter_home_option = 23;</code>
        * @param value The enum numeric value on the wire for friendEnterHomeOption to set.
        * @return This builder for chaining.
        */
@@ -2524,7 +2612,7 @@ public final class FriendBriefOuterClass {
         return this;
       }
       /**
-       * <code>.FriendEnterHomeOption friendEnterHomeOption = 23;</code>
+       * <code>.FriendEnterHomeOption friend_enter_home_option = 23;</code>
        * @return The friendEnterHomeOption.
        */
       @java.lang.Override
@@ -2534,7 +2622,7 @@ public final class FriendBriefOuterClass {
         return result == null ? emu.grasscutter.net.proto.FriendEnterHomeOptionOuterClass.FriendEnterHomeOption.UNRECOGNIZED : result;
       }
       /**
-       * <code>.FriendEnterHomeOption friendEnterHomeOption = 23;</code>
+       * <code>.FriendEnterHomeOption friend_enter_home_option = 23;</code>
        * @param value The friendEnterHomeOption to set.
        * @return This builder for chaining.
        */
@@ -2548,7 +2636,7 @@ public final class FriendBriefOuterClass {
         return this;
       }
       /**
-       * <code>.FriendEnterHomeOption friendEnterHomeOption = 23;</code>
+       * <code>.FriendEnterHomeOption friend_enter_home_option = 23;</code>
        * @return This builder for chaining.
        */
       public Builder clearFriendEnterHomeOption() {
@@ -2562,14 +2650,14 @@ public final class FriendBriefOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture, emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.Builder, emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder> profilePictureBuilder_;
       /**
-       * <code>.ProfilePicture profilePicture = 24;</code>
+       * <code>.ProfilePicture profile_picture = 24;</code>
        * @return Whether the profilePicture field is set.
        */
       public boolean hasProfilePicture() {
         return profilePictureBuilder_ != null || profilePicture_ != null;
       }
       /**
-       * <code>.ProfilePicture profilePicture = 24;</code>
+       * <code>.ProfilePicture profile_picture = 24;</code>
        * @return The profilePicture.
        */
       public emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture getProfilePicture() {
@@ -2580,7 +2668,7 @@ public final class FriendBriefOuterClass {
         }
       }
       /**
-       * <code>.ProfilePicture profilePicture = 24;</code>
+       * <code>.ProfilePicture profile_picture = 24;</code>
        */
       public Builder setProfilePicture(emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture value) {
         if (profilePictureBuilder_ == null) {
@@ -2596,7 +2684,7 @@ public final class FriendBriefOuterClass {
         return this;
       }
       /**
-       * <code>.ProfilePicture profilePicture = 24;</code>
+       * <code>.ProfilePicture profile_picture = 24;</code>
        */
       public Builder setProfilePicture(
           emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.Builder builderForValue) {
@@ -2610,7 +2698,7 @@ public final class FriendBriefOuterClass {
         return this;
       }
       /**
-       * <code>.ProfilePicture profilePicture = 24;</code>
+       * <code>.ProfilePicture profile_picture = 24;</code>
        */
       public Builder mergeProfilePicture(emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture value) {
         if (profilePictureBuilder_ == null) {
@@ -2628,7 +2716,7 @@ public final class FriendBriefOuterClass {
         return this;
       }
       /**
-       * <code>.ProfilePicture profilePicture = 24;</code>
+       * <code>.ProfilePicture profile_picture = 24;</code>
        */
       public Builder clearProfilePicture() {
         if (profilePictureBuilder_ == null) {
@@ -2642,7 +2730,7 @@ public final class FriendBriefOuterClass {
         return this;
       }
       /**
-       * <code>.ProfilePicture profilePicture = 24;</code>
+       * <code>.ProfilePicture profile_picture = 24;</code>
        */
       public emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.Builder getProfilePictureBuilder() {
         
@@ -2650,7 +2738,7 @@ public final class FriendBriefOuterClass {
         return getProfilePictureFieldBuilder().getBuilder();
       }
       /**
-       * <code>.ProfilePicture profilePicture = 24;</code>
+       * <code>.ProfilePicture profile_picture = 24;</code>
        */
       public emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder getProfilePictureOrBuilder() {
         if (profilePictureBuilder_ != null) {
@@ -2661,7 +2749,7 @@ public final class FriendBriefOuterClass {
         }
       }
       /**
-       * <code>.ProfilePicture profilePicture = 24;</code>
+       * <code>.ProfilePicture profile_picture = 24;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture, emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.Builder, emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder> 
@@ -2679,7 +2767,7 @@ public final class FriendBriefOuterClass {
 
       private boolean isGameSource_ ;
       /**
-       * <code>bool isGameSource = 25;</code>
+       * <code>bool is_game_source = 25;</code>
        * @return The isGameSource.
        */
       @java.lang.Override
@@ -2687,7 +2775,7 @@ public final class FriendBriefOuterClass {
         return isGameSource_;
       }
       /**
-       * <code>bool isGameSource = 25;</code>
+       * <code>bool is_game_source = 25;</code>
        * @param value The isGameSource to set.
        * @return This builder for chaining.
        */
@@ -2698,7 +2786,7 @@ public final class FriendBriefOuterClass {
         return this;
       }
       /**
-       * <code>bool isGameSource = 25;</code>
+       * <code>bool is_game_source = 25;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsGameSource() {
@@ -2710,7 +2798,7 @@ public final class FriendBriefOuterClass {
 
       private boolean isPsnSource_ ;
       /**
-       * <code>bool isPsnSource = 26;</code>
+       * <code>bool is_psn_source = 26;</code>
        * @return The isPsnSource.
        */
       @java.lang.Override
@@ -2718,7 +2806,7 @@ public final class FriendBriefOuterClass {
         return isPsnSource_;
       }
       /**
-       * <code>bool isPsnSource = 26;</code>
+       * <code>bool is_psn_source = 26;</code>
        * @param value The isPsnSource to set.
        * @return This builder for chaining.
        */
@@ -2729,7 +2817,7 @@ public final class FriendBriefOuterClass {
         return this;
       }
       /**
-       * <code>bool isPsnSource = 26;</code>
+       * <code>bool is_psn_source = 26;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsPsnSource() {
@@ -2741,14 +2829,14 @@ public final class FriendBriefOuterClass {
 
       private int platformType_ = 0;
       /**
-       * <code>.PlatformType platformType = 27;</code>
+       * <code>.PlatformType platform_type = 27;</code>
        * @return The enum numeric value on the wire for platformType.
        */
       @java.lang.Override public int getPlatformTypeValue() {
         return platformType_;
       }
       /**
-       * <code>.PlatformType platformType = 27;</code>
+       * <code>.PlatformType platform_type = 27;</code>
        * @param value The enum numeric value on the wire for platformType to set.
        * @return This builder for chaining.
        */
@@ -2759,7 +2847,7 @@ public final class FriendBriefOuterClass {
         return this;
       }
       /**
-       * <code>.PlatformType platformType = 27;</code>
+       * <code>.PlatformType platform_type = 27;</code>
        * @return The platformType.
        */
       @java.lang.Override
@@ -2769,7 +2857,7 @@ public final class FriendBriefOuterClass {
         return result == null ? emu.grasscutter.net.proto.PlatformTypeOuterClass.PlatformType.UNRECOGNIZED : result;
       }
       /**
-       * <code>.PlatformType platformType = 27;</code>
+       * <code>.PlatformType platform_type = 27;</code>
        * @param value The platformType to set.
        * @return This builder for chaining.
        */
@@ -2783,12 +2871,74 @@ public final class FriendBriefOuterClass {
         return this;
       }
       /**
-       * <code>.PlatformType platformType = 27;</code>
+       * <code>.PlatformType platform_type = 27;</code>
        * @return This builder for chaining.
        */
       public Builder clearPlatformType() {
         
         platformType_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean isInDuel_ ;
+      /**
+       * <code>bool is_in_duel = 28;</code>
+       * @return The isInDuel.
+       */
+      @java.lang.Override
+      public boolean getIsInDuel() {
+        return isInDuel_;
+      }
+      /**
+       * <code>bool is_in_duel = 28;</code>
+       * @param value The isInDuel to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsInDuel(boolean value) {
+        
+        isInDuel_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_in_duel = 28;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsInDuel() {
+        
+        isInDuel_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean isDuelObservable_ ;
+      /**
+       * <code>bool is_duel_observable = 29;</code>
+       * @return The isDuelObservable.
+       */
+      @java.lang.Override
+      public boolean getIsDuelObservable() {
+        return isDuelObservable_;
+      }
+      /**
+       * <code>bool is_duel_observable = 29;</code>
+       * @param value The isDuelObservable to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsDuelObservable(boolean value) {
+        
+        isDuelObservable_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_duel_observable = 29;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsDuelObservable() {
+        
+        isDuelObservable_ = false;
         onChanged();
         return this;
       }
@@ -2860,45 +3010,47 @@ public final class FriendBriefOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\021FriendBrief.proto\032\027FriendOnlineState.p" +
-      "roto\032\033FriendEnterHomeOption.proto\032\024Profi" +
-      "lePicture.proto\032\022PlatformType.proto\032\032Soc" +
-      "ialShowAvatarInfo.proto\"\300\004\n\013FriendBrief\022" +
+      "roto\032\032SocialShowAvatarInfo.proto\032\033Friend" +
+      "EnterHomeOption.proto\032\024ProfilePicture.pr" +
+      "oto\032\022PlatformType.proto\"\216\005\n\013FriendBrief\022" +
       "\013\n\003uid\030\001 \001(\r\022\020\n\010nickname\030\002 \001(\t\022\r\n\005level\030" +
-      "\003 \001(\r\022\020\n\010avatarId\030\004 \001(\r\022\022\n\nworldLevel\030\005 " +
-      "\001(\r\022\021\n\tsignature\030\006 \001(\t\022\'\n\013onlineState\030\007 " +
-      "\001(\0162\022.FriendOnlineState\022\r\n\005param\030\010 \001(\r\022\031" +
-      "\n\021isMpModeAvailable\030\n \001(\010\022\020\n\010onlineId\030\013 " +
-      "\001(\t\022\026\n\016lastActiveTime\030\014 \001(\r\022\022\n\nnameCardI" +
-      "d\030\r \001(\r\022\023\n\013mpPlayerNum\030\016 \001(\r\022\027\n\017isChatNo" +
-      "Disturb\030\017 \001(\010\022\024\n\014chatSequence\030\020 \001(\r\022\022\n\nr" +
-      "emarkName\030\021 \001(\t\0221\n\022showAvatarInfoList\030\026 " +
-      "\003(\0132\025.SocialShowAvatarInfo\0225\n\025friendEnte" +
-      "rHomeOption\030\027 \001(\0162\026.FriendEnterHomeOptio" +
-      "n\022\'\n\016profilePicture\030\030 \001(\0132\017.ProfilePictu" +
-      "re\022\024\n\014isGameSource\030\031 \001(\010\022\023\n\013isPsnSource\030" +
-      "\032 \001(\010\022#\n\014platformType\030\033 \001(\0162\r.PlatformTy" +
-      "peB\033\n\031emu.grasscutter.net.protob\006proto3"
+      "\003 \001(\r\022\021\n\tavatar_id\030\004 \001(\r\022\023\n\013world_level\030" +
+      "\005 \001(\r\022\021\n\tsignature\030\006 \001(\t\022(\n\014online_state" +
+      "\030\007 \001(\0162\022.FriendOnlineState\022\r\n\005param\030\010 \001(" +
+      "\r\022\034\n\024is_mp_mode_available\030\n \001(\010\022\021\n\tonlin" +
+      "e_id\030\013 \001(\t\022\030\n\020last_active_time\030\014 \001(\r\022\024\n\014" +
+      "name_card_id\030\r \001(\r\022\025\n\rmp_player_num\030\016 \001(" +
+      "\r\022\032\n\022is_chat_no_disturb\030\017 \001(\010\022\025\n\rchat_se" +
+      "quence\030\020 \001(\r\022\023\n\013remark_name\030\021 \001(\t\0224\n\025sho" +
+      "w_avatar_info_list\030\026 \003(\0132\025.SocialShowAva" +
+      "tarInfo\0228\n\030friend_enter_home_option\030\027 \001(" +
+      "\0162\026.FriendEnterHomeOption\022(\n\017profile_pic" +
+      "ture\030\030 \001(\0132\017.ProfilePicture\022\026\n\016is_game_s" +
+      "ource\030\031 \001(\010\022\025\n\ris_psn_source\030\032 \001(\010\022$\n\rpl" +
+      "atform_type\030\033 \001(\0162\r.PlatformType\022\022\n\nis_i" +
+      "n_duel\030\034 \001(\010\022\032\n\022is_duel_observable\030\035 \001(\010" +
+      "B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
           emu.grasscutter.net.proto.FriendOnlineStateOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.SocialShowAvatarInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.FriendEnterHomeOptionOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.ProfilePictureOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.PlatformTypeOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.SocialShowAvatarInfoOuterClass.getDescriptor(),
         });
     internal_static_FriendBrief_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_FriendBrief_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_FriendBrief_descriptor,
-        new java.lang.String[] { "Uid", "Nickname", "Level", "AvatarId", "WorldLevel", "Signature", "OnlineState", "Param", "IsMpModeAvailable", "OnlineId", "LastActiveTime", "NameCardId", "MpPlayerNum", "IsChatNoDisturb", "ChatSequence", "RemarkName", "ShowAvatarInfoList", "FriendEnterHomeOption", "ProfilePicture", "IsGameSource", "IsPsnSource", "PlatformType", });
+        new java.lang.String[] { "Uid", "Nickname", "Level", "AvatarId", "WorldLevel", "Signature", "OnlineState", "Param", "IsMpModeAvailable", "OnlineId", "LastActiveTime", "NameCardId", "MpPlayerNum", "IsChatNoDisturb", "ChatSequence", "RemarkName", "ShowAvatarInfoList", "FriendEnterHomeOption", "ProfilePicture", "IsGameSource", "IsPsnSource", "PlatformType", "IsInDuel", "IsDuelObservable", });
     emu.grasscutter.net.proto.FriendOnlineStateOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.SocialShowAvatarInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.FriendEnterHomeOptionOuterClass.getDescriptor();
     emu.grasscutter.net.proto.ProfilePictureOuterClass.getDescriptor();
     emu.grasscutter.net.proto.PlatformTypeOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.SocialShowAvatarInfoOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

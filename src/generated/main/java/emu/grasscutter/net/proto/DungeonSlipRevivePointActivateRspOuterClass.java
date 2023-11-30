@@ -19,18 +19,23 @@ public final class DungeonSlipRevivePointActivateRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 slipRevivePointId = 11;</code>
+     * <code>uint32 slip_revive_point_id = 5;</code>
      * @return The slipRevivePointId.
      */
     int getSlipRevivePointId();
 
     /**
-     * <code>int32 retcode = 5;</code>
+     * <code>int32 retcode = 6;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
+   * <pre>
+   * CmdId: 1980
+   * Obf: CNEDCJKENNB
+   * </pre>
+   *
    * Protobuf type {@code DungeonSlipRevivePointActivateRsp}
    */
   public static final class DungeonSlipRevivePointActivateRsp extends
@@ -77,12 +82,12 @@ public final class DungeonSlipRevivePointActivateRspOuterClass {
               break;
             case 40: {
 
-              retcode_ = input.readInt32();
+              slipRevivePointId_ = input.readUInt32();
               break;
             }
-            case 88: {
+            case 48: {
 
-              slipRevivePointId_ = input.readUInt32();
+              retcode_ = input.readInt32();
               break;
             }
             default: {
@@ -117,141 +122,10 @@ public final class DungeonSlipRevivePointActivateRspOuterClass {
               emu.grasscutter.net.proto.DungeonSlipRevivePointActivateRspOuterClass.DungeonSlipRevivePointActivateRsp.class, emu.grasscutter.net.proto.DungeonSlipRevivePointActivateRspOuterClass.DungeonSlipRevivePointActivateRsp.Builder.class);
     }
 
-    /**
-     * Protobuf enum {@code DungeonSlipRevivePointActivateRsp.ADCIMBHOHKB}
-     */
-    public enum ADCIMBHOHKB
-        implements com.google.protobuf.ProtocolMessageEnum {
-      /**
-       * <code>NONE = 0;</code>
-       */
-      NONE(0, 0),
-      /**
-       * <code>PEPPOHPHJOJ = 979;</code>
-       */
-      PEPPOHPHJOJ(1, 979),
-      /**
-       * <code>NNBKOLMPOEA = 1;</code>
-       */
-      NNBKOLMPOEA(3, 1),
-      UNRECOGNIZED(-1, -1),
-      ;
-
-      /**
-       * <code>DCDNILFDFLB = 0;</code>
-       */
-      public static final ADCIMBHOHKB DCDNILFDFLB = NONE;
-      /**
-       * <code>NONE = 0;</code>
-       */
-      public static final int NONE_VALUE = 0;
-      /**
-       * <code>PEPPOHPHJOJ = 979;</code>
-       */
-      public static final int PEPPOHPHJOJ_VALUE = 979;
-      /**
-       * <code>DCDNILFDFLB = 0;</code>
-       */
-      public static final int DCDNILFDFLB_VALUE = 0;
-      /**
-       * <code>NNBKOLMPOEA = 1;</code>
-       */
-      public static final int NNBKOLMPOEA_VALUE = 1;
-
-
-      public final int getNumber() {
-        if (index == -1) {
-          throw new java.lang.IllegalArgumentException(
-              "Can't get the number of an unknown enum value.");
-        }
-        return value;
-      }
-
-      /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
-       * @deprecated Use {@link #forNumber(int)} instead.
-       */
-      @java.lang.Deprecated
-      public static ADCIMBHOHKB valueOf(int value) {
-        return forNumber(value);
-      }
-
-      /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
-       */
-      public static ADCIMBHOHKB forNumber(int value) {
-        switch (value) {
-          case 0: return NONE;
-          case 979: return PEPPOHPHJOJ;
-          case 1: return NNBKOLMPOEA;
-          default: return null;
-        }
-      }
-
-      public static com.google.protobuf.Internal.EnumLiteMap<ADCIMBHOHKB>
-          internalGetValueMap() {
-        return internalValueMap;
-      }
-      private static final com.google.protobuf.Internal.EnumLiteMap<
-          ADCIMBHOHKB> internalValueMap =
-            new com.google.protobuf.Internal.EnumLiteMap<ADCIMBHOHKB>() {
-              public ADCIMBHOHKB findValueByNumber(int number) {
-                return ADCIMBHOHKB.forNumber(number);
-              }
-            };
-
-      public final com.google.protobuf.Descriptors.EnumValueDescriptor
-          getValueDescriptor() {
-        if (index == -1) {
-          throw new java.lang.IllegalStateException(
-              "Can't get the descriptor of an unrecognized enum value.");
-        }
-        return getDescriptor().getValues().get(index);
-      }
-      public final com.google.protobuf.Descriptors.EnumDescriptor
-          getDescriptorForType() {
-        return getDescriptor();
-      }
-      public static final com.google.protobuf.Descriptors.EnumDescriptor
-          getDescriptor() {
-        return emu.grasscutter.net.proto.DungeonSlipRevivePointActivateRspOuterClass.DungeonSlipRevivePointActivateRsp.getDescriptor().getEnumTypes().get(0);
-      }
-
-      private static final ADCIMBHOHKB[] VALUES = getStaticValuesArray();
-      private static ADCIMBHOHKB[] getStaticValuesArray() {
-        return new ADCIMBHOHKB[] {
-          NONE, PEPPOHPHJOJ, DCDNILFDFLB, NNBKOLMPOEA, 
-        };
-      }
-      public static ADCIMBHOHKB valueOf(
-          com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
-        if (desc.getType() != getDescriptor()) {
-          throw new java.lang.IllegalArgumentException(
-            "EnumValueDescriptor is not for this type.");
-        }
-        if (desc.getIndex() == -1) {
-          return UNRECOGNIZED;
-        }
-        return VALUES[desc.getIndex()];
-      }
-
-      private final int index;
-      private final int value;
-
-      private ADCIMBHOHKB(int index, int value) {
-        this.index = index;
-        this.value = value;
-      }
-
-      // @@protoc_insertion_point(enum_scope:DungeonSlipRevivePointActivateRsp.ADCIMBHOHKB)
-    }
-
-    public static final int SLIPREVIVEPOINTID_FIELD_NUMBER = 11;
+    public static final int SLIP_REVIVE_POINT_ID_FIELD_NUMBER = 5;
     private int slipRevivePointId_;
     /**
-     * <code>uint32 slipRevivePointId = 11;</code>
+     * <code>uint32 slip_revive_point_id = 5;</code>
      * @return The slipRevivePointId.
      */
     @java.lang.Override
@@ -259,10 +133,10 @@ public final class DungeonSlipRevivePointActivateRspOuterClass {
       return slipRevivePointId_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 5;
+    public static final int RETCODE_FIELD_NUMBER = 6;
     private int retcode_;
     /**
-     * <code>int32 retcode = 5;</code>
+     * <code>int32 retcode = 6;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -284,11 +158,11 @@ public final class DungeonSlipRevivePointActivateRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (retcode_ != 0) {
-        output.writeInt32(5, retcode_);
-      }
       if (slipRevivePointId_ != 0) {
-        output.writeUInt32(11, slipRevivePointId_);
+        output.writeUInt32(5, slipRevivePointId_);
+      }
+      if (retcode_ != 0) {
+        output.writeInt32(6, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -299,13 +173,13 @@ public final class DungeonSlipRevivePointActivateRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(5, retcode_);
-      }
       if (slipRevivePointId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, slipRevivePointId_);
+          .computeUInt32Size(5, slipRevivePointId_);
+      }
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(6, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -337,7 +211,7 @@ public final class DungeonSlipRevivePointActivateRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + SLIPREVIVEPOINTID_FIELD_NUMBER;
+      hash = (37 * hash) + SLIP_REVIVE_POINT_ID_FIELD_NUMBER;
       hash = (53 * hash) + getSlipRevivePointId();
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
@@ -437,6 +311,11 @@ public final class DungeonSlipRevivePointActivateRspOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 1980
+     * Obf: CNEDCJKENNB
+     * </pre>
+     *
      * Protobuf type {@code DungeonSlipRevivePointActivateRsp}
      */
     public static final class Builder extends
@@ -591,7 +470,7 @@ public final class DungeonSlipRevivePointActivateRspOuterClass {
 
       private int slipRevivePointId_ ;
       /**
-       * <code>uint32 slipRevivePointId = 11;</code>
+       * <code>uint32 slip_revive_point_id = 5;</code>
        * @return The slipRevivePointId.
        */
       @java.lang.Override
@@ -599,7 +478,7 @@ public final class DungeonSlipRevivePointActivateRspOuterClass {
         return slipRevivePointId_;
       }
       /**
-       * <code>uint32 slipRevivePointId = 11;</code>
+       * <code>uint32 slip_revive_point_id = 5;</code>
        * @param value The slipRevivePointId to set.
        * @return This builder for chaining.
        */
@@ -610,7 +489,7 @@ public final class DungeonSlipRevivePointActivateRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 slipRevivePointId = 11;</code>
+       * <code>uint32 slip_revive_point_id = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearSlipRevivePointId() {
@@ -622,7 +501,7 @@ public final class DungeonSlipRevivePointActivateRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 5;</code>
+       * <code>int32 retcode = 6;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -630,7 +509,7 @@ public final class DungeonSlipRevivePointActivateRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 5;</code>
+       * <code>int32 retcode = 6;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -641,7 +520,7 @@ public final class DungeonSlipRevivePointActivateRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 5;</code>
+       * <code>int32 retcode = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -718,12 +597,10 @@ public final class DungeonSlipRevivePointActivateRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\'DungeonSlipRevivePointActivateRsp.prot" +
-      "o\"\240\001\n!DungeonSlipRevivePointActivateRsp\022" +
-      "\031\n\021slipRevivePointId\030\013 \001(\r\022\017\n\007retcode\030\005 " +
-      "\001(\005\"O\n\013ADCIMBHOHKB\022\010\n\004NONE\020\000\022\020\n\013PEPPOHPH" +
-      "JOJ\020\323\007\022\017\n\013DCDNILFDFLB\020\000\022\017\n\013NNBKOLMPOEA\020\001" +
-      "\032\002\020\001B\033\n\031emu.grasscutter.net.protob\006proto" +
-      "3"
+      "o\"R\n!DungeonSlipRevivePointActivateRsp\022\034" +
+      "\n\024slip_revive_point_id\030\005 \001(\r\022\017\n\007retcode\030" +
+      "\006 \001(\005B\033\n\031emu.grasscutter.net.protob\006prot" +
+      "o3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

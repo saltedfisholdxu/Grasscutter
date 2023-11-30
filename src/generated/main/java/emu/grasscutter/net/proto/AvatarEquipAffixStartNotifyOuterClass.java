@@ -19,27 +19,32 @@ public final class AvatarEquipAffixStartNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.AvatarEquipAffixInfo equipAffixInfo = 5;</code>
+     * <code>.AvatarEquipAffixInfo equip_affix_info = 5;</code>
      * @return Whether the equipAffixInfo field is set.
      */
     boolean hasEquipAffixInfo();
     /**
-     * <code>.AvatarEquipAffixInfo equipAffixInfo = 5;</code>
+     * <code>.AvatarEquipAffixInfo equip_affix_info = 5;</code>
      * @return The equipAffixInfo.
      */
     emu.grasscutter.net.proto.AvatarEquipAffixInfoOuterClass.AvatarEquipAffixInfo getEquipAffixInfo();
     /**
-     * <code>.AvatarEquipAffixInfo equipAffixInfo = 5;</code>
+     * <code>.AvatarEquipAffixInfo equip_affix_info = 5;</code>
      */
     emu.grasscutter.net.proto.AvatarEquipAffixInfoOuterClass.AvatarEquipAffixInfoOrBuilder getEquipAffixInfoOrBuilder();
 
     /**
-     * <code>uint64 avatarGuid = 15;</code>
+     * <code>uint64 avatar_guid = 12;</code>
      * @return The avatarGuid.
      */
     long getAvatarGuid();
   }
   /**
+   * <pre>
+   * CmdId: 21354
+   * Obf: CNGHGKIPNBB
+   * </pre>
+   *
    * Protobuf type {@code AvatarEquipAffixStartNotify}
    */
   public static final class AvatarEquipAffixStartNotify extends
@@ -97,7 +102,7 @@ public final class AvatarEquipAffixStartNotifyOuterClass {
 
               break;
             }
-            case 120: {
+            case 96: {
 
               avatarGuid_ = input.readUInt64();
               break;
@@ -134,141 +139,10 @@ public final class AvatarEquipAffixStartNotifyOuterClass {
               emu.grasscutter.net.proto.AvatarEquipAffixStartNotifyOuterClass.AvatarEquipAffixStartNotify.class, emu.grasscutter.net.proto.AvatarEquipAffixStartNotifyOuterClass.AvatarEquipAffixStartNotify.Builder.class);
     }
 
-    /**
-     * Protobuf enum {@code AvatarEquipAffixStartNotify.CIBOKBFGLBI}
-     */
-    public enum CIBOKBFGLBI
-        implements com.google.protobuf.ProtocolMessageEnum {
-      /**
-       * <code>NONE = 0;</code>
-       */
-      NONE(0, 0),
-      /**
-       * <code>PEPPOHPHJOJ = 1602;</code>
-       */
-      PEPPOHPHJOJ(1, 1602),
-      /**
-       * <code>NNBKOLMPOEA = 1;</code>
-       */
-      NNBKOLMPOEA(3, 1),
-      UNRECOGNIZED(-1, -1),
-      ;
-
-      /**
-       * <code>DCDNILFDFLB = 0;</code>
-       */
-      public static final CIBOKBFGLBI DCDNILFDFLB = NONE;
-      /**
-       * <code>NONE = 0;</code>
-       */
-      public static final int NONE_VALUE = 0;
-      /**
-       * <code>PEPPOHPHJOJ = 1602;</code>
-       */
-      public static final int PEPPOHPHJOJ_VALUE = 1602;
-      /**
-       * <code>DCDNILFDFLB = 0;</code>
-       */
-      public static final int DCDNILFDFLB_VALUE = 0;
-      /**
-       * <code>NNBKOLMPOEA = 1;</code>
-       */
-      public static final int NNBKOLMPOEA_VALUE = 1;
-
-
-      public final int getNumber() {
-        if (index == -1) {
-          throw new java.lang.IllegalArgumentException(
-              "Can't get the number of an unknown enum value.");
-        }
-        return value;
-      }
-
-      /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
-       * @deprecated Use {@link #forNumber(int)} instead.
-       */
-      @java.lang.Deprecated
-      public static CIBOKBFGLBI valueOf(int value) {
-        return forNumber(value);
-      }
-
-      /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
-       */
-      public static CIBOKBFGLBI forNumber(int value) {
-        switch (value) {
-          case 0: return NONE;
-          case 1602: return PEPPOHPHJOJ;
-          case 1: return NNBKOLMPOEA;
-          default: return null;
-        }
-      }
-
-      public static com.google.protobuf.Internal.EnumLiteMap<CIBOKBFGLBI>
-          internalGetValueMap() {
-        return internalValueMap;
-      }
-      private static final com.google.protobuf.Internal.EnumLiteMap<
-          CIBOKBFGLBI> internalValueMap =
-            new com.google.protobuf.Internal.EnumLiteMap<CIBOKBFGLBI>() {
-              public CIBOKBFGLBI findValueByNumber(int number) {
-                return CIBOKBFGLBI.forNumber(number);
-              }
-            };
-
-      public final com.google.protobuf.Descriptors.EnumValueDescriptor
-          getValueDescriptor() {
-        if (index == -1) {
-          throw new java.lang.IllegalStateException(
-              "Can't get the descriptor of an unrecognized enum value.");
-        }
-        return getDescriptor().getValues().get(index);
-      }
-      public final com.google.protobuf.Descriptors.EnumDescriptor
-          getDescriptorForType() {
-        return getDescriptor();
-      }
-      public static final com.google.protobuf.Descriptors.EnumDescriptor
-          getDescriptor() {
-        return emu.grasscutter.net.proto.AvatarEquipAffixStartNotifyOuterClass.AvatarEquipAffixStartNotify.getDescriptor().getEnumTypes().get(0);
-      }
-
-      private static final CIBOKBFGLBI[] VALUES = getStaticValuesArray();
-      private static CIBOKBFGLBI[] getStaticValuesArray() {
-        return new CIBOKBFGLBI[] {
-          NONE, PEPPOHPHJOJ, DCDNILFDFLB, NNBKOLMPOEA, 
-        };
-      }
-      public static CIBOKBFGLBI valueOf(
-          com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
-        if (desc.getType() != getDescriptor()) {
-          throw new java.lang.IllegalArgumentException(
-            "EnumValueDescriptor is not for this type.");
-        }
-        if (desc.getIndex() == -1) {
-          return UNRECOGNIZED;
-        }
-        return VALUES[desc.getIndex()];
-      }
-
-      private final int index;
-      private final int value;
-
-      private CIBOKBFGLBI(int index, int value) {
-        this.index = index;
-        this.value = value;
-      }
-
-      // @@protoc_insertion_point(enum_scope:AvatarEquipAffixStartNotify.CIBOKBFGLBI)
-    }
-
-    public static final int EQUIPAFFIXINFO_FIELD_NUMBER = 5;
+    public static final int EQUIP_AFFIX_INFO_FIELD_NUMBER = 5;
     private emu.grasscutter.net.proto.AvatarEquipAffixInfoOuterClass.AvatarEquipAffixInfo equipAffixInfo_;
     /**
-     * <code>.AvatarEquipAffixInfo equipAffixInfo = 5;</code>
+     * <code>.AvatarEquipAffixInfo equip_affix_info = 5;</code>
      * @return Whether the equipAffixInfo field is set.
      */
     @java.lang.Override
@@ -276,7 +150,7 @@ public final class AvatarEquipAffixStartNotifyOuterClass {
       return equipAffixInfo_ != null;
     }
     /**
-     * <code>.AvatarEquipAffixInfo equipAffixInfo = 5;</code>
+     * <code>.AvatarEquipAffixInfo equip_affix_info = 5;</code>
      * @return The equipAffixInfo.
      */
     @java.lang.Override
@@ -284,17 +158,17 @@ public final class AvatarEquipAffixStartNotifyOuterClass {
       return equipAffixInfo_ == null ? emu.grasscutter.net.proto.AvatarEquipAffixInfoOuterClass.AvatarEquipAffixInfo.getDefaultInstance() : equipAffixInfo_;
     }
     /**
-     * <code>.AvatarEquipAffixInfo equipAffixInfo = 5;</code>
+     * <code>.AvatarEquipAffixInfo equip_affix_info = 5;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.AvatarEquipAffixInfoOuterClass.AvatarEquipAffixInfoOrBuilder getEquipAffixInfoOrBuilder() {
       return getEquipAffixInfo();
     }
 
-    public static final int AVATARGUID_FIELD_NUMBER = 15;
+    public static final int AVATAR_GUID_FIELD_NUMBER = 12;
     private long avatarGuid_;
     /**
-     * <code>uint64 avatarGuid = 15;</code>
+     * <code>uint64 avatar_guid = 12;</code>
      * @return The avatarGuid.
      */
     @java.lang.Override
@@ -320,7 +194,7 @@ public final class AvatarEquipAffixStartNotifyOuterClass {
         output.writeMessage(5, getEquipAffixInfo());
       }
       if (avatarGuid_ != 0L) {
-        output.writeUInt64(15, avatarGuid_);
+        output.writeUInt64(12, avatarGuid_);
       }
       unknownFields.writeTo(output);
     }
@@ -337,7 +211,7 @@ public final class AvatarEquipAffixStartNotifyOuterClass {
       }
       if (avatarGuid_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(15, avatarGuid_);
+          .computeUInt64Size(12, avatarGuid_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -373,10 +247,10 @@ public final class AvatarEquipAffixStartNotifyOuterClass {
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
       if (hasEquipAffixInfo()) {
-        hash = (37 * hash) + EQUIPAFFIXINFO_FIELD_NUMBER;
+        hash = (37 * hash) + EQUIP_AFFIX_INFO_FIELD_NUMBER;
         hash = (53 * hash) + getEquipAffixInfo().hashCode();
       }
-      hash = (37 * hash) + AVATARGUID_FIELD_NUMBER;
+      hash = (37 * hash) + AVATAR_GUID_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
           getAvatarGuid());
       hash = (29 * hash) + unknownFields.hashCode();
@@ -475,6 +349,11 @@ public final class AvatarEquipAffixStartNotifyOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 21354
+     * Obf: CNGHGKIPNBB
+     * </pre>
+     *
      * Protobuf type {@code AvatarEquipAffixStartNotify}
      */
     public static final class Builder extends
@@ -639,14 +518,14 @@ public final class AvatarEquipAffixStartNotifyOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.AvatarEquipAffixInfoOuterClass.AvatarEquipAffixInfo, emu.grasscutter.net.proto.AvatarEquipAffixInfoOuterClass.AvatarEquipAffixInfo.Builder, emu.grasscutter.net.proto.AvatarEquipAffixInfoOuterClass.AvatarEquipAffixInfoOrBuilder> equipAffixInfoBuilder_;
       /**
-       * <code>.AvatarEquipAffixInfo equipAffixInfo = 5;</code>
+       * <code>.AvatarEquipAffixInfo equip_affix_info = 5;</code>
        * @return Whether the equipAffixInfo field is set.
        */
       public boolean hasEquipAffixInfo() {
         return equipAffixInfoBuilder_ != null || equipAffixInfo_ != null;
       }
       /**
-       * <code>.AvatarEquipAffixInfo equipAffixInfo = 5;</code>
+       * <code>.AvatarEquipAffixInfo equip_affix_info = 5;</code>
        * @return The equipAffixInfo.
        */
       public emu.grasscutter.net.proto.AvatarEquipAffixInfoOuterClass.AvatarEquipAffixInfo getEquipAffixInfo() {
@@ -657,7 +536,7 @@ public final class AvatarEquipAffixStartNotifyOuterClass {
         }
       }
       /**
-       * <code>.AvatarEquipAffixInfo equipAffixInfo = 5;</code>
+       * <code>.AvatarEquipAffixInfo equip_affix_info = 5;</code>
        */
       public Builder setEquipAffixInfo(emu.grasscutter.net.proto.AvatarEquipAffixInfoOuterClass.AvatarEquipAffixInfo value) {
         if (equipAffixInfoBuilder_ == null) {
@@ -673,7 +552,7 @@ public final class AvatarEquipAffixStartNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.AvatarEquipAffixInfo equipAffixInfo = 5;</code>
+       * <code>.AvatarEquipAffixInfo equip_affix_info = 5;</code>
        */
       public Builder setEquipAffixInfo(
           emu.grasscutter.net.proto.AvatarEquipAffixInfoOuterClass.AvatarEquipAffixInfo.Builder builderForValue) {
@@ -687,7 +566,7 @@ public final class AvatarEquipAffixStartNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.AvatarEquipAffixInfo equipAffixInfo = 5;</code>
+       * <code>.AvatarEquipAffixInfo equip_affix_info = 5;</code>
        */
       public Builder mergeEquipAffixInfo(emu.grasscutter.net.proto.AvatarEquipAffixInfoOuterClass.AvatarEquipAffixInfo value) {
         if (equipAffixInfoBuilder_ == null) {
@@ -705,7 +584,7 @@ public final class AvatarEquipAffixStartNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.AvatarEquipAffixInfo equipAffixInfo = 5;</code>
+       * <code>.AvatarEquipAffixInfo equip_affix_info = 5;</code>
        */
       public Builder clearEquipAffixInfo() {
         if (equipAffixInfoBuilder_ == null) {
@@ -719,7 +598,7 @@ public final class AvatarEquipAffixStartNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.AvatarEquipAffixInfo equipAffixInfo = 5;</code>
+       * <code>.AvatarEquipAffixInfo equip_affix_info = 5;</code>
        */
       public emu.grasscutter.net.proto.AvatarEquipAffixInfoOuterClass.AvatarEquipAffixInfo.Builder getEquipAffixInfoBuilder() {
         
@@ -727,7 +606,7 @@ public final class AvatarEquipAffixStartNotifyOuterClass {
         return getEquipAffixInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.AvatarEquipAffixInfo equipAffixInfo = 5;</code>
+       * <code>.AvatarEquipAffixInfo equip_affix_info = 5;</code>
        */
       public emu.grasscutter.net.proto.AvatarEquipAffixInfoOuterClass.AvatarEquipAffixInfoOrBuilder getEquipAffixInfoOrBuilder() {
         if (equipAffixInfoBuilder_ != null) {
@@ -738,7 +617,7 @@ public final class AvatarEquipAffixStartNotifyOuterClass {
         }
       }
       /**
-       * <code>.AvatarEquipAffixInfo equipAffixInfo = 5;</code>
+       * <code>.AvatarEquipAffixInfo equip_affix_info = 5;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.AvatarEquipAffixInfoOuterClass.AvatarEquipAffixInfo, emu.grasscutter.net.proto.AvatarEquipAffixInfoOuterClass.AvatarEquipAffixInfo.Builder, emu.grasscutter.net.proto.AvatarEquipAffixInfoOuterClass.AvatarEquipAffixInfoOrBuilder> 
@@ -756,7 +635,7 @@ public final class AvatarEquipAffixStartNotifyOuterClass {
 
       private long avatarGuid_ ;
       /**
-       * <code>uint64 avatarGuid = 15;</code>
+       * <code>uint64 avatar_guid = 12;</code>
        * @return The avatarGuid.
        */
       @java.lang.Override
@@ -764,7 +643,7 @@ public final class AvatarEquipAffixStartNotifyOuterClass {
         return avatarGuid_;
       }
       /**
-       * <code>uint64 avatarGuid = 15;</code>
+       * <code>uint64 avatar_guid = 12;</code>
        * @param value The avatarGuid to set.
        * @return This builder for chaining.
        */
@@ -775,7 +654,7 @@ public final class AvatarEquipAffixStartNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint64 avatarGuid = 15;</code>
+       * <code>uint64 avatar_guid = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearAvatarGuid() {
@@ -852,12 +731,11 @@ public final class AvatarEquipAffixStartNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n!AvatarEquipAffixStartNotify.proto\032\032Ava" +
-      "tarEquipAffixInfo.proto\"\261\001\n\033AvatarEquipA" +
-      "ffixStartNotify\022-\n\016equipAffixInfo\030\005 \001(\0132" +
-      "\025.AvatarEquipAffixInfo\022\022\n\navatarGuid\030\017 \001" +
-      "(\004\"O\n\013CIBOKBFGLBI\022\010\n\004NONE\020\000\022\020\n\013PEPPOHPHJ" +
-      "OJ\020\302\014\022\017\n\013DCDNILFDFLB\020\000\022\017\n\013NNBKOLMPOEA\020\001\032" +
-      "\002\020\001B\033\n\031emu.grasscutter.net.protob\006proto3"
+      "tarEquipAffixInfo.proto\"c\n\033AvatarEquipAf" +
+      "fixStartNotify\022/\n\020equip_affix_info\030\005 \001(\013" +
+      "2\025.AvatarEquipAffixInfo\022\023\n\013avatar_guid\030\014" +
+      " \001(\004B\033\n\031emu.grasscutter.net.protob\006proto" +
+      "3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

@@ -19,18 +19,23 @@ public final class SetOpenStateReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 value = 14;</code>
+     * <code>uint32 value = 13;</code>
      * @return The value.
      */
     int getValue();
 
     /**
-     * <code>uint32 key = 7;</code>
+     * <code>uint32 key = 12;</code>
      * @return The key.
      */
     int getKey();
   }
   /**
+   * <pre>
+   * CmdId: 20702
+   * Obf: KFLGFOELPIO
+   * </pre>
+   *
    * Protobuf type {@code SetOpenStateReq}
    */
   public static final class SetOpenStateReq extends
@@ -75,12 +80,12 @@ public final class SetOpenStateReqOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
+            case 96: {
 
               key_ = input.readUInt32();
               break;
             }
-            case 112: {
+            case 104: {
 
               value_ = input.readUInt32();
               break;
@@ -117,149 +122,10 @@ public final class SetOpenStateReqOuterClass {
               emu.grasscutter.net.proto.SetOpenStateReqOuterClass.SetOpenStateReq.class, emu.grasscutter.net.proto.SetOpenStateReqOuterClass.SetOpenStateReq.Builder.class);
     }
 
-    /**
-     * Protobuf enum {@code SetOpenStateReq.GLFJEJCADED}
-     */
-    public enum GLFJEJCADED
-        implements com.google.protobuf.ProtocolMessageEnum {
-      /**
-       * <code>NONE = 0;</code>
-       */
-      NONE(0, 0),
-      /**
-       * <code>PEPPOHPHJOJ = 188;</code>
-       */
-      PEPPOHPHJOJ(1, 188),
-      /**
-       * <code>NNBKOLMPOEA = 1;</code>
-       */
-      NNBKOLMPOEA(3, 1),
-      UNRECOGNIZED(-1, -1),
-      ;
-
-      /**
-       * <code>DCDNILFDFLB = 0;</code>
-       */
-      public static final GLFJEJCADED DCDNILFDFLB = NONE;
-      /**
-       * <code>EAJIABGAOCI = 1;</code>
-       */
-      public static final GLFJEJCADED EAJIABGAOCI = NNBKOLMPOEA;
-      /**
-       * <code>NONE = 0;</code>
-       */
-      public static final int NONE_VALUE = 0;
-      /**
-       * <code>PEPPOHPHJOJ = 188;</code>
-       */
-      public static final int PEPPOHPHJOJ_VALUE = 188;
-      /**
-       * <code>DCDNILFDFLB = 0;</code>
-       */
-      public static final int DCDNILFDFLB_VALUE = 0;
-      /**
-       * <code>NNBKOLMPOEA = 1;</code>
-       */
-      public static final int NNBKOLMPOEA_VALUE = 1;
-      /**
-       * <code>EAJIABGAOCI = 1;</code>
-       */
-      public static final int EAJIABGAOCI_VALUE = 1;
-
-
-      public final int getNumber() {
-        if (index == -1) {
-          throw new java.lang.IllegalArgumentException(
-              "Can't get the number of an unknown enum value.");
-        }
-        return value;
-      }
-
-      /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
-       * @deprecated Use {@link #forNumber(int)} instead.
-       */
-      @java.lang.Deprecated
-      public static GLFJEJCADED valueOf(int value) {
-        return forNumber(value);
-      }
-
-      /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
-       */
-      public static GLFJEJCADED forNumber(int value) {
-        switch (value) {
-          case 0: return NONE;
-          case 188: return PEPPOHPHJOJ;
-          case 1: return NNBKOLMPOEA;
-          default: return null;
-        }
-      }
-
-      public static com.google.protobuf.Internal.EnumLiteMap<GLFJEJCADED>
-          internalGetValueMap() {
-        return internalValueMap;
-      }
-      private static final com.google.protobuf.Internal.EnumLiteMap<
-          GLFJEJCADED> internalValueMap =
-            new com.google.protobuf.Internal.EnumLiteMap<GLFJEJCADED>() {
-              public GLFJEJCADED findValueByNumber(int number) {
-                return GLFJEJCADED.forNumber(number);
-              }
-            };
-
-      public final com.google.protobuf.Descriptors.EnumValueDescriptor
-          getValueDescriptor() {
-        if (index == -1) {
-          throw new java.lang.IllegalStateException(
-              "Can't get the descriptor of an unrecognized enum value.");
-        }
-        return getDescriptor().getValues().get(index);
-      }
-      public final com.google.protobuf.Descriptors.EnumDescriptor
-          getDescriptorForType() {
-        return getDescriptor();
-      }
-      public static final com.google.protobuf.Descriptors.EnumDescriptor
-          getDescriptor() {
-        return emu.grasscutter.net.proto.SetOpenStateReqOuterClass.SetOpenStateReq.getDescriptor().getEnumTypes().get(0);
-      }
-
-      private static final GLFJEJCADED[] VALUES = getStaticValuesArray();
-      private static GLFJEJCADED[] getStaticValuesArray() {
-        return new GLFJEJCADED[] {
-          NONE, PEPPOHPHJOJ, DCDNILFDFLB, NNBKOLMPOEA, EAJIABGAOCI, 
-        };
-      }
-      public static GLFJEJCADED valueOf(
-          com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
-        if (desc.getType() != getDescriptor()) {
-          throw new java.lang.IllegalArgumentException(
-            "EnumValueDescriptor is not for this type.");
-        }
-        if (desc.getIndex() == -1) {
-          return UNRECOGNIZED;
-        }
-        return VALUES[desc.getIndex()];
-      }
-
-      private final int index;
-      private final int value;
-
-      private GLFJEJCADED(int index, int value) {
-        this.index = index;
-        this.value = value;
-      }
-
-      // @@protoc_insertion_point(enum_scope:SetOpenStateReq.GLFJEJCADED)
-    }
-
-    public static final int VALUE_FIELD_NUMBER = 14;
+    public static final int VALUE_FIELD_NUMBER = 13;
     private int value_;
     /**
-     * <code>uint32 value = 14;</code>
+     * <code>uint32 value = 13;</code>
      * @return The value.
      */
     @java.lang.Override
@@ -267,10 +133,10 @@ public final class SetOpenStateReqOuterClass {
       return value_;
     }
 
-    public static final int KEY_FIELD_NUMBER = 7;
+    public static final int KEY_FIELD_NUMBER = 12;
     private int key_;
     /**
-     * <code>uint32 key = 7;</code>
+     * <code>uint32 key = 12;</code>
      * @return The key.
      */
     @java.lang.Override
@@ -293,10 +159,10 @@ public final class SetOpenStateReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (key_ != 0) {
-        output.writeUInt32(7, key_);
+        output.writeUInt32(12, key_);
       }
       if (value_ != 0) {
-        output.writeUInt32(14, value_);
+        output.writeUInt32(13, value_);
       }
       unknownFields.writeTo(output);
     }
@@ -309,11 +175,11 @@ public final class SetOpenStateReqOuterClass {
       size = 0;
       if (key_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, key_);
+          .computeUInt32Size(12, key_);
       }
       if (value_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, value_);
+          .computeUInt32Size(13, value_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -445,6 +311,11 @@ public final class SetOpenStateReqOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 20702
+     * Obf: KFLGFOELPIO
+     * </pre>
+     *
      * Protobuf type {@code SetOpenStateReq}
      */
     public static final class Builder extends
@@ -599,7 +470,7 @@ public final class SetOpenStateReqOuterClass {
 
       private int value_ ;
       /**
-       * <code>uint32 value = 14;</code>
+       * <code>uint32 value = 13;</code>
        * @return The value.
        */
       @java.lang.Override
@@ -607,7 +478,7 @@ public final class SetOpenStateReqOuterClass {
         return value_;
       }
       /**
-       * <code>uint32 value = 14;</code>
+       * <code>uint32 value = 13;</code>
        * @param value The value to set.
        * @return This builder for chaining.
        */
@@ -618,7 +489,7 @@ public final class SetOpenStateReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 value = 14;</code>
+       * <code>uint32 value = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearValue() {
@@ -630,7 +501,7 @@ public final class SetOpenStateReqOuterClass {
 
       private int key_ ;
       /**
-       * <code>uint32 key = 7;</code>
+       * <code>uint32 key = 12;</code>
        * @return The key.
        */
       @java.lang.Override
@@ -638,7 +509,7 @@ public final class SetOpenStateReqOuterClass {
         return key_;
       }
       /**
-       * <code>uint32 key = 7;</code>
+       * <code>uint32 key = 12;</code>
        * @param value The key to set.
        * @return This builder for chaining.
        */
@@ -649,7 +520,7 @@ public final class SetOpenStateReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 key = 7;</code>
+       * <code>uint32 key = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearKey() {
@@ -725,12 +596,9 @@ public final class SetOpenStateReqOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\025SetOpenStateReq.proto\"\217\001\n\017SetOpenState" +
-      "Req\022\r\n\005value\030\016 \001(\r\022\013\n\003key\030\007 \001(\r\"`\n\013GLFJE" +
-      "JCADED\022\010\n\004NONE\020\000\022\020\n\013PEPPOHPHJOJ\020\274\001\022\017\n\013DC" +
-      "DNILFDFLB\020\000\022\017\n\013NNBKOLMPOEA\020\001\022\017\n\013EAJIABGA" +
-      "OCI\020\001\032\002\020\001B\033\n\031emu.grasscutter.net.protob\006" +
-      "proto3"
+      "\n\025SetOpenStateReq.proto\"-\n\017SetOpenStateR" +
+      "eq\022\r\n\005value\030\r \001(\r\022\013\n\003key\030\014 \001(\rB\033\n\031emu.gr" +
+      "asscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

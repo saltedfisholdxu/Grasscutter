@@ -19,18 +19,23 @@ public final class HostPlayerNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 hostUid = 4;</code>
+     * <code>uint32 host_uid = 8;</code>
      * @return The hostUid.
      */
     int getHostUid();
 
     /**
-     * <code>uint32 hostPeerId = 5;</code>
+     * <code>uint32 host_peer_id = 7;</code>
      * @return The hostPeerId.
      */
     int getHostPeerId();
   }
   /**
+   * <pre>
+   * CmdId: 9459
+   * Obf: JBPDNKOINAN
+   * </pre>
+   *
    * Protobuf type {@code HostPlayerNotify}
    */
   public static final class HostPlayerNotify extends
@@ -75,14 +80,14 @@ public final class HostPlayerNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
-
-              hostUid_ = input.readUInt32();
-              break;
-            }
-            case 40: {
+            case 56: {
 
               hostPeerId_ = input.readUInt32();
+              break;
+            }
+            case 64: {
+
+              hostUid_ = input.readUInt32();
               break;
             }
             default: {
@@ -117,141 +122,10 @@ public final class HostPlayerNotifyOuterClass {
               emu.grasscutter.net.proto.HostPlayerNotifyOuterClass.HostPlayerNotify.class, emu.grasscutter.net.proto.HostPlayerNotifyOuterClass.HostPlayerNotify.Builder.class);
     }
 
-    /**
-     * Protobuf enum {@code HostPlayerNotify.AJDCLIKNOLN}
-     */
-    public enum AJDCLIKNOLN
-        implements com.google.protobuf.ProtocolMessageEnum {
-      /**
-       * <code>NONE = 0;</code>
-       */
-      NONE(0, 0),
-      /**
-       * <code>PEPPOHPHJOJ = 387;</code>
-       */
-      PEPPOHPHJOJ(1, 387),
-      /**
-       * <code>NNBKOLMPOEA = 1;</code>
-       */
-      NNBKOLMPOEA(3, 1),
-      UNRECOGNIZED(-1, -1),
-      ;
-
-      /**
-       * <code>DCDNILFDFLB = 0;</code>
-       */
-      public static final AJDCLIKNOLN DCDNILFDFLB = NONE;
-      /**
-       * <code>NONE = 0;</code>
-       */
-      public static final int NONE_VALUE = 0;
-      /**
-       * <code>PEPPOHPHJOJ = 387;</code>
-       */
-      public static final int PEPPOHPHJOJ_VALUE = 387;
-      /**
-       * <code>DCDNILFDFLB = 0;</code>
-       */
-      public static final int DCDNILFDFLB_VALUE = 0;
-      /**
-       * <code>NNBKOLMPOEA = 1;</code>
-       */
-      public static final int NNBKOLMPOEA_VALUE = 1;
-
-
-      public final int getNumber() {
-        if (index == -1) {
-          throw new java.lang.IllegalArgumentException(
-              "Can't get the number of an unknown enum value.");
-        }
-        return value;
-      }
-
-      /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
-       * @deprecated Use {@link #forNumber(int)} instead.
-       */
-      @java.lang.Deprecated
-      public static AJDCLIKNOLN valueOf(int value) {
-        return forNumber(value);
-      }
-
-      /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
-       */
-      public static AJDCLIKNOLN forNumber(int value) {
-        switch (value) {
-          case 0: return NONE;
-          case 387: return PEPPOHPHJOJ;
-          case 1: return NNBKOLMPOEA;
-          default: return null;
-        }
-      }
-
-      public static com.google.protobuf.Internal.EnumLiteMap<AJDCLIKNOLN>
-          internalGetValueMap() {
-        return internalValueMap;
-      }
-      private static final com.google.protobuf.Internal.EnumLiteMap<
-          AJDCLIKNOLN> internalValueMap =
-            new com.google.protobuf.Internal.EnumLiteMap<AJDCLIKNOLN>() {
-              public AJDCLIKNOLN findValueByNumber(int number) {
-                return AJDCLIKNOLN.forNumber(number);
-              }
-            };
-
-      public final com.google.protobuf.Descriptors.EnumValueDescriptor
-          getValueDescriptor() {
-        if (index == -1) {
-          throw new java.lang.IllegalStateException(
-              "Can't get the descriptor of an unrecognized enum value.");
-        }
-        return getDescriptor().getValues().get(index);
-      }
-      public final com.google.protobuf.Descriptors.EnumDescriptor
-          getDescriptorForType() {
-        return getDescriptor();
-      }
-      public static final com.google.protobuf.Descriptors.EnumDescriptor
-          getDescriptor() {
-        return emu.grasscutter.net.proto.HostPlayerNotifyOuterClass.HostPlayerNotify.getDescriptor().getEnumTypes().get(0);
-      }
-
-      private static final AJDCLIKNOLN[] VALUES = getStaticValuesArray();
-      private static AJDCLIKNOLN[] getStaticValuesArray() {
-        return new AJDCLIKNOLN[] {
-          NONE, PEPPOHPHJOJ, DCDNILFDFLB, NNBKOLMPOEA, 
-        };
-      }
-      public static AJDCLIKNOLN valueOf(
-          com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
-        if (desc.getType() != getDescriptor()) {
-          throw new java.lang.IllegalArgumentException(
-            "EnumValueDescriptor is not for this type.");
-        }
-        if (desc.getIndex() == -1) {
-          return UNRECOGNIZED;
-        }
-        return VALUES[desc.getIndex()];
-      }
-
-      private final int index;
-      private final int value;
-
-      private AJDCLIKNOLN(int index, int value) {
-        this.index = index;
-        this.value = value;
-      }
-
-      // @@protoc_insertion_point(enum_scope:HostPlayerNotify.AJDCLIKNOLN)
-    }
-
-    public static final int HOSTUID_FIELD_NUMBER = 4;
+    public static final int HOST_UID_FIELD_NUMBER = 8;
     private int hostUid_;
     /**
-     * <code>uint32 hostUid = 4;</code>
+     * <code>uint32 host_uid = 8;</code>
      * @return The hostUid.
      */
     @java.lang.Override
@@ -259,10 +133,10 @@ public final class HostPlayerNotifyOuterClass {
       return hostUid_;
     }
 
-    public static final int HOSTPEERID_FIELD_NUMBER = 5;
+    public static final int HOST_PEER_ID_FIELD_NUMBER = 7;
     private int hostPeerId_;
     /**
-     * <code>uint32 hostPeerId = 5;</code>
+     * <code>uint32 host_peer_id = 7;</code>
      * @return The hostPeerId.
      */
     @java.lang.Override
@@ -284,11 +158,11 @@ public final class HostPlayerNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (hostUid_ != 0) {
-        output.writeUInt32(4, hostUid_);
-      }
       if (hostPeerId_ != 0) {
-        output.writeUInt32(5, hostPeerId_);
+        output.writeUInt32(7, hostPeerId_);
+      }
+      if (hostUid_ != 0) {
+        output.writeUInt32(8, hostUid_);
       }
       unknownFields.writeTo(output);
     }
@@ -299,13 +173,13 @@ public final class HostPlayerNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (hostUid_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, hostUid_);
-      }
       if (hostPeerId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, hostPeerId_);
+          .computeUInt32Size(7, hostPeerId_);
+      }
+      if (hostUid_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(8, hostUid_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -337,9 +211,9 @@ public final class HostPlayerNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + HOSTUID_FIELD_NUMBER;
+      hash = (37 * hash) + HOST_UID_FIELD_NUMBER;
       hash = (53 * hash) + getHostUid();
-      hash = (37 * hash) + HOSTPEERID_FIELD_NUMBER;
+      hash = (37 * hash) + HOST_PEER_ID_FIELD_NUMBER;
       hash = (53 * hash) + getHostPeerId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -437,6 +311,11 @@ public final class HostPlayerNotifyOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 9459
+     * Obf: JBPDNKOINAN
+     * </pre>
+     *
      * Protobuf type {@code HostPlayerNotify}
      */
     public static final class Builder extends
@@ -591,7 +470,7 @@ public final class HostPlayerNotifyOuterClass {
 
       private int hostUid_ ;
       /**
-       * <code>uint32 hostUid = 4;</code>
+       * <code>uint32 host_uid = 8;</code>
        * @return The hostUid.
        */
       @java.lang.Override
@@ -599,7 +478,7 @@ public final class HostPlayerNotifyOuterClass {
         return hostUid_;
       }
       /**
-       * <code>uint32 hostUid = 4;</code>
+       * <code>uint32 host_uid = 8;</code>
        * @param value The hostUid to set.
        * @return This builder for chaining.
        */
@@ -610,7 +489,7 @@ public final class HostPlayerNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 hostUid = 4;</code>
+       * <code>uint32 host_uid = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearHostUid() {
@@ -622,7 +501,7 @@ public final class HostPlayerNotifyOuterClass {
 
       private int hostPeerId_ ;
       /**
-       * <code>uint32 hostPeerId = 5;</code>
+       * <code>uint32 host_peer_id = 7;</code>
        * @return The hostPeerId.
        */
       @java.lang.Override
@@ -630,7 +509,7 @@ public final class HostPlayerNotifyOuterClass {
         return hostPeerId_;
       }
       /**
-       * <code>uint32 hostPeerId = 5;</code>
+       * <code>uint32 host_peer_id = 7;</code>
        * @param value The hostPeerId to set.
        * @return This builder for chaining.
        */
@@ -641,7 +520,7 @@ public final class HostPlayerNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 hostPeerId = 5;</code>
+       * <code>uint32 host_peer_id = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearHostPeerId() {
@@ -717,11 +596,10 @@ public final class HostPlayerNotifyOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\026HostPlayerNotify.proto\"\210\001\n\020HostPlayerN" +
-      "otify\022\017\n\007hostUid\030\004 \001(\r\022\022\n\nhostPeerId\030\005 \001" +
-      "(\r\"O\n\013AJDCLIKNOLN\022\010\n\004NONE\020\000\022\020\n\013PEPPOHPHJ" +
-      "OJ\020\203\003\022\017\n\013DCDNILFDFLB\020\000\022\017\n\013NNBKOLMPOEA\020\001\032" +
-      "\002\020\001B\033\n\031emu.grasscutter.net.protob\006proto3"
+      "\n\026HostPlayerNotify.proto\":\n\020HostPlayerNo" +
+      "tify\022\020\n\010host_uid\030\010 \001(\r\022\024\n\014host_peer_id\030\007" +
+      " \001(\rB\033\n\031emu.grasscutter.net.protob\006proto" +
+      "3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

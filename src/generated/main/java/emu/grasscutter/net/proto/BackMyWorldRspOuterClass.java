@@ -26,13 +26,8 @@ public final class BackMyWorldRspOuterClass {
   }
   /**
    * <pre>
-   *enum MHICMFDMFAI {
-   *	option allow_alias= true;
-   *	NONE = 0;
-   *	PEPPOHPHJOJ = 276;
-   *	DCDNILFDFLB = 0;
-   *	NNBKOLMPOEA = 1;
-   *}
+   * CmdId: 25964
+   * Obf: CLFDBEPFLAI
    * </pre>
    *
    * Protobuf type {@code BackMyWorldRsp}
@@ -284,13 +279,8 @@ public final class BackMyWorldRspOuterClass {
     }
     /**
      * <pre>
-     *enum MHICMFDMFAI {
-     *	option allow_alias= true;
-     *	NONE = 0;
-     *	PEPPOHPHJOJ = 276;
-     *	DCDNILFDFLB = 0;
-     *	NNBKOLMPOEA = 1;
-     *}
+     * CmdId: 25964
+     * Obf: CLFDBEPFLAI
      * </pre>
      *
      * Protobuf type {@code BackMyWorldRsp}

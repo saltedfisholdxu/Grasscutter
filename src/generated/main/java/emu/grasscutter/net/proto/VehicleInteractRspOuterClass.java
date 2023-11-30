@@ -19,44 +19,91 @@ public final class VehicleInteractRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.VehicleMember member = 15;</code>
-     * @return Whether the member field is set.
-     */
-    boolean hasMember();
-    /**
-     * <code>.VehicleMember member = 15;</code>
-     * @return The member.
-     */
-    emu.grasscutter.net.proto.VehicleMemberOuterClass.VehicleMember getMember();
-    /**
-     * <code>.VehicleMember member = 15;</code>
-     */
-    emu.grasscutter.net.proto.VehicleMemberOuterClass.VehicleMemberOrBuilder getMemberOrBuilder();
-
-    /**
-     * <code>uint32 entityId = 2;</code>
-     * @return The entityId.
-     */
-    int getEntityId();
-
-    /**
-     * <code>int32 retcode = 10;</code>
+     * <code>int32 retcode = 6;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>.VehicleInteractType interactType = 8;</code>
+     * <code>.VehicleMember member = 14;</code>
+     * @return Whether the member field is set.
+     */
+    boolean hasMember();
+    /**
+     * <code>.VehicleMember member = 14;</code>
+     * @return The member.
+     */
+    emu.grasscutter.net.proto.VehicleMemberOuterClass.VehicleMember getMember();
+    /**
+     * <code>.VehicleMember member = 14;</code>
+     */
+    emu.grasscutter.net.proto.VehicleMemberOuterClass.VehicleMemberOrBuilder getMemberOrBuilder();
+
+    /**
+     * <code>.Vector KKDFCJENDNI = 4;</code>
+     * @return Whether the kKDFCJENDNI field is set.
+     */
+    boolean hasKKDFCJENDNI();
+    /**
+     * <code>.Vector KKDFCJENDNI = 4;</code>
+     * @return The kKDFCJENDNI.
+     */
+    emu.grasscutter.net.proto.VectorOuterClass.Vector getKKDFCJENDNI();
+    /**
+     * <code>.Vector KKDFCJENDNI = 4;</code>
+     */
+    emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getKKDFCJENDNIOrBuilder();
+
+    /**
+     * <code>uint32 entity_id = 5;</code>
+     * @return The entityId.
+     */
+    int getEntityId();
+
+    /**
+     * <code>.VehicleInteractType interact_type = 7;</code>
      * @return The enum numeric value on the wire for interactType.
      */
     int getInteractTypeValue();
     /**
-     * <code>.VehicleInteractType interactType = 8;</code>
+     * <code>.VehicleInteractType interact_type = 7;</code>
      * @return The interactType.
      */
     emu.grasscutter.net.proto.VehicleInteractTypeOuterClass.VehicleInteractType getInteractType();
+
+    /**
+     * <code>uint32 gadget_id = 13;</code>
+     * @return The gadgetId.
+     */
+    int getGadgetId();
+
+    /**
+     * <code>.Vector JGOGBMEKOPP = 1;</code>
+     * @return Whether the jGOGBMEKOPP field is set.
+     */
+    boolean hasJGOGBMEKOPP();
+    /**
+     * <code>.Vector JGOGBMEKOPP = 1;</code>
+     * @return The jGOGBMEKOPP.
+     */
+    emu.grasscutter.net.proto.VectorOuterClass.Vector getJGOGBMEKOPP();
+    /**
+     * <code>.Vector JGOGBMEKOPP = 1;</code>
+     */
+    emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getJGOGBMEKOPPOrBuilder();
+
+    /**
+     * <code>uint32 CJIMMADJKHD = 10;</code>
+     * @return The cJIMMADJKHD.
+     */
+    int getCJIMMADJKHD();
   }
   /**
+   * <pre>
+   * CmdId: 29349
+   * Obf: CFHCGPCDLPA
+   * </pre>
+   *
    * Protobuf type {@code VehicleInteractRsp}
    */
   public static final class VehicleInteractRsp extends
@@ -102,12 +149,43 @@ public final class VehicleInteractRspOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 10: {
+              emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder subBuilder = null;
+              if (jGOGBMEKOPP_ != null) {
+                subBuilder = jGOGBMEKOPP_.toBuilder();
+              }
+              jGOGBMEKOPP_ = input.readMessage(emu.grasscutter.net.proto.VectorOuterClass.Vector.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(jGOGBMEKOPP_);
+                jGOGBMEKOPP_ = subBuilder.buildPartial();
+              }
+
+              break;
+            }
+            case 34: {
+              emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder subBuilder = null;
+              if (kKDFCJENDNI_ != null) {
+                subBuilder = kKDFCJENDNI_.toBuilder();
+              }
+              kKDFCJENDNI_ = input.readMessage(emu.grasscutter.net.proto.VectorOuterClass.Vector.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(kKDFCJENDNI_);
+                kKDFCJENDNI_ = subBuilder.buildPartial();
+              }
+
+              break;
+            }
+            case 40: {
 
               entityId_ = input.readUInt32();
               break;
             }
-            case 64: {
+            case 48: {
+
+              retcode_ = input.readInt32();
+              break;
+            }
+            case 56: {
               int rawValue = input.readEnum();
 
               interactType_ = rawValue;
@@ -115,10 +193,15 @@ public final class VehicleInteractRspOuterClass {
             }
             case 80: {
 
-              retcode_ = input.readInt32();
+              cJIMMADJKHD_ = input.readUInt32();
               break;
             }
-            case 122: {
+            case 104: {
+
+              gadgetId_ = input.readUInt32();
+              break;
+            }
+            case 114: {
               emu.grasscutter.net.proto.VehicleMemberOuterClass.VehicleMember.Builder subBuilder = null;
               if (member_ != null) {
                 subBuilder = member_.toBuilder();
@@ -163,178 +246,10 @@ public final class VehicleInteractRspOuterClass {
               emu.grasscutter.net.proto.VehicleInteractRspOuterClass.VehicleInteractRsp.class, emu.grasscutter.net.proto.VehicleInteractRspOuterClass.VehicleInteractRsp.Builder.class);
     }
 
-    /**
-     * Protobuf enum {@code VehicleInteractRsp.HPGMAKHGBBO}
-     */
-    public enum HPGMAKHGBBO
-        implements com.google.protobuf.ProtocolMessageEnum {
-      /**
-       * <code>NONE = 0;</code>
-       */
-      NONE(0, 0),
-      /**
-       * <code>PEPPOHPHJOJ = 825;</code>
-       */
-      PEPPOHPHJOJ(1, 825),
-      /**
-       * <code>NNBKOLMPOEA = 1;</code>
-       */
-      NNBKOLMPOEA(3, 1),
-      UNRECOGNIZED(-1, -1),
-      ;
-
-      /**
-       * <code>DCDNILFDFLB = 0;</code>
-       */
-      public static final HPGMAKHGBBO DCDNILFDFLB = NONE;
-      /**
-       * <code>NONE = 0;</code>
-       */
-      public static final int NONE_VALUE = 0;
-      /**
-       * <code>PEPPOHPHJOJ = 825;</code>
-       */
-      public static final int PEPPOHPHJOJ_VALUE = 825;
-      /**
-       * <code>DCDNILFDFLB = 0;</code>
-       */
-      public static final int DCDNILFDFLB_VALUE = 0;
-      /**
-       * <code>NNBKOLMPOEA = 1;</code>
-       */
-      public static final int NNBKOLMPOEA_VALUE = 1;
-
-
-      public final int getNumber() {
-        if (index == -1) {
-          throw new java.lang.IllegalArgumentException(
-              "Can't get the number of an unknown enum value.");
-        }
-        return value;
-      }
-
-      /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
-       * @deprecated Use {@link #forNumber(int)} instead.
-       */
-      @java.lang.Deprecated
-      public static HPGMAKHGBBO valueOf(int value) {
-        return forNumber(value);
-      }
-
-      /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
-       */
-      public static HPGMAKHGBBO forNumber(int value) {
-        switch (value) {
-          case 0: return NONE;
-          case 825: return PEPPOHPHJOJ;
-          case 1: return NNBKOLMPOEA;
-          default: return null;
-        }
-      }
-
-      public static com.google.protobuf.Internal.EnumLiteMap<HPGMAKHGBBO>
-          internalGetValueMap() {
-        return internalValueMap;
-      }
-      private static final com.google.protobuf.Internal.EnumLiteMap<
-          HPGMAKHGBBO> internalValueMap =
-            new com.google.protobuf.Internal.EnumLiteMap<HPGMAKHGBBO>() {
-              public HPGMAKHGBBO findValueByNumber(int number) {
-                return HPGMAKHGBBO.forNumber(number);
-              }
-            };
-
-      public final com.google.protobuf.Descriptors.EnumValueDescriptor
-          getValueDescriptor() {
-        if (index == -1) {
-          throw new java.lang.IllegalStateException(
-              "Can't get the descriptor of an unrecognized enum value.");
-        }
-        return getDescriptor().getValues().get(index);
-      }
-      public final com.google.protobuf.Descriptors.EnumDescriptor
-          getDescriptorForType() {
-        return getDescriptor();
-      }
-      public static final com.google.protobuf.Descriptors.EnumDescriptor
-          getDescriptor() {
-        return emu.grasscutter.net.proto.VehicleInteractRspOuterClass.VehicleInteractRsp.getDescriptor().getEnumTypes().get(0);
-      }
-
-      private static final HPGMAKHGBBO[] VALUES = getStaticValuesArray();
-      private static HPGMAKHGBBO[] getStaticValuesArray() {
-        return new HPGMAKHGBBO[] {
-          NONE, PEPPOHPHJOJ, DCDNILFDFLB, NNBKOLMPOEA, 
-        };
-      }
-      public static HPGMAKHGBBO valueOf(
-          com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
-        if (desc.getType() != getDescriptor()) {
-          throw new java.lang.IllegalArgumentException(
-            "EnumValueDescriptor is not for this type.");
-        }
-        if (desc.getIndex() == -1) {
-          return UNRECOGNIZED;
-        }
-        return VALUES[desc.getIndex()];
-      }
-
-      private final int index;
-      private final int value;
-
-      private HPGMAKHGBBO(int index, int value) {
-        this.index = index;
-        this.value = value;
-      }
-
-      // @@protoc_insertion_point(enum_scope:VehicleInteractRsp.HPGMAKHGBBO)
-    }
-
-    public static final int MEMBER_FIELD_NUMBER = 15;
-    private emu.grasscutter.net.proto.VehicleMemberOuterClass.VehicleMember member_;
-    /**
-     * <code>.VehicleMember member = 15;</code>
-     * @return Whether the member field is set.
-     */
-    @java.lang.Override
-    public boolean hasMember() {
-      return member_ != null;
-    }
-    /**
-     * <code>.VehicleMember member = 15;</code>
-     * @return The member.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.VehicleMemberOuterClass.VehicleMember getMember() {
-      return member_ == null ? emu.grasscutter.net.proto.VehicleMemberOuterClass.VehicleMember.getDefaultInstance() : member_;
-    }
-    /**
-     * <code>.VehicleMember member = 15;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.VehicleMemberOuterClass.VehicleMemberOrBuilder getMemberOrBuilder() {
-      return getMember();
-    }
-
-    public static final int ENTITYID_FIELD_NUMBER = 2;
-    private int entityId_;
-    /**
-     * <code>uint32 entityId = 2;</code>
-     * @return The entityId.
-     */
-    @java.lang.Override
-    public int getEntityId() {
-      return entityId_;
-    }
-
-    public static final int RETCODE_FIELD_NUMBER = 10;
+    public static final int RETCODE_FIELD_NUMBER = 6;
     private int retcode_;
     /**
-     * <code>int32 retcode = 10;</code>
+     * <code>int32 retcode = 6;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -342,23 +257,134 @@ public final class VehicleInteractRspOuterClass {
       return retcode_;
     }
 
-    public static final int INTERACTTYPE_FIELD_NUMBER = 8;
+    public static final int MEMBER_FIELD_NUMBER = 14;
+    private emu.grasscutter.net.proto.VehicleMemberOuterClass.VehicleMember member_;
+    /**
+     * <code>.VehicleMember member = 14;</code>
+     * @return Whether the member field is set.
+     */
+    @java.lang.Override
+    public boolean hasMember() {
+      return member_ != null;
+    }
+    /**
+     * <code>.VehicleMember member = 14;</code>
+     * @return The member.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.VehicleMemberOuterClass.VehicleMember getMember() {
+      return member_ == null ? emu.grasscutter.net.proto.VehicleMemberOuterClass.VehicleMember.getDefaultInstance() : member_;
+    }
+    /**
+     * <code>.VehicleMember member = 14;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.VehicleMemberOuterClass.VehicleMemberOrBuilder getMemberOrBuilder() {
+      return getMember();
+    }
+
+    public static final int KKDFCJENDNI_FIELD_NUMBER = 4;
+    private emu.grasscutter.net.proto.VectorOuterClass.Vector kKDFCJENDNI_;
+    /**
+     * <code>.Vector KKDFCJENDNI = 4;</code>
+     * @return Whether the kKDFCJENDNI field is set.
+     */
+    @java.lang.Override
+    public boolean hasKKDFCJENDNI() {
+      return kKDFCJENDNI_ != null;
+    }
+    /**
+     * <code>.Vector KKDFCJENDNI = 4;</code>
+     * @return The kKDFCJENDNI.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.VectorOuterClass.Vector getKKDFCJENDNI() {
+      return kKDFCJENDNI_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : kKDFCJENDNI_;
+    }
+    /**
+     * <code>.Vector KKDFCJENDNI = 4;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getKKDFCJENDNIOrBuilder() {
+      return getKKDFCJENDNI();
+    }
+
+    public static final int ENTITY_ID_FIELD_NUMBER = 5;
+    private int entityId_;
+    /**
+     * <code>uint32 entity_id = 5;</code>
+     * @return The entityId.
+     */
+    @java.lang.Override
+    public int getEntityId() {
+      return entityId_;
+    }
+
+    public static final int INTERACT_TYPE_FIELD_NUMBER = 7;
     private int interactType_;
     /**
-     * <code>.VehicleInteractType interactType = 8;</code>
+     * <code>.VehicleInteractType interact_type = 7;</code>
      * @return The enum numeric value on the wire for interactType.
      */
     @java.lang.Override public int getInteractTypeValue() {
       return interactType_;
     }
     /**
-     * <code>.VehicleInteractType interactType = 8;</code>
+     * <code>.VehicleInteractType interact_type = 7;</code>
      * @return The interactType.
      */
     @java.lang.Override public emu.grasscutter.net.proto.VehicleInteractTypeOuterClass.VehicleInteractType getInteractType() {
       @SuppressWarnings("deprecation")
       emu.grasscutter.net.proto.VehicleInteractTypeOuterClass.VehicleInteractType result = emu.grasscutter.net.proto.VehicleInteractTypeOuterClass.VehicleInteractType.valueOf(interactType_);
       return result == null ? emu.grasscutter.net.proto.VehicleInteractTypeOuterClass.VehicleInteractType.UNRECOGNIZED : result;
+    }
+
+    public static final int GADGET_ID_FIELD_NUMBER = 13;
+    private int gadgetId_;
+    /**
+     * <code>uint32 gadget_id = 13;</code>
+     * @return The gadgetId.
+     */
+    @java.lang.Override
+    public int getGadgetId() {
+      return gadgetId_;
+    }
+
+    public static final int JGOGBMEKOPP_FIELD_NUMBER = 1;
+    private emu.grasscutter.net.proto.VectorOuterClass.Vector jGOGBMEKOPP_;
+    /**
+     * <code>.Vector JGOGBMEKOPP = 1;</code>
+     * @return Whether the jGOGBMEKOPP field is set.
+     */
+    @java.lang.Override
+    public boolean hasJGOGBMEKOPP() {
+      return jGOGBMEKOPP_ != null;
+    }
+    /**
+     * <code>.Vector JGOGBMEKOPP = 1;</code>
+     * @return The jGOGBMEKOPP.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.VectorOuterClass.Vector getJGOGBMEKOPP() {
+      return jGOGBMEKOPP_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : jGOGBMEKOPP_;
+    }
+    /**
+     * <code>.Vector JGOGBMEKOPP = 1;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getJGOGBMEKOPPOrBuilder() {
+      return getJGOGBMEKOPP();
+    }
+
+    public static final int CJIMMADJKHD_FIELD_NUMBER = 10;
+    private int cJIMMADJKHD_;
+    /**
+     * <code>uint32 CJIMMADJKHD = 10;</code>
+     * @return The cJIMMADJKHD.
+     */
+    @java.lang.Override
+    public int getCJIMMADJKHD() {
+      return cJIMMADJKHD_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -375,17 +401,29 @@ public final class VehicleInteractRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (entityId_ != 0) {
-        output.writeUInt32(2, entityId_);
+      if (jGOGBMEKOPP_ != null) {
+        output.writeMessage(1, getJGOGBMEKOPP());
       }
-      if (interactType_ != emu.grasscutter.net.proto.VehicleInteractTypeOuterClass.VehicleInteractType.VEHICLE_INTERACT_TYPE_NONE.getNumber()) {
-        output.writeEnum(8, interactType_);
+      if (kKDFCJENDNI_ != null) {
+        output.writeMessage(4, getKKDFCJENDNI());
+      }
+      if (entityId_ != 0) {
+        output.writeUInt32(5, entityId_);
       }
       if (retcode_ != 0) {
-        output.writeInt32(10, retcode_);
+        output.writeInt32(6, retcode_);
+      }
+      if (interactType_ != emu.grasscutter.net.proto.VehicleInteractTypeOuterClass.VehicleInteractType.VEHICLE_INTERACT_TYPE_NONE.getNumber()) {
+        output.writeEnum(7, interactType_);
+      }
+      if (cJIMMADJKHD_ != 0) {
+        output.writeUInt32(10, cJIMMADJKHD_);
+      }
+      if (gadgetId_ != 0) {
+        output.writeUInt32(13, gadgetId_);
       }
       if (member_ != null) {
-        output.writeMessage(15, getMember());
+        output.writeMessage(14, getMember());
       }
       unknownFields.writeTo(output);
     }
@@ -396,21 +434,37 @@ public final class VehicleInteractRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (jGOGBMEKOPP_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(1, getJGOGBMEKOPP());
+      }
+      if (kKDFCJENDNI_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(4, getKKDFCJENDNI());
+      }
       if (entityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, entityId_);
-      }
-      if (interactType_ != emu.grasscutter.net.proto.VehicleInteractTypeOuterClass.VehicleInteractType.VEHICLE_INTERACT_TYPE_NONE.getNumber()) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(8, interactType_);
+          .computeUInt32Size(5, entityId_);
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(10, retcode_);
+          .computeInt32Size(6, retcode_);
+      }
+      if (interactType_ != emu.grasscutter.net.proto.VehicleInteractTypeOuterClass.VehicleInteractType.VEHICLE_INTERACT_TYPE_NONE.getNumber()) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(7, interactType_);
+      }
+      if (cJIMMADJKHD_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(10, cJIMMADJKHD_);
+      }
+      if (gadgetId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(13, gadgetId_);
       }
       if (member_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(15, getMember());
+          .computeMessageSize(14, getMember());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -427,16 +481,30 @@ public final class VehicleInteractRspOuterClass {
       }
       emu.grasscutter.net.proto.VehicleInteractRspOuterClass.VehicleInteractRsp other = (emu.grasscutter.net.proto.VehicleInteractRspOuterClass.VehicleInteractRsp) obj;
 
+      if (getRetcode()
+          != other.getRetcode()) return false;
       if (hasMember() != other.hasMember()) return false;
       if (hasMember()) {
         if (!getMember()
             .equals(other.getMember())) return false;
       }
+      if (hasKKDFCJENDNI() != other.hasKKDFCJENDNI()) return false;
+      if (hasKKDFCJENDNI()) {
+        if (!getKKDFCJENDNI()
+            .equals(other.getKKDFCJENDNI())) return false;
+      }
       if (getEntityId()
           != other.getEntityId()) return false;
-      if (getRetcode()
-          != other.getRetcode()) return false;
       if (interactType_ != other.interactType_) return false;
+      if (getGadgetId()
+          != other.getGadgetId()) return false;
+      if (hasJGOGBMEKOPP() != other.hasJGOGBMEKOPP()) return false;
+      if (hasJGOGBMEKOPP()) {
+        if (!getJGOGBMEKOPP()
+            .equals(other.getJGOGBMEKOPP())) return false;
+      }
+      if (getCJIMMADJKHD()
+          != other.getCJIMMADJKHD()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -448,16 +516,28 @@ public final class VehicleInteractRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
       if (hasMember()) {
         hash = (37 * hash) + MEMBER_FIELD_NUMBER;
         hash = (53 * hash) + getMember().hashCode();
       }
-      hash = (37 * hash) + ENTITYID_FIELD_NUMBER;
+      if (hasKKDFCJENDNI()) {
+        hash = (37 * hash) + KKDFCJENDNI_FIELD_NUMBER;
+        hash = (53 * hash) + getKKDFCJENDNI().hashCode();
+      }
+      hash = (37 * hash) + ENTITY_ID_FIELD_NUMBER;
       hash = (53 * hash) + getEntityId();
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
-      hash = (37 * hash) + INTERACTTYPE_FIELD_NUMBER;
+      hash = (37 * hash) + INTERACT_TYPE_FIELD_NUMBER;
       hash = (53 * hash) + interactType_;
+      hash = (37 * hash) + GADGET_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getGadgetId();
+      if (hasJGOGBMEKOPP()) {
+        hash = (37 * hash) + JGOGBMEKOPP_FIELD_NUMBER;
+        hash = (53 * hash) + getJGOGBMEKOPP().hashCode();
+      }
+      hash = (37 * hash) + CJIMMADJKHD_FIELD_NUMBER;
+      hash = (53 * hash) + getCJIMMADJKHD();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -554,6 +634,11 @@ public final class VehicleInteractRspOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 29349
+     * Obf: CFHCGPCDLPA
+     * </pre>
+     *
      * Protobuf type {@code VehicleInteractRsp}
      */
     public static final class Builder extends
@@ -591,17 +676,33 @@ public final class VehicleInteractRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        retcode_ = 0;
+
         if (memberBuilder_ == null) {
           member_ = null;
         } else {
           member_ = null;
           memberBuilder_ = null;
         }
+        if (kKDFCJENDNIBuilder_ == null) {
+          kKDFCJENDNI_ = null;
+        } else {
+          kKDFCJENDNI_ = null;
+          kKDFCJENDNIBuilder_ = null;
+        }
         entityId_ = 0;
 
-        retcode_ = 0;
-
         interactType_ = 0;
+
+        gadgetId_ = 0;
+
+        if (jGOGBMEKOPPBuilder_ == null) {
+          jGOGBMEKOPP_ = null;
+        } else {
+          jGOGBMEKOPP_ = null;
+          jGOGBMEKOPPBuilder_ = null;
+        }
+        cJIMMADJKHD_ = 0;
 
         return this;
       }
@@ -629,14 +730,26 @@ public final class VehicleInteractRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.VehicleInteractRspOuterClass.VehicleInteractRsp buildPartial() {
         emu.grasscutter.net.proto.VehicleInteractRspOuterClass.VehicleInteractRsp result = new emu.grasscutter.net.proto.VehicleInteractRspOuterClass.VehicleInteractRsp(this);
+        result.retcode_ = retcode_;
         if (memberBuilder_ == null) {
           result.member_ = member_;
         } else {
           result.member_ = memberBuilder_.build();
         }
+        if (kKDFCJENDNIBuilder_ == null) {
+          result.kKDFCJENDNI_ = kKDFCJENDNI_;
+        } else {
+          result.kKDFCJENDNI_ = kKDFCJENDNIBuilder_.build();
+        }
         result.entityId_ = entityId_;
-        result.retcode_ = retcode_;
         result.interactType_ = interactType_;
+        result.gadgetId_ = gadgetId_;
+        if (jGOGBMEKOPPBuilder_ == null) {
+          result.jGOGBMEKOPP_ = jGOGBMEKOPP_;
+        } else {
+          result.jGOGBMEKOPP_ = jGOGBMEKOPPBuilder_.build();
+        }
+        result.cJIMMADJKHD_ = cJIMMADJKHD_;
         onBuilt();
         return result;
       }
@@ -685,17 +798,29 @@ public final class VehicleInteractRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.VehicleInteractRspOuterClass.VehicleInteractRsp other) {
         if (other == emu.grasscutter.net.proto.VehicleInteractRspOuterClass.VehicleInteractRsp.getDefaultInstance()) return this;
+        if (other.getRetcode() != 0) {
+          setRetcode(other.getRetcode());
+        }
         if (other.hasMember()) {
           mergeMember(other.getMember());
+        }
+        if (other.hasKKDFCJENDNI()) {
+          mergeKKDFCJENDNI(other.getKKDFCJENDNI());
         }
         if (other.getEntityId() != 0) {
           setEntityId(other.getEntityId());
         }
-        if (other.getRetcode() != 0) {
-          setRetcode(other.getRetcode());
-        }
         if (other.interactType_ != 0) {
           setInteractTypeValue(other.getInteractTypeValue());
+        }
+        if (other.getGadgetId() != 0) {
+          setGadgetId(other.getGadgetId());
+        }
+        if (other.hasJGOGBMEKOPP()) {
+          mergeJGOGBMEKOPP(other.getJGOGBMEKOPP());
+        }
+        if (other.getCJIMMADJKHD() != 0) {
+          setCJIMMADJKHD(other.getCJIMMADJKHD());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -726,18 +851,49 @@ public final class VehicleInteractRspOuterClass {
         return this;
       }
 
+      private int retcode_ ;
+      /**
+       * <code>int32 retcode = 6;</code>
+       * @return The retcode.
+       */
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
+      }
+      /**
+       * <code>int32 retcode = 6;</code>
+       * @param value The retcode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRetcode(int value) {
+        
+        retcode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 retcode = 6;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        
+        retcode_ = 0;
+        onChanged();
+        return this;
+      }
+
       private emu.grasscutter.net.proto.VehicleMemberOuterClass.VehicleMember member_;
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VehicleMemberOuterClass.VehicleMember, emu.grasscutter.net.proto.VehicleMemberOuterClass.VehicleMember.Builder, emu.grasscutter.net.proto.VehicleMemberOuterClass.VehicleMemberOrBuilder> memberBuilder_;
       /**
-       * <code>.VehicleMember member = 15;</code>
+       * <code>.VehicleMember member = 14;</code>
        * @return Whether the member field is set.
        */
       public boolean hasMember() {
         return memberBuilder_ != null || member_ != null;
       }
       /**
-       * <code>.VehicleMember member = 15;</code>
+       * <code>.VehicleMember member = 14;</code>
        * @return The member.
        */
       public emu.grasscutter.net.proto.VehicleMemberOuterClass.VehicleMember getMember() {
@@ -748,7 +904,7 @@ public final class VehicleInteractRspOuterClass {
         }
       }
       /**
-       * <code>.VehicleMember member = 15;</code>
+       * <code>.VehicleMember member = 14;</code>
        */
       public Builder setMember(emu.grasscutter.net.proto.VehicleMemberOuterClass.VehicleMember value) {
         if (memberBuilder_ == null) {
@@ -764,7 +920,7 @@ public final class VehicleInteractRspOuterClass {
         return this;
       }
       /**
-       * <code>.VehicleMember member = 15;</code>
+       * <code>.VehicleMember member = 14;</code>
        */
       public Builder setMember(
           emu.grasscutter.net.proto.VehicleMemberOuterClass.VehicleMember.Builder builderForValue) {
@@ -778,7 +934,7 @@ public final class VehicleInteractRspOuterClass {
         return this;
       }
       /**
-       * <code>.VehicleMember member = 15;</code>
+       * <code>.VehicleMember member = 14;</code>
        */
       public Builder mergeMember(emu.grasscutter.net.proto.VehicleMemberOuterClass.VehicleMember value) {
         if (memberBuilder_ == null) {
@@ -796,7 +952,7 @@ public final class VehicleInteractRspOuterClass {
         return this;
       }
       /**
-       * <code>.VehicleMember member = 15;</code>
+       * <code>.VehicleMember member = 14;</code>
        */
       public Builder clearMember() {
         if (memberBuilder_ == null) {
@@ -810,7 +966,7 @@ public final class VehicleInteractRspOuterClass {
         return this;
       }
       /**
-       * <code>.VehicleMember member = 15;</code>
+       * <code>.VehicleMember member = 14;</code>
        */
       public emu.grasscutter.net.proto.VehicleMemberOuterClass.VehicleMember.Builder getMemberBuilder() {
         
@@ -818,7 +974,7 @@ public final class VehicleInteractRspOuterClass {
         return getMemberFieldBuilder().getBuilder();
       }
       /**
-       * <code>.VehicleMember member = 15;</code>
+       * <code>.VehicleMember member = 14;</code>
        */
       public emu.grasscutter.net.proto.VehicleMemberOuterClass.VehicleMemberOrBuilder getMemberOrBuilder() {
         if (memberBuilder_ != null) {
@@ -829,7 +985,7 @@ public final class VehicleInteractRspOuterClass {
         }
       }
       /**
-       * <code>.VehicleMember member = 15;</code>
+       * <code>.VehicleMember member = 14;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VehicleMemberOuterClass.VehicleMember, emu.grasscutter.net.proto.VehicleMemberOuterClass.VehicleMember.Builder, emu.grasscutter.net.proto.VehicleMemberOuterClass.VehicleMemberOrBuilder> 
@@ -845,9 +1001,128 @@ public final class VehicleInteractRspOuterClass {
         return memberBuilder_;
       }
 
+      private emu.grasscutter.net.proto.VectorOuterClass.Vector kKDFCJENDNI_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> kKDFCJENDNIBuilder_;
+      /**
+       * <code>.Vector KKDFCJENDNI = 4;</code>
+       * @return Whether the kKDFCJENDNI field is set.
+       */
+      public boolean hasKKDFCJENDNI() {
+        return kKDFCJENDNIBuilder_ != null || kKDFCJENDNI_ != null;
+      }
+      /**
+       * <code>.Vector KKDFCJENDNI = 4;</code>
+       * @return The kKDFCJENDNI.
+       */
+      public emu.grasscutter.net.proto.VectorOuterClass.Vector getKKDFCJENDNI() {
+        if (kKDFCJENDNIBuilder_ == null) {
+          return kKDFCJENDNI_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : kKDFCJENDNI_;
+        } else {
+          return kKDFCJENDNIBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.Vector KKDFCJENDNI = 4;</code>
+       */
+      public Builder setKKDFCJENDNI(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
+        if (kKDFCJENDNIBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          kKDFCJENDNI_ = value;
+          onChanged();
+        } else {
+          kKDFCJENDNIBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Vector KKDFCJENDNI = 4;</code>
+       */
+      public Builder setKKDFCJENDNI(
+          emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
+        if (kKDFCJENDNIBuilder_ == null) {
+          kKDFCJENDNI_ = builderForValue.build();
+          onChanged();
+        } else {
+          kKDFCJENDNIBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Vector KKDFCJENDNI = 4;</code>
+       */
+      public Builder mergeKKDFCJENDNI(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
+        if (kKDFCJENDNIBuilder_ == null) {
+          if (kKDFCJENDNI_ != null) {
+            kKDFCJENDNI_ =
+              emu.grasscutter.net.proto.VectorOuterClass.Vector.newBuilder(kKDFCJENDNI_).mergeFrom(value).buildPartial();
+          } else {
+            kKDFCJENDNI_ = value;
+          }
+          onChanged();
+        } else {
+          kKDFCJENDNIBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Vector KKDFCJENDNI = 4;</code>
+       */
+      public Builder clearKKDFCJENDNI() {
+        if (kKDFCJENDNIBuilder_ == null) {
+          kKDFCJENDNI_ = null;
+          onChanged();
+        } else {
+          kKDFCJENDNI_ = null;
+          kKDFCJENDNIBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Vector KKDFCJENDNI = 4;</code>
+       */
+      public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getKKDFCJENDNIBuilder() {
+        
+        onChanged();
+        return getKKDFCJENDNIFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.Vector KKDFCJENDNI = 4;</code>
+       */
+      public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getKKDFCJENDNIOrBuilder() {
+        if (kKDFCJENDNIBuilder_ != null) {
+          return kKDFCJENDNIBuilder_.getMessageOrBuilder();
+        } else {
+          return kKDFCJENDNI_ == null ?
+              emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : kKDFCJENDNI_;
+        }
+      }
+      /**
+       * <code>.Vector KKDFCJENDNI = 4;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
+          getKKDFCJENDNIFieldBuilder() {
+        if (kKDFCJENDNIBuilder_ == null) {
+          kKDFCJENDNIBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder>(
+                  getKKDFCJENDNI(),
+                  getParentForChildren(),
+                  isClean());
+          kKDFCJENDNI_ = null;
+        }
+        return kKDFCJENDNIBuilder_;
+      }
+
       private int entityId_ ;
       /**
-       * <code>uint32 entityId = 2;</code>
+       * <code>uint32 entity_id = 5;</code>
        * @return The entityId.
        */
       @java.lang.Override
@@ -855,7 +1130,7 @@ public final class VehicleInteractRspOuterClass {
         return entityId_;
       }
       /**
-       * <code>uint32 entityId = 2;</code>
+       * <code>uint32 entity_id = 5;</code>
        * @param value The entityId to set.
        * @return This builder for chaining.
        */
@@ -866,7 +1141,7 @@ public final class VehicleInteractRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 entityId = 2;</code>
+       * <code>uint32 entity_id = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearEntityId() {
@@ -876,47 +1151,16 @@ public final class VehicleInteractRspOuterClass {
         return this;
       }
 
-      private int retcode_ ;
-      /**
-       * <code>int32 retcode = 10;</code>
-       * @return The retcode.
-       */
-      @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
-      }
-      /**
-       * <code>int32 retcode = 10;</code>
-       * @param value The retcode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRetcode(int value) {
-        
-        retcode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 retcode = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRetcode() {
-        
-        retcode_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int interactType_ = 0;
       /**
-       * <code>.VehicleInteractType interactType = 8;</code>
+       * <code>.VehicleInteractType interact_type = 7;</code>
        * @return The enum numeric value on the wire for interactType.
        */
       @java.lang.Override public int getInteractTypeValue() {
         return interactType_;
       }
       /**
-       * <code>.VehicleInteractType interactType = 8;</code>
+       * <code>.VehicleInteractType interact_type = 7;</code>
        * @param value The enum numeric value on the wire for interactType to set.
        * @return This builder for chaining.
        */
@@ -927,7 +1171,7 @@ public final class VehicleInteractRspOuterClass {
         return this;
       }
       /**
-       * <code>.VehicleInteractType interactType = 8;</code>
+       * <code>.VehicleInteractType interact_type = 7;</code>
        * @return The interactType.
        */
       @java.lang.Override
@@ -937,7 +1181,7 @@ public final class VehicleInteractRspOuterClass {
         return result == null ? emu.grasscutter.net.proto.VehicleInteractTypeOuterClass.VehicleInteractType.UNRECOGNIZED : result;
       }
       /**
-       * <code>.VehicleInteractType interactType = 8;</code>
+       * <code>.VehicleInteractType interact_type = 7;</code>
        * @param value The interactType to set.
        * @return This builder for chaining.
        */
@@ -951,12 +1195,193 @@ public final class VehicleInteractRspOuterClass {
         return this;
       }
       /**
-       * <code>.VehicleInteractType interactType = 8;</code>
+       * <code>.VehicleInteractType interact_type = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearInteractType() {
         
         interactType_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int gadgetId_ ;
+      /**
+       * <code>uint32 gadget_id = 13;</code>
+       * @return The gadgetId.
+       */
+      @java.lang.Override
+      public int getGadgetId() {
+        return gadgetId_;
+      }
+      /**
+       * <code>uint32 gadget_id = 13;</code>
+       * @param value The gadgetId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setGadgetId(int value) {
+        
+        gadgetId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 gadget_id = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearGadgetId() {
+        
+        gadgetId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private emu.grasscutter.net.proto.VectorOuterClass.Vector jGOGBMEKOPP_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> jGOGBMEKOPPBuilder_;
+      /**
+       * <code>.Vector JGOGBMEKOPP = 1;</code>
+       * @return Whether the jGOGBMEKOPP field is set.
+       */
+      public boolean hasJGOGBMEKOPP() {
+        return jGOGBMEKOPPBuilder_ != null || jGOGBMEKOPP_ != null;
+      }
+      /**
+       * <code>.Vector JGOGBMEKOPP = 1;</code>
+       * @return The jGOGBMEKOPP.
+       */
+      public emu.grasscutter.net.proto.VectorOuterClass.Vector getJGOGBMEKOPP() {
+        if (jGOGBMEKOPPBuilder_ == null) {
+          return jGOGBMEKOPP_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : jGOGBMEKOPP_;
+        } else {
+          return jGOGBMEKOPPBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.Vector JGOGBMEKOPP = 1;</code>
+       */
+      public Builder setJGOGBMEKOPP(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
+        if (jGOGBMEKOPPBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          jGOGBMEKOPP_ = value;
+          onChanged();
+        } else {
+          jGOGBMEKOPPBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Vector JGOGBMEKOPP = 1;</code>
+       */
+      public Builder setJGOGBMEKOPP(
+          emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
+        if (jGOGBMEKOPPBuilder_ == null) {
+          jGOGBMEKOPP_ = builderForValue.build();
+          onChanged();
+        } else {
+          jGOGBMEKOPPBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Vector JGOGBMEKOPP = 1;</code>
+       */
+      public Builder mergeJGOGBMEKOPP(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
+        if (jGOGBMEKOPPBuilder_ == null) {
+          if (jGOGBMEKOPP_ != null) {
+            jGOGBMEKOPP_ =
+              emu.grasscutter.net.proto.VectorOuterClass.Vector.newBuilder(jGOGBMEKOPP_).mergeFrom(value).buildPartial();
+          } else {
+            jGOGBMEKOPP_ = value;
+          }
+          onChanged();
+        } else {
+          jGOGBMEKOPPBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Vector JGOGBMEKOPP = 1;</code>
+       */
+      public Builder clearJGOGBMEKOPP() {
+        if (jGOGBMEKOPPBuilder_ == null) {
+          jGOGBMEKOPP_ = null;
+          onChanged();
+        } else {
+          jGOGBMEKOPP_ = null;
+          jGOGBMEKOPPBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Vector JGOGBMEKOPP = 1;</code>
+       */
+      public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getJGOGBMEKOPPBuilder() {
+        
+        onChanged();
+        return getJGOGBMEKOPPFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.Vector JGOGBMEKOPP = 1;</code>
+       */
+      public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getJGOGBMEKOPPOrBuilder() {
+        if (jGOGBMEKOPPBuilder_ != null) {
+          return jGOGBMEKOPPBuilder_.getMessageOrBuilder();
+        } else {
+          return jGOGBMEKOPP_ == null ?
+              emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : jGOGBMEKOPP_;
+        }
+      }
+      /**
+       * <code>.Vector JGOGBMEKOPP = 1;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
+          getJGOGBMEKOPPFieldBuilder() {
+        if (jGOGBMEKOPPBuilder_ == null) {
+          jGOGBMEKOPPBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder>(
+                  getJGOGBMEKOPP(),
+                  getParentForChildren(),
+                  isClean());
+          jGOGBMEKOPP_ = null;
+        }
+        return jGOGBMEKOPPBuilder_;
+      }
+
+      private int cJIMMADJKHD_ ;
+      /**
+       * <code>uint32 CJIMMADJKHD = 10;</code>
+       * @return The cJIMMADJKHD.
+       */
+      @java.lang.Override
+      public int getCJIMMADJKHD() {
+        return cJIMMADJKHD_;
+      }
+      /**
+       * <code>uint32 CJIMMADJKHD = 10;</code>
+       * @param value The cJIMMADJKHD to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCJIMMADJKHD(int value) {
+        
+        cJIMMADJKHD_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 CJIMMADJKHD = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCJIMMADJKHD() {
+        
+        cJIMMADJKHD_ = 0;
         onChanged();
         return this;
       }
@@ -1028,19 +1453,21 @@ public final class VehicleInteractRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\030VehicleInteractRsp.proto\032\023VehicleMembe" +
-      "r.proto\032\031VehicleInteractType.proto\"\324\001\n\022V" +
-      "ehicleInteractRsp\022\036\n\006member\030\017 \001(\0132\016.Vehi" +
-      "cleMember\022\020\n\010entityId\030\002 \001(\r\022\017\n\007retcode\030\n" +
-      " \001(\005\022*\n\014interactType\030\010 \001(\0162\024.VehicleInte" +
-      "ractType\"O\n\013HPGMAKHGBBO\022\010\n\004NONE\020\000\022\020\n\013PEP" +
-      "POHPHJOJ\020\271\006\022\017\n\013DCDNILFDFLB\020\000\022\017\n\013NNBKOLMP" +
-      "OEA\020\001\032\002\020\001B\033\n\031emu.grasscutter.net.protob\006" +
-      "proto3"
+      "r.proto\032\014Vector.proto\032\031VehicleInteractTy" +
+      "pe.proto\"\351\001\n\022VehicleInteractRsp\022\017\n\007retco" +
+      "de\030\006 \001(\005\022\036\n\006member\030\016 \001(\0132\016.VehicleMember" +
+      "\022\034\n\013KKDFCJENDNI\030\004 \001(\0132\007.Vector\022\021\n\tentity" +
+      "_id\030\005 \001(\r\022+\n\rinteract_type\030\007 \001(\0162\024.Vehic" +
+      "leInteractType\022\021\n\tgadget_id\030\r \001(\r\022\034\n\013JGO" +
+      "GBMEKOPP\030\001 \001(\0132\007.Vector\022\023\n\013CJIMMADJKHD\030\n" +
+      " \001(\rB\033\n\031emu.grasscutter.net.protob\006proto" +
+      "3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
           emu.grasscutter.net.proto.VehicleMemberOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.VectorOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.VehicleInteractTypeOuterClass.getDescriptor(),
         });
     internal_static_VehicleInteractRsp_descriptor =
@@ -1048,8 +1475,9 @@ public final class VehicleInteractRspOuterClass {
     internal_static_VehicleInteractRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_VehicleInteractRsp_descriptor,
-        new java.lang.String[] { "Member", "EntityId", "Retcode", "InteractType", });
+        new java.lang.String[] { "Retcode", "Member", "KKDFCJENDNI", "EntityId", "InteractType", "GadgetId", "JGOGBMEKOPP", "CJIMMADJKHD", });
     emu.grasscutter.net.proto.VehicleMemberOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.VectorOuterClass.getDescriptor();
     emu.grasscutter.net.proto.VehicleInteractTypeOuterClass.getDescriptor();
   }
 

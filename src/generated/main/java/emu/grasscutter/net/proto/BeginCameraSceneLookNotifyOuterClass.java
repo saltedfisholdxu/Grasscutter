@@ -19,86 +19,120 @@ public final class BeginCameraSceneLookNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool Unk3300_ONBDMCHFPDL = 2;</code>
-     * @return The unk3300ONBDMCHFPDL.
+     * <code>uint32 entity_id = 609;</code>
+     * @return The entityId.
      */
-    boolean getUnk3300ONBDMCHFPDL();
+    int getEntityId();
 
     /**
-     * <code>bool Unk3300_PIEFLAEGGBI = 8;</code>
-     * @return The unk3300PIEFLAEGGBI.
+     * <code>bool JBCEDEGCGFJ = 8;</code>
+     * @return The jBCEDEGCGFJ.
      */
-    boolean getUnk3300PIEFLAEGGBI();
+    boolean getJBCEDEGCGFJ();
 
     /**
-     * <code>bool Unk3300_NJLBIMJDFHJ = 1;</code>
-     * @return The unk3300NJLBIMJDFHJ.
+     * <code>bool ADPLABBOBKF = 15;</code>
+     * @return The aDPLABBOBKF.
      */
-    boolean getUnk3300NJLBIMJDFHJ();
+    boolean getADPLABBOBKF();
 
     /**
-     * <code>float duration = 10;</code>
-     * @return The duration.
+     * <code>uint32 DOCBFPIPMPK = 1006;</code>
+     * @return The dOCBFPIPMPK.
      */
-    float getDuration();
+    int getDOCBFPIPMPK();
 
     /**
-     * <code>.KeepRotType keepRotType = 14;</code>
-     * @return The enum numeric value on the wire for keepRotType.
+     * <code>.Vector LKGGBPLCEJI = 12;</code>
+     * @return Whether the lKGGBPLCEJI field is set.
      */
-    int getKeepRotTypeValue();
+    boolean hasLKGGBPLCEJI();
     /**
-     * <code>.KeepRotType keepRotType = 14;</code>
-     * @return The keepRotType.
+     * <code>.Vector LKGGBPLCEJI = 12;</code>
+     * @return The lKGGBPLCEJI.
      */
-    emu.grasscutter.net.proto.KeepRotTypeOuterClass.KeepRotType getKeepRotType();
+    emu.grasscutter.net.proto.VectorOuterClass.Vector getLKGGBPLCEJI();
+    /**
+     * <code>.Vector LKGGBPLCEJI = 12;</code>
+     */
+    emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getLKGGBPLCEJIOrBuilder();
 
     /**
-     * <code>.Vector Unk3300_FJDFGLNLMBN = 13;</code>
-     * @return Whether the unk3300FJDFGLNLMBN field is set.
+     * <code>bool KJHLOCKMIMB = 1477;</code>
+     * @return The kJHLOCKMIMB.
      */
-    boolean hasUnk3300FJDFGLNLMBN();
-    /**
-     * <code>.Vector Unk3300_FJDFGLNLMBN = 13;</code>
-     * @return The unk3300FJDFGLNLMBN.
-     */
-    emu.grasscutter.net.proto.VectorOuterClass.Vector getUnk3300FJDFGLNLMBN();
-    /**
-     * <code>.Vector Unk3300_FJDFGLNLMBN = 13;</code>
-     */
-    emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getUnk3300FJDFGLNLMBNOrBuilder();
+    boolean getKJHLOCKMIMB();
 
     /**
-     * <code>float Unk3300_FIOLGCIKFLH = 5;</code>
-     * @return The unk3300FIOLGCIKFLH.
+     * <code>float GJNLEMGJCJI = 10;</code>
+     * @return The gJNLEMGJCJI.
      */
-    float getUnk3300FIOLGCIKFLH();
+    float getGJNLEMGJCJI();
 
     /**
-     * <code>float Unk3300_HFPCHFNFJKP = 11;</code>
-     * @return The unk3300HFPCHFNFJKP.
+     * <code>bool IPKFLPFLNNI = 9;</code>
+     * @return The iPKFLPFLNNI.
      */
-    float getUnk3300HFPCHFNFJKP();
+    boolean getIPKFLPFLNNI();
 
     /**
-     * <code>repeated string otherParams = 12;</code>
+     * <code>bool PDOCOOCFAIH = 5;</code>
+     * @return The pDOCOOCFAIH.
+     */
+    boolean getPDOCOOCFAIH();
+
+    /**
+     * <code>.Vector MMOMOKPCOJK = 14;</code>
+     * @return Whether the mMOMOKPCOJK field is set.
+     */
+    boolean hasMMOMOKPCOJK();
+    /**
+     * <code>.Vector MMOMOKPCOJK = 14;</code>
+     * @return The mMOMOKPCOJK.
+     */
+    emu.grasscutter.net.proto.VectorOuterClass.Vector getMMOMOKPCOJK();
+    /**
+     * <code>.Vector MMOMOKPCOJK = 14;</code>
+     */
+    emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getMMOMOKPCOJKOrBuilder();
+
+    /**
+     * <code>bool FPDPEHICGAC = 7;</code>
+     * @return The fPDPEHICGAC.
+     */
+    boolean getFPDPEHICGAC();
+
+    /**
+     * <code>float MIKBDFOBIBB = 3;</code>
+     * @return The mIKBDFOBIBB.
+     */
+    float getMIKBDFOBIBB();
+
+    /**
+     * <code>float CLLOFLJICAF = 11;</code>
+     * @return The cLLOFLJICAF.
+     */
+    float getCLLOFLJICAF();
+
+    /**
+     * <code>repeated string other_params = 2;</code>
      * @return A list containing the otherParams.
      */
     java.util.List<java.lang.String>
         getOtherParamsList();
     /**
-     * <code>repeated string otherParams = 12;</code>
+     * <code>repeated string other_params = 2;</code>
      * @return The count of otherParams.
      */
     int getOtherParamsCount();
     /**
-     * <code>repeated string otherParams = 12;</code>
+     * <code>repeated string other_params = 2;</code>
      * @param index The index of the element to return.
      * @return The otherParams at the given index.
      */
     java.lang.String getOtherParams(int index);
     /**
-     * <code>repeated string otherParams = 12;</code>
+     * <code>repeated string other_params = 2;</code>
      * @param index The index of the value to return.
      * @return The bytes of the otherParams at the given index.
      */
@@ -106,81 +140,52 @@ public final class BeginCameraSceneLookNotifyOuterClass {
         getOtherParamsBytes(int index);
 
     /**
-     * <code>uint32 entityId = 167;</code>
-     * @return The entityId.
+     * <code>.BeginCameraSceneLookNotify.KeepRotType keep_rot_type = 4;</code>
+     * @return The enum numeric value on the wire for keepRotType.
      */
-    int getEntityId();
+    int getKeepRotTypeValue();
+    /**
+     * <code>.BeginCameraSceneLookNotify.KeepRotType keep_rot_type = 4;</code>
+     * @return The keepRotType.
+     */
+    emu.grasscutter.net.proto.BeginCameraSceneLookNotifyOuterClass.BeginCameraSceneLookNotify.KeepRotType getKeepRotType();
 
     /**
-     * <code>bool Unk3300_ODADMBBFPAP = 4;</code>
-     * @return The unk3300ODADMBBFPAP.
+     * <code>bool FFHJPJBDLJC = 1;</code>
+     * @return The fFHJPJBDLJC.
      */
-    boolean getUnk3300ODADMBBFPAP();
+    boolean getFFHJPJBDLJC();
 
     /**
-     * <code>bool Unk3300_EELNOAICHOJ = 3;</code>
-     * @return The unk3300EELNOAICHOJ.
+     * <code>float duration = 6;</code>
+     * @return The duration.
      */
-    boolean getUnk3300EELNOAICHOJ();
+    float getDuration();
 
     /**
-     * <code>uint32 Unk3300_KCHKKBODNCJ = 1965;</code>
-     * @return The unk3300KCHKKBODNCJ.
+     * <code>uint32 GEBMAIIKMBJ = 54;</code>
+     * @return The gEBMAIIKMBJ.
      */
-    int getUnk3300KCHKKBODNCJ();
+    int getGEBMAIIKMBJ();
 
     /**
-     * <code>bool Unk3300_DFPCMOFONNK = 15;</code>
-     * @return The unk3300DFPCMOFONNK.
+     * <code>bool MCFGAPGPNLN = 13;</code>
+     * @return The mCFGAPGPNLN.
      */
-    boolean getUnk3300DFPCMOFONNK();
+    boolean getMCFGAPGPNLN();
 
     /**
-     * <code>float Unk3300_HKKCHCEMJIE = 2004;</code>
-     * @return The unk3300HKKCHCEMJIE.
+     * <code>float OJKGLFJCMID = 801;</code>
+     * @return The oJKGLFJCMID.
      */
-    float getUnk3300HKKCHCEMJIE();
-
-    /**
-     * <code>uint32 Unk3300_AJEENEOCFON = 106;</code>
-     * @return The unk3300AJEENEOCFON.
-     */
-    int getUnk3300AJEENEOCFON();
-
-    /**
-     * <code>.Vector Unk3300_PPCIDICMIEN = 7;</code>
-     * @return Whether the unk3300PPCIDICMIEN field is set.
-     */
-    boolean hasUnk3300PPCIDICMIEN();
-    /**
-     * <code>.Vector Unk3300_PPCIDICMIEN = 7;</code>
-     * @return The unk3300PPCIDICMIEN.
-     */
-    emu.grasscutter.net.proto.VectorOuterClass.Vector getUnk3300PPCIDICMIEN();
-    /**
-     * <code>.Vector Unk3300_PPCIDICMIEN = 7;</code>
-     */
-    emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getUnk3300PPCIDICMIENOrBuilder();
-
-    /**
-     * <code>bool Unk3300_AAOGBCCNJAF = 644;</code>
-     * @return The unk3300AAOGBCCNJAF.
-     */
-    boolean getUnk3300AAOGBCCNJAF();
-
-    /**
-     * <code>float Unk3300_HCLPGGAOIAC = 6;</code>
-     * @return The unk3300HCLPGGAOIAC.
-     */
-    float getUnk3300HCLPGGAOIAC();
-
-    /**
-     * <code>bool Unk3300_ILMHDLHLKGJ = 9;</code>
-     * @return The unk3300ILMHDLHLKGJ.
-     */
-    boolean getUnk3300ILMHDLHLKGJ();
+    float getOJKGLFJCMID();
   }
   /**
+   * <pre>
+   * CmdId: 27569
+   * Obf: KAGMEJHECDK
+   * </pre>
+   *
    * Protobuf type {@code BeginCameraSceneLookNotify}
    */
   public static final class BeginCameraSceneLookNotify extends
@@ -193,8 +198,8 @@ public final class BeginCameraSceneLookNotifyOuterClass {
       super(builder);
     }
     private BeginCameraSceneLookNotify() {
-      keepRotType_ = 0;
       otherParams_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+      keepRotType_ = 0;
     }
 
     @java.lang.Override
@@ -230,68 +235,10 @@ public final class BeginCameraSceneLookNotifyOuterClass {
               break;
             case 8: {
 
-              unk3300NJLBIMJDFHJ_ = input.readBool();
+              fFHJPJBDLJC_ = input.readBool();
               break;
             }
-            case 16: {
-
-              unk3300ONBDMCHFPDL_ = input.readBool();
-              break;
-            }
-            case 24: {
-
-              unk3300EELNOAICHOJ_ = input.readBool();
-              break;
-            }
-            case 32: {
-
-              unk3300ODADMBBFPAP_ = input.readBool();
-              break;
-            }
-            case 45: {
-
-              unk3300FIOLGCIKFLH_ = input.readFloat();
-              break;
-            }
-            case 53: {
-
-              unk3300HCLPGGAOIAC_ = input.readFloat();
-              break;
-            }
-            case 58: {
-              emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder subBuilder = null;
-              if (unk3300PPCIDICMIEN_ != null) {
-                subBuilder = unk3300PPCIDICMIEN_.toBuilder();
-              }
-              unk3300PPCIDICMIEN_ = input.readMessage(emu.grasscutter.net.proto.VectorOuterClass.Vector.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(unk3300PPCIDICMIEN_);
-                unk3300PPCIDICMIEN_ = subBuilder.buildPartial();
-              }
-
-              break;
-            }
-            case 64: {
-
-              unk3300PIEFLAEGGBI_ = input.readBool();
-              break;
-            }
-            case 72: {
-
-              unk3300ILMHDLHLKGJ_ = input.readBool();
-              break;
-            }
-            case 85: {
-
-              duration_ = input.readFloat();
-              break;
-            }
-            case 93: {
-
-              unk3300HFPCHFNFJKP_ = input.readFloat();
-              break;
-            }
-            case 98: {
+            case 18: {
               java.lang.String s = input.readStringRequireUtf8();
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 otherParams_ = new com.google.protobuf.LazyStringArrayList();
@@ -300,53 +247,111 @@ public final class BeginCameraSceneLookNotifyOuterClass {
               otherParams_.add(s);
               break;
             }
-            case 106: {
-              emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder subBuilder = null;
-              if (unk3300FJDFGLNLMBN_ != null) {
-                subBuilder = unk3300FJDFGLNLMBN_.toBuilder();
-              }
-              unk3300FJDFGLNLMBN_ = input.readMessage(emu.grasscutter.net.proto.VectorOuterClass.Vector.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(unk3300FJDFGLNLMBN_);
-                unk3300FJDFGLNLMBN_ = subBuilder.buildPartial();
-              }
+            case 29: {
 
+              mIKBDFOBIBB_ = input.readFloat();
               break;
             }
-            case 112: {
+            case 32: {
               int rawValue = input.readEnum();
 
               keepRotType_ = rawValue;
               break;
             }
+            case 40: {
+
+              pDOCOOCFAIH_ = input.readBool();
+              break;
+            }
+            case 53: {
+
+              duration_ = input.readFloat();
+              break;
+            }
+            case 56: {
+
+              fPDPEHICGAC_ = input.readBool();
+              break;
+            }
+            case 64: {
+
+              jBCEDEGCGFJ_ = input.readBool();
+              break;
+            }
+            case 72: {
+
+              iPKFLPFLNNI_ = input.readBool();
+              break;
+            }
+            case 85: {
+
+              gJNLEMGJCJI_ = input.readFloat();
+              break;
+            }
+            case 93: {
+
+              cLLOFLJICAF_ = input.readFloat();
+              break;
+            }
+            case 98: {
+              emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder subBuilder = null;
+              if (lKGGBPLCEJI_ != null) {
+                subBuilder = lKGGBPLCEJI_.toBuilder();
+              }
+              lKGGBPLCEJI_ = input.readMessage(emu.grasscutter.net.proto.VectorOuterClass.Vector.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(lKGGBPLCEJI_);
+                lKGGBPLCEJI_ = subBuilder.buildPartial();
+              }
+
+              break;
+            }
+            case 104: {
+
+              mCFGAPGPNLN_ = input.readBool();
+              break;
+            }
+            case 114: {
+              emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder subBuilder = null;
+              if (mMOMOKPCOJK_ != null) {
+                subBuilder = mMOMOKPCOJK_.toBuilder();
+              }
+              mMOMOKPCOJK_ = input.readMessage(emu.grasscutter.net.proto.VectorOuterClass.Vector.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(mMOMOKPCOJK_);
+                mMOMOKPCOJK_ = subBuilder.buildPartial();
+              }
+
+              break;
+            }
             case 120: {
 
-              unk3300DFPCMOFONNK_ = input.readBool();
+              aDPLABBOBKF_ = input.readBool();
               break;
             }
-            case 848: {
+            case 432: {
 
-              unk3300AJEENEOCFON_ = input.readUInt32();
+              gEBMAIIKMBJ_ = input.readUInt32();
               break;
             }
-            case 1336: {
+            case 4872: {
 
               entityId_ = input.readUInt32();
               break;
             }
-            case 5152: {
+            case 6413: {
 
-              unk3300AAOGBCCNJAF_ = input.readBool();
+              oJKGLFJCMID_ = input.readFloat();
               break;
             }
-            case 15720: {
+            case 8048: {
 
-              unk3300KCHKKBODNCJ_ = input.readUInt32();
+              dOCBFPIPMPK_ = input.readUInt32();
               break;
             }
-            case 16037: {
+            case 11816: {
 
-              unk3300HKKCHCEMJIE_ = input.readFloat();
+              kJHLOCKMIMB_ = input.readBool();
               break;
             }
             default: {
@@ -385,49 +390,37 @@ public final class BeginCameraSceneLookNotifyOuterClass {
     }
 
     /**
-     * Protobuf enum {@code BeginCameraSceneLookNotify.CPHHCGOAFAE}
+     * <pre>
+     * Obf: ONABGJCLONK
+     * </pre>
+     *
+     * Protobuf enum {@code BeginCameraSceneLookNotify.KeepRotType}
      */
-    public enum CPHHCGOAFAE
+    public enum KeepRotType
         implements com.google.protobuf.ProtocolMessageEnum {
       /**
-       * <code>NONE = 0;</code>
+       * <code>KEEP_ROT_X = 0;</code>
        */
-      NONE(0, 0),
+      KEEP_ROT_X(0),
       /**
-       * <code>PEPPOHPHJOJ = 279;</code>
+       * <code>KEEP_ROT_XY = 1;</code>
        */
-      PEPPOHPHJOJ(1, 279),
-      /**
-       * <code>NNBKOLMPOEA = 1;</code>
-       */
-      NNBKOLMPOEA(3, 1),
-      UNRECOGNIZED(-1, -1),
+      KEEP_ROT_XY(1),
+      UNRECOGNIZED(-1),
       ;
 
       /**
-       * <code>DCDNILFDFLB = 0;</code>
+       * <code>KEEP_ROT_X = 0;</code>
        */
-      public static final CPHHCGOAFAE DCDNILFDFLB = NONE;
+      public static final int KEEP_ROT_X_VALUE = 0;
       /**
-       * <code>NONE = 0;</code>
+       * <code>KEEP_ROT_XY = 1;</code>
        */
-      public static final int NONE_VALUE = 0;
-      /**
-       * <code>PEPPOHPHJOJ = 279;</code>
-       */
-      public static final int PEPPOHPHJOJ_VALUE = 279;
-      /**
-       * <code>DCDNILFDFLB = 0;</code>
-       */
-      public static final int DCDNILFDFLB_VALUE = 0;
-      /**
-       * <code>NNBKOLMPOEA = 1;</code>
-       */
-      public static final int NNBKOLMPOEA_VALUE = 1;
+      public static final int KEEP_ROT_XY_VALUE = 1;
 
 
       public final int getNumber() {
-        if (index == -1) {
+        if (this == UNRECOGNIZED) {
           throw new java.lang.IllegalArgumentException(
               "Can't get the number of an unknown enum value.");
         }
@@ -440,7 +433,7 @@ public final class BeginCameraSceneLookNotifyOuterClass {
        * @deprecated Use {@link #forNumber(int)} instead.
        */
       @java.lang.Deprecated
-      public static CPHHCGOAFAE valueOf(int value) {
+      public static KeepRotType valueOf(int value) {
         return forNumber(value);
       }
 
@@ -448,34 +441,33 @@ public final class BeginCameraSceneLookNotifyOuterClass {
        * @param value The numeric wire value of the corresponding enum entry.
        * @return The enum associated with the given numeric wire value.
        */
-      public static CPHHCGOAFAE forNumber(int value) {
+      public static KeepRotType forNumber(int value) {
         switch (value) {
-          case 0: return NONE;
-          case 279: return PEPPOHPHJOJ;
-          case 1: return NNBKOLMPOEA;
+          case 0: return KEEP_ROT_X;
+          case 1: return KEEP_ROT_XY;
           default: return null;
         }
       }
 
-      public static com.google.protobuf.Internal.EnumLiteMap<CPHHCGOAFAE>
+      public static com.google.protobuf.Internal.EnumLiteMap<KeepRotType>
           internalGetValueMap() {
         return internalValueMap;
       }
       private static final com.google.protobuf.Internal.EnumLiteMap<
-          CPHHCGOAFAE> internalValueMap =
-            new com.google.protobuf.Internal.EnumLiteMap<CPHHCGOAFAE>() {
-              public CPHHCGOAFAE findValueByNumber(int number) {
-                return CPHHCGOAFAE.forNumber(number);
+          KeepRotType> internalValueMap =
+            new com.google.protobuf.Internal.EnumLiteMap<KeepRotType>() {
+              public KeepRotType findValueByNumber(int number) {
+                return KeepRotType.forNumber(number);
               }
             };
 
       public final com.google.protobuf.Descriptors.EnumValueDescriptor
           getValueDescriptor() {
-        if (index == -1) {
+        if (this == UNRECOGNIZED) {
           throw new java.lang.IllegalStateException(
               "Can't get the descriptor of an unrecognized enum value.");
         }
-        return getDescriptor().getValues().get(index);
+        return getDescriptor().getValues().get(ordinal());
       }
       public final com.google.protobuf.Descriptors.EnumDescriptor
           getDescriptorForType() {
@@ -486,13 +478,9 @@ public final class BeginCameraSceneLookNotifyOuterClass {
         return emu.grasscutter.net.proto.BeginCameraSceneLookNotifyOuterClass.BeginCameraSceneLookNotify.getDescriptor().getEnumTypes().get(0);
       }
 
-      private static final CPHHCGOAFAE[] VALUES = getStaticValuesArray();
-      private static CPHHCGOAFAE[] getStaticValuesArray() {
-        return new CPHHCGOAFAE[] {
-          NONE, PEPPOHPHJOJ, DCDNILFDFLB, NNBKOLMPOEA, 
-        };
-      }
-      public static CPHHCGOAFAE valueOf(
+      private static final KeepRotType[] VALUES = values();
+
+      public static KeepRotType valueOf(
           com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
         if (desc.getType() != getDescriptor()) {
           throw new java.lang.IllegalArgumentException(
@@ -504,132 +492,192 @@ public final class BeginCameraSceneLookNotifyOuterClass {
         return VALUES[desc.getIndex()];
       }
 
-      private final int index;
       private final int value;
 
-      private CPHHCGOAFAE(int index, int value) {
-        this.index = index;
+      private KeepRotType(int value) {
         this.value = value;
       }
 
-      // @@protoc_insertion_point(enum_scope:BeginCameraSceneLookNotify.CPHHCGOAFAE)
+      // @@protoc_insertion_point(enum_scope:BeginCameraSceneLookNotify.KeepRotType)
     }
 
-    public static final int UNK3300_ONBDMCHFPDL_FIELD_NUMBER = 2;
-    private boolean unk3300ONBDMCHFPDL_;
+    public static final int ENTITY_ID_FIELD_NUMBER = 609;
+    private int entityId_;
     /**
-     * <code>bool Unk3300_ONBDMCHFPDL = 2;</code>
-     * @return The unk3300ONBDMCHFPDL.
+     * <code>uint32 entity_id = 609;</code>
+     * @return The entityId.
      */
     @java.lang.Override
-    public boolean getUnk3300ONBDMCHFPDL() {
-      return unk3300ONBDMCHFPDL_;
+    public int getEntityId() {
+      return entityId_;
     }
 
-    public static final int UNK3300_PIEFLAEGGBI_FIELD_NUMBER = 8;
-    private boolean unk3300PIEFLAEGGBI_;
+    public static final int JBCEDEGCGFJ_FIELD_NUMBER = 8;
+    private boolean jBCEDEGCGFJ_;
     /**
-     * <code>bool Unk3300_PIEFLAEGGBI = 8;</code>
-     * @return The unk3300PIEFLAEGGBI.
+     * <code>bool JBCEDEGCGFJ = 8;</code>
+     * @return The jBCEDEGCGFJ.
      */
     @java.lang.Override
-    public boolean getUnk3300PIEFLAEGGBI() {
-      return unk3300PIEFLAEGGBI_;
+    public boolean getJBCEDEGCGFJ() {
+      return jBCEDEGCGFJ_;
     }
 
-    public static final int UNK3300_NJLBIMJDFHJ_FIELD_NUMBER = 1;
-    private boolean unk3300NJLBIMJDFHJ_;
+    public static final int ADPLABBOBKF_FIELD_NUMBER = 15;
+    private boolean aDPLABBOBKF_;
     /**
-     * <code>bool Unk3300_NJLBIMJDFHJ = 1;</code>
-     * @return The unk3300NJLBIMJDFHJ.
+     * <code>bool ADPLABBOBKF = 15;</code>
+     * @return The aDPLABBOBKF.
      */
     @java.lang.Override
-    public boolean getUnk3300NJLBIMJDFHJ() {
-      return unk3300NJLBIMJDFHJ_;
+    public boolean getADPLABBOBKF() {
+      return aDPLABBOBKF_;
     }
 
-    public static final int DURATION_FIELD_NUMBER = 10;
-    private float duration_;
+    public static final int DOCBFPIPMPK_FIELD_NUMBER = 1006;
+    private int dOCBFPIPMPK_;
     /**
-     * <code>float duration = 10;</code>
-     * @return The duration.
+     * <code>uint32 DOCBFPIPMPK = 1006;</code>
+     * @return The dOCBFPIPMPK.
      */
     @java.lang.Override
-    public float getDuration() {
-      return duration_;
+    public int getDOCBFPIPMPK() {
+      return dOCBFPIPMPK_;
     }
 
-    public static final int KEEPROTTYPE_FIELD_NUMBER = 14;
-    private int keepRotType_;
+    public static final int LKGGBPLCEJI_FIELD_NUMBER = 12;
+    private emu.grasscutter.net.proto.VectorOuterClass.Vector lKGGBPLCEJI_;
     /**
-     * <code>.KeepRotType keepRotType = 14;</code>
-     * @return The enum numeric value on the wire for keepRotType.
+     * <code>.Vector LKGGBPLCEJI = 12;</code>
+     * @return Whether the lKGGBPLCEJI field is set.
      */
-    @java.lang.Override public int getKeepRotTypeValue() {
-      return keepRotType_;
+    @java.lang.Override
+    public boolean hasLKGGBPLCEJI() {
+      return lKGGBPLCEJI_ != null;
     }
     /**
-     * <code>.KeepRotType keepRotType = 14;</code>
-     * @return The keepRotType.
+     * <code>.Vector LKGGBPLCEJI = 12;</code>
+     * @return The lKGGBPLCEJI.
      */
-    @java.lang.Override public emu.grasscutter.net.proto.KeepRotTypeOuterClass.KeepRotType getKeepRotType() {
-      @SuppressWarnings("deprecation")
-      emu.grasscutter.net.proto.KeepRotTypeOuterClass.KeepRotType result = emu.grasscutter.net.proto.KeepRotTypeOuterClass.KeepRotType.valueOf(keepRotType_);
-      return result == null ? emu.grasscutter.net.proto.KeepRotTypeOuterClass.KeepRotType.UNRECOGNIZED : result;
+    @java.lang.Override
+    public emu.grasscutter.net.proto.VectorOuterClass.Vector getLKGGBPLCEJI() {
+      return lKGGBPLCEJI_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : lKGGBPLCEJI_;
+    }
+    /**
+     * <code>.Vector LKGGBPLCEJI = 12;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getLKGGBPLCEJIOrBuilder() {
+      return getLKGGBPLCEJI();
     }
 
-    public static final int UNK3300_FJDFGLNLMBN_FIELD_NUMBER = 13;
-    private emu.grasscutter.net.proto.VectorOuterClass.Vector unk3300FJDFGLNLMBN_;
+    public static final int KJHLOCKMIMB_FIELD_NUMBER = 1477;
+    private boolean kJHLOCKMIMB_;
     /**
-     * <code>.Vector Unk3300_FJDFGLNLMBN = 13;</code>
-     * @return Whether the unk3300FJDFGLNLMBN field is set.
+     * <code>bool KJHLOCKMIMB = 1477;</code>
+     * @return The kJHLOCKMIMB.
      */
     @java.lang.Override
-    public boolean hasUnk3300FJDFGLNLMBN() {
-      return unk3300FJDFGLNLMBN_ != null;
-    }
-    /**
-     * <code>.Vector Unk3300_FJDFGLNLMBN = 13;</code>
-     * @return The unk3300FJDFGLNLMBN.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.VectorOuterClass.Vector getUnk3300FJDFGLNLMBN() {
-      return unk3300FJDFGLNLMBN_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : unk3300FJDFGLNLMBN_;
-    }
-    /**
-     * <code>.Vector Unk3300_FJDFGLNLMBN = 13;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getUnk3300FJDFGLNLMBNOrBuilder() {
-      return getUnk3300FJDFGLNLMBN();
+    public boolean getKJHLOCKMIMB() {
+      return kJHLOCKMIMB_;
     }
 
-    public static final int UNK3300_FIOLGCIKFLH_FIELD_NUMBER = 5;
-    private float unk3300FIOLGCIKFLH_;
+    public static final int GJNLEMGJCJI_FIELD_NUMBER = 10;
+    private float gJNLEMGJCJI_;
     /**
-     * <code>float Unk3300_FIOLGCIKFLH = 5;</code>
-     * @return The unk3300FIOLGCIKFLH.
+     * <code>float GJNLEMGJCJI = 10;</code>
+     * @return The gJNLEMGJCJI.
      */
     @java.lang.Override
-    public float getUnk3300FIOLGCIKFLH() {
-      return unk3300FIOLGCIKFLH_;
+    public float getGJNLEMGJCJI() {
+      return gJNLEMGJCJI_;
     }
 
-    public static final int UNK3300_HFPCHFNFJKP_FIELD_NUMBER = 11;
-    private float unk3300HFPCHFNFJKP_;
+    public static final int IPKFLPFLNNI_FIELD_NUMBER = 9;
+    private boolean iPKFLPFLNNI_;
     /**
-     * <code>float Unk3300_HFPCHFNFJKP = 11;</code>
-     * @return The unk3300HFPCHFNFJKP.
+     * <code>bool IPKFLPFLNNI = 9;</code>
+     * @return The iPKFLPFLNNI.
      */
     @java.lang.Override
-    public float getUnk3300HFPCHFNFJKP() {
-      return unk3300HFPCHFNFJKP_;
+    public boolean getIPKFLPFLNNI() {
+      return iPKFLPFLNNI_;
     }
 
-    public static final int OTHERPARAMS_FIELD_NUMBER = 12;
+    public static final int PDOCOOCFAIH_FIELD_NUMBER = 5;
+    private boolean pDOCOOCFAIH_;
+    /**
+     * <code>bool PDOCOOCFAIH = 5;</code>
+     * @return The pDOCOOCFAIH.
+     */
+    @java.lang.Override
+    public boolean getPDOCOOCFAIH() {
+      return pDOCOOCFAIH_;
+    }
+
+    public static final int MMOMOKPCOJK_FIELD_NUMBER = 14;
+    private emu.grasscutter.net.proto.VectorOuterClass.Vector mMOMOKPCOJK_;
+    /**
+     * <code>.Vector MMOMOKPCOJK = 14;</code>
+     * @return Whether the mMOMOKPCOJK field is set.
+     */
+    @java.lang.Override
+    public boolean hasMMOMOKPCOJK() {
+      return mMOMOKPCOJK_ != null;
+    }
+    /**
+     * <code>.Vector MMOMOKPCOJK = 14;</code>
+     * @return The mMOMOKPCOJK.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.VectorOuterClass.Vector getMMOMOKPCOJK() {
+      return mMOMOKPCOJK_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : mMOMOKPCOJK_;
+    }
+    /**
+     * <code>.Vector MMOMOKPCOJK = 14;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getMMOMOKPCOJKOrBuilder() {
+      return getMMOMOKPCOJK();
+    }
+
+    public static final int FPDPEHICGAC_FIELD_NUMBER = 7;
+    private boolean fPDPEHICGAC_;
+    /**
+     * <code>bool FPDPEHICGAC = 7;</code>
+     * @return The fPDPEHICGAC.
+     */
+    @java.lang.Override
+    public boolean getFPDPEHICGAC() {
+      return fPDPEHICGAC_;
+    }
+
+    public static final int MIKBDFOBIBB_FIELD_NUMBER = 3;
+    private float mIKBDFOBIBB_;
+    /**
+     * <code>float MIKBDFOBIBB = 3;</code>
+     * @return The mIKBDFOBIBB.
+     */
+    @java.lang.Override
+    public float getMIKBDFOBIBB() {
+      return mIKBDFOBIBB_;
+    }
+
+    public static final int CLLOFLJICAF_FIELD_NUMBER = 11;
+    private float cLLOFLJICAF_;
+    /**
+     * <code>float CLLOFLJICAF = 11;</code>
+     * @return The cLLOFLJICAF.
+     */
+    @java.lang.Override
+    public float getCLLOFLJICAF() {
+      return cLLOFLJICAF_;
+    }
+
+    public static final int OTHER_PARAMS_FIELD_NUMBER = 2;
     private com.google.protobuf.LazyStringList otherParams_;
     /**
-     * <code>repeated string otherParams = 12;</code>
+     * <code>repeated string other_params = 2;</code>
      * @return A list containing the otherParams.
      */
     public com.google.protobuf.ProtocolStringList
@@ -637,14 +685,14 @@ public final class BeginCameraSceneLookNotifyOuterClass {
       return otherParams_;
     }
     /**
-     * <code>repeated string otherParams = 12;</code>
+     * <code>repeated string other_params = 2;</code>
      * @return The count of otherParams.
      */
     public int getOtherParamsCount() {
       return otherParams_.size();
     }
     /**
-     * <code>repeated string otherParams = 12;</code>
+     * <code>repeated string other_params = 2;</code>
      * @param index The index of the element to return.
      * @return The otherParams at the given index.
      */
@@ -652,7 +700,7 @@ public final class BeginCameraSceneLookNotifyOuterClass {
       return otherParams_.get(index);
     }
     /**
-     * <code>repeated string otherParams = 12;</code>
+     * <code>repeated string other_params = 2;</code>
      * @param index The index of the value to return.
      * @return The bytes of the otherParams at the given index.
      */
@@ -661,140 +709,78 @@ public final class BeginCameraSceneLookNotifyOuterClass {
       return otherParams_.getByteString(index);
     }
 
-    public static final int ENTITYID_FIELD_NUMBER = 167;
-    private int entityId_;
+    public static final int KEEP_ROT_TYPE_FIELD_NUMBER = 4;
+    private int keepRotType_;
     /**
-     * <code>uint32 entityId = 167;</code>
-     * @return The entityId.
+     * <code>.BeginCameraSceneLookNotify.KeepRotType keep_rot_type = 4;</code>
+     * @return The enum numeric value on the wire for keepRotType.
      */
-    @java.lang.Override
-    public int getEntityId() {
-      return entityId_;
+    @java.lang.Override public int getKeepRotTypeValue() {
+      return keepRotType_;
+    }
+    /**
+     * <code>.BeginCameraSceneLookNotify.KeepRotType keep_rot_type = 4;</code>
+     * @return The keepRotType.
+     */
+    @java.lang.Override public emu.grasscutter.net.proto.BeginCameraSceneLookNotifyOuterClass.BeginCameraSceneLookNotify.KeepRotType getKeepRotType() {
+      @SuppressWarnings("deprecation")
+      emu.grasscutter.net.proto.BeginCameraSceneLookNotifyOuterClass.BeginCameraSceneLookNotify.KeepRotType result = emu.grasscutter.net.proto.BeginCameraSceneLookNotifyOuterClass.BeginCameraSceneLookNotify.KeepRotType.valueOf(keepRotType_);
+      return result == null ? emu.grasscutter.net.proto.BeginCameraSceneLookNotifyOuterClass.BeginCameraSceneLookNotify.KeepRotType.UNRECOGNIZED : result;
     }
 
-    public static final int UNK3300_ODADMBBFPAP_FIELD_NUMBER = 4;
-    private boolean unk3300ODADMBBFPAP_;
+    public static final int FFHJPJBDLJC_FIELD_NUMBER = 1;
+    private boolean fFHJPJBDLJC_;
     /**
-     * <code>bool Unk3300_ODADMBBFPAP = 4;</code>
-     * @return The unk3300ODADMBBFPAP.
+     * <code>bool FFHJPJBDLJC = 1;</code>
+     * @return The fFHJPJBDLJC.
      */
     @java.lang.Override
-    public boolean getUnk3300ODADMBBFPAP() {
-      return unk3300ODADMBBFPAP_;
+    public boolean getFFHJPJBDLJC() {
+      return fFHJPJBDLJC_;
     }
 
-    public static final int UNK3300_EELNOAICHOJ_FIELD_NUMBER = 3;
-    private boolean unk3300EELNOAICHOJ_;
+    public static final int DURATION_FIELD_NUMBER = 6;
+    private float duration_;
     /**
-     * <code>bool Unk3300_EELNOAICHOJ = 3;</code>
-     * @return The unk3300EELNOAICHOJ.
+     * <code>float duration = 6;</code>
+     * @return The duration.
      */
     @java.lang.Override
-    public boolean getUnk3300EELNOAICHOJ() {
-      return unk3300EELNOAICHOJ_;
+    public float getDuration() {
+      return duration_;
     }
 
-    public static final int UNK3300_KCHKKBODNCJ_FIELD_NUMBER = 1965;
-    private int unk3300KCHKKBODNCJ_;
+    public static final int GEBMAIIKMBJ_FIELD_NUMBER = 54;
+    private int gEBMAIIKMBJ_;
     /**
-     * <code>uint32 Unk3300_KCHKKBODNCJ = 1965;</code>
-     * @return The unk3300KCHKKBODNCJ.
+     * <code>uint32 GEBMAIIKMBJ = 54;</code>
+     * @return The gEBMAIIKMBJ.
      */
     @java.lang.Override
-    public int getUnk3300KCHKKBODNCJ() {
-      return unk3300KCHKKBODNCJ_;
+    public int getGEBMAIIKMBJ() {
+      return gEBMAIIKMBJ_;
     }
 
-    public static final int UNK3300_DFPCMOFONNK_FIELD_NUMBER = 15;
-    private boolean unk3300DFPCMOFONNK_;
+    public static final int MCFGAPGPNLN_FIELD_NUMBER = 13;
+    private boolean mCFGAPGPNLN_;
     /**
-     * <code>bool Unk3300_DFPCMOFONNK = 15;</code>
-     * @return The unk3300DFPCMOFONNK.
+     * <code>bool MCFGAPGPNLN = 13;</code>
+     * @return The mCFGAPGPNLN.
      */
     @java.lang.Override
-    public boolean getUnk3300DFPCMOFONNK() {
-      return unk3300DFPCMOFONNK_;
+    public boolean getMCFGAPGPNLN() {
+      return mCFGAPGPNLN_;
     }
 
-    public static final int UNK3300_HKKCHCEMJIE_FIELD_NUMBER = 2004;
-    private float unk3300HKKCHCEMJIE_;
+    public static final int OJKGLFJCMID_FIELD_NUMBER = 801;
+    private float oJKGLFJCMID_;
     /**
-     * <code>float Unk3300_HKKCHCEMJIE = 2004;</code>
-     * @return The unk3300HKKCHCEMJIE.
+     * <code>float OJKGLFJCMID = 801;</code>
+     * @return The oJKGLFJCMID.
      */
     @java.lang.Override
-    public float getUnk3300HKKCHCEMJIE() {
-      return unk3300HKKCHCEMJIE_;
-    }
-
-    public static final int UNK3300_AJEENEOCFON_FIELD_NUMBER = 106;
-    private int unk3300AJEENEOCFON_;
-    /**
-     * <code>uint32 Unk3300_AJEENEOCFON = 106;</code>
-     * @return The unk3300AJEENEOCFON.
-     */
-    @java.lang.Override
-    public int getUnk3300AJEENEOCFON() {
-      return unk3300AJEENEOCFON_;
-    }
-
-    public static final int UNK3300_PPCIDICMIEN_FIELD_NUMBER = 7;
-    private emu.grasscutter.net.proto.VectorOuterClass.Vector unk3300PPCIDICMIEN_;
-    /**
-     * <code>.Vector Unk3300_PPCIDICMIEN = 7;</code>
-     * @return Whether the unk3300PPCIDICMIEN field is set.
-     */
-    @java.lang.Override
-    public boolean hasUnk3300PPCIDICMIEN() {
-      return unk3300PPCIDICMIEN_ != null;
-    }
-    /**
-     * <code>.Vector Unk3300_PPCIDICMIEN = 7;</code>
-     * @return The unk3300PPCIDICMIEN.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.VectorOuterClass.Vector getUnk3300PPCIDICMIEN() {
-      return unk3300PPCIDICMIEN_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : unk3300PPCIDICMIEN_;
-    }
-    /**
-     * <code>.Vector Unk3300_PPCIDICMIEN = 7;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getUnk3300PPCIDICMIENOrBuilder() {
-      return getUnk3300PPCIDICMIEN();
-    }
-
-    public static final int UNK3300_AAOGBCCNJAF_FIELD_NUMBER = 644;
-    private boolean unk3300AAOGBCCNJAF_;
-    /**
-     * <code>bool Unk3300_AAOGBCCNJAF = 644;</code>
-     * @return The unk3300AAOGBCCNJAF.
-     */
-    @java.lang.Override
-    public boolean getUnk3300AAOGBCCNJAF() {
-      return unk3300AAOGBCCNJAF_;
-    }
-
-    public static final int UNK3300_HCLPGGAOIAC_FIELD_NUMBER = 6;
-    private float unk3300HCLPGGAOIAC_;
-    /**
-     * <code>float Unk3300_HCLPGGAOIAC = 6;</code>
-     * @return The unk3300HCLPGGAOIAC.
-     */
-    @java.lang.Override
-    public float getUnk3300HCLPGGAOIAC() {
-      return unk3300HCLPGGAOIAC_;
-    }
-
-    public static final int UNK3300_ILMHDLHLKGJ_FIELD_NUMBER = 9;
-    private boolean unk3300ILMHDLHLKGJ_;
-    /**
-     * <code>bool Unk3300_ILMHDLHLKGJ = 9;</code>
-     * @return The unk3300ILMHDLHLKGJ.
-     */
-    @java.lang.Override
-    public boolean getUnk3300ILMHDLHLKGJ() {
-      return unk3300ILMHDLHLKGJ_;
+    public float getOJKGLFJCMID() {
+      return oJKGLFJCMID_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -811,65 +797,65 @@ public final class BeginCameraSceneLookNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (unk3300NJLBIMJDFHJ_ != false) {
-        output.writeBool(1, unk3300NJLBIMJDFHJ_);
-      }
-      if (unk3300ONBDMCHFPDL_ != false) {
-        output.writeBool(2, unk3300ONBDMCHFPDL_);
-      }
-      if (unk3300EELNOAICHOJ_ != false) {
-        output.writeBool(3, unk3300EELNOAICHOJ_);
-      }
-      if (unk3300ODADMBBFPAP_ != false) {
-        output.writeBool(4, unk3300ODADMBBFPAP_);
-      }
-      if (unk3300FIOLGCIKFLH_ != 0F) {
-        output.writeFloat(5, unk3300FIOLGCIKFLH_);
-      }
-      if (unk3300HCLPGGAOIAC_ != 0F) {
-        output.writeFloat(6, unk3300HCLPGGAOIAC_);
-      }
-      if (unk3300PPCIDICMIEN_ != null) {
-        output.writeMessage(7, getUnk3300PPCIDICMIEN());
-      }
-      if (unk3300PIEFLAEGGBI_ != false) {
-        output.writeBool(8, unk3300PIEFLAEGGBI_);
-      }
-      if (unk3300ILMHDLHLKGJ_ != false) {
-        output.writeBool(9, unk3300ILMHDLHLKGJ_);
-      }
-      if (duration_ != 0F) {
-        output.writeFloat(10, duration_);
-      }
-      if (unk3300HFPCHFNFJKP_ != 0F) {
-        output.writeFloat(11, unk3300HFPCHFNFJKP_);
+      if (fFHJPJBDLJC_ != false) {
+        output.writeBool(1, fFHJPJBDLJC_);
       }
       for (int i = 0; i < otherParams_.size(); i++) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 12, otherParams_.getRaw(i));
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 2, otherParams_.getRaw(i));
       }
-      if (unk3300FJDFGLNLMBN_ != null) {
-        output.writeMessage(13, getUnk3300FJDFGLNLMBN());
+      if (mIKBDFOBIBB_ != 0F) {
+        output.writeFloat(3, mIKBDFOBIBB_);
       }
-      if (keepRotType_ != emu.grasscutter.net.proto.KeepRotTypeOuterClass.KeepRotType.KEEP_ROT_TYPE_X.getNumber()) {
-        output.writeEnum(14, keepRotType_);
+      if (keepRotType_ != emu.grasscutter.net.proto.BeginCameraSceneLookNotifyOuterClass.BeginCameraSceneLookNotify.KeepRotType.KEEP_ROT_X.getNumber()) {
+        output.writeEnum(4, keepRotType_);
       }
-      if (unk3300DFPCMOFONNK_ != false) {
-        output.writeBool(15, unk3300DFPCMOFONNK_);
+      if (pDOCOOCFAIH_ != false) {
+        output.writeBool(5, pDOCOOCFAIH_);
       }
-      if (unk3300AJEENEOCFON_ != 0) {
-        output.writeUInt32(106, unk3300AJEENEOCFON_);
+      if (duration_ != 0F) {
+        output.writeFloat(6, duration_);
+      }
+      if (fPDPEHICGAC_ != false) {
+        output.writeBool(7, fPDPEHICGAC_);
+      }
+      if (jBCEDEGCGFJ_ != false) {
+        output.writeBool(8, jBCEDEGCGFJ_);
+      }
+      if (iPKFLPFLNNI_ != false) {
+        output.writeBool(9, iPKFLPFLNNI_);
+      }
+      if (gJNLEMGJCJI_ != 0F) {
+        output.writeFloat(10, gJNLEMGJCJI_);
+      }
+      if (cLLOFLJICAF_ != 0F) {
+        output.writeFloat(11, cLLOFLJICAF_);
+      }
+      if (lKGGBPLCEJI_ != null) {
+        output.writeMessage(12, getLKGGBPLCEJI());
+      }
+      if (mCFGAPGPNLN_ != false) {
+        output.writeBool(13, mCFGAPGPNLN_);
+      }
+      if (mMOMOKPCOJK_ != null) {
+        output.writeMessage(14, getMMOMOKPCOJK());
+      }
+      if (aDPLABBOBKF_ != false) {
+        output.writeBool(15, aDPLABBOBKF_);
+      }
+      if (gEBMAIIKMBJ_ != 0) {
+        output.writeUInt32(54, gEBMAIIKMBJ_);
       }
       if (entityId_ != 0) {
-        output.writeUInt32(167, entityId_);
+        output.writeUInt32(609, entityId_);
       }
-      if (unk3300AAOGBCCNJAF_ != false) {
-        output.writeBool(644, unk3300AAOGBCCNJAF_);
+      if (oJKGLFJCMID_ != 0F) {
+        output.writeFloat(801, oJKGLFJCMID_);
       }
-      if (unk3300KCHKKBODNCJ_ != 0) {
-        output.writeUInt32(1965, unk3300KCHKKBODNCJ_);
+      if (dOCBFPIPMPK_ != 0) {
+        output.writeUInt32(1006, dOCBFPIPMPK_);
       }
-      if (unk3300HKKCHCEMJIE_ != 0F) {
-        output.writeFloat(2004, unk3300HKKCHCEMJIE_);
+      if (kJHLOCKMIMB_ != false) {
+        output.writeBool(1477, kJHLOCKMIMB_);
       }
       unknownFields.writeTo(output);
     }
@@ -880,49 +866,9 @@ public final class BeginCameraSceneLookNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (unk3300NJLBIMJDFHJ_ != false) {
+      if (fFHJPJBDLJC_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(1, unk3300NJLBIMJDFHJ_);
-      }
-      if (unk3300ONBDMCHFPDL_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(2, unk3300ONBDMCHFPDL_);
-      }
-      if (unk3300EELNOAICHOJ_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(3, unk3300EELNOAICHOJ_);
-      }
-      if (unk3300ODADMBBFPAP_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(4, unk3300ODADMBBFPAP_);
-      }
-      if (unk3300FIOLGCIKFLH_ != 0F) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(5, unk3300FIOLGCIKFLH_);
-      }
-      if (unk3300HCLPGGAOIAC_ != 0F) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(6, unk3300HCLPGGAOIAC_);
-      }
-      if (unk3300PPCIDICMIEN_ != null) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(7, getUnk3300PPCIDICMIEN());
-      }
-      if (unk3300PIEFLAEGGBI_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(8, unk3300PIEFLAEGGBI_);
-      }
-      if (unk3300ILMHDLHLKGJ_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(9, unk3300ILMHDLHLKGJ_);
-      }
-      if (duration_ != 0F) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(10, duration_);
-      }
-      if (unk3300HFPCHFNFJKP_ != 0F) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(11, unk3300HFPCHFNFJKP_);
+          .computeBoolSize(1, fFHJPJBDLJC_);
       }
       {
         int dataSize = 0;
@@ -932,37 +878,77 @@ public final class BeginCameraSceneLookNotifyOuterClass {
         size += dataSize;
         size += 1 * getOtherParamsList().size();
       }
-      if (unk3300FJDFGLNLMBN_ != null) {
+      if (mIKBDFOBIBB_ != 0F) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(13, getUnk3300FJDFGLNLMBN());
+          .computeFloatSize(3, mIKBDFOBIBB_);
       }
-      if (keepRotType_ != emu.grasscutter.net.proto.KeepRotTypeOuterClass.KeepRotType.KEEP_ROT_TYPE_X.getNumber()) {
+      if (keepRotType_ != emu.grasscutter.net.proto.BeginCameraSceneLookNotifyOuterClass.BeginCameraSceneLookNotify.KeepRotType.KEEP_ROT_X.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(14, keepRotType_);
+          .computeEnumSize(4, keepRotType_);
       }
-      if (unk3300DFPCMOFONNK_ != false) {
+      if (pDOCOOCFAIH_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(15, unk3300DFPCMOFONNK_);
+          .computeBoolSize(5, pDOCOOCFAIH_);
       }
-      if (unk3300AJEENEOCFON_ != 0) {
+      if (duration_ != 0F) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(106, unk3300AJEENEOCFON_);
+          .computeFloatSize(6, duration_);
+      }
+      if (fPDPEHICGAC_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(7, fPDPEHICGAC_);
+      }
+      if (jBCEDEGCGFJ_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(8, jBCEDEGCGFJ_);
+      }
+      if (iPKFLPFLNNI_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(9, iPKFLPFLNNI_);
+      }
+      if (gJNLEMGJCJI_ != 0F) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeFloatSize(10, gJNLEMGJCJI_);
+      }
+      if (cLLOFLJICAF_ != 0F) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeFloatSize(11, cLLOFLJICAF_);
+      }
+      if (lKGGBPLCEJI_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(12, getLKGGBPLCEJI());
+      }
+      if (mCFGAPGPNLN_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(13, mCFGAPGPNLN_);
+      }
+      if (mMOMOKPCOJK_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(14, getMMOMOKPCOJK());
+      }
+      if (aDPLABBOBKF_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(15, aDPLABBOBKF_);
+      }
+      if (gEBMAIIKMBJ_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(54, gEBMAIIKMBJ_);
       }
       if (entityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(167, entityId_);
+          .computeUInt32Size(609, entityId_);
       }
-      if (unk3300AAOGBCCNJAF_ != false) {
+      if (oJKGLFJCMID_ != 0F) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(644, unk3300AAOGBCCNJAF_);
+          .computeFloatSize(801, oJKGLFJCMID_);
       }
-      if (unk3300KCHKKBODNCJ_ != 0) {
+      if (dOCBFPIPMPK_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1965, unk3300KCHKKBODNCJ_);
+          .computeUInt32Size(1006, dOCBFPIPMPK_);
       }
-      if (unk3300HKKCHCEMJIE_ != 0F) {
+      if (kJHLOCKMIMB_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(2004, unk3300HKKCHCEMJIE_);
+          .computeBoolSize(1477, kJHLOCKMIMB_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -979,56 +965,56 @@ public final class BeginCameraSceneLookNotifyOuterClass {
       }
       emu.grasscutter.net.proto.BeginCameraSceneLookNotifyOuterClass.BeginCameraSceneLookNotify other = (emu.grasscutter.net.proto.BeginCameraSceneLookNotifyOuterClass.BeginCameraSceneLookNotify) obj;
 
-      if (getUnk3300ONBDMCHFPDL()
-          != other.getUnk3300ONBDMCHFPDL()) return false;
-      if (getUnk3300PIEFLAEGGBI()
-          != other.getUnk3300PIEFLAEGGBI()) return false;
-      if (getUnk3300NJLBIMJDFHJ()
-          != other.getUnk3300NJLBIMJDFHJ()) return false;
+      if (getEntityId()
+          != other.getEntityId()) return false;
+      if (getJBCEDEGCGFJ()
+          != other.getJBCEDEGCGFJ()) return false;
+      if (getADPLABBOBKF()
+          != other.getADPLABBOBKF()) return false;
+      if (getDOCBFPIPMPK()
+          != other.getDOCBFPIPMPK()) return false;
+      if (hasLKGGBPLCEJI() != other.hasLKGGBPLCEJI()) return false;
+      if (hasLKGGBPLCEJI()) {
+        if (!getLKGGBPLCEJI()
+            .equals(other.getLKGGBPLCEJI())) return false;
+      }
+      if (getKJHLOCKMIMB()
+          != other.getKJHLOCKMIMB()) return false;
+      if (java.lang.Float.floatToIntBits(getGJNLEMGJCJI())
+          != java.lang.Float.floatToIntBits(
+              other.getGJNLEMGJCJI())) return false;
+      if (getIPKFLPFLNNI()
+          != other.getIPKFLPFLNNI()) return false;
+      if (getPDOCOOCFAIH()
+          != other.getPDOCOOCFAIH()) return false;
+      if (hasMMOMOKPCOJK() != other.hasMMOMOKPCOJK()) return false;
+      if (hasMMOMOKPCOJK()) {
+        if (!getMMOMOKPCOJK()
+            .equals(other.getMMOMOKPCOJK())) return false;
+      }
+      if (getFPDPEHICGAC()
+          != other.getFPDPEHICGAC()) return false;
+      if (java.lang.Float.floatToIntBits(getMIKBDFOBIBB())
+          != java.lang.Float.floatToIntBits(
+              other.getMIKBDFOBIBB())) return false;
+      if (java.lang.Float.floatToIntBits(getCLLOFLJICAF())
+          != java.lang.Float.floatToIntBits(
+              other.getCLLOFLJICAF())) return false;
+      if (!getOtherParamsList()
+          .equals(other.getOtherParamsList())) return false;
+      if (keepRotType_ != other.keepRotType_) return false;
+      if (getFFHJPJBDLJC()
+          != other.getFFHJPJBDLJC()) return false;
       if (java.lang.Float.floatToIntBits(getDuration())
           != java.lang.Float.floatToIntBits(
               other.getDuration())) return false;
-      if (keepRotType_ != other.keepRotType_) return false;
-      if (hasUnk3300FJDFGLNLMBN() != other.hasUnk3300FJDFGLNLMBN()) return false;
-      if (hasUnk3300FJDFGLNLMBN()) {
-        if (!getUnk3300FJDFGLNLMBN()
-            .equals(other.getUnk3300FJDFGLNLMBN())) return false;
-      }
-      if (java.lang.Float.floatToIntBits(getUnk3300FIOLGCIKFLH())
+      if (getGEBMAIIKMBJ()
+          != other.getGEBMAIIKMBJ()) return false;
+      if (getMCFGAPGPNLN()
+          != other.getMCFGAPGPNLN()) return false;
+      if (java.lang.Float.floatToIntBits(getOJKGLFJCMID())
           != java.lang.Float.floatToIntBits(
-              other.getUnk3300FIOLGCIKFLH())) return false;
-      if (java.lang.Float.floatToIntBits(getUnk3300HFPCHFNFJKP())
-          != java.lang.Float.floatToIntBits(
-              other.getUnk3300HFPCHFNFJKP())) return false;
-      if (!getOtherParamsList()
-          .equals(other.getOtherParamsList())) return false;
-      if (getEntityId()
-          != other.getEntityId()) return false;
-      if (getUnk3300ODADMBBFPAP()
-          != other.getUnk3300ODADMBBFPAP()) return false;
-      if (getUnk3300EELNOAICHOJ()
-          != other.getUnk3300EELNOAICHOJ()) return false;
-      if (getUnk3300KCHKKBODNCJ()
-          != other.getUnk3300KCHKKBODNCJ()) return false;
-      if (getUnk3300DFPCMOFONNK()
-          != other.getUnk3300DFPCMOFONNK()) return false;
-      if (java.lang.Float.floatToIntBits(getUnk3300HKKCHCEMJIE())
-          != java.lang.Float.floatToIntBits(
-              other.getUnk3300HKKCHCEMJIE())) return false;
-      if (getUnk3300AJEENEOCFON()
-          != other.getUnk3300AJEENEOCFON()) return false;
-      if (hasUnk3300PPCIDICMIEN() != other.hasUnk3300PPCIDICMIEN()) return false;
-      if (hasUnk3300PPCIDICMIEN()) {
-        if (!getUnk3300PPCIDICMIEN()
-            .equals(other.getUnk3300PPCIDICMIEN())) return false;
-      }
-      if (getUnk3300AAOGBCCNJAF()
-          != other.getUnk3300AAOGBCCNJAF()) return false;
-      if (java.lang.Float.floatToIntBits(getUnk3300HCLPGGAOIAC())
-          != java.lang.Float.floatToIntBits(
-              other.getUnk3300HCLPGGAOIAC())) return false;
-      if (getUnk3300ILMHDLHLKGJ()
-          != other.getUnk3300ILMHDLHLKGJ()) return false;
+              other.getOJKGLFJCMID())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -1040,65 +1026,65 @@ public final class BeginCameraSceneLookNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + UNK3300_ONBDMCHFPDL_FIELD_NUMBER;
+      hash = (37 * hash) + ENTITY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getEntityId();
+      hash = (37 * hash) + JBCEDEGCGFJ_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getUnk3300ONBDMCHFPDL());
-      hash = (37 * hash) + UNK3300_PIEFLAEGGBI_FIELD_NUMBER;
+          getJBCEDEGCGFJ());
+      hash = (37 * hash) + ADPLABBOBKF_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getUnk3300PIEFLAEGGBI());
-      hash = (37 * hash) + UNK3300_NJLBIMJDFHJ_FIELD_NUMBER;
+          getADPLABBOBKF());
+      hash = (37 * hash) + DOCBFPIPMPK_FIELD_NUMBER;
+      hash = (53 * hash) + getDOCBFPIPMPK();
+      if (hasLKGGBPLCEJI()) {
+        hash = (37 * hash) + LKGGBPLCEJI_FIELD_NUMBER;
+        hash = (53 * hash) + getLKGGBPLCEJI().hashCode();
+      }
+      hash = (37 * hash) + KJHLOCKMIMB_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getUnk3300NJLBIMJDFHJ());
+          getKJHLOCKMIMB());
+      hash = (37 * hash) + GJNLEMGJCJI_FIELD_NUMBER;
+      hash = (53 * hash) + java.lang.Float.floatToIntBits(
+          getGJNLEMGJCJI());
+      hash = (37 * hash) + IPKFLPFLNNI_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIPKFLPFLNNI());
+      hash = (37 * hash) + PDOCOOCFAIH_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getPDOCOOCFAIH());
+      if (hasMMOMOKPCOJK()) {
+        hash = (37 * hash) + MMOMOKPCOJK_FIELD_NUMBER;
+        hash = (53 * hash) + getMMOMOKPCOJK().hashCode();
+      }
+      hash = (37 * hash) + FPDPEHICGAC_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getFPDPEHICGAC());
+      hash = (37 * hash) + MIKBDFOBIBB_FIELD_NUMBER;
+      hash = (53 * hash) + java.lang.Float.floatToIntBits(
+          getMIKBDFOBIBB());
+      hash = (37 * hash) + CLLOFLJICAF_FIELD_NUMBER;
+      hash = (53 * hash) + java.lang.Float.floatToIntBits(
+          getCLLOFLJICAF());
+      if (getOtherParamsCount() > 0) {
+        hash = (37 * hash) + OTHER_PARAMS_FIELD_NUMBER;
+        hash = (53 * hash) + getOtherParamsList().hashCode();
+      }
+      hash = (37 * hash) + KEEP_ROT_TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + keepRotType_;
+      hash = (37 * hash) + FFHJPJBDLJC_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getFFHJPJBDLJC());
       hash = (37 * hash) + DURATION_FIELD_NUMBER;
       hash = (53 * hash) + java.lang.Float.floatToIntBits(
           getDuration());
-      hash = (37 * hash) + KEEPROTTYPE_FIELD_NUMBER;
-      hash = (53 * hash) + keepRotType_;
-      if (hasUnk3300FJDFGLNLMBN()) {
-        hash = (37 * hash) + UNK3300_FJDFGLNLMBN_FIELD_NUMBER;
-        hash = (53 * hash) + getUnk3300FJDFGLNLMBN().hashCode();
-      }
-      hash = (37 * hash) + UNK3300_FIOLGCIKFLH_FIELD_NUMBER;
+      hash = (37 * hash) + GEBMAIIKMBJ_FIELD_NUMBER;
+      hash = (53 * hash) + getGEBMAIIKMBJ();
+      hash = (37 * hash) + MCFGAPGPNLN_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getMCFGAPGPNLN());
+      hash = (37 * hash) + OJKGLFJCMID_FIELD_NUMBER;
       hash = (53 * hash) + java.lang.Float.floatToIntBits(
-          getUnk3300FIOLGCIKFLH());
-      hash = (37 * hash) + UNK3300_HFPCHFNFJKP_FIELD_NUMBER;
-      hash = (53 * hash) + java.lang.Float.floatToIntBits(
-          getUnk3300HFPCHFNFJKP());
-      if (getOtherParamsCount() > 0) {
-        hash = (37 * hash) + OTHERPARAMS_FIELD_NUMBER;
-        hash = (53 * hash) + getOtherParamsList().hashCode();
-      }
-      hash = (37 * hash) + ENTITYID_FIELD_NUMBER;
-      hash = (53 * hash) + getEntityId();
-      hash = (37 * hash) + UNK3300_ODADMBBFPAP_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getUnk3300ODADMBBFPAP());
-      hash = (37 * hash) + UNK3300_EELNOAICHOJ_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getUnk3300EELNOAICHOJ());
-      hash = (37 * hash) + UNK3300_KCHKKBODNCJ_FIELD_NUMBER;
-      hash = (53 * hash) + getUnk3300KCHKKBODNCJ();
-      hash = (37 * hash) + UNK3300_DFPCMOFONNK_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getUnk3300DFPCMOFONNK());
-      hash = (37 * hash) + UNK3300_HKKCHCEMJIE_FIELD_NUMBER;
-      hash = (53 * hash) + java.lang.Float.floatToIntBits(
-          getUnk3300HKKCHCEMJIE());
-      hash = (37 * hash) + UNK3300_AJEENEOCFON_FIELD_NUMBER;
-      hash = (53 * hash) + getUnk3300AJEENEOCFON();
-      if (hasUnk3300PPCIDICMIEN()) {
-        hash = (37 * hash) + UNK3300_PPCIDICMIEN_FIELD_NUMBER;
-        hash = (53 * hash) + getUnk3300PPCIDICMIEN().hashCode();
-      }
-      hash = (37 * hash) + UNK3300_AAOGBCCNJAF_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getUnk3300AAOGBCCNJAF());
-      hash = (37 * hash) + UNK3300_HCLPGGAOIAC_FIELD_NUMBER;
-      hash = (53 * hash) + java.lang.Float.floatToIntBits(
-          getUnk3300HCLPGGAOIAC());
-      hash = (37 * hash) + UNK3300_ILMHDLHLKGJ_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getUnk3300ILMHDLHLKGJ());
+          getOJKGLFJCMID());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -1195,6 +1181,11 @@ public final class BeginCameraSceneLookNotifyOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 27569
+     * Obf: KAGMEJHECDK
+     * </pre>
+     *
      * Protobuf type {@code BeginCameraSceneLookNotify}
      */
     public static final class Builder extends
@@ -1232,53 +1223,53 @@ public final class BeginCameraSceneLookNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        unk3300ONBDMCHFPDL_ = false;
+        entityId_ = 0;
 
-        unk3300PIEFLAEGGBI_ = false;
+        jBCEDEGCGFJ_ = false;
 
-        unk3300NJLBIMJDFHJ_ = false;
+        aDPLABBOBKF_ = false;
 
-        duration_ = 0F;
+        dOCBFPIPMPK_ = 0;
 
-        keepRotType_ = 0;
-
-        if (unk3300FJDFGLNLMBNBuilder_ == null) {
-          unk3300FJDFGLNLMBN_ = null;
+        if (lKGGBPLCEJIBuilder_ == null) {
+          lKGGBPLCEJI_ = null;
         } else {
-          unk3300FJDFGLNLMBN_ = null;
-          unk3300FJDFGLNLMBNBuilder_ = null;
+          lKGGBPLCEJI_ = null;
+          lKGGBPLCEJIBuilder_ = null;
         }
-        unk3300FIOLGCIKFLH_ = 0F;
+        kJHLOCKMIMB_ = false;
 
-        unk3300HFPCHFNFJKP_ = 0F;
+        gJNLEMGJCJI_ = 0F;
+
+        iPKFLPFLNNI_ = false;
+
+        pDOCOOCFAIH_ = false;
+
+        if (mMOMOKPCOJKBuilder_ == null) {
+          mMOMOKPCOJK_ = null;
+        } else {
+          mMOMOKPCOJK_ = null;
+          mMOMOKPCOJKBuilder_ = null;
+        }
+        fPDPEHICGAC_ = false;
+
+        mIKBDFOBIBB_ = 0F;
+
+        cLLOFLJICAF_ = 0F;
 
         otherParams_ = com.google.protobuf.LazyStringArrayList.EMPTY;
         bitField0_ = (bitField0_ & ~0x00000001);
-        entityId_ = 0;
+        keepRotType_ = 0;
 
-        unk3300ODADMBBFPAP_ = false;
+        fFHJPJBDLJC_ = false;
 
-        unk3300EELNOAICHOJ_ = false;
+        duration_ = 0F;
 
-        unk3300KCHKKBODNCJ_ = 0;
+        gEBMAIIKMBJ_ = 0;
 
-        unk3300DFPCMOFONNK_ = false;
+        mCFGAPGPNLN_ = false;
 
-        unk3300HKKCHCEMJIE_ = 0F;
-
-        unk3300AJEENEOCFON_ = 0;
-
-        if (unk3300PPCIDICMIENBuilder_ == null) {
-          unk3300PPCIDICMIEN_ = null;
-        } else {
-          unk3300PPCIDICMIEN_ = null;
-          unk3300PPCIDICMIENBuilder_ = null;
-        }
-        unk3300AAOGBCCNJAF_ = false;
-
-        unk3300HCLPGGAOIAC_ = 0F;
-
-        unk3300ILMHDLHLKGJ_ = false;
+        oJKGLFJCMID_ = 0F;
 
         return this;
       }
@@ -1307,38 +1298,38 @@ public final class BeginCameraSceneLookNotifyOuterClass {
       public emu.grasscutter.net.proto.BeginCameraSceneLookNotifyOuterClass.BeginCameraSceneLookNotify buildPartial() {
         emu.grasscutter.net.proto.BeginCameraSceneLookNotifyOuterClass.BeginCameraSceneLookNotify result = new emu.grasscutter.net.proto.BeginCameraSceneLookNotifyOuterClass.BeginCameraSceneLookNotify(this);
         int from_bitField0_ = bitField0_;
-        result.unk3300ONBDMCHFPDL_ = unk3300ONBDMCHFPDL_;
-        result.unk3300PIEFLAEGGBI_ = unk3300PIEFLAEGGBI_;
-        result.unk3300NJLBIMJDFHJ_ = unk3300NJLBIMJDFHJ_;
-        result.duration_ = duration_;
-        result.keepRotType_ = keepRotType_;
-        if (unk3300FJDFGLNLMBNBuilder_ == null) {
-          result.unk3300FJDFGLNLMBN_ = unk3300FJDFGLNLMBN_;
+        result.entityId_ = entityId_;
+        result.jBCEDEGCGFJ_ = jBCEDEGCGFJ_;
+        result.aDPLABBOBKF_ = aDPLABBOBKF_;
+        result.dOCBFPIPMPK_ = dOCBFPIPMPK_;
+        if (lKGGBPLCEJIBuilder_ == null) {
+          result.lKGGBPLCEJI_ = lKGGBPLCEJI_;
         } else {
-          result.unk3300FJDFGLNLMBN_ = unk3300FJDFGLNLMBNBuilder_.build();
+          result.lKGGBPLCEJI_ = lKGGBPLCEJIBuilder_.build();
         }
-        result.unk3300FIOLGCIKFLH_ = unk3300FIOLGCIKFLH_;
-        result.unk3300HFPCHFNFJKP_ = unk3300HFPCHFNFJKP_;
+        result.kJHLOCKMIMB_ = kJHLOCKMIMB_;
+        result.gJNLEMGJCJI_ = gJNLEMGJCJI_;
+        result.iPKFLPFLNNI_ = iPKFLPFLNNI_;
+        result.pDOCOOCFAIH_ = pDOCOOCFAIH_;
+        if (mMOMOKPCOJKBuilder_ == null) {
+          result.mMOMOKPCOJK_ = mMOMOKPCOJK_;
+        } else {
+          result.mMOMOKPCOJK_ = mMOMOKPCOJKBuilder_.build();
+        }
+        result.fPDPEHICGAC_ = fPDPEHICGAC_;
+        result.mIKBDFOBIBB_ = mIKBDFOBIBB_;
+        result.cLLOFLJICAF_ = cLLOFLJICAF_;
         if (((bitField0_ & 0x00000001) != 0)) {
           otherParams_ = otherParams_.getUnmodifiableView();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.otherParams_ = otherParams_;
-        result.entityId_ = entityId_;
-        result.unk3300ODADMBBFPAP_ = unk3300ODADMBBFPAP_;
-        result.unk3300EELNOAICHOJ_ = unk3300EELNOAICHOJ_;
-        result.unk3300KCHKKBODNCJ_ = unk3300KCHKKBODNCJ_;
-        result.unk3300DFPCMOFONNK_ = unk3300DFPCMOFONNK_;
-        result.unk3300HKKCHCEMJIE_ = unk3300HKKCHCEMJIE_;
-        result.unk3300AJEENEOCFON_ = unk3300AJEENEOCFON_;
-        if (unk3300PPCIDICMIENBuilder_ == null) {
-          result.unk3300PPCIDICMIEN_ = unk3300PPCIDICMIEN_;
-        } else {
-          result.unk3300PPCIDICMIEN_ = unk3300PPCIDICMIENBuilder_.build();
-        }
-        result.unk3300AAOGBCCNJAF_ = unk3300AAOGBCCNJAF_;
-        result.unk3300HCLPGGAOIAC_ = unk3300HCLPGGAOIAC_;
-        result.unk3300ILMHDLHLKGJ_ = unk3300ILMHDLHLKGJ_;
+        result.keepRotType_ = keepRotType_;
+        result.fFHJPJBDLJC_ = fFHJPJBDLJC_;
+        result.duration_ = duration_;
+        result.gEBMAIIKMBJ_ = gEBMAIIKMBJ_;
+        result.mCFGAPGPNLN_ = mCFGAPGPNLN_;
+        result.oJKGLFJCMID_ = oJKGLFJCMID_;
         onBuilt();
         return result;
       }
@@ -1387,29 +1378,44 @@ public final class BeginCameraSceneLookNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.BeginCameraSceneLookNotifyOuterClass.BeginCameraSceneLookNotify other) {
         if (other == emu.grasscutter.net.proto.BeginCameraSceneLookNotifyOuterClass.BeginCameraSceneLookNotify.getDefaultInstance()) return this;
-        if (other.getUnk3300ONBDMCHFPDL() != false) {
-          setUnk3300ONBDMCHFPDL(other.getUnk3300ONBDMCHFPDL());
+        if (other.getEntityId() != 0) {
+          setEntityId(other.getEntityId());
         }
-        if (other.getUnk3300PIEFLAEGGBI() != false) {
-          setUnk3300PIEFLAEGGBI(other.getUnk3300PIEFLAEGGBI());
+        if (other.getJBCEDEGCGFJ() != false) {
+          setJBCEDEGCGFJ(other.getJBCEDEGCGFJ());
         }
-        if (other.getUnk3300NJLBIMJDFHJ() != false) {
-          setUnk3300NJLBIMJDFHJ(other.getUnk3300NJLBIMJDFHJ());
+        if (other.getADPLABBOBKF() != false) {
+          setADPLABBOBKF(other.getADPLABBOBKF());
         }
-        if (other.getDuration() != 0F) {
-          setDuration(other.getDuration());
+        if (other.getDOCBFPIPMPK() != 0) {
+          setDOCBFPIPMPK(other.getDOCBFPIPMPK());
         }
-        if (other.keepRotType_ != 0) {
-          setKeepRotTypeValue(other.getKeepRotTypeValue());
+        if (other.hasLKGGBPLCEJI()) {
+          mergeLKGGBPLCEJI(other.getLKGGBPLCEJI());
         }
-        if (other.hasUnk3300FJDFGLNLMBN()) {
-          mergeUnk3300FJDFGLNLMBN(other.getUnk3300FJDFGLNLMBN());
+        if (other.getKJHLOCKMIMB() != false) {
+          setKJHLOCKMIMB(other.getKJHLOCKMIMB());
         }
-        if (other.getUnk3300FIOLGCIKFLH() != 0F) {
-          setUnk3300FIOLGCIKFLH(other.getUnk3300FIOLGCIKFLH());
+        if (other.getGJNLEMGJCJI() != 0F) {
+          setGJNLEMGJCJI(other.getGJNLEMGJCJI());
         }
-        if (other.getUnk3300HFPCHFNFJKP() != 0F) {
-          setUnk3300HFPCHFNFJKP(other.getUnk3300HFPCHFNFJKP());
+        if (other.getIPKFLPFLNNI() != false) {
+          setIPKFLPFLNNI(other.getIPKFLPFLNNI());
+        }
+        if (other.getPDOCOOCFAIH() != false) {
+          setPDOCOOCFAIH(other.getPDOCOOCFAIH());
+        }
+        if (other.hasMMOMOKPCOJK()) {
+          mergeMMOMOKPCOJK(other.getMMOMOKPCOJK());
+        }
+        if (other.getFPDPEHICGAC() != false) {
+          setFPDPEHICGAC(other.getFPDPEHICGAC());
+        }
+        if (other.getMIKBDFOBIBB() != 0F) {
+          setMIKBDFOBIBB(other.getMIKBDFOBIBB());
+        }
+        if (other.getCLLOFLJICAF() != 0F) {
+          setCLLOFLJICAF(other.getCLLOFLJICAF());
         }
         if (!other.otherParams_.isEmpty()) {
           if (otherParams_.isEmpty()) {
@@ -1421,38 +1427,23 @@ public final class BeginCameraSceneLookNotifyOuterClass {
           }
           onChanged();
         }
-        if (other.getEntityId() != 0) {
-          setEntityId(other.getEntityId());
+        if (other.keepRotType_ != 0) {
+          setKeepRotTypeValue(other.getKeepRotTypeValue());
         }
-        if (other.getUnk3300ODADMBBFPAP() != false) {
-          setUnk3300ODADMBBFPAP(other.getUnk3300ODADMBBFPAP());
+        if (other.getFFHJPJBDLJC() != false) {
+          setFFHJPJBDLJC(other.getFFHJPJBDLJC());
         }
-        if (other.getUnk3300EELNOAICHOJ() != false) {
-          setUnk3300EELNOAICHOJ(other.getUnk3300EELNOAICHOJ());
+        if (other.getDuration() != 0F) {
+          setDuration(other.getDuration());
         }
-        if (other.getUnk3300KCHKKBODNCJ() != 0) {
-          setUnk3300KCHKKBODNCJ(other.getUnk3300KCHKKBODNCJ());
+        if (other.getGEBMAIIKMBJ() != 0) {
+          setGEBMAIIKMBJ(other.getGEBMAIIKMBJ());
         }
-        if (other.getUnk3300DFPCMOFONNK() != false) {
-          setUnk3300DFPCMOFONNK(other.getUnk3300DFPCMOFONNK());
+        if (other.getMCFGAPGPNLN() != false) {
+          setMCFGAPGPNLN(other.getMCFGAPGPNLN());
         }
-        if (other.getUnk3300HKKCHCEMJIE() != 0F) {
-          setUnk3300HKKCHCEMJIE(other.getUnk3300HKKCHCEMJIE());
-        }
-        if (other.getUnk3300AJEENEOCFON() != 0) {
-          setUnk3300AJEENEOCFON(other.getUnk3300AJEENEOCFON());
-        }
-        if (other.hasUnk3300PPCIDICMIEN()) {
-          mergeUnk3300PPCIDICMIEN(other.getUnk3300PPCIDICMIEN());
-        }
-        if (other.getUnk3300AAOGBCCNJAF() != false) {
-          setUnk3300AAOGBCCNJAF(other.getUnk3300AAOGBCCNJAF());
-        }
-        if (other.getUnk3300HCLPGGAOIAC() != 0F) {
-          setUnk3300HCLPGGAOIAC(other.getUnk3300HCLPGGAOIAC());
-        }
-        if (other.getUnk3300ILMHDLHLKGJ() != false) {
-          setUnk3300ILMHDLHLKGJ(other.getUnk3300ILMHDLHLKGJ());
+        if (other.getOJKGLFJCMID() != 0F) {
+          setOJKGLFJCMID(other.getOJKGLFJCMID());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -1484,361 +1475,581 @@ public final class BeginCameraSceneLookNotifyOuterClass {
       }
       private int bitField0_;
 
-      private boolean unk3300ONBDMCHFPDL_ ;
+      private int entityId_ ;
       /**
-       * <code>bool Unk3300_ONBDMCHFPDL = 2;</code>
-       * @return The unk3300ONBDMCHFPDL.
+       * <code>uint32 entity_id = 609;</code>
+       * @return The entityId.
        */
       @java.lang.Override
-      public boolean getUnk3300ONBDMCHFPDL() {
-        return unk3300ONBDMCHFPDL_;
+      public int getEntityId() {
+        return entityId_;
       }
       /**
-       * <code>bool Unk3300_ONBDMCHFPDL = 2;</code>
-       * @param value The unk3300ONBDMCHFPDL to set.
+       * <code>uint32 entity_id = 609;</code>
+       * @param value The entityId to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk3300ONBDMCHFPDL(boolean value) {
+      public Builder setEntityId(int value) {
         
-        unk3300ONBDMCHFPDL_ = value;
+        entityId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool Unk3300_ONBDMCHFPDL = 2;</code>
+       * <code>uint32 entity_id = 609;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk3300ONBDMCHFPDL() {
+      public Builder clearEntityId() {
         
-        unk3300ONBDMCHFPDL_ = false;
+        entityId_ = 0;
         onChanged();
         return this;
       }
 
-      private boolean unk3300PIEFLAEGGBI_ ;
+      private boolean jBCEDEGCGFJ_ ;
       /**
-       * <code>bool Unk3300_PIEFLAEGGBI = 8;</code>
-       * @return The unk3300PIEFLAEGGBI.
+       * <code>bool JBCEDEGCGFJ = 8;</code>
+       * @return The jBCEDEGCGFJ.
        */
       @java.lang.Override
-      public boolean getUnk3300PIEFLAEGGBI() {
-        return unk3300PIEFLAEGGBI_;
+      public boolean getJBCEDEGCGFJ() {
+        return jBCEDEGCGFJ_;
       }
       /**
-       * <code>bool Unk3300_PIEFLAEGGBI = 8;</code>
-       * @param value The unk3300PIEFLAEGGBI to set.
+       * <code>bool JBCEDEGCGFJ = 8;</code>
+       * @param value The jBCEDEGCGFJ to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk3300PIEFLAEGGBI(boolean value) {
+      public Builder setJBCEDEGCGFJ(boolean value) {
         
-        unk3300PIEFLAEGGBI_ = value;
+        jBCEDEGCGFJ_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool Unk3300_PIEFLAEGGBI = 8;</code>
+       * <code>bool JBCEDEGCGFJ = 8;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk3300PIEFLAEGGBI() {
+      public Builder clearJBCEDEGCGFJ() {
         
-        unk3300PIEFLAEGGBI_ = false;
+        jBCEDEGCGFJ_ = false;
         onChanged();
         return this;
       }
 
-      private boolean unk3300NJLBIMJDFHJ_ ;
+      private boolean aDPLABBOBKF_ ;
       /**
-       * <code>bool Unk3300_NJLBIMJDFHJ = 1;</code>
-       * @return The unk3300NJLBIMJDFHJ.
+       * <code>bool ADPLABBOBKF = 15;</code>
+       * @return The aDPLABBOBKF.
        */
       @java.lang.Override
-      public boolean getUnk3300NJLBIMJDFHJ() {
-        return unk3300NJLBIMJDFHJ_;
+      public boolean getADPLABBOBKF() {
+        return aDPLABBOBKF_;
       }
       /**
-       * <code>bool Unk3300_NJLBIMJDFHJ = 1;</code>
-       * @param value The unk3300NJLBIMJDFHJ to set.
+       * <code>bool ADPLABBOBKF = 15;</code>
+       * @param value The aDPLABBOBKF to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk3300NJLBIMJDFHJ(boolean value) {
+      public Builder setADPLABBOBKF(boolean value) {
         
-        unk3300NJLBIMJDFHJ_ = value;
+        aDPLABBOBKF_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool Unk3300_NJLBIMJDFHJ = 1;</code>
+       * <code>bool ADPLABBOBKF = 15;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk3300NJLBIMJDFHJ() {
+      public Builder clearADPLABBOBKF() {
         
-        unk3300NJLBIMJDFHJ_ = false;
+        aDPLABBOBKF_ = false;
         onChanged();
         return this;
       }
 
-      private float duration_ ;
+      private int dOCBFPIPMPK_ ;
       /**
-       * <code>float duration = 10;</code>
-       * @return The duration.
+       * <code>uint32 DOCBFPIPMPK = 1006;</code>
+       * @return The dOCBFPIPMPK.
        */
       @java.lang.Override
-      public float getDuration() {
-        return duration_;
+      public int getDOCBFPIPMPK() {
+        return dOCBFPIPMPK_;
       }
       /**
-       * <code>float duration = 10;</code>
-       * @param value The duration to set.
+       * <code>uint32 DOCBFPIPMPK = 1006;</code>
+       * @param value The dOCBFPIPMPK to set.
        * @return This builder for chaining.
        */
-      public Builder setDuration(float value) {
+      public Builder setDOCBFPIPMPK(int value) {
         
-        duration_ = value;
+        dOCBFPIPMPK_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>float duration = 10;</code>
+       * <code>uint32 DOCBFPIPMPK = 1006;</code>
        * @return This builder for chaining.
        */
-      public Builder clearDuration() {
+      public Builder clearDOCBFPIPMPK() {
         
-        duration_ = 0F;
+        dOCBFPIPMPK_ = 0;
         onChanged();
         return this;
       }
 
-      private int keepRotType_ = 0;
-      /**
-       * <code>.KeepRotType keepRotType = 14;</code>
-       * @return The enum numeric value on the wire for keepRotType.
-       */
-      @java.lang.Override public int getKeepRotTypeValue() {
-        return keepRotType_;
-      }
-      /**
-       * <code>.KeepRotType keepRotType = 14;</code>
-       * @param value The enum numeric value on the wire for keepRotType to set.
-       * @return This builder for chaining.
-       */
-      public Builder setKeepRotTypeValue(int value) {
-        
-        keepRotType_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.KeepRotType keepRotType = 14;</code>
-       * @return The keepRotType.
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.KeepRotTypeOuterClass.KeepRotType getKeepRotType() {
-        @SuppressWarnings("deprecation")
-        emu.grasscutter.net.proto.KeepRotTypeOuterClass.KeepRotType result = emu.grasscutter.net.proto.KeepRotTypeOuterClass.KeepRotType.valueOf(keepRotType_);
-        return result == null ? emu.grasscutter.net.proto.KeepRotTypeOuterClass.KeepRotType.UNRECOGNIZED : result;
-      }
-      /**
-       * <code>.KeepRotType keepRotType = 14;</code>
-       * @param value The keepRotType to set.
-       * @return This builder for chaining.
-       */
-      public Builder setKeepRotType(emu.grasscutter.net.proto.KeepRotTypeOuterClass.KeepRotType value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        
-        keepRotType_ = value.getNumber();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.KeepRotType keepRotType = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearKeepRotType() {
-        
-        keepRotType_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private emu.grasscutter.net.proto.VectorOuterClass.Vector unk3300FJDFGLNLMBN_;
+      private emu.grasscutter.net.proto.VectorOuterClass.Vector lKGGBPLCEJI_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> unk3300FJDFGLNLMBNBuilder_;
+          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> lKGGBPLCEJIBuilder_;
       /**
-       * <code>.Vector Unk3300_FJDFGLNLMBN = 13;</code>
-       * @return Whether the unk3300FJDFGLNLMBN field is set.
+       * <code>.Vector LKGGBPLCEJI = 12;</code>
+       * @return Whether the lKGGBPLCEJI field is set.
        */
-      public boolean hasUnk3300FJDFGLNLMBN() {
-        return unk3300FJDFGLNLMBNBuilder_ != null || unk3300FJDFGLNLMBN_ != null;
+      public boolean hasLKGGBPLCEJI() {
+        return lKGGBPLCEJIBuilder_ != null || lKGGBPLCEJI_ != null;
       }
       /**
-       * <code>.Vector Unk3300_FJDFGLNLMBN = 13;</code>
-       * @return The unk3300FJDFGLNLMBN.
+       * <code>.Vector LKGGBPLCEJI = 12;</code>
+       * @return The lKGGBPLCEJI.
        */
-      public emu.grasscutter.net.proto.VectorOuterClass.Vector getUnk3300FJDFGLNLMBN() {
-        if (unk3300FJDFGLNLMBNBuilder_ == null) {
-          return unk3300FJDFGLNLMBN_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : unk3300FJDFGLNLMBN_;
+      public emu.grasscutter.net.proto.VectorOuterClass.Vector getLKGGBPLCEJI() {
+        if (lKGGBPLCEJIBuilder_ == null) {
+          return lKGGBPLCEJI_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : lKGGBPLCEJI_;
         } else {
-          return unk3300FJDFGLNLMBNBuilder_.getMessage();
+          return lKGGBPLCEJIBuilder_.getMessage();
         }
       }
       /**
-       * <code>.Vector Unk3300_FJDFGLNLMBN = 13;</code>
+       * <code>.Vector LKGGBPLCEJI = 12;</code>
        */
-      public Builder setUnk3300FJDFGLNLMBN(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
-        if (unk3300FJDFGLNLMBNBuilder_ == null) {
+      public Builder setLKGGBPLCEJI(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
+        if (lKGGBPLCEJIBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          unk3300FJDFGLNLMBN_ = value;
+          lKGGBPLCEJI_ = value;
           onChanged();
         } else {
-          unk3300FJDFGLNLMBNBuilder_.setMessage(value);
+          lKGGBPLCEJIBuilder_.setMessage(value);
         }
 
         return this;
       }
       /**
-       * <code>.Vector Unk3300_FJDFGLNLMBN = 13;</code>
+       * <code>.Vector LKGGBPLCEJI = 12;</code>
        */
-      public Builder setUnk3300FJDFGLNLMBN(
+      public Builder setLKGGBPLCEJI(
           emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
-        if (unk3300FJDFGLNLMBNBuilder_ == null) {
-          unk3300FJDFGLNLMBN_ = builderForValue.build();
+        if (lKGGBPLCEJIBuilder_ == null) {
+          lKGGBPLCEJI_ = builderForValue.build();
           onChanged();
         } else {
-          unk3300FJDFGLNLMBNBuilder_.setMessage(builderForValue.build());
+          lKGGBPLCEJIBuilder_.setMessage(builderForValue.build());
         }
 
         return this;
       }
       /**
-       * <code>.Vector Unk3300_FJDFGLNLMBN = 13;</code>
+       * <code>.Vector LKGGBPLCEJI = 12;</code>
        */
-      public Builder mergeUnk3300FJDFGLNLMBN(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
-        if (unk3300FJDFGLNLMBNBuilder_ == null) {
-          if (unk3300FJDFGLNLMBN_ != null) {
-            unk3300FJDFGLNLMBN_ =
-              emu.grasscutter.net.proto.VectorOuterClass.Vector.newBuilder(unk3300FJDFGLNLMBN_).mergeFrom(value).buildPartial();
+      public Builder mergeLKGGBPLCEJI(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
+        if (lKGGBPLCEJIBuilder_ == null) {
+          if (lKGGBPLCEJI_ != null) {
+            lKGGBPLCEJI_ =
+              emu.grasscutter.net.proto.VectorOuterClass.Vector.newBuilder(lKGGBPLCEJI_).mergeFrom(value).buildPartial();
           } else {
-            unk3300FJDFGLNLMBN_ = value;
+            lKGGBPLCEJI_ = value;
           }
           onChanged();
         } else {
-          unk3300FJDFGLNLMBNBuilder_.mergeFrom(value);
+          lKGGBPLCEJIBuilder_.mergeFrom(value);
         }
 
         return this;
       }
       /**
-       * <code>.Vector Unk3300_FJDFGLNLMBN = 13;</code>
+       * <code>.Vector LKGGBPLCEJI = 12;</code>
        */
-      public Builder clearUnk3300FJDFGLNLMBN() {
-        if (unk3300FJDFGLNLMBNBuilder_ == null) {
-          unk3300FJDFGLNLMBN_ = null;
+      public Builder clearLKGGBPLCEJI() {
+        if (lKGGBPLCEJIBuilder_ == null) {
+          lKGGBPLCEJI_ = null;
           onChanged();
         } else {
-          unk3300FJDFGLNLMBN_ = null;
-          unk3300FJDFGLNLMBNBuilder_ = null;
+          lKGGBPLCEJI_ = null;
+          lKGGBPLCEJIBuilder_ = null;
         }
 
         return this;
       }
       /**
-       * <code>.Vector Unk3300_FJDFGLNLMBN = 13;</code>
+       * <code>.Vector LKGGBPLCEJI = 12;</code>
        */
-      public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getUnk3300FJDFGLNLMBNBuilder() {
+      public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getLKGGBPLCEJIBuilder() {
         
         onChanged();
-        return getUnk3300FJDFGLNLMBNFieldBuilder().getBuilder();
+        return getLKGGBPLCEJIFieldBuilder().getBuilder();
       }
       /**
-       * <code>.Vector Unk3300_FJDFGLNLMBN = 13;</code>
+       * <code>.Vector LKGGBPLCEJI = 12;</code>
        */
-      public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getUnk3300FJDFGLNLMBNOrBuilder() {
-        if (unk3300FJDFGLNLMBNBuilder_ != null) {
-          return unk3300FJDFGLNLMBNBuilder_.getMessageOrBuilder();
+      public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getLKGGBPLCEJIOrBuilder() {
+        if (lKGGBPLCEJIBuilder_ != null) {
+          return lKGGBPLCEJIBuilder_.getMessageOrBuilder();
         } else {
-          return unk3300FJDFGLNLMBN_ == null ?
-              emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : unk3300FJDFGLNLMBN_;
+          return lKGGBPLCEJI_ == null ?
+              emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : lKGGBPLCEJI_;
         }
       }
       /**
-       * <code>.Vector Unk3300_FJDFGLNLMBN = 13;</code>
+       * <code>.Vector LKGGBPLCEJI = 12;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
-          getUnk3300FJDFGLNLMBNFieldBuilder() {
-        if (unk3300FJDFGLNLMBNBuilder_ == null) {
-          unk3300FJDFGLNLMBNBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+          getLKGGBPLCEJIFieldBuilder() {
+        if (lKGGBPLCEJIBuilder_ == null) {
+          lKGGBPLCEJIBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
               emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder>(
-                  getUnk3300FJDFGLNLMBN(),
+                  getLKGGBPLCEJI(),
                   getParentForChildren(),
                   isClean());
-          unk3300FJDFGLNLMBN_ = null;
+          lKGGBPLCEJI_ = null;
         }
-        return unk3300FJDFGLNLMBNBuilder_;
+        return lKGGBPLCEJIBuilder_;
       }
 
-      private float unk3300FIOLGCIKFLH_ ;
+      private boolean kJHLOCKMIMB_ ;
       /**
-       * <code>float Unk3300_FIOLGCIKFLH = 5;</code>
-       * @return The unk3300FIOLGCIKFLH.
+       * <code>bool KJHLOCKMIMB = 1477;</code>
+       * @return The kJHLOCKMIMB.
        */
       @java.lang.Override
-      public float getUnk3300FIOLGCIKFLH() {
-        return unk3300FIOLGCIKFLH_;
+      public boolean getKJHLOCKMIMB() {
+        return kJHLOCKMIMB_;
       }
       /**
-       * <code>float Unk3300_FIOLGCIKFLH = 5;</code>
-       * @param value The unk3300FIOLGCIKFLH to set.
+       * <code>bool KJHLOCKMIMB = 1477;</code>
+       * @param value The kJHLOCKMIMB to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk3300FIOLGCIKFLH(float value) {
+      public Builder setKJHLOCKMIMB(boolean value) {
         
-        unk3300FIOLGCIKFLH_ = value;
+        kJHLOCKMIMB_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>float Unk3300_FIOLGCIKFLH = 5;</code>
+       * <code>bool KJHLOCKMIMB = 1477;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk3300FIOLGCIKFLH() {
+      public Builder clearKJHLOCKMIMB() {
         
-        unk3300FIOLGCIKFLH_ = 0F;
+        kJHLOCKMIMB_ = false;
         onChanged();
         return this;
       }
 
-      private float unk3300HFPCHFNFJKP_ ;
+      private float gJNLEMGJCJI_ ;
       /**
-       * <code>float Unk3300_HFPCHFNFJKP = 11;</code>
-       * @return The unk3300HFPCHFNFJKP.
+       * <code>float GJNLEMGJCJI = 10;</code>
+       * @return The gJNLEMGJCJI.
        */
       @java.lang.Override
-      public float getUnk3300HFPCHFNFJKP() {
-        return unk3300HFPCHFNFJKP_;
+      public float getGJNLEMGJCJI() {
+        return gJNLEMGJCJI_;
       }
       /**
-       * <code>float Unk3300_HFPCHFNFJKP = 11;</code>
-       * @param value The unk3300HFPCHFNFJKP to set.
+       * <code>float GJNLEMGJCJI = 10;</code>
+       * @param value The gJNLEMGJCJI to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk3300HFPCHFNFJKP(float value) {
+      public Builder setGJNLEMGJCJI(float value) {
         
-        unk3300HFPCHFNFJKP_ = value;
+        gJNLEMGJCJI_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>float Unk3300_HFPCHFNFJKP = 11;</code>
+       * <code>float GJNLEMGJCJI = 10;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk3300HFPCHFNFJKP() {
+      public Builder clearGJNLEMGJCJI() {
         
-        unk3300HFPCHFNFJKP_ = 0F;
+        gJNLEMGJCJI_ = 0F;
+        onChanged();
+        return this;
+      }
+
+      private boolean iPKFLPFLNNI_ ;
+      /**
+       * <code>bool IPKFLPFLNNI = 9;</code>
+       * @return The iPKFLPFLNNI.
+       */
+      @java.lang.Override
+      public boolean getIPKFLPFLNNI() {
+        return iPKFLPFLNNI_;
+      }
+      /**
+       * <code>bool IPKFLPFLNNI = 9;</code>
+       * @param value The iPKFLPFLNNI to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIPKFLPFLNNI(boolean value) {
+        
+        iPKFLPFLNNI_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool IPKFLPFLNNI = 9;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIPKFLPFLNNI() {
+        
+        iPKFLPFLNNI_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean pDOCOOCFAIH_ ;
+      /**
+       * <code>bool PDOCOOCFAIH = 5;</code>
+       * @return The pDOCOOCFAIH.
+       */
+      @java.lang.Override
+      public boolean getPDOCOOCFAIH() {
+        return pDOCOOCFAIH_;
+      }
+      /**
+       * <code>bool PDOCOOCFAIH = 5;</code>
+       * @param value The pDOCOOCFAIH to set.
+       * @return This builder for chaining.
+       */
+      public Builder setPDOCOOCFAIH(boolean value) {
+        
+        pDOCOOCFAIH_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool PDOCOOCFAIH = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearPDOCOOCFAIH() {
+        
+        pDOCOOCFAIH_ = false;
+        onChanged();
+        return this;
+      }
+
+      private emu.grasscutter.net.proto.VectorOuterClass.Vector mMOMOKPCOJK_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> mMOMOKPCOJKBuilder_;
+      /**
+       * <code>.Vector MMOMOKPCOJK = 14;</code>
+       * @return Whether the mMOMOKPCOJK field is set.
+       */
+      public boolean hasMMOMOKPCOJK() {
+        return mMOMOKPCOJKBuilder_ != null || mMOMOKPCOJK_ != null;
+      }
+      /**
+       * <code>.Vector MMOMOKPCOJK = 14;</code>
+       * @return The mMOMOKPCOJK.
+       */
+      public emu.grasscutter.net.proto.VectorOuterClass.Vector getMMOMOKPCOJK() {
+        if (mMOMOKPCOJKBuilder_ == null) {
+          return mMOMOKPCOJK_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : mMOMOKPCOJK_;
+        } else {
+          return mMOMOKPCOJKBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.Vector MMOMOKPCOJK = 14;</code>
+       */
+      public Builder setMMOMOKPCOJK(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
+        if (mMOMOKPCOJKBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          mMOMOKPCOJK_ = value;
+          onChanged();
+        } else {
+          mMOMOKPCOJKBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Vector MMOMOKPCOJK = 14;</code>
+       */
+      public Builder setMMOMOKPCOJK(
+          emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
+        if (mMOMOKPCOJKBuilder_ == null) {
+          mMOMOKPCOJK_ = builderForValue.build();
+          onChanged();
+        } else {
+          mMOMOKPCOJKBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Vector MMOMOKPCOJK = 14;</code>
+       */
+      public Builder mergeMMOMOKPCOJK(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
+        if (mMOMOKPCOJKBuilder_ == null) {
+          if (mMOMOKPCOJK_ != null) {
+            mMOMOKPCOJK_ =
+              emu.grasscutter.net.proto.VectorOuterClass.Vector.newBuilder(mMOMOKPCOJK_).mergeFrom(value).buildPartial();
+          } else {
+            mMOMOKPCOJK_ = value;
+          }
+          onChanged();
+        } else {
+          mMOMOKPCOJKBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Vector MMOMOKPCOJK = 14;</code>
+       */
+      public Builder clearMMOMOKPCOJK() {
+        if (mMOMOKPCOJKBuilder_ == null) {
+          mMOMOKPCOJK_ = null;
+          onChanged();
+        } else {
+          mMOMOKPCOJK_ = null;
+          mMOMOKPCOJKBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Vector MMOMOKPCOJK = 14;</code>
+       */
+      public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getMMOMOKPCOJKBuilder() {
+        
+        onChanged();
+        return getMMOMOKPCOJKFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.Vector MMOMOKPCOJK = 14;</code>
+       */
+      public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getMMOMOKPCOJKOrBuilder() {
+        if (mMOMOKPCOJKBuilder_ != null) {
+          return mMOMOKPCOJKBuilder_.getMessageOrBuilder();
+        } else {
+          return mMOMOKPCOJK_ == null ?
+              emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : mMOMOKPCOJK_;
+        }
+      }
+      /**
+       * <code>.Vector MMOMOKPCOJK = 14;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
+          getMMOMOKPCOJKFieldBuilder() {
+        if (mMOMOKPCOJKBuilder_ == null) {
+          mMOMOKPCOJKBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder>(
+                  getMMOMOKPCOJK(),
+                  getParentForChildren(),
+                  isClean());
+          mMOMOKPCOJK_ = null;
+        }
+        return mMOMOKPCOJKBuilder_;
+      }
+
+      private boolean fPDPEHICGAC_ ;
+      /**
+       * <code>bool FPDPEHICGAC = 7;</code>
+       * @return The fPDPEHICGAC.
+       */
+      @java.lang.Override
+      public boolean getFPDPEHICGAC() {
+        return fPDPEHICGAC_;
+      }
+      /**
+       * <code>bool FPDPEHICGAC = 7;</code>
+       * @param value The fPDPEHICGAC to set.
+       * @return This builder for chaining.
+       */
+      public Builder setFPDPEHICGAC(boolean value) {
+        
+        fPDPEHICGAC_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool FPDPEHICGAC = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearFPDPEHICGAC() {
+        
+        fPDPEHICGAC_ = false;
+        onChanged();
+        return this;
+      }
+
+      private float mIKBDFOBIBB_ ;
+      /**
+       * <code>float MIKBDFOBIBB = 3;</code>
+       * @return The mIKBDFOBIBB.
+       */
+      @java.lang.Override
+      public float getMIKBDFOBIBB() {
+        return mIKBDFOBIBB_;
+      }
+      /**
+       * <code>float MIKBDFOBIBB = 3;</code>
+       * @param value The mIKBDFOBIBB to set.
+       * @return This builder for chaining.
+       */
+      public Builder setMIKBDFOBIBB(float value) {
+        
+        mIKBDFOBIBB_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>float MIKBDFOBIBB = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearMIKBDFOBIBB() {
+        
+        mIKBDFOBIBB_ = 0F;
+        onChanged();
+        return this;
+      }
+
+      private float cLLOFLJICAF_ ;
+      /**
+       * <code>float CLLOFLJICAF = 11;</code>
+       * @return The cLLOFLJICAF.
+       */
+      @java.lang.Override
+      public float getCLLOFLJICAF() {
+        return cLLOFLJICAF_;
+      }
+      /**
+       * <code>float CLLOFLJICAF = 11;</code>
+       * @param value The cLLOFLJICAF to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCLLOFLJICAF(float value) {
+        
+        cLLOFLJICAF_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>float CLLOFLJICAF = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCLLOFLJICAF() {
+        
+        cLLOFLJICAF_ = 0F;
         onChanged();
         return this;
       }
@@ -1851,7 +2062,7 @@ public final class BeginCameraSceneLookNotifyOuterClass {
          }
       }
       /**
-       * <code>repeated string otherParams = 12;</code>
+       * <code>repeated string other_params = 2;</code>
        * @return A list containing the otherParams.
        */
       public com.google.protobuf.ProtocolStringList
@@ -1859,14 +2070,14 @@ public final class BeginCameraSceneLookNotifyOuterClass {
         return otherParams_.getUnmodifiableView();
       }
       /**
-       * <code>repeated string otherParams = 12;</code>
+       * <code>repeated string other_params = 2;</code>
        * @return The count of otherParams.
        */
       public int getOtherParamsCount() {
         return otherParams_.size();
       }
       /**
-       * <code>repeated string otherParams = 12;</code>
+       * <code>repeated string other_params = 2;</code>
        * @param index The index of the element to return.
        * @return The otherParams at the given index.
        */
@@ -1874,7 +2085,7 @@ public final class BeginCameraSceneLookNotifyOuterClass {
         return otherParams_.get(index);
       }
       /**
-       * <code>repeated string otherParams = 12;</code>
+       * <code>repeated string other_params = 2;</code>
        * @param index The index of the value to return.
        * @return The bytes of the otherParams at the given index.
        */
@@ -1883,7 +2094,7 @@ public final class BeginCameraSceneLookNotifyOuterClass {
         return otherParams_.getByteString(index);
       }
       /**
-       * <code>repeated string otherParams = 12;</code>
+       * <code>repeated string other_params = 2;</code>
        * @param index The index to set the value at.
        * @param value The otherParams to set.
        * @return This builder for chaining.
@@ -1899,7 +2110,7 @@ public final class BeginCameraSceneLookNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated string otherParams = 12;</code>
+       * <code>repeated string other_params = 2;</code>
        * @param value The otherParams to add.
        * @return This builder for chaining.
        */
@@ -1914,7 +2125,7 @@ public final class BeginCameraSceneLookNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated string otherParams = 12;</code>
+       * <code>repeated string other_params = 2;</code>
        * @param values The otherParams to add.
        * @return This builder for chaining.
        */
@@ -1927,7 +2138,7 @@ public final class BeginCameraSceneLookNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated string otherParams = 12;</code>
+       * <code>repeated string other_params = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearOtherParams() {
@@ -1937,7 +2148,7 @@ public final class BeginCameraSceneLookNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated string otherParams = 12;</code>
+       * <code>repeated string other_params = 2;</code>
        * @param value The bytes of the otherParams to add.
        * @return This builder for chaining.
        */
@@ -1953,431 +2164,211 @@ public final class BeginCameraSceneLookNotifyOuterClass {
         return this;
       }
 
-      private int entityId_ ;
+      private int keepRotType_ = 0;
       /**
-       * <code>uint32 entityId = 167;</code>
-       * @return The entityId.
+       * <code>.BeginCameraSceneLookNotify.KeepRotType keep_rot_type = 4;</code>
+       * @return The enum numeric value on the wire for keepRotType.
+       */
+      @java.lang.Override public int getKeepRotTypeValue() {
+        return keepRotType_;
+      }
+      /**
+       * <code>.BeginCameraSceneLookNotify.KeepRotType keep_rot_type = 4;</code>
+       * @param value The enum numeric value on the wire for keepRotType to set.
+       * @return This builder for chaining.
+       */
+      public Builder setKeepRotTypeValue(int value) {
+        
+        keepRotType_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.BeginCameraSceneLookNotify.KeepRotType keep_rot_type = 4;</code>
+       * @return The keepRotType.
        */
       @java.lang.Override
-      public int getEntityId() {
-        return entityId_;
+      public emu.grasscutter.net.proto.BeginCameraSceneLookNotifyOuterClass.BeginCameraSceneLookNotify.KeepRotType getKeepRotType() {
+        @SuppressWarnings("deprecation")
+        emu.grasscutter.net.proto.BeginCameraSceneLookNotifyOuterClass.BeginCameraSceneLookNotify.KeepRotType result = emu.grasscutter.net.proto.BeginCameraSceneLookNotifyOuterClass.BeginCameraSceneLookNotify.KeepRotType.valueOf(keepRotType_);
+        return result == null ? emu.grasscutter.net.proto.BeginCameraSceneLookNotifyOuterClass.BeginCameraSceneLookNotify.KeepRotType.UNRECOGNIZED : result;
       }
       /**
-       * <code>uint32 entityId = 167;</code>
-       * @param value The entityId to set.
+       * <code>.BeginCameraSceneLookNotify.KeepRotType keep_rot_type = 4;</code>
+       * @param value The keepRotType to set.
        * @return This builder for chaining.
        */
-      public Builder setEntityId(int value) {
-        
-        entityId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 entityId = 167;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearEntityId() {
-        
-        entityId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private boolean unk3300ODADMBBFPAP_ ;
-      /**
-       * <code>bool Unk3300_ODADMBBFPAP = 4;</code>
-       * @return The unk3300ODADMBBFPAP.
-       */
-      @java.lang.Override
-      public boolean getUnk3300ODADMBBFPAP() {
-        return unk3300ODADMBBFPAP_;
-      }
-      /**
-       * <code>bool Unk3300_ODADMBBFPAP = 4;</code>
-       * @param value The unk3300ODADMBBFPAP to set.
-       * @return This builder for chaining.
-       */
-      public Builder setUnk3300ODADMBBFPAP(boolean value) {
-        
-        unk3300ODADMBBFPAP_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool Unk3300_ODADMBBFPAP = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearUnk3300ODADMBBFPAP() {
-        
-        unk3300ODADMBBFPAP_ = false;
-        onChanged();
-        return this;
-      }
-
-      private boolean unk3300EELNOAICHOJ_ ;
-      /**
-       * <code>bool Unk3300_EELNOAICHOJ = 3;</code>
-       * @return The unk3300EELNOAICHOJ.
-       */
-      @java.lang.Override
-      public boolean getUnk3300EELNOAICHOJ() {
-        return unk3300EELNOAICHOJ_;
-      }
-      /**
-       * <code>bool Unk3300_EELNOAICHOJ = 3;</code>
-       * @param value The unk3300EELNOAICHOJ to set.
-       * @return This builder for chaining.
-       */
-      public Builder setUnk3300EELNOAICHOJ(boolean value) {
-        
-        unk3300EELNOAICHOJ_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool Unk3300_EELNOAICHOJ = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearUnk3300EELNOAICHOJ() {
-        
-        unk3300EELNOAICHOJ_ = false;
-        onChanged();
-        return this;
-      }
-
-      private int unk3300KCHKKBODNCJ_ ;
-      /**
-       * <code>uint32 Unk3300_KCHKKBODNCJ = 1965;</code>
-       * @return The unk3300KCHKKBODNCJ.
-       */
-      @java.lang.Override
-      public int getUnk3300KCHKKBODNCJ() {
-        return unk3300KCHKKBODNCJ_;
-      }
-      /**
-       * <code>uint32 Unk3300_KCHKKBODNCJ = 1965;</code>
-       * @param value The unk3300KCHKKBODNCJ to set.
-       * @return This builder for chaining.
-       */
-      public Builder setUnk3300KCHKKBODNCJ(int value) {
-        
-        unk3300KCHKKBODNCJ_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 Unk3300_KCHKKBODNCJ = 1965;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearUnk3300KCHKKBODNCJ() {
-        
-        unk3300KCHKKBODNCJ_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private boolean unk3300DFPCMOFONNK_ ;
-      /**
-       * <code>bool Unk3300_DFPCMOFONNK = 15;</code>
-       * @return The unk3300DFPCMOFONNK.
-       */
-      @java.lang.Override
-      public boolean getUnk3300DFPCMOFONNK() {
-        return unk3300DFPCMOFONNK_;
-      }
-      /**
-       * <code>bool Unk3300_DFPCMOFONNK = 15;</code>
-       * @param value The unk3300DFPCMOFONNK to set.
-       * @return This builder for chaining.
-       */
-      public Builder setUnk3300DFPCMOFONNK(boolean value) {
-        
-        unk3300DFPCMOFONNK_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool Unk3300_DFPCMOFONNK = 15;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearUnk3300DFPCMOFONNK() {
-        
-        unk3300DFPCMOFONNK_ = false;
-        onChanged();
-        return this;
-      }
-
-      private float unk3300HKKCHCEMJIE_ ;
-      /**
-       * <code>float Unk3300_HKKCHCEMJIE = 2004;</code>
-       * @return The unk3300HKKCHCEMJIE.
-       */
-      @java.lang.Override
-      public float getUnk3300HKKCHCEMJIE() {
-        return unk3300HKKCHCEMJIE_;
-      }
-      /**
-       * <code>float Unk3300_HKKCHCEMJIE = 2004;</code>
-       * @param value The unk3300HKKCHCEMJIE to set.
-       * @return This builder for chaining.
-       */
-      public Builder setUnk3300HKKCHCEMJIE(float value) {
-        
-        unk3300HKKCHCEMJIE_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>float Unk3300_HKKCHCEMJIE = 2004;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearUnk3300HKKCHCEMJIE() {
-        
-        unk3300HKKCHCEMJIE_ = 0F;
-        onChanged();
-        return this;
-      }
-
-      private int unk3300AJEENEOCFON_ ;
-      /**
-       * <code>uint32 Unk3300_AJEENEOCFON = 106;</code>
-       * @return The unk3300AJEENEOCFON.
-       */
-      @java.lang.Override
-      public int getUnk3300AJEENEOCFON() {
-        return unk3300AJEENEOCFON_;
-      }
-      /**
-       * <code>uint32 Unk3300_AJEENEOCFON = 106;</code>
-       * @param value The unk3300AJEENEOCFON to set.
-       * @return This builder for chaining.
-       */
-      public Builder setUnk3300AJEENEOCFON(int value) {
-        
-        unk3300AJEENEOCFON_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 Unk3300_AJEENEOCFON = 106;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearUnk3300AJEENEOCFON() {
-        
-        unk3300AJEENEOCFON_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private emu.grasscutter.net.proto.VectorOuterClass.Vector unk3300PPCIDICMIEN_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> unk3300PPCIDICMIENBuilder_;
-      /**
-       * <code>.Vector Unk3300_PPCIDICMIEN = 7;</code>
-       * @return Whether the unk3300PPCIDICMIEN field is set.
-       */
-      public boolean hasUnk3300PPCIDICMIEN() {
-        return unk3300PPCIDICMIENBuilder_ != null || unk3300PPCIDICMIEN_ != null;
-      }
-      /**
-       * <code>.Vector Unk3300_PPCIDICMIEN = 7;</code>
-       * @return The unk3300PPCIDICMIEN.
-       */
-      public emu.grasscutter.net.proto.VectorOuterClass.Vector getUnk3300PPCIDICMIEN() {
-        if (unk3300PPCIDICMIENBuilder_ == null) {
-          return unk3300PPCIDICMIEN_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : unk3300PPCIDICMIEN_;
-        } else {
-          return unk3300PPCIDICMIENBuilder_.getMessage();
+      public Builder setKeepRotType(emu.grasscutter.net.proto.BeginCameraSceneLookNotifyOuterClass.BeginCameraSceneLookNotify.KeepRotType value) {
+        if (value == null) {
+          throw new NullPointerException();
         }
-      }
-      /**
-       * <code>.Vector Unk3300_PPCIDICMIEN = 7;</code>
-       */
-      public Builder setUnk3300PPCIDICMIEN(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
-        if (unk3300PPCIDICMIENBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          unk3300PPCIDICMIEN_ = value;
-          onChanged();
-        } else {
-          unk3300PPCIDICMIENBuilder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.Vector Unk3300_PPCIDICMIEN = 7;</code>
-       */
-      public Builder setUnk3300PPCIDICMIEN(
-          emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
-        if (unk3300PPCIDICMIENBuilder_ == null) {
-          unk3300PPCIDICMIEN_ = builderForValue.build();
-          onChanged();
-        } else {
-          unk3300PPCIDICMIENBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <code>.Vector Unk3300_PPCIDICMIEN = 7;</code>
-       */
-      public Builder mergeUnk3300PPCIDICMIEN(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
-        if (unk3300PPCIDICMIENBuilder_ == null) {
-          if (unk3300PPCIDICMIEN_ != null) {
-            unk3300PPCIDICMIEN_ =
-              emu.grasscutter.net.proto.VectorOuterClass.Vector.newBuilder(unk3300PPCIDICMIEN_).mergeFrom(value).buildPartial();
-          } else {
-            unk3300PPCIDICMIEN_ = value;
-          }
-          onChanged();
-        } else {
-          unk3300PPCIDICMIENBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.Vector Unk3300_PPCIDICMIEN = 7;</code>
-       */
-      public Builder clearUnk3300PPCIDICMIEN() {
-        if (unk3300PPCIDICMIENBuilder_ == null) {
-          unk3300PPCIDICMIEN_ = null;
-          onChanged();
-        } else {
-          unk3300PPCIDICMIEN_ = null;
-          unk3300PPCIDICMIENBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <code>.Vector Unk3300_PPCIDICMIEN = 7;</code>
-       */
-      public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getUnk3300PPCIDICMIENBuilder() {
         
+        keepRotType_ = value.getNumber();
         onChanged();
-        return getUnk3300PPCIDICMIENFieldBuilder().getBuilder();
+        return this;
       }
       /**
-       * <code>.Vector Unk3300_PPCIDICMIEN = 7;</code>
+       * <code>.BeginCameraSceneLookNotify.KeepRotType keep_rot_type = 4;</code>
+       * @return This builder for chaining.
        */
-      public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getUnk3300PPCIDICMIENOrBuilder() {
-        if (unk3300PPCIDICMIENBuilder_ != null) {
-          return unk3300PPCIDICMIENBuilder_.getMessageOrBuilder();
-        } else {
-          return unk3300PPCIDICMIEN_ == null ?
-              emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : unk3300PPCIDICMIEN_;
-        }
-      }
-      /**
-       * <code>.Vector Unk3300_PPCIDICMIEN = 7;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
-          getUnk3300PPCIDICMIENFieldBuilder() {
-        if (unk3300PPCIDICMIENBuilder_ == null) {
-          unk3300PPCIDICMIENBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder>(
-                  getUnk3300PPCIDICMIEN(),
-                  getParentForChildren(),
-                  isClean());
-          unk3300PPCIDICMIEN_ = null;
-        }
-        return unk3300PPCIDICMIENBuilder_;
+      public Builder clearKeepRotType() {
+        
+        keepRotType_ = 0;
+        onChanged();
+        return this;
       }
 
-      private boolean unk3300AAOGBCCNJAF_ ;
+      private boolean fFHJPJBDLJC_ ;
       /**
-       * <code>bool Unk3300_AAOGBCCNJAF = 644;</code>
-       * @return The unk3300AAOGBCCNJAF.
+       * <code>bool FFHJPJBDLJC = 1;</code>
+       * @return The fFHJPJBDLJC.
        */
       @java.lang.Override
-      public boolean getUnk3300AAOGBCCNJAF() {
-        return unk3300AAOGBCCNJAF_;
+      public boolean getFFHJPJBDLJC() {
+        return fFHJPJBDLJC_;
       }
       /**
-       * <code>bool Unk3300_AAOGBCCNJAF = 644;</code>
-       * @param value The unk3300AAOGBCCNJAF to set.
+       * <code>bool FFHJPJBDLJC = 1;</code>
+       * @param value The fFHJPJBDLJC to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk3300AAOGBCCNJAF(boolean value) {
+      public Builder setFFHJPJBDLJC(boolean value) {
         
-        unk3300AAOGBCCNJAF_ = value;
+        fFHJPJBDLJC_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool Unk3300_AAOGBCCNJAF = 644;</code>
+       * <code>bool FFHJPJBDLJC = 1;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk3300AAOGBCCNJAF() {
+      public Builder clearFFHJPJBDLJC() {
         
-        unk3300AAOGBCCNJAF_ = false;
-        onChanged();
-        return this;
-      }
-
-      private float unk3300HCLPGGAOIAC_ ;
-      /**
-       * <code>float Unk3300_HCLPGGAOIAC = 6;</code>
-       * @return The unk3300HCLPGGAOIAC.
-       */
-      @java.lang.Override
-      public float getUnk3300HCLPGGAOIAC() {
-        return unk3300HCLPGGAOIAC_;
-      }
-      /**
-       * <code>float Unk3300_HCLPGGAOIAC = 6;</code>
-       * @param value The unk3300HCLPGGAOIAC to set.
-       * @return This builder for chaining.
-       */
-      public Builder setUnk3300HCLPGGAOIAC(float value) {
-        
-        unk3300HCLPGGAOIAC_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>float Unk3300_HCLPGGAOIAC = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearUnk3300HCLPGGAOIAC() {
-        
-        unk3300HCLPGGAOIAC_ = 0F;
+        fFHJPJBDLJC_ = false;
         onChanged();
         return this;
       }
 
-      private boolean unk3300ILMHDLHLKGJ_ ;
+      private float duration_ ;
       /**
-       * <code>bool Unk3300_ILMHDLHLKGJ = 9;</code>
-       * @return The unk3300ILMHDLHLKGJ.
+       * <code>float duration = 6;</code>
+       * @return The duration.
        */
       @java.lang.Override
-      public boolean getUnk3300ILMHDLHLKGJ() {
-        return unk3300ILMHDLHLKGJ_;
+      public float getDuration() {
+        return duration_;
       }
       /**
-       * <code>bool Unk3300_ILMHDLHLKGJ = 9;</code>
-       * @param value The unk3300ILMHDLHLKGJ to set.
+       * <code>float duration = 6;</code>
+       * @param value The duration to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk3300ILMHDLHLKGJ(boolean value) {
+      public Builder setDuration(float value) {
         
-        unk3300ILMHDLHLKGJ_ = value;
+        duration_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool Unk3300_ILMHDLHLKGJ = 9;</code>
+       * <code>float duration = 6;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk3300ILMHDLHLKGJ() {
+      public Builder clearDuration() {
         
-        unk3300ILMHDLHLKGJ_ = false;
+        duration_ = 0F;
+        onChanged();
+        return this;
+      }
+
+      private int gEBMAIIKMBJ_ ;
+      /**
+       * <code>uint32 GEBMAIIKMBJ = 54;</code>
+       * @return The gEBMAIIKMBJ.
+       */
+      @java.lang.Override
+      public int getGEBMAIIKMBJ() {
+        return gEBMAIIKMBJ_;
+      }
+      /**
+       * <code>uint32 GEBMAIIKMBJ = 54;</code>
+       * @param value The gEBMAIIKMBJ to set.
+       * @return This builder for chaining.
+       */
+      public Builder setGEBMAIIKMBJ(int value) {
+        
+        gEBMAIIKMBJ_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 GEBMAIIKMBJ = 54;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearGEBMAIIKMBJ() {
+        
+        gEBMAIIKMBJ_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean mCFGAPGPNLN_ ;
+      /**
+       * <code>bool MCFGAPGPNLN = 13;</code>
+       * @return The mCFGAPGPNLN.
+       */
+      @java.lang.Override
+      public boolean getMCFGAPGPNLN() {
+        return mCFGAPGPNLN_;
+      }
+      /**
+       * <code>bool MCFGAPGPNLN = 13;</code>
+       * @param value The mCFGAPGPNLN to set.
+       * @return This builder for chaining.
+       */
+      public Builder setMCFGAPGPNLN(boolean value) {
+        
+        mCFGAPGPNLN_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool MCFGAPGPNLN = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearMCFGAPGPNLN() {
+        
+        mCFGAPGPNLN_ = false;
+        onChanged();
+        return this;
+      }
+
+      private float oJKGLFJCMID_ ;
+      /**
+       * <code>float OJKGLFJCMID = 801;</code>
+       * @return The oJKGLFJCMID.
+       */
+      @java.lang.Override
+      public float getOJKGLFJCMID() {
+        return oJKGLFJCMID_;
+      }
+      /**
+       * <code>float OJKGLFJCMID = 801;</code>
+       * @param value The oJKGLFJCMID to set.
+       * @return This builder for chaining.
+       */
+      public Builder setOJKGLFJCMID(float value) {
+        
+        oJKGLFJCMID_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>float OJKGLFJCMID = 801;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearOJKGLFJCMID() {
+        
+        oJKGLFJCMID_ = 0F;
         onChanged();
         return this;
       }
@@ -2448,31 +2439,27 @@ public final class BeginCameraSceneLookNotifyOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n BeginCameraSceneLookNotify.proto\032\021Keep" +
-      "RotType.proto\032\014Vector.proto\"\257\005\n\032BeginCam" +
-      "eraSceneLookNotify\022\033\n\023Unk3300_ONBDMCHFPD" +
-      "L\030\002 \001(\010\022\033\n\023Unk3300_PIEFLAEGGBI\030\010 \001(\010\022\033\n\023" +
-      "Unk3300_NJLBIMJDFHJ\030\001 \001(\010\022\020\n\010duration\030\n " +
-      "\001(\002\022!\n\013keepRotType\030\016 \001(\0162\014.KeepRotType\022$" +
-      "\n\023Unk3300_FJDFGLNLMBN\030\r \001(\0132\007.Vector\022\033\n\023" +
-      "Unk3300_FIOLGCIKFLH\030\005 \001(\002\022\033\n\023Unk3300_HFP" +
-      "CHFNFJKP\030\013 \001(\002\022\023\n\013otherParams\030\014 \003(\t\022\021\n\010e" +
-      "ntityId\030\247\001 \001(\r\022\033\n\023Unk3300_ODADMBBFPAP\030\004 " +
-      "\001(\010\022\033\n\023Unk3300_EELNOAICHOJ\030\003 \001(\010\022\034\n\023Unk3" +
-      "300_KCHKKBODNCJ\030\255\017 \001(\r\022\033\n\023Unk3300_DFPCMO" +
-      "FONNK\030\017 \001(\010\022\034\n\023Unk3300_HKKCHCEMJIE\030\324\017 \001(" +
-      "\002\022\033\n\023Unk3300_AJEENEOCFON\030j \001(\r\022$\n\023Unk330" +
-      "0_PPCIDICMIEN\030\007 \001(\0132\007.Vector\022\034\n\023Unk3300_" +
-      "AAOGBCCNJAF\030\204\005 \001(\010\022\033\n\023Unk3300_HCLPGGAOIA" +
-      "C\030\006 \001(\002\022\033\n\023Unk3300_ILMHDLHLKGJ\030\t \001(\010\"O\n\013" +
-      "CPHHCGOAFAE\022\010\n\004NONE\020\000\022\020\n\013PEPPOHPHJOJ\020\227\002\022" +
-      "\017\n\013DCDNILFDFLB\020\000\022\017\n\013NNBKOLMPOEA\020\001\032\002\020\001B\033\n" +
-      "\031emu.grasscutter.net.protob\006proto3"
+      "\n BeginCameraSceneLookNotify.proto\032\014Vect" +
+      "or.proto\"\255\004\n\032BeginCameraSceneLookNotify\022" +
+      "\022\n\tentity_id\030\341\004 \001(\r\022\023\n\013JBCEDEGCGFJ\030\010 \001(\010" +
+      "\022\023\n\013ADPLABBOBKF\030\017 \001(\010\022\024\n\013DOCBFPIPMPK\030\356\007 " +
+      "\001(\r\022\034\n\013LKGGBPLCEJI\030\014 \001(\0132\007.Vector\022\024\n\013KJH" +
+      "LOCKMIMB\030\305\013 \001(\010\022\023\n\013GJNLEMGJCJI\030\n \001(\002\022\023\n\013" +
+      "IPKFLPFLNNI\030\t \001(\010\022\023\n\013PDOCOOCFAIH\030\005 \001(\010\022\034" +
+      "\n\013MMOMOKPCOJK\030\016 \001(\0132\007.Vector\022\023\n\013FPDPEHIC" +
+      "GAC\030\007 \001(\010\022\023\n\013MIKBDFOBIBB\030\003 \001(\002\022\023\n\013CLLOFL" +
+      "JICAF\030\013 \001(\002\022\024\n\014other_params\030\002 \003(\t\022>\n\rkee" +
+      "p_rot_type\030\004 \001(\0162\'.BeginCameraSceneLookN" +
+      "otify.KeepRotType\022\023\n\013FFHJPJBDLJC\030\001 \001(\010\022\020" +
+      "\n\010duration\030\006 \001(\002\022\023\n\013GEBMAIIKMBJ\0306 \001(\r\022\023\n" +
+      "\013MCFGAPGPNLN\030\r \001(\010\022\024\n\013OJKGLFJCMID\030\241\006 \001(\002" +
+      "\".\n\013KeepRotType\022\016\n\nKEEP_ROT_X\020\000\022\017\n\013KEEP_" +
+      "ROT_XY\020\001B\033\n\031emu.grasscutter.net.protob\006p" +
+      "roto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.KeepRotTypeOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.VectorOuterClass.getDescriptor(),
         });
     internal_static_BeginCameraSceneLookNotify_descriptor =
@@ -2480,8 +2467,7 @@ public final class BeginCameraSceneLookNotifyOuterClass {
     internal_static_BeginCameraSceneLookNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_BeginCameraSceneLookNotify_descriptor,
-        new java.lang.String[] { "Unk3300ONBDMCHFPDL", "Unk3300PIEFLAEGGBI", "Unk3300NJLBIMJDFHJ", "Duration", "KeepRotType", "Unk3300FJDFGLNLMBN", "Unk3300FIOLGCIKFLH", "Unk3300HFPCHFNFJKP", "OtherParams", "EntityId", "Unk3300ODADMBBFPAP", "Unk3300EELNOAICHOJ", "Unk3300KCHKKBODNCJ", "Unk3300DFPCMOFONNK", "Unk3300HKKCHCEMJIE", "Unk3300AJEENEOCFON", "Unk3300PPCIDICMIEN", "Unk3300AAOGBCCNJAF", "Unk3300HCLPGGAOIAC", "Unk3300ILMHDLHLKGJ", });
-    emu.grasscutter.net.proto.KeepRotTypeOuterClass.getDescriptor();
+        new java.lang.String[] { "EntityId", "JBCEDEGCGFJ", "ADPLABBOBKF", "DOCBFPIPMPK", "LKGGBPLCEJI", "KJHLOCKMIMB", "GJNLEMGJCJI", "IPKFLPFLNNI", "PDOCOOCFAIH", "MMOMOKPCOJK", "FPDPEHICGAC", "MIKBDFOBIBB", "CLLOFLJICAF", "OtherParams", "KeepRotType", "FFHJPJBDLJC", "Duration", "GEBMAIIKMBJ", "MCFGAPGPNLN", "OJKGLFJCMID", });
     emu.grasscutter.net.proto.VectorOuterClass.getDescriptor();
   }
 

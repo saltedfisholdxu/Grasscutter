@@ -19,30 +19,34 @@ public final class HomeSeekFurnitureAllRecordOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .HomeSeekFurnitureOneRecord recordList = 5;</code>
+     * <code>repeated .HomeSeekFurnitureOneRecord record_list = 11;</code>
      */
     java.util.List<emu.grasscutter.net.proto.HomeSeekFurnitureOneRecordOuterClass.HomeSeekFurnitureOneRecord> 
         getRecordListList();
     /**
-     * <code>repeated .HomeSeekFurnitureOneRecord recordList = 5;</code>
+     * <code>repeated .HomeSeekFurnitureOneRecord record_list = 11;</code>
      */
     emu.grasscutter.net.proto.HomeSeekFurnitureOneRecordOuterClass.HomeSeekFurnitureOneRecord getRecordList(int index);
     /**
-     * <code>repeated .HomeSeekFurnitureOneRecord recordList = 5;</code>
+     * <code>repeated .HomeSeekFurnitureOneRecord record_list = 11;</code>
      */
     int getRecordListCount();
     /**
-     * <code>repeated .HomeSeekFurnitureOneRecord recordList = 5;</code>
+     * <code>repeated .HomeSeekFurnitureOneRecord record_list = 11;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.HomeSeekFurnitureOneRecordOuterClass.HomeSeekFurnitureOneRecordOrBuilder> 
         getRecordListOrBuilderList();
     /**
-     * <code>repeated .HomeSeekFurnitureOneRecord recordList = 5;</code>
+     * <code>repeated .HomeSeekFurnitureOneRecord record_list = 11;</code>
      */
     emu.grasscutter.net.proto.HomeSeekFurnitureOneRecordOuterClass.HomeSeekFurnitureOneRecordOrBuilder getRecordListOrBuilder(
         int index);
   }
   /**
+   * <pre>
+   * Obf: MKKMMPLDODC
+   * </pre>
+   *
    * Protobuf type {@code HomeSeekFurnitureAllRecord}
    */
   public static final class HomeSeekFurnitureAllRecord extends
@@ -89,7 +93,7 @@ public final class HomeSeekFurnitureAllRecordOuterClass {
             case 0:
               done = true;
               break;
-            case 42: {
+            case 90: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 recordList_ = new java.util.ArrayList<emu.grasscutter.net.proto.HomeSeekFurnitureOneRecordOuterClass.HomeSeekFurnitureOneRecord>();
                 mutable_bitField0_ |= 0x00000001;
@@ -133,17 +137,17 @@ public final class HomeSeekFurnitureAllRecordOuterClass {
               emu.grasscutter.net.proto.HomeSeekFurnitureAllRecordOuterClass.HomeSeekFurnitureAllRecord.class, emu.grasscutter.net.proto.HomeSeekFurnitureAllRecordOuterClass.HomeSeekFurnitureAllRecord.Builder.class);
     }
 
-    public static final int RECORDLIST_FIELD_NUMBER = 5;
+    public static final int RECORD_LIST_FIELD_NUMBER = 11;
     private java.util.List<emu.grasscutter.net.proto.HomeSeekFurnitureOneRecordOuterClass.HomeSeekFurnitureOneRecord> recordList_;
     /**
-     * <code>repeated .HomeSeekFurnitureOneRecord recordList = 5;</code>
+     * <code>repeated .HomeSeekFurnitureOneRecord record_list = 11;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.HomeSeekFurnitureOneRecordOuterClass.HomeSeekFurnitureOneRecord> getRecordListList() {
       return recordList_;
     }
     /**
-     * <code>repeated .HomeSeekFurnitureOneRecord recordList = 5;</code>
+     * <code>repeated .HomeSeekFurnitureOneRecord record_list = 11;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.HomeSeekFurnitureOneRecordOuterClass.HomeSeekFurnitureOneRecordOrBuilder> 
@@ -151,21 +155,21 @@ public final class HomeSeekFurnitureAllRecordOuterClass {
       return recordList_;
     }
     /**
-     * <code>repeated .HomeSeekFurnitureOneRecord recordList = 5;</code>
+     * <code>repeated .HomeSeekFurnitureOneRecord record_list = 11;</code>
      */
     @java.lang.Override
     public int getRecordListCount() {
       return recordList_.size();
     }
     /**
-     * <code>repeated .HomeSeekFurnitureOneRecord recordList = 5;</code>
+     * <code>repeated .HomeSeekFurnitureOneRecord record_list = 11;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.HomeSeekFurnitureOneRecordOuterClass.HomeSeekFurnitureOneRecord getRecordList(int index) {
       return recordList_.get(index);
     }
     /**
-     * <code>repeated .HomeSeekFurnitureOneRecord recordList = 5;</code>
+     * <code>repeated .HomeSeekFurnitureOneRecord record_list = 11;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.HomeSeekFurnitureOneRecordOuterClass.HomeSeekFurnitureOneRecordOrBuilder getRecordListOrBuilder(
@@ -188,7 +192,7 @@ public final class HomeSeekFurnitureAllRecordOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       for (int i = 0; i < recordList_.size(); i++) {
-        output.writeMessage(5, recordList_.get(i));
+        output.writeMessage(11, recordList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -201,7 +205,7 @@ public final class HomeSeekFurnitureAllRecordOuterClass {
       size = 0;
       for (int i = 0; i < recordList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(5, recordList_.get(i));
+          .computeMessageSize(11, recordList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -232,7 +236,7 @@ public final class HomeSeekFurnitureAllRecordOuterClass {
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
       if (getRecordListCount() > 0) {
-        hash = (37 * hash) + RECORDLIST_FIELD_NUMBER;
+        hash = (37 * hash) + RECORD_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getRecordListList().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
@@ -331,6 +335,10 @@ public final class HomeSeekFurnitureAllRecordOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Obf: MKKMMPLDODC
+     * </pre>
+     *
      * Protobuf type {@code HomeSeekFurnitureAllRecord}
      */
     public static final class Builder extends
@@ -528,7 +536,7 @@ public final class HomeSeekFurnitureAllRecordOuterClass {
           emu.grasscutter.net.proto.HomeSeekFurnitureOneRecordOuterClass.HomeSeekFurnitureOneRecord, emu.grasscutter.net.proto.HomeSeekFurnitureOneRecordOuterClass.HomeSeekFurnitureOneRecord.Builder, emu.grasscutter.net.proto.HomeSeekFurnitureOneRecordOuterClass.HomeSeekFurnitureOneRecordOrBuilder> recordListBuilder_;
 
       /**
-       * <code>repeated .HomeSeekFurnitureOneRecord recordList = 5;</code>
+       * <code>repeated .HomeSeekFurnitureOneRecord record_list = 11;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.HomeSeekFurnitureOneRecordOuterClass.HomeSeekFurnitureOneRecord> getRecordListList() {
         if (recordListBuilder_ == null) {
@@ -538,7 +546,7 @@ public final class HomeSeekFurnitureAllRecordOuterClass {
         }
       }
       /**
-       * <code>repeated .HomeSeekFurnitureOneRecord recordList = 5;</code>
+       * <code>repeated .HomeSeekFurnitureOneRecord record_list = 11;</code>
        */
       public int getRecordListCount() {
         if (recordListBuilder_ == null) {
@@ -548,7 +556,7 @@ public final class HomeSeekFurnitureAllRecordOuterClass {
         }
       }
       /**
-       * <code>repeated .HomeSeekFurnitureOneRecord recordList = 5;</code>
+       * <code>repeated .HomeSeekFurnitureOneRecord record_list = 11;</code>
        */
       public emu.grasscutter.net.proto.HomeSeekFurnitureOneRecordOuterClass.HomeSeekFurnitureOneRecord getRecordList(int index) {
         if (recordListBuilder_ == null) {
@@ -558,7 +566,7 @@ public final class HomeSeekFurnitureAllRecordOuterClass {
         }
       }
       /**
-       * <code>repeated .HomeSeekFurnitureOneRecord recordList = 5;</code>
+       * <code>repeated .HomeSeekFurnitureOneRecord record_list = 11;</code>
        */
       public Builder setRecordList(
           int index, emu.grasscutter.net.proto.HomeSeekFurnitureOneRecordOuterClass.HomeSeekFurnitureOneRecord value) {
@@ -575,7 +583,7 @@ public final class HomeSeekFurnitureAllRecordOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HomeSeekFurnitureOneRecord recordList = 5;</code>
+       * <code>repeated .HomeSeekFurnitureOneRecord record_list = 11;</code>
        */
       public Builder setRecordList(
           int index, emu.grasscutter.net.proto.HomeSeekFurnitureOneRecordOuterClass.HomeSeekFurnitureOneRecord.Builder builderForValue) {
@@ -589,7 +597,7 @@ public final class HomeSeekFurnitureAllRecordOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HomeSeekFurnitureOneRecord recordList = 5;</code>
+       * <code>repeated .HomeSeekFurnitureOneRecord record_list = 11;</code>
        */
       public Builder addRecordList(emu.grasscutter.net.proto.HomeSeekFurnitureOneRecordOuterClass.HomeSeekFurnitureOneRecord value) {
         if (recordListBuilder_ == null) {
@@ -605,7 +613,7 @@ public final class HomeSeekFurnitureAllRecordOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HomeSeekFurnitureOneRecord recordList = 5;</code>
+       * <code>repeated .HomeSeekFurnitureOneRecord record_list = 11;</code>
        */
       public Builder addRecordList(
           int index, emu.grasscutter.net.proto.HomeSeekFurnitureOneRecordOuterClass.HomeSeekFurnitureOneRecord value) {
@@ -622,7 +630,7 @@ public final class HomeSeekFurnitureAllRecordOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HomeSeekFurnitureOneRecord recordList = 5;</code>
+       * <code>repeated .HomeSeekFurnitureOneRecord record_list = 11;</code>
        */
       public Builder addRecordList(
           emu.grasscutter.net.proto.HomeSeekFurnitureOneRecordOuterClass.HomeSeekFurnitureOneRecord.Builder builderForValue) {
@@ -636,7 +644,7 @@ public final class HomeSeekFurnitureAllRecordOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HomeSeekFurnitureOneRecord recordList = 5;</code>
+       * <code>repeated .HomeSeekFurnitureOneRecord record_list = 11;</code>
        */
       public Builder addRecordList(
           int index, emu.grasscutter.net.proto.HomeSeekFurnitureOneRecordOuterClass.HomeSeekFurnitureOneRecord.Builder builderForValue) {
@@ -650,7 +658,7 @@ public final class HomeSeekFurnitureAllRecordOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HomeSeekFurnitureOneRecord recordList = 5;</code>
+       * <code>repeated .HomeSeekFurnitureOneRecord record_list = 11;</code>
        */
       public Builder addAllRecordList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.HomeSeekFurnitureOneRecordOuterClass.HomeSeekFurnitureOneRecord> values) {
@@ -665,7 +673,7 @@ public final class HomeSeekFurnitureAllRecordOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HomeSeekFurnitureOneRecord recordList = 5;</code>
+       * <code>repeated .HomeSeekFurnitureOneRecord record_list = 11;</code>
        */
       public Builder clearRecordList() {
         if (recordListBuilder_ == null) {
@@ -678,7 +686,7 @@ public final class HomeSeekFurnitureAllRecordOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HomeSeekFurnitureOneRecord recordList = 5;</code>
+       * <code>repeated .HomeSeekFurnitureOneRecord record_list = 11;</code>
        */
       public Builder removeRecordList(int index) {
         if (recordListBuilder_ == null) {
@@ -691,14 +699,14 @@ public final class HomeSeekFurnitureAllRecordOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HomeSeekFurnitureOneRecord recordList = 5;</code>
+       * <code>repeated .HomeSeekFurnitureOneRecord record_list = 11;</code>
        */
       public emu.grasscutter.net.proto.HomeSeekFurnitureOneRecordOuterClass.HomeSeekFurnitureOneRecord.Builder getRecordListBuilder(
           int index) {
         return getRecordListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .HomeSeekFurnitureOneRecord recordList = 5;</code>
+       * <code>repeated .HomeSeekFurnitureOneRecord record_list = 11;</code>
        */
       public emu.grasscutter.net.proto.HomeSeekFurnitureOneRecordOuterClass.HomeSeekFurnitureOneRecordOrBuilder getRecordListOrBuilder(
           int index) {
@@ -708,7 +716,7 @@ public final class HomeSeekFurnitureAllRecordOuterClass {
         }
       }
       /**
-       * <code>repeated .HomeSeekFurnitureOneRecord recordList = 5;</code>
+       * <code>repeated .HomeSeekFurnitureOneRecord record_list = 11;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.HomeSeekFurnitureOneRecordOuterClass.HomeSeekFurnitureOneRecordOrBuilder> 
            getRecordListOrBuilderList() {
@@ -719,14 +727,14 @@ public final class HomeSeekFurnitureAllRecordOuterClass {
         }
       }
       /**
-       * <code>repeated .HomeSeekFurnitureOneRecord recordList = 5;</code>
+       * <code>repeated .HomeSeekFurnitureOneRecord record_list = 11;</code>
        */
       public emu.grasscutter.net.proto.HomeSeekFurnitureOneRecordOuterClass.HomeSeekFurnitureOneRecord.Builder addRecordListBuilder() {
         return getRecordListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.HomeSeekFurnitureOneRecordOuterClass.HomeSeekFurnitureOneRecord.getDefaultInstance());
       }
       /**
-       * <code>repeated .HomeSeekFurnitureOneRecord recordList = 5;</code>
+       * <code>repeated .HomeSeekFurnitureOneRecord record_list = 11;</code>
        */
       public emu.grasscutter.net.proto.HomeSeekFurnitureOneRecordOuterClass.HomeSeekFurnitureOneRecord.Builder addRecordListBuilder(
           int index) {
@@ -734,7 +742,7 @@ public final class HomeSeekFurnitureAllRecordOuterClass {
             index, emu.grasscutter.net.proto.HomeSeekFurnitureOneRecordOuterClass.HomeSeekFurnitureOneRecord.getDefaultInstance());
       }
       /**
-       * <code>repeated .HomeSeekFurnitureOneRecord recordList = 5;</code>
+       * <code>repeated .HomeSeekFurnitureOneRecord record_list = 11;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.HomeSeekFurnitureOneRecordOuterClass.HomeSeekFurnitureOneRecord.Builder> 
            getRecordListBuilderList() {
@@ -822,10 +830,10 @@ public final class HomeSeekFurnitureAllRecordOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n HomeSeekFurnitureAllRecord.proto\032 Home" +
-      "SeekFurnitureOneRecord.proto\"M\n\032HomeSeek" +
-      "FurnitureAllRecord\022/\n\nrecordList\030\005 \003(\0132\033" +
-      ".HomeSeekFurnitureOneRecordB\033\n\031emu.grass" +
-      "cutter.net.protob\006proto3"
+      "SeekFurnitureOneRecord.proto\"N\n\032HomeSeek" +
+      "FurnitureAllRecord\0220\n\013record_list\030\013 \003(\0132" +
+      "\033.HomeSeekFurnitureOneRecordB\033\n\031emu.gras" +
+      "scutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

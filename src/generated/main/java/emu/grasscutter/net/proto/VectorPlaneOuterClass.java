@@ -31,6 +31,10 @@ public final class VectorPlaneOuterClass {
     float getY();
   }
   /**
+   * <pre>
+   * Obf: FOOALIEJOLM
+   * </pre>
+   *
    * Protobuf type {@code VectorPlane}
    */
   public static final class VectorPlane extends
@@ -310,6 +314,10 @@ public final class VectorPlaneOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Obf: FOOALIEJOLM
+     * </pre>
+     *
      * Protobuf type {@code VectorPlane}
      */
     public static final class Builder extends

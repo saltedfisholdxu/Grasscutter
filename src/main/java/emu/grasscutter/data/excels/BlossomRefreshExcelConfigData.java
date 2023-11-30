@@ -1,30 +1,30 @@
 package emu.grasscutter.data.excels;
 
+import emu.grasscutter.data.*;
 import java.util.List;
-
-import emu.grasscutter.data.GameResource;
-import emu.grasscutter.data.ResourceType;
 import lombok.Getter;
 
 @ResourceType(name = "BlossomRefreshExcelConfigData.json")
 @Getter
 public class BlossomRefreshExcelConfigData extends GameResource {
-    @Getter(onMethod = @__(@Override))
+    @Getter(onMethod_ = @Override)
     private int id;
     // Map details
     private long nameTextMapHash;
     private long descTextMapHash;
     private String icon;
-    private String clientShowType;  // BLOSSOM_SHOWTYPE_CHALLENGE, BLOSSOM_SHOWTYPE_NPCTALK
+    private String clientShowType; // BLOSSOM_SHOWTYPE_CHALLENGE, BLOSSOM_SHOWTYPE_NPCTALK
 
     // Refresh details
-    private String refreshType;  // Leyline blossoms, magical ore outcrops
-    private int refreshCount;  // Number of entries to spawn at refresh (1 for each leyline type for each city, 4 for magical ore for each city)
-    private String refreshTime;  // Server time-of-day to refresh at
-    private RefreshCond[] refreshCondVec;  // AR requirements etc.
+    private String refreshType; // Leyline blossoms, magical ore outcrops
+    private int
+            refreshCount; // Number of entries to spawn at refresh (1 for each leyline type for each city,
+    // 4 for magical ore for each city)
+    private String refreshTime; // Server time-of-day to refresh at
+    private RefreshCond[] refreshCondVec; // AR requirements etc.
 
     private int cityId;
-    private int blossomChestId;  // 1 for mora, 2 for exp
+    private int blossomChestId; // 1 for mora, 2 for exp
     private Drop[] dropVec;
 
     // Unknown details

@@ -99,26 +99,45 @@ public final class CreateEntityInfoOuterClass {
     emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getRotOrBuilder();
 
     /**
-     * <code>uint32 sceneId = 10;</code>
+     * <code>uint32 scene_id = 10;</code>
      * @return The sceneId.
      */
     int getSceneId();
 
     /**
-     * <code>uint32 roomId = 11;</code>
+     * <code>uint32 room_id = 11;</code>
      * @return The roomId.
      */
     int getRoomId();
 
     /**
-     * <code>uint32 clientUniqueId = 12;</code>
+     * <code>uint32 client_unique_id = 12;</code>
      * @return The clientUniqueId.
      */
     int getClientUniqueId();
 
+    /**
+     * <code>optional .CreateGadgetInfo gadget = 13;</code>
+     * @return Whether the gadget field is set.
+     */
+    boolean hasGadget();
+    /**
+     * <code>optional .CreateGadgetInfo gadget = 13;</code>
+     * @return The gadget.
+     */
+    emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.CreateGadgetInfo getGadget();
+    /**
+     * <code>optional .CreateGadgetInfo gadget = 13;</code>
+     */
+    emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.CreateGadgetInfoOrBuilder getGadgetOrBuilder();
+
     public emu.grasscutter.net.proto.CreateEntityInfoOuterClass.CreateEntityInfo.EntityCase getEntityCase();
   }
   /**
+   * <pre>
+   * Obf: CIDLLJOHEFL
+   * </pre>
+   *
    * Protobuf type {@code CreateEntityInfo}
    */
   public static final class CreateEntityInfo extends
@@ -153,6 +172,7 @@ public final class CreateEntityInfoOuterClass {
       if (extensionRegistry == null) {
         throw new java.lang.NullPointerException();
       }
+      int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
       try {
@@ -229,6 +249,19 @@ public final class CreateEntityInfoOuterClass {
               clientUniqueId_ = input.readUInt32();
               break;
             }
+            case 106: {
+              emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.CreateGadgetInfo.Builder subBuilder = null;
+              if (((bitField0_ & 0x00000001) != 0)) {
+                subBuilder = gadget_.toBuilder();
+              }
+              gadget_ = input.readMessage(emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.CreateGadgetInfo.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(gadget_);
+                gadget_ = subBuilder.buildPartial();
+              }
+              bitField0_ |= 0x00000001;
+              break;
+            }
             default: {
               if (!parseUnknownField(
                   input, unknownFields, extensionRegistry, tag)) {
@@ -261,6 +294,7 @@ public final class CreateEntityInfoOuterClass {
               emu.grasscutter.net.proto.CreateEntityInfoOuterClass.CreateEntityInfo.class, emu.grasscutter.net.proto.CreateEntityInfoOuterClass.CreateEntityInfo.Builder.class);
     }
 
+    private int bitField0_;
     private int entityCase_ = 0;
     private java.lang.Object entity_;
     public enum EntityCase
@@ -453,10 +487,10 @@ public final class CreateEntityInfoOuterClass {
       return getRot();
     }
 
-    public static final int SCENEID_FIELD_NUMBER = 10;
+    public static final int SCENE_ID_FIELD_NUMBER = 10;
     private int sceneId_;
     /**
-     * <code>uint32 sceneId = 10;</code>
+     * <code>uint32 scene_id = 10;</code>
      * @return The sceneId.
      */
     @java.lang.Override
@@ -464,10 +498,10 @@ public final class CreateEntityInfoOuterClass {
       return sceneId_;
     }
 
-    public static final int ROOMID_FIELD_NUMBER = 11;
+    public static final int ROOM_ID_FIELD_NUMBER = 11;
     private int roomId_;
     /**
-     * <code>uint32 roomId = 11;</code>
+     * <code>uint32 room_id = 11;</code>
      * @return The roomId.
      */
     @java.lang.Override
@@ -475,15 +509,41 @@ public final class CreateEntityInfoOuterClass {
       return roomId_;
     }
 
-    public static final int CLIENTUNIQUEID_FIELD_NUMBER = 12;
+    public static final int CLIENT_UNIQUE_ID_FIELD_NUMBER = 12;
     private int clientUniqueId_;
     /**
-     * <code>uint32 clientUniqueId = 12;</code>
+     * <code>uint32 client_unique_id = 12;</code>
      * @return The clientUniqueId.
      */
     @java.lang.Override
     public int getClientUniqueId() {
       return clientUniqueId_;
+    }
+
+    public static final int GADGET_FIELD_NUMBER = 13;
+    private emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.CreateGadgetInfo gadget_;
+    /**
+     * <code>optional .CreateGadgetInfo gadget = 13;</code>
+     * @return Whether the gadget field is set.
+     */
+    @java.lang.Override
+    public boolean hasGadget() {
+      return ((bitField0_ & 0x00000001) != 0);
+    }
+    /**
+     * <code>optional .CreateGadgetInfo gadget = 13;</code>
+     * @return The gadget.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.CreateGadgetInfo getGadget() {
+      return gadget_ == null ? emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.CreateGadgetInfo.getDefaultInstance() : gadget_;
+    }
+    /**
+     * <code>optional .CreateGadgetInfo gadget = 13;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.CreateGadgetInfoOrBuilder getGadgetOrBuilder() {
+      return gadget_ == null ? emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.CreateGadgetInfo.getDefaultInstance() : gadget_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -533,6 +593,9 @@ public final class CreateEntityInfoOuterClass {
       }
       if (clientUniqueId_ != 0) {
         output.writeUInt32(12, clientUniqueId_);
+      }
+      if (((bitField0_ & 0x00000001) != 0)) {
+        output.writeMessage(13, getGadget());
       }
       unknownFields.writeTo(output);
     }
@@ -587,6 +650,10 @@ public final class CreateEntityInfoOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(12, clientUniqueId_);
       }
+      if (((bitField0_ & 0x00000001) != 0)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(13, getGadget());
+      }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
       return size;
@@ -620,6 +687,11 @@ public final class CreateEntityInfoOuterClass {
           != other.getRoomId()) return false;
       if (getClientUniqueId()
           != other.getClientUniqueId()) return false;
+      if (hasGadget() != other.hasGadget()) return false;
+      if (hasGadget()) {
+        if (!getGadget()
+            .equals(other.getGadget())) return false;
+      }
       if (!getEntityCase().equals(other.getEntityCase())) return false;
       switch (entityCase_) {
         case 1:
@@ -662,12 +734,16 @@ public final class CreateEntityInfoOuterClass {
         hash = (37 * hash) + ROT_FIELD_NUMBER;
         hash = (53 * hash) + getRot().hashCode();
       }
-      hash = (37 * hash) + SCENEID_FIELD_NUMBER;
+      hash = (37 * hash) + SCENE_ID_FIELD_NUMBER;
       hash = (53 * hash) + getSceneId();
-      hash = (37 * hash) + ROOMID_FIELD_NUMBER;
+      hash = (37 * hash) + ROOM_ID_FIELD_NUMBER;
       hash = (53 * hash) + getRoomId();
-      hash = (37 * hash) + CLIENTUNIQUEID_FIELD_NUMBER;
+      hash = (37 * hash) + CLIENT_UNIQUE_ID_FIELD_NUMBER;
       hash = (53 * hash) + getClientUniqueId();
+      if (hasGadget()) {
+        hash = (37 * hash) + GADGET_FIELD_NUMBER;
+        hash = (53 * hash) + getGadget().hashCode();
+      }
       switch (entityCase_) {
         case 1:
           hash = (37 * hash) + MONSTER_ID_FIELD_NUMBER;
@@ -784,6 +860,10 @@ public final class CreateEntityInfoOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Obf: CIDLLJOHEFL
+     * </pre>
+     *
      * Protobuf type {@code CreateEntityInfo}
      */
     public static final class Builder extends
@@ -816,6 +896,7 @@ public final class CreateEntityInfoOuterClass {
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
+          getGadgetFieldBuilder();
         }
       }
       @java.lang.Override
@@ -841,6 +922,12 @@ public final class CreateEntityInfoOuterClass {
 
         clientUniqueId_ = 0;
 
+        if (gadgetBuilder_ == null) {
+          gadget_ = null;
+        } else {
+          gadgetBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000001);
         entityCase_ = 0;
         entity_ = null;
         return this;
@@ -869,6 +956,8 @@ public final class CreateEntityInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.CreateEntityInfoOuterClass.CreateEntityInfo buildPartial() {
         emu.grasscutter.net.proto.CreateEntityInfoOuterClass.CreateEntityInfo result = new emu.grasscutter.net.proto.CreateEntityInfoOuterClass.CreateEntityInfo(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
         if (entityCase_ == 1) {
           result.entity_ = entity_;
         }
@@ -895,6 +984,15 @@ public final class CreateEntityInfoOuterClass {
         result.sceneId_ = sceneId_;
         result.roomId_ = roomId_;
         result.clientUniqueId_ = clientUniqueId_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          if (gadgetBuilder_ == null) {
+            result.gadget_ = gadget_;
+          } else {
+            result.gadget_ = gadgetBuilder_.build();
+          }
+          to_bitField0_ |= 0x00000001;
+        }
+        result.bitField0_ = to_bitField0_;
         result.entityCase_ = entityCase_;
         onBuilt();
         return result;
@@ -962,6 +1060,9 @@ public final class CreateEntityInfoOuterClass {
         if (other.getClientUniqueId() != 0) {
           setClientUniqueId(other.getClientUniqueId());
         }
+        if (other.hasGadget()) {
+          mergeGadget(other.getGadget());
+        }
         switch (other.getEntityCase()) {
           case MONSTER_ID: {
             setMonsterId(other.getMonsterId());
@@ -1026,6 +1127,7 @@ public final class CreateEntityInfoOuterClass {
         return this;
       }
 
+      private int bitField0_;
 
       /**
        * <code>uint32 monster_id = 1;</code>
@@ -1462,7 +1564,7 @@ public final class CreateEntityInfoOuterClass {
 
       private int sceneId_ ;
       /**
-       * <code>uint32 sceneId = 10;</code>
+       * <code>uint32 scene_id = 10;</code>
        * @return The sceneId.
        */
       @java.lang.Override
@@ -1470,7 +1572,7 @@ public final class CreateEntityInfoOuterClass {
         return sceneId_;
       }
       /**
-       * <code>uint32 sceneId = 10;</code>
+       * <code>uint32 scene_id = 10;</code>
        * @param value The sceneId to set.
        * @return This builder for chaining.
        */
@@ -1481,7 +1583,7 @@ public final class CreateEntityInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 sceneId = 10;</code>
+       * <code>uint32 scene_id = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearSceneId() {
@@ -1493,7 +1595,7 @@ public final class CreateEntityInfoOuterClass {
 
       private int roomId_ ;
       /**
-       * <code>uint32 roomId = 11;</code>
+       * <code>uint32 room_id = 11;</code>
        * @return The roomId.
        */
       @java.lang.Override
@@ -1501,7 +1603,7 @@ public final class CreateEntityInfoOuterClass {
         return roomId_;
       }
       /**
-       * <code>uint32 roomId = 11;</code>
+       * <code>uint32 room_id = 11;</code>
        * @param value The roomId to set.
        * @return This builder for chaining.
        */
@@ -1512,7 +1614,7 @@ public final class CreateEntityInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 roomId = 11;</code>
+       * <code>uint32 room_id = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearRoomId() {
@@ -1524,7 +1626,7 @@ public final class CreateEntityInfoOuterClass {
 
       private int clientUniqueId_ ;
       /**
-       * <code>uint32 clientUniqueId = 12;</code>
+       * <code>uint32 client_unique_id = 12;</code>
        * @return The clientUniqueId.
        */
       @java.lang.Override
@@ -1532,7 +1634,7 @@ public final class CreateEntityInfoOuterClass {
         return clientUniqueId_;
       }
       /**
-       * <code>uint32 clientUniqueId = 12;</code>
+       * <code>uint32 client_unique_id = 12;</code>
        * @param value The clientUniqueId to set.
        * @return This builder for chaining.
        */
@@ -1543,7 +1645,7 @@ public final class CreateEntityInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 clientUniqueId = 12;</code>
+       * <code>uint32 client_unique_id = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearClientUniqueId() {
@@ -1551,6 +1653,126 @@ public final class CreateEntityInfoOuterClass {
         clientUniqueId_ = 0;
         onChanged();
         return this;
+      }
+
+      private emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.CreateGadgetInfo gadget_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.CreateGadgetInfo, emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.CreateGadgetInfo.Builder, emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.CreateGadgetInfoOrBuilder> gadgetBuilder_;
+      /**
+       * <code>optional .CreateGadgetInfo gadget = 13;</code>
+       * @return Whether the gadget field is set.
+       */
+      public boolean hasGadget() {
+        return ((bitField0_ & 0x00000001) != 0);
+      }
+      /**
+       * <code>optional .CreateGadgetInfo gadget = 13;</code>
+       * @return The gadget.
+       */
+      public emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.CreateGadgetInfo getGadget() {
+        if (gadgetBuilder_ == null) {
+          return gadget_ == null ? emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.CreateGadgetInfo.getDefaultInstance() : gadget_;
+        } else {
+          return gadgetBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>optional .CreateGadgetInfo gadget = 13;</code>
+       */
+      public Builder setGadget(emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.CreateGadgetInfo value) {
+        if (gadgetBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          gadget_ = value;
+          onChanged();
+        } else {
+          gadgetBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000001;
+        return this;
+      }
+      /**
+       * <code>optional .CreateGadgetInfo gadget = 13;</code>
+       */
+      public Builder setGadget(
+          emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.CreateGadgetInfo.Builder builderForValue) {
+        if (gadgetBuilder_ == null) {
+          gadget_ = builderForValue.build();
+          onChanged();
+        } else {
+          gadgetBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000001;
+        return this;
+      }
+      /**
+       * <code>optional .CreateGadgetInfo gadget = 13;</code>
+       */
+      public Builder mergeGadget(emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.CreateGadgetInfo value) {
+        if (gadgetBuilder_ == null) {
+          if (((bitField0_ & 0x00000001) != 0) &&
+              gadget_ != null &&
+              gadget_ != emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.CreateGadgetInfo.getDefaultInstance()) {
+            gadget_ =
+              emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.CreateGadgetInfo.newBuilder(gadget_).mergeFrom(value).buildPartial();
+          } else {
+            gadget_ = value;
+          }
+          onChanged();
+        } else {
+          gadgetBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000001;
+        return this;
+      }
+      /**
+       * <code>optional .CreateGadgetInfo gadget = 13;</code>
+       */
+      public Builder clearGadget() {
+        if (gadgetBuilder_ == null) {
+          gadget_ = null;
+          onChanged();
+        } else {
+          gadgetBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000001);
+        return this;
+      }
+      /**
+       * <code>optional .CreateGadgetInfo gadget = 13;</code>
+       */
+      public emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.CreateGadgetInfo.Builder getGadgetBuilder() {
+        bitField0_ |= 0x00000001;
+        onChanged();
+        return getGadgetFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>optional .CreateGadgetInfo gadget = 13;</code>
+       */
+      public emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.CreateGadgetInfoOrBuilder getGadgetOrBuilder() {
+        if (gadgetBuilder_ != null) {
+          return gadgetBuilder_.getMessageOrBuilder();
+        } else {
+          return gadget_ == null ?
+              emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.CreateGadgetInfo.getDefaultInstance() : gadget_;
+        }
+      }
+      /**
+       * <code>optional .CreateGadgetInfo gadget = 13;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.CreateGadgetInfo, emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.CreateGadgetInfo.Builder, emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.CreateGadgetInfoOrBuilder> 
+          getGadgetFieldBuilder() {
+        if (gadgetBuilder_ == null) {
+          gadgetBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.CreateGadgetInfo, emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.CreateGadgetInfo.Builder, emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.CreateGadgetInfoOrBuilder>(
+                  getGadget(),
+                  getParentForChildren(),
+                  isClean());
+          gadget_ = null;
+        }
+        return gadgetBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -1619,27 +1841,31 @@ public final class CreateEntityInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\026CreateEntityInfo.proto\032\014Vector.proto\"\340" +
-      "\001\n\020CreateEntityInfo\022\024\n\nmonster_id\030\001 \001(\rH" +
-      "\000\022\020\n\006npc_id\030\002 \001(\rH\000\022\023\n\tgadget_id\030\003 \001(\rH\000" +
-      "\022\021\n\007item_id\030\004 \001(\rH\000\022\r\n\005level\030\005 \001(\r\022\024\n\003po" +
-      "s\030\006 \001(\0132\007.Vector\022\024\n\003rot\030\007 \001(\0132\007.Vector\022\017" +
-      "\n\007sceneId\030\n \001(\r\022\016\n\006roomId\030\013 \001(\r\022\026\n\016clien" +
-      "tUniqueId\030\014 \001(\rB\010\n\006entityB\033\n\031emu.grasscu" +
-      "tter.net.protob\006proto3"
+      "\n\026CreateEntityInfo.proto\032\014Vector.proto\032\026" +
+      "CreateGadgetInfo.proto\"\227\002\n\020CreateEntityI" +
+      "nfo\022\024\n\nmonster_id\030\001 \001(\rH\000\022\020\n\006npc_id\030\002 \001(" +
+      "\rH\000\022\023\n\tgadget_id\030\003 \001(\rH\000\022\021\n\007item_id\030\004 \001(" +
+      "\rH\000\022\r\n\005level\030\005 \001(\r\022\024\n\003pos\030\006 \001(\0132\007.Vector" +
+      "\022\024\n\003rot\030\007 \001(\0132\007.Vector\022\020\n\010scene_id\030\n \001(\r" +
+      "\022\017\n\007room_id\030\013 \001(\r\022\030\n\020client_unique_id\030\014 " +
+      "\001(\r\022&\n\006gadget\030\r \001(\0132\021.CreateGadgetInfoH\001" +
+      "\210\001\001B\010\n\006entityB\t\n\007_gadgetB\033\n\031emu.grasscut" +
+      "ter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
           emu.grasscutter.net.proto.VectorOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.getDescriptor(),
         });
     internal_static_CreateEntityInfo_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_CreateEntityInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_CreateEntityInfo_descriptor,
-        new java.lang.String[] { "MonsterId", "NpcId", "GadgetId", "ItemId", "Level", "Pos", "Rot", "SceneId", "RoomId", "ClientUniqueId", "Entity", });
+        new java.lang.String[] { "MonsterId", "NpcId", "GadgetId", "ItemId", "Level", "Pos", "Rot", "SceneId", "RoomId", "ClientUniqueId", "Gadget", "Entity", "Gadget", });
     emu.grasscutter.net.proto.VectorOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

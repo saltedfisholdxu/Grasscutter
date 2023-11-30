@@ -45,6 +45,10 @@ public final class CreateGadgetInfoOuterClass {
     emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.CreateGadgetInfo.ChestOrBuilder getChestOrBuilder();
   }
   /**
+   * <pre>
+   * Obf: NDJJNLJIAKO
+   * </pre>
+   *
    * Protobuf type {@code CreateGadgetInfo}
    */
   public static final class CreateGadgetInfo extends
@@ -158,6 +162,10 @@ public final class CreateGadgetInfoOuterClass {
       boolean getIsShowCutscene();
     }
     /**
+     * <pre>
+     * Obf: FGAGBNDOGCB
+     * </pre>
+     *
      * Protobuf type {@code CreateGadgetInfo.Chest}
      */
     public static final class Chest extends
@@ -434,6 +442,10 @@ public final class CreateGadgetInfoOuterClass {
         return builder;
       }
       /**
+       * <pre>
+       * Obf: FGAGBNDOGCB
+       * </pre>
+       *
        * Protobuf type {@code CreateGadgetInfo.Chest}
        */
       public static final class Builder extends
@@ -916,6 +928,10 @@ public final class CreateGadgetInfoOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Obf: NDJJNLJIAKO
+     * </pre>
+     *
      * Protobuf type {@code CreateGadgetInfo}
      */
     public static final class Builder extends

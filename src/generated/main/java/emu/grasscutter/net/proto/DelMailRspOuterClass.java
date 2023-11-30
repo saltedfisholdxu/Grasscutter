@@ -19,29 +19,34 @@ public final class DelMailRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 7;</code>
-     * @return The retcode.
-     */
-    int getRetcode();
-
-    /**
-     * <code>repeated uint32 mailIdList = 9;</code>
+     * <code>repeated uint32 mail_id_list = 13;</code>
      * @return A list containing the mailIdList.
      */
     java.util.List<java.lang.Integer> getMailIdListList();
     /**
-     * <code>repeated uint32 mailIdList = 9;</code>
+     * <code>repeated uint32 mail_id_list = 13;</code>
      * @return The count of mailIdList.
      */
     int getMailIdListCount();
     /**
-     * <code>repeated uint32 mailIdList = 9;</code>
+     * <code>repeated uint32 mail_id_list = 13;</code>
      * @param index The index of the element to return.
      * @return The mailIdList at the given index.
      */
     int getMailIdList(int index);
+
+    /**
+     * <code>int32 retcode = 8;</code>
+     * @return The retcode.
+     */
+    int getRetcode();
   }
   /**
+   * <pre>
+   * CmdId: 8328
+   * Obf: EJOGFBHOJKI
+   * </pre>
+   *
    * Protobuf type {@code DelMailRsp}
    */
   public static final class DelMailRsp extends
@@ -88,12 +93,12 @@ public final class DelMailRspOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
+            case 64: {
 
               retcode_ = input.readInt32();
               break;
             }
-            case 72: {
+            case 104: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 mailIdList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -101,7 +106,7 @@ public final class DelMailRspOuterClass {
               mailIdList_.addInt(input.readUInt32());
               break;
             }
-            case 74: {
+            case 106: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -149,152 +154,10 @@ public final class DelMailRspOuterClass {
               emu.grasscutter.net.proto.DelMailRspOuterClass.DelMailRsp.class, emu.grasscutter.net.proto.DelMailRspOuterClass.DelMailRsp.Builder.class);
     }
 
-    /**
-     * Protobuf enum {@code DelMailRsp.MJHOLNPDOKE}
-     */
-    public enum MJHOLNPDOKE
-        implements com.google.protobuf.ProtocolMessageEnum {
-      /**
-       * <code>NONE = 0;</code>
-       */
-      NONE(0, 0),
-      /**
-       * <code>PEPPOHPHJOJ = 1480;</code>
-       */
-      PEPPOHPHJOJ(1, 1480),
-      /**
-       * <code>NNBKOLMPOEA = 1;</code>
-       */
-      NNBKOLMPOEA(3, 1),
-      UNRECOGNIZED(-1, -1),
-      ;
-
-      /**
-       * <code>DCDNILFDFLB = 0;</code>
-       */
-      public static final MJHOLNPDOKE DCDNILFDFLB = NONE;
-      /**
-       * <code>NONE = 0;</code>
-       */
-      public static final int NONE_VALUE = 0;
-      /**
-       * <code>PEPPOHPHJOJ = 1480;</code>
-       */
-      public static final int PEPPOHPHJOJ_VALUE = 1480;
-      /**
-       * <code>DCDNILFDFLB = 0;</code>
-       */
-      public static final int DCDNILFDFLB_VALUE = 0;
-      /**
-       * <code>NNBKOLMPOEA = 1;</code>
-       */
-      public static final int NNBKOLMPOEA_VALUE = 1;
-
-
-      public final int getNumber() {
-        if (index == -1) {
-          throw new java.lang.IllegalArgumentException(
-              "Can't get the number of an unknown enum value.");
-        }
-        return value;
-      }
-
-      /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
-       * @deprecated Use {@link #forNumber(int)} instead.
-       */
-      @java.lang.Deprecated
-      public static MJHOLNPDOKE valueOf(int value) {
-        return forNumber(value);
-      }
-
-      /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
-       */
-      public static MJHOLNPDOKE forNumber(int value) {
-        switch (value) {
-          case 0: return NONE;
-          case 1480: return PEPPOHPHJOJ;
-          case 1: return NNBKOLMPOEA;
-          default: return null;
-        }
-      }
-
-      public static com.google.protobuf.Internal.EnumLiteMap<MJHOLNPDOKE>
-          internalGetValueMap() {
-        return internalValueMap;
-      }
-      private static final com.google.protobuf.Internal.EnumLiteMap<
-          MJHOLNPDOKE> internalValueMap =
-            new com.google.protobuf.Internal.EnumLiteMap<MJHOLNPDOKE>() {
-              public MJHOLNPDOKE findValueByNumber(int number) {
-                return MJHOLNPDOKE.forNumber(number);
-              }
-            };
-
-      public final com.google.protobuf.Descriptors.EnumValueDescriptor
-          getValueDescriptor() {
-        if (index == -1) {
-          throw new java.lang.IllegalStateException(
-              "Can't get the descriptor of an unrecognized enum value.");
-        }
-        return getDescriptor().getValues().get(index);
-      }
-      public final com.google.protobuf.Descriptors.EnumDescriptor
-          getDescriptorForType() {
-        return getDescriptor();
-      }
-      public static final com.google.protobuf.Descriptors.EnumDescriptor
-          getDescriptor() {
-        return emu.grasscutter.net.proto.DelMailRspOuterClass.DelMailRsp.getDescriptor().getEnumTypes().get(0);
-      }
-
-      private static final MJHOLNPDOKE[] VALUES = getStaticValuesArray();
-      private static MJHOLNPDOKE[] getStaticValuesArray() {
-        return new MJHOLNPDOKE[] {
-          NONE, PEPPOHPHJOJ, DCDNILFDFLB, NNBKOLMPOEA, 
-        };
-      }
-      public static MJHOLNPDOKE valueOf(
-          com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
-        if (desc.getType() != getDescriptor()) {
-          throw new java.lang.IllegalArgumentException(
-            "EnumValueDescriptor is not for this type.");
-        }
-        if (desc.getIndex() == -1) {
-          return UNRECOGNIZED;
-        }
-        return VALUES[desc.getIndex()];
-      }
-
-      private final int index;
-      private final int value;
-
-      private MJHOLNPDOKE(int index, int value) {
-        this.index = index;
-        this.value = value;
-      }
-
-      // @@protoc_insertion_point(enum_scope:DelMailRsp.MJHOLNPDOKE)
-    }
-
-    public static final int RETCODE_FIELD_NUMBER = 7;
-    private int retcode_;
-    /**
-     * <code>int32 retcode = 7;</code>
-     * @return The retcode.
-     */
-    @java.lang.Override
-    public int getRetcode() {
-      return retcode_;
-    }
-
-    public static final int MAILIDLIST_FIELD_NUMBER = 9;
+    public static final int MAIL_ID_LIST_FIELD_NUMBER = 13;
     private com.google.protobuf.Internal.IntList mailIdList_;
     /**
-     * <code>repeated uint32 mailIdList = 9;</code>
+     * <code>repeated uint32 mail_id_list = 13;</code>
      * @return A list containing the mailIdList.
      */
     @java.lang.Override
@@ -303,14 +166,14 @@ public final class DelMailRspOuterClass {
       return mailIdList_;
     }
     /**
-     * <code>repeated uint32 mailIdList = 9;</code>
+     * <code>repeated uint32 mail_id_list = 13;</code>
      * @return The count of mailIdList.
      */
     public int getMailIdListCount() {
       return mailIdList_.size();
     }
     /**
-     * <code>repeated uint32 mailIdList = 9;</code>
+     * <code>repeated uint32 mail_id_list = 13;</code>
      * @param index The index of the element to return.
      * @return The mailIdList at the given index.
      */
@@ -318,6 +181,17 @@ public final class DelMailRspOuterClass {
       return mailIdList_.getInt(index);
     }
     private int mailIdListMemoizedSerializedSize = -1;
+
+    public static final int RETCODE_FIELD_NUMBER = 8;
+    private int retcode_;
+    /**
+     * <code>int32 retcode = 8;</code>
+     * @return The retcode.
+     */
+    @java.lang.Override
+    public int getRetcode() {
+      return retcode_;
+    }
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
@@ -335,10 +209,10 @@ public final class DelMailRspOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       if (retcode_ != 0) {
-        output.writeInt32(7, retcode_);
+        output.writeInt32(8, retcode_);
       }
       if (getMailIdListList().size() > 0) {
-        output.writeUInt32NoTag(74);
+        output.writeUInt32NoTag(106);
         output.writeUInt32NoTag(mailIdListMemoizedSerializedSize);
       }
       for (int i = 0; i < mailIdList_.size(); i++) {
@@ -355,7 +229,7 @@ public final class DelMailRspOuterClass {
       size = 0;
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(7, retcode_);
+          .computeInt32Size(8, retcode_);
       }
       {
         int dataSize = 0;
@@ -386,10 +260,10 @@ public final class DelMailRspOuterClass {
       }
       emu.grasscutter.net.proto.DelMailRspOuterClass.DelMailRsp other = (emu.grasscutter.net.proto.DelMailRspOuterClass.DelMailRsp) obj;
 
-      if (getRetcode()
-          != other.getRetcode()) return false;
       if (!getMailIdListList()
           .equals(other.getMailIdListList())) return false;
+      if (getRetcode()
+          != other.getRetcode()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -401,12 +275,12 @@ public final class DelMailRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
       if (getMailIdListCount() > 0) {
-        hash = (37 * hash) + MAILIDLIST_FIELD_NUMBER;
+        hash = (37 * hash) + MAIL_ID_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getMailIdListList().hashCode();
       }
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -503,6 +377,11 @@ public final class DelMailRspOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 8328
+     * Obf: EJOGFBHOJKI
+     * </pre>
+     *
      * Protobuf type {@code DelMailRsp}
      */
     public static final class Builder extends
@@ -540,10 +419,10 @@ public final class DelMailRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        retcode_ = 0;
-
         mailIdList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
+        retcode_ = 0;
+
         return this;
       }
 
@@ -571,12 +450,12 @@ public final class DelMailRspOuterClass {
       public emu.grasscutter.net.proto.DelMailRspOuterClass.DelMailRsp buildPartial() {
         emu.grasscutter.net.proto.DelMailRspOuterClass.DelMailRsp result = new emu.grasscutter.net.proto.DelMailRspOuterClass.DelMailRsp(this);
         int from_bitField0_ = bitField0_;
-        result.retcode_ = retcode_;
         if (((bitField0_ & 0x00000001) != 0)) {
           mailIdList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.mailIdList_ = mailIdList_;
+        result.retcode_ = retcode_;
         onBuilt();
         return result;
       }
@@ -625,9 +504,6 @@ public final class DelMailRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.DelMailRspOuterClass.DelMailRsp other) {
         if (other == emu.grasscutter.net.proto.DelMailRspOuterClass.DelMailRsp.getDefaultInstance()) return this;
-        if (other.getRetcode() != 0) {
-          setRetcode(other.getRetcode());
-        }
         if (!other.mailIdList_.isEmpty()) {
           if (mailIdList_.isEmpty()) {
             mailIdList_ = other.mailIdList_;
@@ -637,6 +513,9 @@ public final class DelMailRspOuterClass {
             mailIdList_.addAll(other.mailIdList_);
           }
           onChanged();
+        }
+        if (other.getRetcode() != 0) {
+          setRetcode(other.getRetcode());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -668,37 +547,6 @@ public final class DelMailRspOuterClass {
       }
       private int bitField0_;
 
-      private int retcode_ ;
-      /**
-       * <code>int32 retcode = 7;</code>
-       * @return The retcode.
-       */
-      @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
-      }
-      /**
-       * <code>int32 retcode = 7;</code>
-       * @param value The retcode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRetcode(int value) {
-        
-        retcode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 retcode = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRetcode() {
-        
-        retcode_ = 0;
-        onChanged();
-        return this;
-      }
-
       private com.google.protobuf.Internal.IntList mailIdList_ = emptyIntList();
       private void ensureMailIdListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
@@ -707,7 +555,7 @@ public final class DelMailRspOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 mailIdList = 9;</code>
+       * <code>repeated uint32 mail_id_list = 13;</code>
        * @return A list containing the mailIdList.
        */
       public java.util.List<java.lang.Integer>
@@ -716,14 +564,14 @@ public final class DelMailRspOuterClass {
                  java.util.Collections.unmodifiableList(mailIdList_) : mailIdList_;
       }
       /**
-       * <code>repeated uint32 mailIdList = 9;</code>
+       * <code>repeated uint32 mail_id_list = 13;</code>
        * @return The count of mailIdList.
        */
       public int getMailIdListCount() {
         return mailIdList_.size();
       }
       /**
-       * <code>repeated uint32 mailIdList = 9;</code>
+       * <code>repeated uint32 mail_id_list = 13;</code>
        * @param index The index of the element to return.
        * @return The mailIdList at the given index.
        */
@@ -731,7 +579,7 @@ public final class DelMailRspOuterClass {
         return mailIdList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 mailIdList = 9;</code>
+       * <code>repeated uint32 mail_id_list = 13;</code>
        * @param index The index to set the value at.
        * @param value The mailIdList to set.
        * @return This builder for chaining.
@@ -744,7 +592,7 @@ public final class DelMailRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 mailIdList = 9;</code>
+       * <code>repeated uint32 mail_id_list = 13;</code>
        * @param value The mailIdList to add.
        * @return This builder for chaining.
        */
@@ -755,7 +603,7 @@ public final class DelMailRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 mailIdList = 9;</code>
+       * <code>repeated uint32 mail_id_list = 13;</code>
        * @param values The mailIdList to add.
        * @return This builder for chaining.
        */
@@ -768,12 +616,43 @@ public final class DelMailRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 mailIdList = 9;</code>
+       * <code>repeated uint32 mail_id_list = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearMailIdList() {
         mailIdList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
+        onChanged();
+        return this;
+      }
+
+      private int retcode_ ;
+      /**
+       * <code>int32 retcode = 8;</code>
+       * @return The retcode.
+       */
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
+      }
+      /**
+       * <code>int32 retcode = 8;</code>
+       * @param value The retcode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRetcode(int value) {
+        
+        retcode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 retcode = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        
+        retcode_ = 0;
         onChanged();
         return this;
       }
@@ -844,10 +723,8 @@ public final class DelMailRspOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\020DelMailRsp.proto\"\202\001\n\nDelMailRsp\022\017\n\007ret" +
-      "code\030\007 \001(\005\022\022\n\nmailIdList\030\t \003(\r\"O\n\013MJHOLN" +
-      "PDOKE\022\010\n\004NONE\020\000\022\020\n\013PEPPOHPHJOJ\020\310\013\022\017\n\013DCD" +
-      "NILFDFLB\020\000\022\017\n\013NNBKOLMPOEA\020\001\032\002\020\001B\033\n\031emu.g" +
+      "\n\020DelMailRsp.proto\"3\n\nDelMailRsp\022\024\n\014mail" +
+      "_id_list\030\r \003(\r\022\017\n\007retcode\030\010 \001(\005B\033\n\031emu.g" +
       "rasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -859,7 +736,7 @@ public final class DelMailRspOuterClass {
     internal_static_DelMailRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_DelMailRsp_descriptor,
-        new java.lang.String[] { "Retcode", "MailIdList", });
+        new java.lang.String[] { "MailIdList", "Retcode", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -19,18 +19,22 @@ public final class ShortAbilityHashPairOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>sfixed32 abilityNameHash = 6;</code>
+     * <code>sfixed32 ability_name_hash = 15;</code>
      * @return The abilityNameHash.
      */
     int getAbilityNameHash();
 
     /**
-     * <code>sfixed32 abilityConfigHash = 10;</code>
+     * <code>sfixed32 ability_config_hash = 14;</code>
      * @return The abilityConfigHash.
      */
     int getAbilityConfigHash();
   }
   /**
+   * <pre>
+   * Obf: HJEEHJPLDFD
+   * </pre>
+   *
    * Protobuf type {@code ShortAbilityHashPair}
    */
   public static final class ShortAbilityHashPair extends
@@ -75,14 +79,14 @@ public final class ShortAbilityHashPairOuterClass {
             case 0:
               done = true;
               break;
-            case 53: {
-
-              abilityNameHash_ = input.readSFixed32();
-              break;
-            }
-            case 85: {
+            case 117: {
 
               abilityConfigHash_ = input.readSFixed32();
+              break;
+            }
+            case 125: {
+
+              abilityNameHash_ = input.readSFixed32();
               break;
             }
             default: {
@@ -117,10 +121,10 @@ public final class ShortAbilityHashPairOuterClass {
               emu.grasscutter.net.proto.ShortAbilityHashPairOuterClass.ShortAbilityHashPair.class, emu.grasscutter.net.proto.ShortAbilityHashPairOuterClass.ShortAbilityHashPair.Builder.class);
     }
 
-    public static final int ABILITYNAMEHASH_FIELD_NUMBER = 6;
+    public static final int ABILITY_NAME_HASH_FIELD_NUMBER = 15;
     private int abilityNameHash_;
     /**
-     * <code>sfixed32 abilityNameHash = 6;</code>
+     * <code>sfixed32 ability_name_hash = 15;</code>
      * @return The abilityNameHash.
      */
     @java.lang.Override
@@ -128,10 +132,10 @@ public final class ShortAbilityHashPairOuterClass {
       return abilityNameHash_;
     }
 
-    public static final int ABILITYCONFIGHASH_FIELD_NUMBER = 10;
+    public static final int ABILITY_CONFIG_HASH_FIELD_NUMBER = 14;
     private int abilityConfigHash_;
     /**
-     * <code>sfixed32 abilityConfigHash = 10;</code>
+     * <code>sfixed32 ability_config_hash = 14;</code>
      * @return The abilityConfigHash.
      */
     @java.lang.Override
@@ -153,11 +157,11 @@ public final class ShortAbilityHashPairOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (abilityNameHash_ != 0) {
-        output.writeSFixed32(6, abilityNameHash_);
-      }
       if (abilityConfigHash_ != 0) {
-        output.writeSFixed32(10, abilityConfigHash_);
+        output.writeSFixed32(14, abilityConfigHash_);
+      }
+      if (abilityNameHash_ != 0) {
+        output.writeSFixed32(15, abilityNameHash_);
       }
       unknownFields.writeTo(output);
     }
@@ -168,13 +172,13 @@ public final class ShortAbilityHashPairOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (abilityNameHash_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeSFixed32Size(6, abilityNameHash_);
-      }
       if (abilityConfigHash_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeSFixed32Size(10, abilityConfigHash_);
+          .computeSFixed32Size(14, abilityConfigHash_);
+      }
+      if (abilityNameHash_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeSFixed32Size(15, abilityNameHash_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -206,9 +210,9 @@ public final class ShortAbilityHashPairOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + ABILITYNAMEHASH_FIELD_NUMBER;
+      hash = (37 * hash) + ABILITY_NAME_HASH_FIELD_NUMBER;
       hash = (53 * hash) + getAbilityNameHash();
-      hash = (37 * hash) + ABILITYCONFIGHASH_FIELD_NUMBER;
+      hash = (37 * hash) + ABILITY_CONFIG_HASH_FIELD_NUMBER;
       hash = (53 * hash) + getAbilityConfigHash();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -306,6 +310,10 @@ public final class ShortAbilityHashPairOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Obf: HJEEHJPLDFD
+     * </pre>
+     *
      * Protobuf type {@code ShortAbilityHashPair}
      */
     public static final class Builder extends
@@ -460,7 +468,7 @@ public final class ShortAbilityHashPairOuterClass {
 
       private int abilityNameHash_ ;
       /**
-       * <code>sfixed32 abilityNameHash = 6;</code>
+       * <code>sfixed32 ability_name_hash = 15;</code>
        * @return The abilityNameHash.
        */
       @java.lang.Override
@@ -468,7 +476,7 @@ public final class ShortAbilityHashPairOuterClass {
         return abilityNameHash_;
       }
       /**
-       * <code>sfixed32 abilityNameHash = 6;</code>
+       * <code>sfixed32 ability_name_hash = 15;</code>
        * @param value The abilityNameHash to set.
        * @return This builder for chaining.
        */
@@ -479,7 +487,7 @@ public final class ShortAbilityHashPairOuterClass {
         return this;
       }
       /**
-       * <code>sfixed32 abilityNameHash = 6;</code>
+       * <code>sfixed32 ability_name_hash = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearAbilityNameHash() {
@@ -491,7 +499,7 @@ public final class ShortAbilityHashPairOuterClass {
 
       private int abilityConfigHash_ ;
       /**
-       * <code>sfixed32 abilityConfigHash = 10;</code>
+       * <code>sfixed32 ability_config_hash = 14;</code>
        * @return The abilityConfigHash.
        */
       @java.lang.Override
@@ -499,7 +507,7 @@ public final class ShortAbilityHashPairOuterClass {
         return abilityConfigHash_;
       }
       /**
-       * <code>sfixed32 abilityConfigHash = 10;</code>
+       * <code>sfixed32 ability_config_hash = 14;</code>
        * @param value The abilityConfigHash to set.
        * @return This builder for chaining.
        */
@@ -510,7 +518,7 @@ public final class ShortAbilityHashPairOuterClass {
         return this;
       }
       /**
-       * <code>sfixed32 abilityConfigHash = 10;</code>
+       * <code>sfixed32 ability_config_hash = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearAbilityConfigHash() {
@@ -586,10 +594,10 @@ public final class ShortAbilityHashPairOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\032ShortAbilityHashPair.proto\"J\n\024ShortAbi" +
-      "lityHashPair\022\027\n\017abilityNameHash\030\006 \001(\017\022\031\n" +
-      "\021abilityConfigHash\030\n \001(\017B\033\n\031emu.grasscut" +
-      "ter.net.protob\006proto3"
+      "\n\032ShortAbilityHashPair.proto\"N\n\024ShortAbi" +
+      "lityHashPair\022\031\n\021ability_name_hash\030\017 \001(\017\022" +
+      "\033\n\023ability_config_hash\030\016 \001(\017B\033\n\031emu.gras" +
+      "scutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

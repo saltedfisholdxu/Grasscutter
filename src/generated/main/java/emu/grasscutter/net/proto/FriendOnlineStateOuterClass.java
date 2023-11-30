@@ -15,6 +15,10 @@ public final class FriendOnlineStateOuterClass {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   /**
+   * <pre>
+   * Obf: NALGAFDLMDG
+   * </pre>
+   *
    * Protobuf enum {@code FriendOnlineState}
    */
   public enum FriendOnlineState

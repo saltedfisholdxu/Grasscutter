@@ -19,24 +19,29 @@ public final class PlayerEnterDungeonRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 pointId = 1;</code>
+     * <code>uint32 point_id = 1;</code>
      * @return The pointId.
      */
     int getPointId();
 
     /**
-     * <code>uint32 dungeonId = 11;</code>
+     * <code>uint32 dungeon_id = 10;</code>
      * @return The dungeonId.
      */
     int getDungeonId();
 
     /**
-     * <code>int32 retcode = 3;</code>
+     * <code>int32 retcode = 2;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
+   * <pre>
+   * CmdId: 24874
+   * Obf: IPGDOPKIBPO
+   * </pre>
+   *
    * Protobuf type {@code PlayerEnterDungeonRsp}
    */
   public static final class PlayerEnterDungeonRsp extends
@@ -86,12 +91,12 @@ public final class PlayerEnterDungeonRspOuterClass {
               pointId_ = input.readUInt32();
               break;
             }
-            case 24: {
+            case 16: {
 
               retcode_ = input.readInt32();
               break;
             }
-            case 88: {
+            case 80: {
 
               dungeonId_ = input.readUInt32();
               break;
@@ -128,141 +133,10 @@ public final class PlayerEnterDungeonRspOuterClass {
               emu.grasscutter.net.proto.PlayerEnterDungeonRspOuterClass.PlayerEnterDungeonRsp.class, emu.grasscutter.net.proto.PlayerEnterDungeonRspOuterClass.PlayerEnterDungeonRsp.Builder.class);
     }
 
-    /**
-     * Protobuf enum {@code PlayerEnterDungeonRsp.IJHCMILABEE}
-     */
-    public enum IJHCMILABEE
-        implements com.google.protobuf.ProtocolMessageEnum {
-      /**
-       * <code>NONE = 0;</code>
-       */
-      NONE(0, 0),
-      /**
-       * <code>PEPPOHPHJOJ = 998;</code>
-       */
-      PEPPOHPHJOJ(1, 998),
-      /**
-       * <code>NNBKOLMPOEA = 1;</code>
-       */
-      NNBKOLMPOEA(3, 1),
-      UNRECOGNIZED(-1, -1),
-      ;
-
-      /**
-       * <code>DCDNILFDFLB = 0;</code>
-       */
-      public static final IJHCMILABEE DCDNILFDFLB = NONE;
-      /**
-       * <code>NONE = 0;</code>
-       */
-      public static final int NONE_VALUE = 0;
-      /**
-       * <code>PEPPOHPHJOJ = 998;</code>
-       */
-      public static final int PEPPOHPHJOJ_VALUE = 998;
-      /**
-       * <code>DCDNILFDFLB = 0;</code>
-       */
-      public static final int DCDNILFDFLB_VALUE = 0;
-      /**
-       * <code>NNBKOLMPOEA = 1;</code>
-       */
-      public static final int NNBKOLMPOEA_VALUE = 1;
-
-
-      public final int getNumber() {
-        if (index == -1) {
-          throw new java.lang.IllegalArgumentException(
-              "Can't get the number of an unknown enum value.");
-        }
-        return value;
-      }
-
-      /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
-       * @deprecated Use {@link #forNumber(int)} instead.
-       */
-      @java.lang.Deprecated
-      public static IJHCMILABEE valueOf(int value) {
-        return forNumber(value);
-      }
-
-      /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
-       */
-      public static IJHCMILABEE forNumber(int value) {
-        switch (value) {
-          case 0: return NONE;
-          case 998: return PEPPOHPHJOJ;
-          case 1: return NNBKOLMPOEA;
-          default: return null;
-        }
-      }
-
-      public static com.google.protobuf.Internal.EnumLiteMap<IJHCMILABEE>
-          internalGetValueMap() {
-        return internalValueMap;
-      }
-      private static final com.google.protobuf.Internal.EnumLiteMap<
-          IJHCMILABEE> internalValueMap =
-            new com.google.protobuf.Internal.EnumLiteMap<IJHCMILABEE>() {
-              public IJHCMILABEE findValueByNumber(int number) {
-                return IJHCMILABEE.forNumber(number);
-              }
-            };
-
-      public final com.google.protobuf.Descriptors.EnumValueDescriptor
-          getValueDescriptor() {
-        if (index == -1) {
-          throw new java.lang.IllegalStateException(
-              "Can't get the descriptor of an unrecognized enum value.");
-        }
-        return getDescriptor().getValues().get(index);
-      }
-      public final com.google.protobuf.Descriptors.EnumDescriptor
-          getDescriptorForType() {
-        return getDescriptor();
-      }
-      public static final com.google.protobuf.Descriptors.EnumDescriptor
-          getDescriptor() {
-        return emu.grasscutter.net.proto.PlayerEnterDungeonRspOuterClass.PlayerEnterDungeonRsp.getDescriptor().getEnumTypes().get(0);
-      }
-
-      private static final IJHCMILABEE[] VALUES = getStaticValuesArray();
-      private static IJHCMILABEE[] getStaticValuesArray() {
-        return new IJHCMILABEE[] {
-          NONE, PEPPOHPHJOJ, DCDNILFDFLB, NNBKOLMPOEA, 
-        };
-      }
-      public static IJHCMILABEE valueOf(
-          com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
-        if (desc.getType() != getDescriptor()) {
-          throw new java.lang.IllegalArgumentException(
-            "EnumValueDescriptor is not for this type.");
-        }
-        if (desc.getIndex() == -1) {
-          return UNRECOGNIZED;
-        }
-        return VALUES[desc.getIndex()];
-      }
-
-      private final int index;
-      private final int value;
-
-      private IJHCMILABEE(int index, int value) {
-        this.index = index;
-        this.value = value;
-      }
-
-      // @@protoc_insertion_point(enum_scope:PlayerEnterDungeonRsp.IJHCMILABEE)
-    }
-
-    public static final int POINTID_FIELD_NUMBER = 1;
+    public static final int POINT_ID_FIELD_NUMBER = 1;
     private int pointId_;
     /**
-     * <code>uint32 pointId = 1;</code>
+     * <code>uint32 point_id = 1;</code>
      * @return The pointId.
      */
     @java.lang.Override
@@ -270,10 +144,10 @@ public final class PlayerEnterDungeonRspOuterClass {
       return pointId_;
     }
 
-    public static final int DUNGEONID_FIELD_NUMBER = 11;
+    public static final int DUNGEON_ID_FIELD_NUMBER = 10;
     private int dungeonId_;
     /**
-     * <code>uint32 dungeonId = 11;</code>
+     * <code>uint32 dungeon_id = 10;</code>
      * @return The dungeonId.
      */
     @java.lang.Override
@@ -281,10 +155,10 @@ public final class PlayerEnterDungeonRspOuterClass {
       return dungeonId_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 3;
+    public static final int RETCODE_FIELD_NUMBER = 2;
     private int retcode_;
     /**
-     * <code>int32 retcode = 3;</code>
+     * <code>int32 retcode = 2;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -310,10 +184,10 @@ public final class PlayerEnterDungeonRspOuterClass {
         output.writeUInt32(1, pointId_);
       }
       if (retcode_ != 0) {
-        output.writeInt32(3, retcode_);
+        output.writeInt32(2, retcode_);
       }
       if (dungeonId_ != 0) {
-        output.writeUInt32(11, dungeonId_);
+        output.writeUInt32(10, dungeonId_);
       }
       unknownFields.writeTo(output);
     }
@@ -330,11 +204,11 @@ public final class PlayerEnterDungeonRspOuterClass {
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(3, retcode_);
+          .computeInt32Size(2, retcode_);
       }
       if (dungeonId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, dungeonId_);
+          .computeUInt32Size(10, dungeonId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -368,9 +242,9 @@ public final class PlayerEnterDungeonRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + POINTID_FIELD_NUMBER;
+      hash = (37 * hash) + POINT_ID_FIELD_NUMBER;
       hash = (53 * hash) + getPointId();
-      hash = (37 * hash) + DUNGEONID_FIELD_NUMBER;
+      hash = (37 * hash) + DUNGEON_ID_FIELD_NUMBER;
       hash = (53 * hash) + getDungeonId();
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
@@ -470,6 +344,11 @@ public final class PlayerEnterDungeonRspOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 24874
+     * Obf: IPGDOPKIBPO
+     * </pre>
+     *
      * Protobuf type {@code PlayerEnterDungeonRsp}
      */
     public static final class Builder extends
@@ -630,7 +509,7 @@ public final class PlayerEnterDungeonRspOuterClass {
 
       private int pointId_ ;
       /**
-       * <code>uint32 pointId = 1;</code>
+       * <code>uint32 point_id = 1;</code>
        * @return The pointId.
        */
       @java.lang.Override
@@ -638,7 +517,7 @@ public final class PlayerEnterDungeonRspOuterClass {
         return pointId_;
       }
       /**
-       * <code>uint32 pointId = 1;</code>
+       * <code>uint32 point_id = 1;</code>
        * @param value The pointId to set.
        * @return This builder for chaining.
        */
@@ -649,7 +528,7 @@ public final class PlayerEnterDungeonRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 pointId = 1;</code>
+       * <code>uint32 point_id = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearPointId() {
@@ -661,7 +540,7 @@ public final class PlayerEnterDungeonRspOuterClass {
 
       private int dungeonId_ ;
       /**
-       * <code>uint32 dungeonId = 11;</code>
+       * <code>uint32 dungeon_id = 10;</code>
        * @return The dungeonId.
        */
       @java.lang.Override
@@ -669,7 +548,7 @@ public final class PlayerEnterDungeonRspOuterClass {
         return dungeonId_;
       }
       /**
-       * <code>uint32 dungeonId = 11;</code>
+       * <code>uint32 dungeon_id = 10;</code>
        * @param value The dungeonId to set.
        * @return This builder for chaining.
        */
@@ -680,7 +559,7 @@ public final class PlayerEnterDungeonRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 dungeonId = 11;</code>
+       * <code>uint32 dungeon_id = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearDungeonId() {
@@ -692,7 +571,7 @@ public final class PlayerEnterDungeonRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 3;</code>
+       * <code>int32 retcode = 2;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -700,7 +579,7 @@ public final class PlayerEnterDungeonRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 3;</code>
+       * <code>int32 retcode = 2;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -711,7 +590,7 @@ public final class PlayerEnterDungeonRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 3;</code>
+       * <code>int32 retcode = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -787,11 +666,9 @@ public final class PlayerEnterDungeonRspOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\033PlayerEnterDungeonRsp.proto\"\235\001\n\025Player" +
-      "EnterDungeonRsp\022\017\n\007pointId\030\001 \001(\r\022\021\n\tdung" +
-      "eonId\030\013 \001(\r\022\017\n\007retcode\030\003 \001(\005\"O\n\013IJHCMILA" +
-      "BEE\022\010\n\004NONE\020\000\022\020\n\013PEPPOHPHJOJ\020\346\007\022\017\n\013DCDNI" +
-      "LFDFLB\020\000\022\017\n\013NNBKOLMPOEA\020\001\032\002\020\001B\033\n\031emu.gra" +
+      "\n\033PlayerEnterDungeonRsp.proto\"N\n\025PlayerE" +
+      "nterDungeonRsp\022\020\n\010point_id\030\001 \001(\r\022\022\n\ndung" +
+      "eon_id\030\n \001(\r\022\017\n\007retcode\030\002 \001(\005B\033\n\031emu.gra" +
       "sscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -19,24 +19,28 @@ public final class FleurFairMusicRecordOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 maxCombo = 1;</code>
+     * <code>uint32 max_combo = 3;</code>
      * @return The maxCombo.
      */
     int getMaxCombo();
 
     /**
-     * <code>bool isUnlock = 7;</code>
+     * <code>bool is_unlock = 11;</code>
      * @return The isUnlock.
      */
     boolean getIsUnlock();
 
     /**
-     * <code>uint32 maxScore = 8;</code>
+     * <code>uint32 max_score = 10;</code>
      * @return The maxScore.
      */
     int getMaxScore();
   }
   /**
+   * <pre>
+   * Obf: NICMDKDJHBF
+   * </pre>
+   *
    * Protobuf type {@code FleurFairMusicRecord}
    */
   public static final class FleurFairMusicRecord extends
@@ -81,19 +85,19 @@ public final class FleurFairMusicRecordOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 24: {
 
               maxCombo_ = input.readUInt32();
               break;
             }
-            case 56: {
-
-              isUnlock_ = input.readBool();
-              break;
-            }
-            case 64: {
+            case 80: {
 
               maxScore_ = input.readUInt32();
+              break;
+            }
+            case 88: {
+
+              isUnlock_ = input.readBool();
               break;
             }
             default: {
@@ -128,10 +132,10 @@ public final class FleurFairMusicRecordOuterClass {
               emu.grasscutter.net.proto.FleurFairMusicRecordOuterClass.FleurFairMusicRecord.class, emu.grasscutter.net.proto.FleurFairMusicRecordOuterClass.FleurFairMusicRecord.Builder.class);
     }
 
-    public static final int MAXCOMBO_FIELD_NUMBER = 1;
+    public static final int MAX_COMBO_FIELD_NUMBER = 3;
     private int maxCombo_;
     /**
-     * <code>uint32 maxCombo = 1;</code>
+     * <code>uint32 max_combo = 3;</code>
      * @return The maxCombo.
      */
     @java.lang.Override
@@ -139,10 +143,10 @@ public final class FleurFairMusicRecordOuterClass {
       return maxCombo_;
     }
 
-    public static final int ISUNLOCK_FIELD_NUMBER = 7;
+    public static final int IS_UNLOCK_FIELD_NUMBER = 11;
     private boolean isUnlock_;
     /**
-     * <code>bool isUnlock = 7;</code>
+     * <code>bool is_unlock = 11;</code>
      * @return The isUnlock.
      */
     @java.lang.Override
@@ -150,10 +154,10 @@ public final class FleurFairMusicRecordOuterClass {
       return isUnlock_;
     }
 
-    public static final int MAXSCORE_FIELD_NUMBER = 8;
+    public static final int MAX_SCORE_FIELD_NUMBER = 10;
     private int maxScore_;
     /**
-     * <code>uint32 maxScore = 8;</code>
+     * <code>uint32 max_score = 10;</code>
      * @return The maxScore.
      */
     @java.lang.Override
@@ -176,13 +180,13 @@ public final class FleurFairMusicRecordOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (maxCombo_ != 0) {
-        output.writeUInt32(1, maxCombo_);
-      }
-      if (isUnlock_ != false) {
-        output.writeBool(7, isUnlock_);
+        output.writeUInt32(3, maxCombo_);
       }
       if (maxScore_ != 0) {
-        output.writeUInt32(8, maxScore_);
+        output.writeUInt32(10, maxScore_);
+      }
+      if (isUnlock_ != false) {
+        output.writeBool(11, isUnlock_);
       }
       unknownFields.writeTo(output);
     }
@@ -195,15 +199,15 @@ public final class FleurFairMusicRecordOuterClass {
       size = 0;
       if (maxCombo_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, maxCombo_);
-      }
-      if (isUnlock_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(7, isUnlock_);
+          .computeUInt32Size(3, maxCombo_);
       }
       if (maxScore_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, maxScore_);
+          .computeUInt32Size(10, maxScore_);
+      }
+      if (isUnlock_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(11, isUnlock_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -237,12 +241,12 @@ public final class FleurFairMusicRecordOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + MAXCOMBO_FIELD_NUMBER;
+      hash = (37 * hash) + MAX_COMBO_FIELD_NUMBER;
       hash = (53 * hash) + getMaxCombo();
-      hash = (37 * hash) + ISUNLOCK_FIELD_NUMBER;
+      hash = (37 * hash) + IS_UNLOCK_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsUnlock());
-      hash = (37 * hash) + MAXSCORE_FIELD_NUMBER;
+      hash = (37 * hash) + MAX_SCORE_FIELD_NUMBER;
       hash = (53 * hash) + getMaxScore();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -340,6 +344,10 @@ public final class FleurFairMusicRecordOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Obf: NICMDKDJHBF
+     * </pre>
+     *
      * Protobuf type {@code FleurFairMusicRecord}
      */
     public static final class Builder extends
@@ -500,7 +508,7 @@ public final class FleurFairMusicRecordOuterClass {
 
       private int maxCombo_ ;
       /**
-       * <code>uint32 maxCombo = 1;</code>
+       * <code>uint32 max_combo = 3;</code>
        * @return The maxCombo.
        */
       @java.lang.Override
@@ -508,7 +516,7 @@ public final class FleurFairMusicRecordOuterClass {
         return maxCombo_;
       }
       /**
-       * <code>uint32 maxCombo = 1;</code>
+       * <code>uint32 max_combo = 3;</code>
        * @param value The maxCombo to set.
        * @return This builder for chaining.
        */
@@ -519,7 +527,7 @@ public final class FleurFairMusicRecordOuterClass {
         return this;
       }
       /**
-       * <code>uint32 maxCombo = 1;</code>
+       * <code>uint32 max_combo = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearMaxCombo() {
@@ -531,7 +539,7 @@ public final class FleurFairMusicRecordOuterClass {
 
       private boolean isUnlock_ ;
       /**
-       * <code>bool isUnlock = 7;</code>
+       * <code>bool is_unlock = 11;</code>
        * @return The isUnlock.
        */
       @java.lang.Override
@@ -539,7 +547,7 @@ public final class FleurFairMusicRecordOuterClass {
         return isUnlock_;
       }
       /**
-       * <code>bool isUnlock = 7;</code>
+       * <code>bool is_unlock = 11;</code>
        * @param value The isUnlock to set.
        * @return This builder for chaining.
        */
@@ -550,7 +558,7 @@ public final class FleurFairMusicRecordOuterClass {
         return this;
       }
       /**
-       * <code>bool isUnlock = 7;</code>
+       * <code>bool is_unlock = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsUnlock() {
@@ -562,7 +570,7 @@ public final class FleurFairMusicRecordOuterClass {
 
       private int maxScore_ ;
       /**
-       * <code>uint32 maxScore = 8;</code>
+       * <code>uint32 max_score = 10;</code>
        * @return The maxScore.
        */
       @java.lang.Override
@@ -570,7 +578,7 @@ public final class FleurFairMusicRecordOuterClass {
         return maxScore_;
       }
       /**
-       * <code>uint32 maxScore = 8;</code>
+       * <code>uint32 max_score = 10;</code>
        * @param value The maxScore to set.
        * @return This builder for chaining.
        */
@@ -581,7 +589,7 @@ public final class FleurFairMusicRecordOuterClass {
         return this;
       }
       /**
-       * <code>uint32 maxScore = 8;</code>
+       * <code>uint32 max_score = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearMaxScore() {
@@ -657,10 +665,10 @@ public final class FleurFairMusicRecordOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\032FleurFairMusicRecord.proto\"L\n\024FleurFai" +
-      "rMusicRecord\022\020\n\010maxCombo\030\001 \001(\r\022\020\n\010isUnlo" +
-      "ck\030\007 \001(\010\022\020\n\010maxScore\030\010 \001(\rB\033\n\031emu.grassc" +
-      "utter.net.protob\006proto3"
+      "\n\032FleurFairMusicRecord.proto\"O\n\024FleurFai" +
+      "rMusicRecord\022\021\n\tmax_combo\030\003 \001(\r\022\021\n\tis_un" +
+      "lock\030\013 \001(\010\022\021\n\tmax_score\030\n \001(\rB\033\n\031emu.gra" +
+      "sscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

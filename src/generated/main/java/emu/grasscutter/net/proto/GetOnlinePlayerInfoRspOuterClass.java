@@ -19,39 +19,44 @@ public final class GetOnlinePlayerInfoRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 14;</code>
-     * @return The retcode.
-     */
-    int getRetcode();
-
-    /**
-     * <code>.OnlinePlayerInfo targetPlayerInfo = 11;</code>
-     * @return Whether the targetPlayerInfo field is set.
-     */
-    boolean hasTargetPlayerInfo();
-    /**
-     * <code>.OnlinePlayerInfo targetPlayerInfo = 11;</code>
-     * @return The targetPlayerInfo.
-     */
-    emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo getTargetPlayerInfo();
-    /**
-     * <code>.OnlinePlayerInfo targetPlayerInfo = 11;</code>
-     */
-    emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfoOrBuilder getTargetPlayerInfoOrBuilder();
-
-    /**
-     * <code>uint32 targetUid = 3;</code>
+     * <code>uint32 target_uid = 2;</code>
      * @return The targetUid.
      */
     int getTargetUid();
 
     /**
-     * <code>uint32 param = 10;</code>
+     * <code>.OnlinePlayerInfo target_player_info = 14;</code>
+     * @return Whether the targetPlayerInfo field is set.
+     */
+    boolean hasTargetPlayerInfo();
+    /**
+     * <code>.OnlinePlayerInfo target_player_info = 14;</code>
+     * @return The targetPlayerInfo.
+     */
+    emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo getTargetPlayerInfo();
+    /**
+     * <code>.OnlinePlayerInfo target_player_info = 14;</code>
+     */
+    emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfoOrBuilder getTargetPlayerInfoOrBuilder();
+
+    /**
+     * <code>uint32 param = 5;</code>
      * @return The param.
      */
     int getParam();
+
+    /**
+     * <code>int32 retcode = 6;</code>
+     * @return The retcode.
+     */
+    int getRetcode();
   }
   /**
+   * <pre>
+   * CmdId: 8759
+   * Obf: LDNOEIHGGKN
+   * </pre>
+   *
    * Protobuf type {@code GetOnlinePlayerInfoRsp}
    */
   public static final class GetOnlinePlayerInfoRsp extends
@@ -96,17 +101,22 @@ public final class GetOnlinePlayerInfoRspOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
+            case 16: {
 
               targetUid_ = input.readUInt32();
               break;
             }
-            case 80: {
+            case 40: {
 
               param_ = input.readUInt32();
               break;
             }
-            case 90: {
+            case 48: {
+
+              retcode_ = input.readInt32();
+              break;
+            }
+            case 114: {
               emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo.Builder subBuilder = null;
               if (targetPlayerInfo_ != null) {
                 subBuilder = targetPlayerInfo_.toBuilder();
@@ -117,11 +127,6 @@ public final class GetOnlinePlayerInfoRspOuterClass {
                 targetPlayerInfo_ = subBuilder.buildPartial();
               }
 
-              break;
-            }
-            case 112: {
-
-              retcode_ = input.readInt32();
               break;
             }
             default: {
@@ -156,178 +161,10 @@ public final class GetOnlinePlayerInfoRspOuterClass {
               emu.grasscutter.net.proto.GetOnlinePlayerInfoRspOuterClass.GetOnlinePlayerInfoRsp.class, emu.grasscutter.net.proto.GetOnlinePlayerInfoRspOuterClass.GetOnlinePlayerInfoRsp.Builder.class);
     }
 
-    /**
-     * Protobuf enum {@code GetOnlinePlayerInfoRsp.JEPFMMKBBBE}
-     */
-    public enum JEPFMMKBBBE
-        implements com.google.protobuf.ProtocolMessageEnum {
-      /**
-       * <code>NONE = 0;</code>
-       */
-      NONE(0, 0),
-      /**
-       * <code>PEPPOHPHJOJ = 39;</code>
-       */
-      PEPPOHPHJOJ(1, 39),
-      /**
-       * <code>NNBKOLMPOEA = 1;</code>
-       */
-      NNBKOLMPOEA(3, 1),
-      UNRECOGNIZED(-1, -1),
-      ;
-
-      /**
-       * <code>DCDNILFDFLB = 0;</code>
-       */
-      public static final JEPFMMKBBBE DCDNILFDFLB = NONE;
-      /**
-       * <code>NONE = 0;</code>
-       */
-      public static final int NONE_VALUE = 0;
-      /**
-       * <code>PEPPOHPHJOJ = 39;</code>
-       */
-      public static final int PEPPOHPHJOJ_VALUE = 39;
-      /**
-       * <code>DCDNILFDFLB = 0;</code>
-       */
-      public static final int DCDNILFDFLB_VALUE = 0;
-      /**
-       * <code>NNBKOLMPOEA = 1;</code>
-       */
-      public static final int NNBKOLMPOEA_VALUE = 1;
-
-
-      public final int getNumber() {
-        if (index == -1) {
-          throw new java.lang.IllegalArgumentException(
-              "Can't get the number of an unknown enum value.");
-        }
-        return value;
-      }
-
-      /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
-       * @deprecated Use {@link #forNumber(int)} instead.
-       */
-      @java.lang.Deprecated
-      public static JEPFMMKBBBE valueOf(int value) {
-        return forNumber(value);
-      }
-
-      /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
-       */
-      public static JEPFMMKBBBE forNumber(int value) {
-        switch (value) {
-          case 0: return NONE;
-          case 39: return PEPPOHPHJOJ;
-          case 1: return NNBKOLMPOEA;
-          default: return null;
-        }
-      }
-
-      public static com.google.protobuf.Internal.EnumLiteMap<JEPFMMKBBBE>
-          internalGetValueMap() {
-        return internalValueMap;
-      }
-      private static final com.google.protobuf.Internal.EnumLiteMap<
-          JEPFMMKBBBE> internalValueMap =
-            new com.google.protobuf.Internal.EnumLiteMap<JEPFMMKBBBE>() {
-              public JEPFMMKBBBE findValueByNumber(int number) {
-                return JEPFMMKBBBE.forNumber(number);
-              }
-            };
-
-      public final com.google.protobuf.Descriptors.EnumValueDescriptor
-          getValueDescriptor() {
-        if (index == -1) {
-          throw new java.lang.IllegalStateException(
-              "Can't get the descriptor of an unrecognized enum value.");
-        }
-        return getDescriptor().getValues().get(index);
-      }
-      public final com.google.protobuf.Descriptors.EnumDescriptor
-          getDescriptorForType() {
-        return getDescriptor();
-      }
-      public static final com.google.protobuf.Descriptors.EnumDescriptor
-          getDescriptor() {
-        return emu.grasscutter.net.proto.GetOnlinePlayerInfoRspOuterClass.GetOnlinePlayerInfoRsp.getDescriptor().getEnumTypes().get(0);
-      }
-
-      private static final JEPFMMKBBBE[] VALUES = getStaticValuesArray();
-      private static JEPFMMKBBBE[] getStaticValuesArray() {
-        return new JEPFMMKBBBE[] {
-          NONE, PEPPOHPHJOJ, DCDNILFDFLB, NNBKOLMPOEA, 
-        };
-      }
-      public static JEPFMMKBBBE valueOf(
-          com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
-        if (desc.getType() != getDescriptor()) {
-          throw new java.lang.IllegalArgumentException(
-            "EnumValueDescriptor is not for this type.");
-        }
-        if (desc.getIndex() == -1) {
-          return UNRECOGNIZED;
-        }
-        return VALUES[desc.getIndex()];
-      }
-
-      private final int index;
-      private final int value;
-
-      private JEPFMMKBBBE(int index, int value) {
-        this.index = index;
-        this.value = value;
-      }
-
-      // @@protoc_insertion_point(enum_scope:GetOnlinePlayerInfoRsp.JEPFMMKBBBE)
-    }
-
-    public static final int RETCODE_FIELD_NUMBER = 14;
-    private int retcode_;
-    /**
-     * <code>int32 retcode = 14;</code>
-     * @return The retcode.
-     */
-    @java.lang.Override
-    public int getRetcode() {
-      return retcode_;
-    }
-
-    public static final int TARGETPLAYERINFO_FIELD_NUMBER = 11;
-    private emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo targetPlayerInfo_;
-    /**
-     * <code>.OnlinePlayerInfo targetPlayerInfo = 11;</code>
-     * @return Whether the targetPlayerInfo field is set.
-     */
-    @java.lang.Override
-    public boolean hasTargetPlayerInfo() {
-      return targetPlayerInfo_ != null;
-    }
-    /**
-     * <code>.OnlinePlayerInfo targetPlayerInfo = 11;</code>
-     * @return The targetPlayerInfo.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo getTargetPlayerInfo() {
-      return targetPlayerInfo_ == null ? emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo.getDefaultInstance() : targetPlayerInfo_;
-    }
-    /**
-     * <code>.OnlinePlayerInfo targetPlayerInfo = 11;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfoOrBuilder getTargetPlayerInfoOrBuilder() {
-      return getTargetPlayerInfo();
-    }
-
-    public static final int TARGETUID_FIELD_NUMBER = 3;
+    public static final int TARGET_UID_FIELD_NUMBER = 2;
     private int targetUid_;
     /**
-     * <code>uint32 targetUid = 3;</code>
+     * <code>uint32 target_uid = 2;</code>
      * @return The targetUid.
      */
     @java.lang.Override
@@ -335,15 +172,52 @@ public final class GetOnlinePlayerInfoRspOuterClass {
       return targetUid_;
     }
 
-    public static final int PARAM_FIELD_NUMBER = 10;
+    public static final int TARGET_PLAYER_INFO_FIELD_NUMBER = 14;
+    private emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo targetPlayerInfo_;
+    /**
+     * <code>.OnlinePlayerInfo target_player_info = 14;</code>
+     * @return Whether the targetPlayerInfo field is set.
+     */
+    @java.lang.Override
+    public boolean hasTargetPlayerInfo() {
+      return targetPlayerInfo_ != null;
+    }
+    /**
+     * <code>.OnlinePlayerInfo target_player_info = 14;</code>
+     * @return The targetPlayerInfo.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo getTargetPlayerInfo() {
+      return targetPlayerInfo_ == null ? emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo.getDefaultInstance() : targetPlayerInfo_;
+    }
+    /**
+     * <code>.OnlinePlayerInfo target_player_info = 14;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfoOrBuilder getTargetPlayerInfoOrBuilder() {
+      return getTargetPlayerInfo();
+    }
+
+    public static final int PARAM_FIELD_NUMBER = 5;
     private int param_;
     /**
-     * <code>uint32 param = 10;</code>
+     * <code>uint32 param = 5;</code>
      * @return The param.
      */
     @java.lang.Override
     public int getParam() {
       return param_;
+    }
+
+    public static final int RETCODE_FIELD_NUMBER = 6;
+    private int retcode_;
+    /**
+     * <code>int32 retcode = 6;</code>
+     * @return The retcode.
+     */
+    @java.lang.Override
+    public int getRetcode() {
+      return retcode_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -361,16 +235,16 @@ public final class GetOnlinePlayerInfoRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (targetUid_ != 0) {
-        output.writeUInt32(3, targetUid_);
+        output.writeUInt32(2, targetUid_);
       }
       if (param_ != 0) {
-        output.writeUInt32(10, param_);
-      }
-      if (targetPlayerInfo_ != null) {
-        output.writeMessage(11, getTargetPlayerInfo());
+        output.writeUInt32(5, param_);
       }
       if (retcode_ != 0) {
-        output.writeInt32(14, retcode_);
+        output.writeInt32(6, retcode_);
+      }
+      if (targetPlayerInfo_ != null) {
+        output.writeMessage(14, getTargetPlayerInfo());
       }
       unknownFields.writeTo(output);
     }
@@ -383,19 +257,19 @@ public final class GetOnlinePlayerInfoRspOuterClass {
       size = 0;
       if (targetUid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, targetUid_);
+          .computeUInt32Size(2, targetUid_);
       }
       if (param_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, param_);
-      }
-      if (targetPlayerInfo_ != null) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(11, getTargetPlayerInfo());
+          .computeUInt32Size(5, param_);
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(14, retcode_);
+          .computeInt32Size(6, retcode_);
+      }
+      if (targetPlayerInfo_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(14, getTargetPlayerInfo());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -412,17 +286,17 @@ public final class GetOnlinePlayerInfoRspOuterClass {
       }
       emu.grasscutter.net.proto.GetOnlinePlayerInfoRspOuterClass.GetOnlinePlayerInfoRsp other = (emu.grasscutter.net.proto.GetOnlinePlayerInfoRspOuterClass.GetOnlinePlayerInfoRsp) obj;
 
-      if (getRetcode()
-          != other.getRetcode()) return false;
+      if (getTargetUid()
+          != other.getTargetUid()) return false;
       if (hasTargetPlayerInfo() != other.hasTargetPlayerInfo()) return false;
       if (hasTargetPlayerInfo()) {
         if (!getTargetPlayerInfo()
             .equals(other.getTargetPlayerInfo())) return false;
       }
-      if (getTargetUid()
-          != other.getTargetUid()) return false;
       if (getParam()
           != other.getParam()) return false;
+      if (getRetcode()
+          != other.getRetcode()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -434,16 +308,16 @@ public final class GetOnlinePlayerInfoRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
+      hash = (37 * hash) + TARGET_UID_FIELD_NUMBER;
+      hash = (53 * hash) + getTargetUid();
       if (hasTargetPlayerInfo()) {
-        hash = (37 * hash) + TARGETPLAYERINFO_FIELD_NUMBER;
+        hash = (37 * hash) + TARGET_PLAYER_INFO_FIELD_NUMBER;
         hash = (53 * hash) + getTargetPlayerInfo().hashCode();
       }
-      hash = (37 * hash) + TARGETUID_FIELD_NUMBER;
-      hash = (53 * hash) + getTargetUid();
       hash = (37 * hash) + PARAM_FIELD_NUMBER;
       hash = (53 * hash) + getParam();
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -540,6 +414,11 @@ public final class GetOnlinePlayerInfoRspOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 8759
+     * Obf: LDNOEIHGGKN
+     * </pre>
+     *
      * Protobuf type {@code GetOnlinePlayerInfoRsp}
      */
     public static final class Builder extends
@@ -577,7 +456,7 @@ public final class GetOnlinePlayerInfoRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        retcode_ = 0;
+        targetUid_ = 0;
 
         if (targetPlayerInfoBuilder_ == null) {
           targetPlayerInfo_ = null;
@@ -585,9 +464,9 @@ public final class GetOnlinePlayerInfoRspOuterClass {
           targetPlayerInfo_ = null;
           targetPlayerInfoBuilder_ = null;
         }
-        targetUid_ = 0;
-
         param_ = 0;
+
+        retcode_ = 0;
 
         return this;
       }
@@ -615,14 +494,14 @@ public final class GetOnlinePlayerInfoRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.GetOnlinePlayerInfoRspOuterClass.GetOnlinePlayerInfoRsp buildPartial() {
         emu.grasscutter.net.proto.GetOnlinePlayerInfoRspOuterClass.GetOnlinePlayerInfoRsp result = new emu.grasscutter.net.proto.GetOnlinePlayerInfoRspOuterClass.GetOnlinePlayerInfoRsp(this);
-        result.retcode_ = retcode_;
+        result.targetUid_ = targetUid_;
         if (targetPlayerInfoBuilder_ == null) {
           result.targetPlayerInfo_ = targetPlayerInfo_;
         } else {
           result.targetPlayerInfo_ = targetPlayerInfoBuilder_.build();
         }
-        result.targetUid_ = targetUid_;
         result.param_ = param_;
+        result.retcode_ = retcode_;
         onBuilt();
         return result;
       }
@@ -671,17 +550,17 @@ public final class GetOnlinePlayerInfoRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GetOnlinePlayerInfoRspOuterClass.GetOnlinePlayerInfoRsp other) {
         if (other == emu.grasscutter.net.proto.GetOnlinePlayerInfoRspOuterClass.GetOnlinePlayerInfoRsp.getDefaultInstance()) return this;
-        if (other.getRetcode() != 0) {
-          setRetcode(other.getRetcode());
+        if (other.getTargetUid() != 0) {
+          setTargetUid(other.getTargetUid());
         }
         if (other.hasTargetPlayerInfo()) {
           mergeTargetPlayerInfo(other.getTargetPlayerInfo());
         }
-        if (other.getTargetUid() != 0) {
-          setTargetUid(other.getTargetUid());
-        }
         if (other.getParam() != 0) {
           setParam(other.getParam());
+        }
+        if (other.getRetcode() != 0) {
+          setRetcode(other.getRetcode());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -712,33 +591,33 @@ public final class GetOnlinePlayerInfoRspOuterClass {
         return this;
       }
 
-      private int retcode_ ;
+      private int targetUid_ ;
       /**
-       * <code>int32 retcode = 14;</code>
-       * @return The retcode.
+       * <code>uint32 target_uid = 2;</code>
+       * @return The targetUid.
        */
       @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
+      public int getTargetUid() {
+        return targetUid_;
       }
       /**
-       * <code>int32 retcode = 14;</code>
-       * @param value The retcode to set.
+       * <code>uint32 target_uid = 2;</code>
+       * @param value The targetUid to set.
        * @return This builder for chaining.
        */
-      public Builder setRetcode(int value) {
+      public Builder setTargetUid(int value) {
         
-        retcode_ = value;
+        targetUid_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>int32 retcode = 14;</code>
+       * <code>uint32 target_uid = 2;</code>
        * @return This builder for chaining.
        */
-      public Builder clearRetcode() {
+      public Builder clearTargetUid() {
         
-        retcode_ = 0;
+        targetUid_ = 0;
         onChanged();
         return this;
       }
@@ -747,14 +626,14 @@ public final class GetOnlinePlayerInfoRspOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo, emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo.Builder, emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfoOrBuilder> targetPlayerInfoBuilder_;
       /**
-       * <code>.OnlinePlayerInfo targetPlayerInfo = 11;</code>
+       * <code>.OnlinePlayerInfo target_player_info = 14;</code>
        * @return Whether the targetPlayerInfo field is set.
        */
       public boolean hasTargetPlayerInfo() {
         return targetPlayerInfoBuilder_ != null || targetPlayerInfo_ != null;
       }
       /**
-       * <code>.OnlinePlayerInfo targetPlayerInfo = 11;</code>
+       * <code>.OnlinePlayerInfo target_player_info = 14;</code>
        * @return The targetPlayerInfo.
        */
       public emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo getTargetPlayerInfo() {
@@ -765,7 +644,7 @@ public final class GetOnlinePlayerInfoRspOuterClass {
         }
       }
       /**
-       * <code>.OnlinePlayerInfo targetPlayerInfo = 11;</code>
+       * <code>.OnlinePlayerInfo target_player_info = 14;</code>
        */
       public Builder setTargetPlayerInfo(emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo value) {
         if (targetPlayerInfoBuilder_ == null) {
@@ -781,7 +660,7 @@ public final class GetOnlinePlayerInfoRspOuterClass {
         return this;
       }
       /**
-       * <code>.OnlinePlayerInfo targetPlayerInfo = 11;</code>
+       * <code>.OnlinePlayerInfo target_player_info = 14;</code>
        */
       public Builder setTargetPlayerInfo(
           emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo.Builder builderForValue) {
@@ -795,7 +674,7 @@ public final class GetOnlinePlayerInfoRspOuterClass {
         return this;
       }
       /**
-       * <code>.OnlinePlayerInfo targetPlayerInfo = 11;</code>
+       * <code>.OnlinePlayerInfo target_player_info = 14;</code>
        */
       public Builder mergeTargetPlayerInfo(emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo value) {
         if (targetPlayerInfoBuilder_ == null) {
@@ -813,7 +692,7 @@ public final class GetOnlinePlayerInfoRspOuterClass {
         return this;
       }
       /**
-       * <code>.OnlinePlayerInfo targetPlayerInfo = 11;</code>
+       * <code>.OnlinePlayerInfo target_player_info = 14;</code>
        */
       public Builder clearTargetPlayerInfo() {
         if (targetPlayerInfoBuilder_ == null) {
@@ -827,7 +706,7 @@ public final class GetOnlinePlayerInfoRspOuterClass {
         return this;
       }
       /**
-       * <code>.OnlinePlayerInfo targetPlayerInfo = 11;</code>
+       * <code>.OnlinePlayerInfo target_player_info = 14;</code>
        */
       public emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo.Builder getTargetPlayerInfoBuilder() {
         
@@ -835,7 +714,7 @@ public final class GetOnlinePlayerInfoRspOuterClass {
         return getTargetPlayerInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.OnlinePlayerInfo targetPlayerInfo = 11;</code>
+       * <code>.OnlinePlayerInfo target_player_info = 14;</code>
        */
       public emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfoOrBuilder getTargetPlayerInfoOrBuilder() {
         if (targetPlayerInfoBuilder_ != null) {
@@ -846,7 +725,7 @@ public final class GetOnlinePlayerInfoRspOuterClass {
         }
       }
       /**
-       * <code>.OnlinePlayerInfo targetPlayerInfo = 11;</code>
+       * <code>.OnlinePlayerInfo target_player_info = 14;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo, emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo.Builder, emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfoOrBuilder> 
@@ -862,40 +741,9 @@ public final class GetOnlinePlayerInfoRspOuterClass {
         return targetPlayerInfoBuilder_;
       }
 
-      private int targetUid_ ;
-      /**
-       * <code>uint32 targetUid = 3;</code>
-       * @return The targetUid.
-       */
-      @java.lang.Override
-      public int getTargetUid() {
-        return targetUid_;
-      }
-      /**
-       * <code>uint32 targetUid = 3;</code>
-       * @param value The targetUid to set.
-       * @return This builder for chaining.
-       */
-      public Builder setTargetUid(int value) {
-        
-        targetUid_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 targetUid = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearTargetUid() {
-        
-        targetUid_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int param_ ;
       /**
-       * <code>uint32 param = 10;</code>
+       * <code>uint32 param = 5;</code>
        * @return The param.
        */
       @java.lang.Override
@@ -903,7 +751,7 @@ public final class GetOnlinePlayerInfoRspOuterClass {
         return param_;
       }
       /**
-       * <code>uint32 param = 10;</code>
+       * <code>uint32 param = 5;</code>
        * @param value The param to set.
        * @return This builder for chaining.
        */
@@ -914,12 +762,43 @@ public final class GetOnlinePlayerInfoRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 param = 10;</code>
+       * <code>uint32 param = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearParam() {
         
         param_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int retcode_ ;
+      /**
+       * <code>int32 retcode = 6;</code>
+       * @return The retcode.
+       */
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
+      }
+      /**
+       * <code>int32 retcode = 6;</code>
+       * @param value The retcode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRetcode(int value) {
+        
+        retcode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 retcode = 6;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        
+        retcode_ = 0;
         onChanged();
         return this;
       }
@@ -991,13 +870,11 @@ public final class GetOnlinePlayerInfoRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\034GetOnlinePlayerInfoRsp.proto\032\026OnlinePl" +
-      "ayerInfo.proto\"\310\001\n\026GetOnlinePlayerInfoRs" +
-      "p\022\017\n\007retcode\030\016 \001(\005\022+\n\020targetPlayerInfo\030\013" +
-      " \001(\0132\021.OnlinePlayerInfo\022\021\n\ttargetUid\030\003 \001" +
-      "(\r\022\r\n\005param\030\n \001(\r\"N\n\013JEPFMMKBBBE\022\010\n\004NONE" +
-      "\020\000\022\017\n\013PEPPOHPHJOJ\020\'\022\017\n\013DCDNILFDFLB\020\000\022\017\n\013" +
-      "NNBKOLMPOEA\020\001\032\002\020\001B\033\n\031emu.grasscutter.net" +
-      ".protob\006proto3"
+      "ayerInfo.proto\"{\n\026GetOnlinePlayerInfoRsp" +
+      "\022\022\n\ntarget_uid\030\002 \001(\r\022-\n\022target_player_in" +
+      "fo\030\016 \001(\0132\021.OnlinePlayerInfo\022\r\n\005param\030\005 \001" +
+      "(\r\022\017\n\007retcode\030\006 \001(\005B\033\n\031emu.grasscutter.n" +
+      "et.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1009,7 +886,7 @@ public final class GetOnlinePlayerInfoRspOuterClass {
     internal_static_GetOnlinePlayerInfoRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GetOnlinePlayerInfoRsp_descriptor,
-        new java.lang.String[] { "Retcode", "TargetPlayerInfo", "TargetUid", "Param", });
+        new java.lang.String[] { "TargetUid", "TargetPlayerInfo", "Param", "Retcode", });
     emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.getDescriptor();
   }
 

@@ -15,6 +15,10 @@ public final class ActivityPushTipsStateOuterClass {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   /**
+   * <pre>
+   * Obf: DKHCNPIKCHO
+   * </pre>
+   *
    * Protobuf enum {@code ActivityPushTipsState}
    */
   public enum ActivityPushTipsState

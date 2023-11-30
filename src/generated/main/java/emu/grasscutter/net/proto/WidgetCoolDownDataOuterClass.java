@@ -19,24 +19,28 @@ public final class WidgetCoolDownDataOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 id = 8;</code>
+     * <code>uint32 id = 1;</code>
      * @return The id.
      */
     int getId();
 
     /**
-     * <code>uint64 coolDownTime = 15;</code>
+     * <code>uint64 cool_down_time = 14;</code>
      * @return The coolDownTime.
      */
     long getCoolDownTime();
 
     /**
-     * <code>bool isSuccess = 12;</code>
+     * <code>bool is_success = 2;</code>
      * @return The isSuccess.
      */
     boolean getIsSuccess();
   }
   /**
+   * <pre>
+   * Obf: ANGGPDIPOFF
+   * </pre>
+   *
    * Protobuf type {@code WidgetCoolDownData}
    */
   public static final class WidgetCoolDownData extends
@@ -81,17 +85,17 @@ public final class WidgetCoolDownDataOuterClass {
             case 0:
               done = true;
               break;
-            case 64: {
+            case 8: {
 
               id_ = input.readUInt32();
               break;
             }
-            case 96: {
+            case 16: {
 
               isSuccess_ = input.readBool();
               break;
             }
-            case 120: {
+            case 112: {
 
               coolDownTime_ = input.readUInt64();
               break;
@@ -128,10 +132,10 @@ public final class WidgetCoolDownDataOuterClass {
               emu.grasscutter.net.proto.WidgetCoolDownDataOuterClass.WidgetCoolDownData.class, emu.grasscutter.net.proto.WidgetCoolDownDataOuterClass.WidgetCoolDownData.Builder.class);
     }
 
-    public static final int ID_FIELD_NUMBER = 8;
+    public static final int ID_FIELD_NUMBER = 1;
     private int id_;
     /**
-     * <code>uint32 id = 8;</code>
+     * <code>uint32 id = 1;</code>
      * @return The id.
      */
     @java.lang.Override
@@ -139,10 +143,10 @@ public final class WidgetCoolDownDataOuterClass {
       return id_;
     }
 
-    public static final int COOLDOWNTIME_FIELD_NUMBER = 15;
+    public static final int COOL_DOWN_TIME_FIELD_NUMBER = 14;
     private long coolDownTime_;
     /**
-     * <code>uint64 coolDownTime = 15;</code>
+     * <code>uint64 cool_down_time = 14;</code>
      * @return The coolDownTime.
      */
     @java.lang.Override
@@ -150,10 +154,10 @@ public final class WidgetCoolDownDataOuterClass {
       return coolDownTime_;
     }
 
-    public static final int ISSUCCESS_FIELD_NUMBER = 12;
+    public static final int IS_SUCCESS_FIELD_NUMBER = 2;
     private boolean isSuccess_;
     /**
-     * <code>bool isSuccess = 12;</code>
+     * <code>bool is_success = 2;</code>
      * @return The isSuccess.
      */
     @java.lang.Override
@@ -176,13 +180,13 @@ public final class WidgetCoolDownDataOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (id_ != 0) {
-        output.writeUInt32(8, id_);
+        output.writeUInt32(1, id_);
       }
       if (isSuccess_ != false) {
-        output.writeBool(12, isSuccess_);
+        output.writeBool(2, isSuccess_);
       }
       if (coolDownTime_ != 0L) {
-        output.writeUInt64(15, coolDownTime_);
+        output.writeUInt64(14, coolDownTime_);
       }
       unknownFields.writeTo(output);
     }
@@ -195,15 +199,15 @@ public final class WidgetCoolDownDataOuterClass {
       size = 0;
       if (id_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, id_);
+          .computeUInt32Size(1, id_);
       }
       if (isSuccess_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(12, isSuccess_);
+          .computeBoolSize(2, isSuccess_);
       }
       if (coolDownTime_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(15, coolDownTime_);
+          .computeUInt64Size(14, coolDownTime_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -239,10 +243,10 @@ public final class WidgetCoolDownDataOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + ID_FIELD_NUMBER;
       hash = (53 * hash) + getId();
-      hash = (37 * hash) + COOLDOWNTIME_FIELD_NUMBER;
+      hash = (37 * hash) + COOL_DOWN_TIME_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
           getCoolDownTime());
-      hash = (37 * hash) + ISSUCCESS_FIELD_NUMBER;
+      hash = (37 * hash) + IS_SUCCESS_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsSuccess());
       hash = (29 * hash) + unknownFields.hashCode();
@@ -341,6 +345,10 @@ public final class WidgetCoolDownDataOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Obf: ANGGPDIPOFF
+     * </pre>
+     *
      * Protobuf type {@code WidgetCoolDownData}
      */
     public static final class Builder extends
@@ -501,7 +509,7 @@ public final class WidgetCoolDownDataOuterClass {
 
       private int id_ ;
       /**
-       * <code>uint32 id = 8;</code>
+       * <code>uint32 id = 1;</code>
        * @return The id.
        */
       @java.lang.Override
@@ -509,7 +517,7 @@ public final class WidgetCoolDownDataOuterClass {
         return id_;
       }
       /**
-       * <code>uint32 id = 8;</code>
+       * <code>uint32 id = 1;</code>
        * @param value The id to set.
        * @return This builder for chaining.
        */
@@ -520,7 +528,7 @@ public final class WidgetCoolDownDataOuterClass {
         return this;
       }
       /**
-       * <code>uint32 id = 8;</code>
+       * <code>uint32 id = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearId() {
@@ -532,7 +540,7 @@ public final class WidgetCoolDownDataOuterClass {
 
       private long coolDownTime_ ;
       /**
-       * <code>uint64 coolDownTime = 15;</code>
+       * <code>uint64 cool_down_time = 14;</code>
        * @return The coolDownTime.
        */
       @java.lang.Override
@@ -540,7 +548,7 @@ public final class WidgetCoolDownDataOuterClass {
         return coolDownTime_;
       }
       /**
-       * <code>uint64 coolDownTime = 15;</code>
+       * <code>uint64 cool_down_time = 14;</code>
        * @param value The coolDownTime to set.
        * @return This builder for chaining.
        */
@@ -551,7 +559,7 @@ public final class WidgetCoolDownDataOuterClass {
         return this;
       }
       /**
-       * <code>uint64 coolDownTime = 15;</code>
+       * <code>uint64 cool_down_time = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearCoolDownTime() {
@@ -563,7 +571,7 @@ public final class WidgetCoolDownDataOuterClass {
 
       private boolean isSuccess_ ;
       /**
-       * <code>bool isSuccess = 12;</code>
+       * <code>bool is_success = 2;</code>
        * @return The isSuccess.
        */
       @java.lang.Override
@@ -571,7 +579,7 @@ public final class WidgetCoolDownDataOuterClass {
         return isSuccess_;
       }
       /**
-       * <code>bool isSuccess = 12;</code>
+       * <code>bool is_success = 2;</code>
        * @param value The isSuccess to set.
        * @return This builder for chaining.
        */
@@ -582,7 +590,7 @@ public final class WidgetCoolDownDataOuterClass {
         return this;
       }
       /**
-       * <code>bool isSuccess = 12;</code>
+       * <code>bool is_success = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsSuccess() {
@@ -658,10 +666,10 @@ public final class WidgetCoolDownDataOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\030WidgetCoolDownData.proto\"I\n\022WidgetCool" +
-      "DownData\022\n\n\002id\030\010 \001(\r\022\024\n\014coolDownTime\030\017 \001" +
-      "(\004\022\021\n\tisSuccess\030\014 \001(\010B\033\n\031emu.grasscutter" +
-      ".net.protob\006proto3"
+      "\n\030WidgetCoolDownData.proto\"L\n\022WidgetCool" +
+      "DownData\022\n\n\002id\030\001 \001(\r\022\026\n\016cool_down_time\030\016" +
+      " \001(\004\022\022\n\nis_success\030\002 \001(\010B\033\n\031emu.grasscut" +
+      "ter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

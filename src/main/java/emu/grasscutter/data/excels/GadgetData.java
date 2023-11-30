@@ -1,14 +1,13 @@
 package emu.grasscutter.data.excels;
 
-import emu.grasscutter.data.GameResource;
-import emu.grasscutter.data.ResourceType;
+import emu.grasscutter.data.*;
 import emu.grasscutter.game.props.EntityType;
 import lombok.Getter;
 
 @ResourceType(name = "GadgetExcelConfigData.json")
 @Getter
-public class GadgetData extends GameResource {
-    @Getter(onMethod = @__(@Override))
+public final class GadgetData extends GameResource {
+    @Getter(onMethod_ = @Override)
     private int id;
 
     private EntityType type;
@@ -17,5 +16,6 @@ public class GadgetData extends GameResource {
     private String[] tags;
     private String itemJsonName;
     private long nameTextMapHash;
-    private int campID;
+    private int campId;
+    private String visionLevel;
 }

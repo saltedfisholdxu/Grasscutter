@@ -19,24 +19,28 @@ public final class SceneGalleryInstableSprayBuffInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 buffId = 9;</code>
+     * <code>uint32 buff_id = 2;</code>
      * @return The buffId.
      */
     int getBuffId();
 
     /**
-     * <code>uint64 Unk3300_EPHAABKNLHC = 3;</code>
-     * @return The unk3300EPHAABKNLHC.
+     * <code>uint64 PMDBPOPIDNL = 13;</code>
+     * @return The pMDBPOPIDNL.
      */
-    long getUnk3300EPHAABKNLHC();
+    long getPMDBPOPIDNL();
 
     /**
-     * <code>uint64 Unk3300_KKDFLBMKGEF = 8;</code>
-     * @return The unk3300KKDFLBMKGEF.
+     * <code>uint64 PCGMEOMDLJC = 8;</code>
+     * @return The pCGMEOMDLJC.
      */
-    long getUnk3300KKDFLBMKGEF();
+    long getPCGMEOMDLJC();
   }
   /**
+   * <pre>
+   * Obf: JAHEIIELIAN
+   * </pre>
+   *
    * Protobuf type {@code SceneGalleryInstableSprayBuffInfo}
    */
   public static final class SceneGalleryInstableSprayBuffInfo extends
@@ -81,19 +85,19 @@ public final class SceneGalleryInstableSprayBuffInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
+            case 16: {
 
-              unk3300EPHAABKNLHC_ = input.readUInt64();
+              buffId_ = input.readUInt32();
               break;
             }
             case 64: {
 
-              unk3300KKDFLBMKGEF_ = input.readUInt64();
+              pCGMEOMDLJC_ = input.readUInt64();
               break;
             }
-            case 72: {
+            case 104: {
 
-              buffId_ = input.readUInt32();
+              pMDBPOPIDNL_ = input.readUInt64();
               break;
             }
             default: {
@@ -128,10 +132,10 @@ public final class SceneGalleryInstableSprayBuffInfoOuterClass {
               emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfo.class, emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfo.Builder.class);
     }
 
-    public static final int BUFFID_FIELD_NUMBER = 9;
+    public static final int BUFF_ID_FIELD_NUMBER = 2;
     private int buffId_;
     /**
-     * <code>uint32 buffId = 9;</code>
+     * <code>uint32 buff_id = 2;</code>
      * @return The buffId.
      */
     @java.lang.Override
@@ -139,26 +143,26 @@ public final class SceneGalleryInstableSprayBuffInfoOuterClass {
       return buffId_;
     }
 
-    public static final int UNK3300_EPHAABKNLHC_FIELD_NUMBER = 3;
-    private long unk3300EPHAABKNLHC_;
+    public static final int PMDBPOPIDNL_FIELD_NUMBER = 13;
+    private long pMDBPOPIDNL_;
     /**
-     * <code>uint64 Unk3300_EPHAABKNLHC = 3;</code>
-     * @return The unk3300EPHAABKNLHC.
+     * <code>uint64 PMDBPOPIDNL = 13;</code>
+     * @return The pMDBPOPIDNL.
      */
     @java.lang.Override
-    public long getUnk3300EPHAABKNLHC() {
-      return unk3300EPHAABKNLHC_;
+    public long getPMDBPOPIDNL() {
+      return pMDBPOPIDNL_;
     }
 
-    public static final int UNK3300_KKDFLBMKGEF_FIELD_NUMBER = 8;
-    private long unk3300KKDFLBMKGEF_;
+    public static final int PCGMEOMDLJC_FIELD_NUMBER = 8;
+    private long pCGMEOMDLJC_;
     /**
-     * <code>uint64 Unk3300_KKDFLBMKGEF = 8;</code>
-     * @return The unk3300KKDFLBMKGEF.
+     * <code>uint64 PCGMEOMDLJC = 8;</code>
+     * @return The pCGMEOMDLJC.
      */
     @java.lang.Override
-    public long getUnk3300KKDFLBMKGEF() {
-      return unk3300KKDFLBMKGEF_;
+    public long getPCGMEOMDLJC() {
+      return pCGMEOMDLJC_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -175,14 +179,14 @@ public final class SceneGalleryInstableSprayBuffInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (unk3300EPHAABKNLHC_ != 0L) {
-        output.writeUInt64(3, unk3300EPHAABKNLHC_);
-      }
-      if (unk3300KKDFLBMKGEF_ != 0L) {
-        output.writeUInt64(8, unk3300KKDFLBMKGEF_);
-      }
       if (buffId_ != 0) {
-        output.writeUInt32(9, buffId_);
+        output.writeUInt32(2, buffId_);
+      }
+      if (pCGMEOMDLJC_ != 0L) {
+        output.writeUInt64(8, pCGMEOMDLJC_);
+      }
+      if (pMDBPOPIDNL_ != 0L) {
+        output.writeUInt64(13, pMDBPOPIDNL_);
       }
       unknownFields.writeTo(output);
     }
@@ -193,17 +197,17 @@ public final class SceneGalleryInstableSprayBuffInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (unk3300EPHAABKNLHC_ != 0L) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(3, unk3300EPHAABKNLHC_);
-      }
-      if (unk3300KKDFLBMKGEF_ != 0L) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(8, unk3300KKDFLBMKGEF_);
-      }
       if (buffId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, buffId_);
+          .computeUInt32Size(2, buffId_);
+      }
+      if (pCGMEOMDLJC_ != 0L) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt64Size(8, pCGMEOMDLJC_);
+      }
+      if (pMDBPOPIDNL_ != 0L) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt64Size(13, pMDBPOPIDNL_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -222,10 +226,10 @@ public final class SceneGalleryInstableSprayBuffInfoOuterClass {
 
       if (getBuffId()
           != other.getBuffId()) return false;
-      if (getUnk3300EPHAABKNLHC()
-          != other.getUnk3300EPHAABKNLHC()) return false;
-      if (getUnk3300KKDFLBMKGEF()
-          != other.getUnk3300KKDFLBMKGEF()) return false;
+      if (getPMDBPOPIDNL()
+          != other.getPMDBPOPIDNL()) return false;
+      if (getPCGMEOMDLJC()
+          != other.getPCGMEOMDLJC()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -237,14 +241,14 @@ public final class SceneGalleryInstableSprayBuffInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + BUFFID_FIELD_NUMBER;
+      hash = (37 * hash) + BUFF_ID_FIELD_NUMBER;
       hash = (53 * hash) + getBuffId();
-      hash = (37 * hash) + UNK3300_EPHAABKNLHC_FIELD_NUMBER;
+      hash = (37 * hash) + PMDBPOPIDNL_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-          getUnk3300EPHAABKNLHC());
-      hash = (37 * hash) + UNK3300_KKDFLBMKGEF_FIELD_NUMBER;
+          getPMDBPOPIDNL());
+      hash = (37 * hash) + PCGMEOMDLJC_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-          getUnk3300KKDFLBMKGEF());
+          getPCGMEOMDLJC());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -341,6 +345,10 @@ public final class SceneGalleryInstableSprayBuffInfoOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Obf: JAHEIIELIAN
+     * </pre>
+     *
      * Protobuf type {@code SceneGalleryInstableSprayBuffInfo}
      */
     public static final class Builder extends
@@ -380,9 +388,9 @@ public final class SceneGalleryInstableSprayBuffInfoOuterClass {
         super.clear();
         buffId_ = 0;
 
-        unk3300EPHAABKNLHC_ = 0L;
+        pMDBPOPIDNL_ = 0L;
 
-        unk3300KKDFLBMKGEF_ = 0L;
+        pCGMEOMDLJC_ = 0L;
 
         return this;
       }
@@ -411,8 +419,8 @@ public final class SceneGalleryInstableSprayBuffInfoOuterClass {
       public emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfo buildPartial() {
         emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfo result = new emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfo(this);
         result.buffId_ = buffId_;
-        result.unk3300EPHAABKNLHC_ = unk3300EPHAABKNLHC_;
-        result.unk3300KKDFLBMKGEF_ = unk3300KKDFLBMKGEF_;
+        result.pMDBPOPIDNL_ = pMDBPOPIDNL_;
+        result.pCGMEOMDLJC_ = pCGMEOMDLJC_;
         onBuilt();
         return result;
       }
@@ -464,11 +472,11 @@ public final class SceneGalleryInstableSprayBuffInfoOuterClass {
         if (other.getBuffId() != 0) {
           setBuffId(other.getBuffId());
         }
-        if (other.getUnk3300EPHAABKNLHC() != 0L) {
-          setUnk3300EPHAABKNLHC(other.getUnk3300EPHAABKNLHC());
+        if (other.getPMDBPOPIDNL() != 0L) {
+          setPMDBPOPIDNL(other.getPMDBPOPIDNL());
         }
-        if (other.getUnk3300KKDFLBMKGEF() != 0L) {
-          setUnk3300KKDFLBMKGEF(other.getUnk3300KKDFLBMKGEF());
+        if (other.getPCGMEOMDLJC() != 0L) {
+          setPCGMEOMDLJC(other.getPCGMEOMDLJC());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -501,7 +509,7 @@ public final class SceneGalleryInstableSprayBuffInfoOuterClass {
 
       private int buffId_ ;
       /**
-       * <code>uint32 buffId = 9;</code>
+       * <code>uint32 buff_id = 2;</code>
        * @return The buffId.
        */
       @java.lang.Override
@@ -509,7 +517,7 @@ public final class SceneGalleryInstableSprayBuffInfoOuterClass {
         return buffId_;
       }
       /**
-       * <code>uint32 buffId = 9;</code>
+       * <code>uint32 buff_id = 2;</code>
        * @param value The buffId to set.
        * @return This builder for chaining.
        */
@@ -520,7 +528,7 @@ public final class SceneGalleryInstableSprayBuffInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 buffId = 9;</code>
+       * <code>uint32 buff_id = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearBuffId() {
@@ -530,64 +538,64 @@ public final class SceneGalleryInstableSprayBuffInfoOuterClass {
         return this;
       }
 
-      private long unk3300EPHAABKNLHC_ ;
+      private long pMDBPOPIDNL_ ;
       /**
-       * <code>uint64 Unk3300_EPHAABKNLHC = 3;</code>
-       * @return The unk3300EPHAABKNLHC.
+       * <code>uint64 PMDBPOPIDNL = 13;</code>
+       * @return The pMDBPOPIDNL.
        */
       @java.lang.Override
-      public long getUnk3300EPHAABKNLHC() {
-        return unk3300EPHAABKNLHC_;
+      public long getPMDBPOPIDNL() {
+        return pMDBPOPIDNL_;
       }
       /**
-       * <code>uint64 Unk3300_EPHAABKNLHC = 3;</code>
-       * @param value The unk3300EPHAABKNLHC to set.
+       * <code>uint64 PMDBPOPIDNL = 13;</code>
+       * @param value The pMDBPOPIDNL to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk3300EPHAABKNLHC(long value) {
+      public Builder setPMDBPOPIDNL(long value) {
         
-        unk3300EPHAABKNLHC_ = value;
+        pMDBPOPIDNL_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint64 Unk3300_EPHAABKNLHC = 3;</code>
+       * <code>uint64 PMDBPOPIDNL = 13;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk3300EPHAABKNLHC() {
+      public Builder clearPMDBPOPIDNL() {
         
-        unk3300EPHAABKNLHC_ = 0L;
+        pMDBPOPIDNL_ = 0L;
         onChanged();
         return this;
       }
 
-      private long unk3300KKDFLBMKGEF_ ;
+      private long pCGMEOMDLJC_ ;
       /**
-       * <code>uint64 Unk3300_KKDFLBMKGEF = 8;</code>
-       * @return The unk3300KKDFLBMKGEF.
+       * <code>uint64 PCGMEOMDLJC = 8;</code>
+       * @return The pCGMEOMDLJC.
        */
       @java.lang.Override
-      public long getUnk3300KKDFLBMKGEF() {
-        return unk3300KKDFLBMKGEF_;
+      public long getPCGMEOMDLJC() {
+        return pCGMEOMDLJC_;
       }
       /**
-       * <code>uint64 Unk3300_KKDFLBMKGEF = 8;</code>
-       * @param value The unk3300KKDFLBMKGEF to set.
+       * <code>uint64 PCGMEOMDLJC = 8;</code>
+       * @param value The pCGMEOMDLJC to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk3300KKDFLBMKGEF(long value) {
+      public Builder setPCGMEOMDLJC(long value) {
         
-        unk3300KKDFLBMKGEF_ = value;
+        pCGMEOMDLJC_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint64 Unk3300_KKDFLBMKGEF = 8;</code>
+       * <code>uint64 PCGMEOMDLJC = 8;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk3300KKDFLBMKGEF() {
+      public Builder clearPCGMEOMDLJC() {
         
-        unk3300KKDFLBMKGEF_ = 0L;
+        pCGMEOMDLJC_ = 0L;
         onChanged();
         return this;
       }
@@ -659,10 +667,10 @@ public final class SceneGalleryInstableSprayBuffInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\'SceneGalleryInstableSprayBuffInfo.prot" +
-      "o\"m\n!SceneGalleryInstableSprayBuffInfo\022\016" +
-      "\n\006buffId\030\t \001(\r\022\033\n\023Unk3300_EPHAABKNLHC\030\003 " +
-      "\001(\004\022\033\n\023Unk3300_KKDFLBMKGEF\030\010 \001(\004B\033\n\031emu." +
-      "grasscutter.net.protob\006proto3"
+      "o\"^\n!SceneGalleryInstableSprayBuffInfo\022\017" +
+      "\n\007buff_id\030\002 \001(\r\022\023\n\013PMDBPOPIDNL\030\r \001(\004\022\023\n\013" +
+      "PCGMEOMDLJC\030\010 \001(\004B\033\n\031emu.grasscutter.net" +
+      ".protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -673,7 +681,7 @@ public final class SceneGalleryInstableSprayBuffInfoOuterClass {
     internal_static_SceneGalleryInstableSprayBuffInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SceneGalleryInstableSprayBuffInfo_descriptor,
-        new java.lang.String[] { "BuffId", "Unk3300EPHAABKNLHC", "Unk3300KKDFLBMKGEF", });
+        new java.lang.String[] { "BuffId", "PMDBPOPIDNL", "PCGMEOMDLJC", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

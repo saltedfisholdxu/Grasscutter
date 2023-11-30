@@ -19,30 +19,35 @@ public final class ChangeTeamNameRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 14;</code>
+     * <code>int32 retcode = 5;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>string teamName = 2;</code>
+     * <code>int32 team_id = 12;</code>
+     * @return The teamId.
+     */
+    int getTeamId();
+
+    /**
+     * <code>string team_name = 15;</code>
      * @return The teamName.
      */
     java.lang.String getTeamName();
     /**
-     * <code>string teamName = 2;</code>
+     * <code>string team_name = 15;</code>
      * @return The bytes for teamName.
      */
     com.google.protobuf.ByteString
         getTeamNameBytes();
-
-    /**
-     * <code>int32 teamId = 3;</code>
-     * @return The teamId.
-     */
-    int getTeamId();
   }
   /**
+   * <pre>
+   * CmdId: 29496
+   * Obf: JKAKFOEKEDH
+   * </pre>
+   *
    * Protobuf type {@code ChangeTeamNameRsp}
    */
   public static final class ChangeTeamNameRsp extends
@@ -88,20 +93,20 @@ public final class ChangeTeamNameRspOuterClass {
             case 0:
               done = true;
               break;
-            case 18: {
-              java.lang.String s = input.readStringRequireUtf8();
+            case 40: {
 
-              teamName_ = s;
+              retcode_ = input.readInt32();
               break;
             }
-            case 24: {
+            case 96: {
 
               teamId_ = input.readInt32();
               break;
             }
-            case 112: {
+            case 122: {
+              java.lang.String s = input.readStringRequireUtf8();
 
-              retcode_ = input.readInt32();
+              teamName_ = s;
               break;
             }
             default: {
@@ -136,141 +141,10 @@ public final class ChangeTeamNameRspOuterClass {
               emu.grasscutter.net.proto.ChangeTeamNameRspOuterClass.ChangeTeamNameRsp.class, emu.grasscutter.net.proto.ChangeTeamNameRspOuterClass.ChangeTeamNameRsp.Builder.class);
     }
 
-    /**
-     * Protobuf enum {@code ChangeTeamNameRsp.NNNCLFAEGPM}
-     */
-    public enum NNNCLFAEGPM
-        implements com.google.protobuf.ProtocolMessageEnum {
-      /**
-       * <code>NONE = 0;</code>
-       */
-      NONE(0, 0),
-      /**
-       * <code>PEPPOHPHJOJ = 1741;</code>
-       */
-      PEPPOHPHJOJ(1, 1741),
-      /**
-       * <code>NNBKOLMPOEA = 1;</code>
-       */
-      NNBKOLMPOEA(3, 1),
-      UNRECOGNIZED(-1, -1),
-      ;
-
-      /**
-       * <code>DCDNILFDFLB = 0;</code>
-       */
-      public static final NNNCLFAEGPM DCDNILFDFLB = NONE;
-      /**
-       * <code>NONE = 0;</code>
-       */
-      public static final int NONE_VALUE = 0;
-      /**
-       * <code>PEPPOHPHJOJ = 1741;</code>
-       */
-      public static final int PEPPOHPHJOJ_VALUE = 1741;
-      /**
-       * <code>DCDNILFDFLB = 0;</code>
-       */
-      public static final int DCDNILFDFLB_VALUE = 0;
-      /**
-       * <code>NNBKOLMPOEA = 1;</code>
-       */
-      public static final int NNBKOLMPOEA_VALUE = 1;
-
-
-      public final int getNumber() {
-        if (index == -1) {
-          throw new java.lang.IllegalArgumentException(
-              "Can't get the number of an unknown enum value.");
-        }
-        return value;
-      }
-
-      /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
-       * @deprecated Use {@link #forNumber(int)} instead.
-       */
-      @java.lang.Deprecated
-      public static NNNCLFAEGPM valueOf(int value) {
-        return forNumber(value);
-      }
-
-      /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
-       */
-      public static NNNCLFAEGPM forNumber(int value) {
-        switch (value) {
-          case 0: return NONE;
-          case 1741: return PEPPOHPHJOJ;
-          case 1: return NNBKOLMPOEA;
-          default: return null;
-        }
-      }
-
-      public static com.google.protobuf.Internal.EnumLiteMap<NNNCLFAEGPM>
-          internalGetValueMap() {
-        return internalValueMap;
-      }
-      private static final com.google.protobuf.Internal.EnumLiteMap<
-          NNNCLFAEGPM> internalValueMap =
-            new com.google.protobuf.Internal.EnumLiteMap<NNNCLFAEGPM>() {
-              public NNNCLFAEGPM findValueByNumber(int number) {
-                return NNNCLFAEGPM.forNumber(number);
-              }
-            };
-
-      public final com.google.protobuf.Descriptors.EnumValueDescriptor
-          getValueDescriptor() {
-        if (index == -1) {
-          throw new java.lang.IllegalStateException(
-              "Can't get the descriptor of an unrecognized enum value.");
-        }
-        return getDescriptor().getValues().get(index);
-      }
-      public final com.google.protobuf.Descriptors.EnumDescriptor
-          getDescriptorForType() {
-        return getDescriptor();
-      }
-      public static final com.google.protobuf.Descriptors.EnumDescriptor
-          getDescriptor() {
-        return emu.grasscutter.net.proto.ChangeTeamNameRspOuterClass.ChangeTeamNameRsp.getDescriptor().getEnumTypes().get(0);
-      }
-
-      private static final NNNCLFAEGPM[] VALUES = getStaticValuesArray();
-      private static NNNCLFAEGPM[] getStaticValuesArray() {
-        return new NNNCLFAEGPM[] {
-          NONE, PEPPOHPHJOJ, DCDNILFDFLB, NNBKOLMPOEA, 
-        };
-      }
-      public static NNNCLFAEGPM valueOf(
-          com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
-        if (desc.getType() != getDescriptor()) {
-          throw new java.lang.IllegalArgumentException(
-            "EnumValueDescriptor is not for this type.");
-        }
-        if (desc.getIndex() == -1) {
-          return UNRECOGNIZED;
-        }
-        return VALUES[desc.getIndex()];
-      }
-
-      private final int index;
-      private final int value;
-
-      private NNNCLFAEGPM(int index, int value) {
-        this.index = index;
-        this.value = value;
-      }
-
-      // @@protoc_insertion_point(enum_scope:ChangeTeamNameRsp.NNNCLFAEGPM)
-    }
-
-    public static final int RETCODE_FIELD_NUMBER = 14;
+    public static final int RETCODE_FIELD_NUMBER = 5;
     private int retcode_;
     /**
-     * <code>int32 retcode = 14;</code>
+     * <code>int32 retcode = 5;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -278,10 +152,21 @@ public final class ChangeTeamNameRspOuterClass {
       return retcode_;
     }
 
-    public static final int TEAMNAME_FIELD_NUMBER = 2;
+    public static final int TEAM_ID_FIELD_NUMBER = 12;
+    private int teamId_;
+    /**
+     * <code>int32 team_id = 12;</code>
+     * @return The teamId.
+     */
+    @java.lang.Override
+    public int getTeamId() {
+      return teamId_;
+    }
+
+    public static final int TEAM_NAME_FIELD_NUMBER = 15;
     private volatile java.lang.Object teamName_;
     /**
-     * <code>string teamName = 2;</code>
+     * <code>string team_name = 15;</code>
      * @return The teamName.
      */
     @java.lang.Override
@@ -298,7 +183,7 @@ public final class ChangeTeamNameRspOuterClass {
       }
     }
     /**
-     * <code>string teamName = 2;</code>
+     * <code>string team_name = 15;</code>
      * @return The bytes for teamName.
      */
     @java.lang.Override
@@ -316,17 +201,6 @@ public final class ChangeTeamNameRspOuterClass {
       }
     }
 
-    public static final int TEAMID_FIELD_NUMBER = 3;
-    private int teamId_;
-    /**
-     * <code>int32 teamId = 3;</code>
-     * @return The teamId.
-     */
-    @java.lang.Override
-    public int getTeamId() {
-      return teamId_;
-    }
-
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
     public final boolean isInitialized() {
@@ -341,14 +215,14 @@ public final class ChangeTeamNameRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(teamName_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 2, teamName_);
+      if (retcode_ != 0) {
+        output.writeInt32(5, retcode_);
       }
       if (teamId_ != 0) {
-        output.writeInt32(3, teamId_);
+        output.writeInt32(12, teamId_);
       }
-      if (retcode_ != 0) {
-        output.writeInt32(14, retcode_);
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(teamName_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 15, teamName_);
       }
       unknownFields.writeTo(output);
     }
@@ -359,16 +233,16 @@ public final class ChangeTeamNameRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(teamName_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, teamName_);
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(5, retcode_);
       }
       if (teamId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(3, teamId_);
+          .computeInt32Size(12, teamId_);
       }
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(14, retcode_);
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(teamName_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(15, teamName_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -387,10 +261,10 @@ public final class ChangeTeamNameRspOuterClass {
 
       if (getRetcode()
           != other.getRetcode()) return false;
-      if (!getTeamName()
-          .equals(other.getTeamName())) return false;
       if (getTeamId()
           != other.getTeamId()) return false;
+      if (!getTeamName()
+          .equals(other.getTeamName())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -404,10 +278,10 @@ public final class ChangeTeamNameRspOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
-      hash = (37 * hash) + TEAMNAME_FIELD_NUMBER;
-      hash = (53 * hash) + getTeamName().hashCode();
-      hash = (37 * hash) + TEAMID_FIELD_NUMBER;
+      hash = (37 * hash) + TEAM_ID_FIELD_NUMBER;
       hash = (53 * hash) + getTeamId();
+      hash = (37 * hash) + TEAM_NAME_FIELD_NUMBER;
+      hash = (53 * hash) + getTeamName().hashCode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -504,6 +378,11 @@ public final class ChangeTeamNameRspOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 29496
+     * Obf: JKAKFOEKEDH
+     * </pre>
+     *
      * Protobuf type {@code ChangeTeamNameRsp}
      */
     public static final class Builder extends
@@ -543,9 +422,9 @@ public final class ChangeTeamNameRspOuterClass {
         super.clear();
         retcode_ = 0;
 
-        teamName_ = "";
-
         teamId_ = 0;
+
+        teamName_ = "";
 
         return this;
       }
@@ -574,8 +453,8 @@ public final class ChangeTeamNameRspOuterClass {
       public emu.grasscutter.net.proto.ChangeTeamNameRspOuterClass.ChangeTeamNameRsp buildPartial() {
         emu.grasscutter.net.proto.ChangeTeamNameRspOuterClass.ChangeTeamNameRsp result = new emu.grasscutter.net.proto.ChangeTeamNameRspOuterClass.ChangeTeamNameRsp(this);
         result.retcode_ = retcode_;
-        result.teamName_ = teamName_;
         result.teamId_ = teamId_;
+        result.teamName_ = teamName_;
         onBuilt();
         return result;
       }
@@ -627,12 +506,12 @@ public final class ChangeTeamNameRspOuterClass {
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
         }
+        if (other.getTeamId() != 0) {
+          setTeamId(other.getTeamId());
+        }
         if (!other.getTeamName().isEmpty()) {
           teamName_ = other.teamName_;
           onChanged();
-        }
-        if (other.getTeamId() != 0) {
-          setTeamId(other.getTeamId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -665,7 +544,7 @@ public final class ChangeTeamNameRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 14;</code>
+       * <code>int32 retcode = 5;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -673,7 +552,7 @@ public final class ChangeTeamNameRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 14;</code>
+       * <code>int32 retcode = 5;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -684,7 +563,7 @@ public final class ChangeTeamNameRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 14;</code>
+       * <code>int32 retcode = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -694,9 +573,40 @@ public final class ChangeTeamNameRspOuterClass {
         return this;
       }
 
+      private int teamId_ ;
+      /**
+       * <code>int32 team_id = 12;</code>
+       * @return The teamId.
+       */
+      @java.lang.Override
+      public int getTeamId() {
+        return teamId_;
+      }
+      /**
+       * <code>int32 team_id = 12;</code>
+       * @param value The teamId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setTeamId(int value) {
+        
+        teamId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 team_id = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearTeamId() {
+        
+        teamId_ = 0;
+        onChanged();
+        return this;
+      }
+
       private java.lang.Object teamName_ = "";
       /**
-       * <code>string teamName = 2;</code>
+       * <code>string team_name = 15;</code>
        * @return The teamName.
        */
       public java.lang.String getTeamName() {
@@ -712,7 +622,7 @@ public final class ChangeTeamNameRspOuterClass {
         }
       }
       /**
-       * <code>string teamName = 2;</code>
+       * <code>string team_name = 15;</code>
        * @return The bytes for teamName.
        */
       public com.google.protobuf.ByteString
@@ -729,7 +639,7 @@ public final class ChangeTeamNameRspOuterClass {
         }
       }
       /**
-       * <code>string teamName = 2;</code>
+       * <code>string team_name = 15;</code>
        * @param value The teamName to set.
        * @return This builder for chaining.
        */
@@ -744,7 +654,7 @@ public final class ChangeTeamNameRspOuterClass {
         return this;
       }
       /**
-       * <code>string teamName = 2;</code>
+       * <code>string team_name = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearTeamName() {
@@ -754,7 +664,7 @@ public final class ChangeTeamNameRspOuterClass {
         return this;
       }
       /**
-       * <code>string teamName = 2;</code>
+       * <code>string team_name = 15;</code>
        * @param value The bytes for teamName to set.
        * @return This builder for chaining.
        */
@@ -766,37 +676,6 @@ public final class ChangeTeamNameRspOuterClass {
   checkByteStringIsUtf8(value);
         
         teamName_ = value;
-        onChanged();
-        return this;
-      }
-
-      private int teamId_ ;
-      /**
-       * <code>int32 teamId = 3;</code>
-       * @return The teamId.
-       */
-      @java.lang.Override
-      public int getTeamId() {
-        return teamId_;
-      }
-      /**
-       * <code>int32 teamId = 3;</code>
-       * @param value The teamId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setTeamId(int value) {
-        
-        teamId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 teamId = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearTeamId() {
-        
-        teamId_ = 0;
         onChanged();
         return this;
       }
@@ -867,11 +746,9 @@ public final class ChangeTeamNameRspOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\027ChangeTeamNameRsp.proto\"\227\001\n\021ChangeTeam" +
-      "NameRsp\022\017\n\007retcode\030\016 \001(\005\022\020\n\010teamName\030\002 \001" +
-      "(\t\022\016\n\006teamId\030\003 \001(\005\"O\n\013NNNCLFAEGPM\022\010\n\004NON" +
-      "E\020\000\022\020\n\013PEPPOHPHJOJ\020\315\r\022\017\n\013DCDNILFDFLB\020\000\022\017" +
-      "\n\013NNBKOLMPOEA\020\001\032\002\020\001B\033\n\031emu.grasscutter.n" +
+      "\n\027ChangeTeamNameRsp.proto\"H\n\021ChangeTeamN" +
+      "ameRsp\022\017\n\007retcode\030\005 \001(\005\022\017\n\007team_id\030\014 \001(\005" +
+      "\022\021\n\tteam_name\030\017 \001(\tB\033\n\031emu.grasscutter.n" +
       "et.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -883,7 +760,7 @@ public final class ChangeTeamNameRspOuterClass {
     internal_static_ChangeTeamNameRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ChangeTeamNameRsp_descriptor,
-        new java.lang.String[] { "Retcode", "TeamName", "TeamId", });
+        new java.lang.String[] { "Retcode", "TeamId", "TeamName", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

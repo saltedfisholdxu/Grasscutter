@@ -43,6 +43,10 @@ public final class AbilityMetaReInitOverrideMapOuterClass {
         int index);
   }
   /**
+   * <pre>
+   * Obf: DKNHIBDBJDH
+   * </pre>
+   *
    * Protobuf type {@code AbilityMetaReInitOverrideMap}
    */
   public static final class AbilityMetaReInitOverrideMap extends
@@ -331,6 +335,10 @@ public final class AbilityMetaReInitOverrideMapOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Obf: DKNHIBDBJDH
+     * </pre>
+     *
      * Protobuf type {@code AbilityMetaReInitOverrideMap}
      */
     public static final class Builder extends

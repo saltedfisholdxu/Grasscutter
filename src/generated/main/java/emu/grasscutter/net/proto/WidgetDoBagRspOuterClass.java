@@ -19,18 +19,23 @@ public final class WidgetDoBagRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 materialId = 6;</code>
+     * <code>uint32 material_id = 15;</code>
      * @return The materialId.
      */
     int getMaterialId();
 
     /**
-     * <code>int32 retcode = 1;</code>
+     * <code>int32 retcode = 4;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
+   * <pre>
+   * CmdId: 8212
+   * Obf: PIDNCNBIGBN
+   * </pre>
+   *
    * Protobuf type {@code WidgetDoBagRsp}
    */
   public static final class WidgetDoBagRsp extends
@@ -75,12 +80,12 @@ public final class WidgetDoBagRspOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 32: {
 
               retcode_ = input.readInt32();
               break;
             }
-            case 48: {
+            case 120: {
 
               materialId_ = input.readUInt32();
               break;
@@ -117,141 +122,10 @@ public final class WidgetDoBagRspOuterClass {
               emu.grasscutter.net.proto.WidgetDoBagRspOuterClass.WidgetDoBagRsp.class, emu.grasscutter.net.proto.WidgetDoBagRspOuterClass.WidgetDoBagRsp.Builder.class);
     }
 
-    /**
-     * Protobuf enum {@code WidgetDoBagRsp.MDHJPMKCGNN}
-     */
-    public enum MDHJPMKCGNN
-        implements com.google.protobuf.ProtocolMessageEnum {
-      /**
-       * <code>NONE = 0;</code>
-       */
-      NONE(0, 0),
-      /**
-       * <code>PEPPOHPHJOJ = 4258;</code>
-       */
-      PEPPOHPHJOJ(1, 4258),
-      /**
-       * <code>NNBKOLMPOEA = 1;</code>
-       */
-      NNBKOLMPOEA(3, 1),
-      UNRECOGNIZED(-1, -1),
-      ;
-
-      /**
-       * <code>DCDNILFDFLB = 0;</code>
-       */
-      public static final MDHJPMKCGNN DCDNILFDFLB = NONE;
-      /**
-       * <code>NONE = 0;</code>
-       */
-      public static final int NONE_VALUE = 0;
-      /**
-       * <code>PEPPOHPHJOJ = 4258;</code>
-       */
-      public static final int PEPPOHPHJOJ_VALUE = 4258;
-      /**
-       * <code>DCDNILFDFLB = 0;</code>
-       */
-      public static final int DCDNILFDFLB_VALUE = 0;
-      /**
-       * <code>NNBKOLMPOEA = 1;</code>
-       */
-      public static final int NNBKOLMPOEA_VALUE = 1;
-
-
-      public final int getNumber() {
-        if (index == -1) {
-          throw new java.lang.IllegalArgumentException(
-              "Can't get the number of an unknown enum value.");
-        }
-        return value;
-      }
-
-      /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
-       * @deprecated Use {@link #forNumber(int)} instead.
-       */
-      @java.lang.Deprecated
-      public static MDHJPMKCGNN valueOf(int value) {
-        return forNumber(value);
-      }
-
-      /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
-       */
-      public static MDHJPMKCGNN forNumber(int value) {
-        switch (value) {
-          case 0: return NONE;
-          case 4258: return PEPPOHPHJOJ;
-          case 1: return NNBKOLMPOEA;
-          default: return null;
-        }
-      }
-
-      public static com.google.protobuf.Internal.EnumLiteMap<MDHJPMKCGNN>
-          internalGetValueMap() {
-        return internalValueMap;
-      }
-      private static final com.google.protobuf.Internal.EnumLiteMap<
-          MDHJPMKCGNN> internalValueMap =
-            new com.google.protobuf.Internal.EnumLiteMap<MDHJPMKCGNN>() {
-              public MDHJPMKCGNN findValueByNumber(int number) {
-                return MDHJPMKCGNN.forNumber(number);
-              }
-            };
-
-      public final com.google.protobuf.Descriptors.EnumValueDescriptor
-          getValueDescriptor() {
-        if (index == -1) {
-          throw new java.lang.IllegalStateException(
-              "Can't get the descriptor of an unrecognized enum value.");
-        }
-        return getDescriptor().getValues().get(index);
-      }
-      public final com.google.protobuf.Descriptors.EnumDescriptor
-          getDescriptorForType() {
-        return getDescriptor();
-      }
-      public static final com.google.protobuf.Descriptors.EnumDescriptor
-          getDescriptor() {
-        return emu.grasscutter.net.proto.WidgetDoBagRspOuterClass.WidgetDoBagRsp.getDescriptor().getEnumTypes().get(0);
-      }
-
-      private static final MDHJPMKCGNN[] VALUES = getStaticValuesArray();
-      private static MDHJPMKCGNN[] getStaticValuesArray() {
-        return new MDHJPMKCGNN[] {
-          NONE, PEPPOHPHJOJ, DCDNILFDFLB, NNBKOLMPOEA, 
-        };
-      }
-      public static MDHJPMKCGNN valueOf(
-          com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
-        if (desc.getType() != getDescriptor()) {
-          throw new java.lang.IllegalArgumentException(
-            "EnumValueDescriptor is not for this type.");
-        }
-        if (desc.getIndex() == -1) {
-          return UNRECOGNIZED;
-        }
-        return VALUES[desc.getIndex()];
-      }
-
-      private final int index;
-      private final int value;
-
-      private MDHJPMKCGNN(int index, int value) {
-        this.index = index;
-        this.value = value;
-      }
-
-      // @@protoc_insertion_point(enum_scope:WidgetDoBagRsp.MDHJPMKCGNN)
-    }
-
-    public static final int MATERIALID_FIELD_NUMBER = 6;
+    public static final int MATERIAL_ID_FIELD_NUMBER = 15;
     private int materialId_;
     /**
-     * <code>uint32 materialId = 6;</code>
+     * <code>uint32 material_id = 15;</code>
      * @return The materialId.
      */
     @java.lang.Override
@@ -259,10 +133,10 @@ public final class WidgetDoBagRspOuterClass {
       return materialId_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 1;
+    public static final int RETCODE_FIELD_NUMBER = 4;
     private int retcode_;
     /**
-     * <code>int32 retcode = 1;</code>
+     * <code>int32 retcode = 4;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -285,10 +159,10 @@ public final class WidgetDoBagRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (retcode_ != 0) {
-        output.writeInt32(1, retcode_);
+        output.writeInt32(4, retcode_);
       }
       if (materialId_ != 0) {
-        output.writeUInt32(6, materialId_);
+        output.writeUInt32(15, materialId_);
       }
       unknownFields.writeTo(output);
     }
@@ -301,11 +175,11 @@ public final class WidgetDoBagRspOuterClass {
       size = 0;
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(1, retcode_);
+          .computeInt32Size(4, retcode_);
       }
       if (materialId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, materialId_);
+          .computeUInt32Size(15, materialId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -337,7 +211,7 @@ public final class WidgetDoBagRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + MATERIALID_FIELD_NUMBER;
+      hash = (37 * hash) + MATERIAL_ID_FIELD_NUMBER;
       hash = (53 * hash) + getMaterialId();
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
@@ -437,6 +311,11 @@ public final class WidgetDoBagRspOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 8212
+     * Obf: PIDNCNBIGBN
+     * </pre>
+     *
      * Protobuf type {@code WidgetDoBagRsp}
      */
     public static final class Builder extends
@@ -591,7 +470,7 @@ public final class WidgetDoBagRspOuterClass {
 
       private int materialId_ ;
       /**
-       * <code>uint32 materialId = 6;</code>
+       * <code>uint32 material_id = 15;</code>
        * @return The materialId.
        */
       @java.lang.Override
@@ -599,7 +478,7 @@ public final class WidgetDoBagRspOuterClass {
         return materialId_;
       }
       /**
-       * <code>uint32 materialId = 6;</code>
+       * <code>uint32 material_id = 15;</code>
        * @param value The materialId to set.
        * @return This builder for chaining.
        */
@@ -610,7 +489,7 @@ public final class WidgetDoBagRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 materialId = 6;</code>
+       * <code>uint32 material_id = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearMaterialId() {
@@ -622,7 +501,7 @@ public final class WidgetDoBagRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 1;</code>
+       * <code>int32 retcode = 4;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -630,7 +509,7 @@ public final class WidgetDoBagRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 1;</code>
+       * <code>int32 retcode = 4;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -641,7 +520,7 @@ public final class WidgetDoBagRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 1;</code>
+       * <code>int32 retcode = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -717,11 +596,9 @@ public final class WidgetDoBagRspOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\024WidgetDoBagRsp.proto\"\206\001\n\016WidgetDoBagRs" +
-      "p\022\022\n\nmaterialId\030\006 \001(\r\022\017\n\007retcode\030\001 \001(\005\"O" +
-      "\n\013MDHJPMKCGNN\022\010\n\004NONE\020\000\022\020\n\013PEPPOHPHJOJ\020\242" +
-      "!\022\017\n\013DCDNILFDFLB\020\000\022\017\n\013NNBKOLMPOEA\020\001\032\002\020\001B" +
-      "\033\n\031emu.grasscutter.net.protob\006proto3"
+      "\n\024WidgetDoBagRsp.proto\"6\n\016WidgetDoBagRsp" +
+      "\022\023\n\013material_id\030\017 \001(\r\022\017\n\007retcode\030\004 \001(\005B\033" +
+      "\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

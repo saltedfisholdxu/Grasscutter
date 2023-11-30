@@ -15,6 +15,10 @@ public final class MailCollectStateOuterClass {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   /**
+   * <pre>
+   * Obf: EDOAABBJLID
+   * </pre>
+   *
    * Protobuf enum {@code MailCollectState}
    */
   public enum MailCollectState

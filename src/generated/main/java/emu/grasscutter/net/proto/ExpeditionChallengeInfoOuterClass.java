@@ -19,24 +19,28 @@ public final class ExpeditionChallengeInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 openTime = 11;</code>
+     * <code>uint32 open_time = 2;</code>
      * @return The openTime.
      */
     int getOpenTime();
 
     /**
-     * <code>uint32 id = 13;</code>
+     * <code>uint32 id = 4;</code>
      * @return The id.
      */
     int getId();
 
     /**
-     * <code>bool isFinished = 15;</code>
+     * <code>bool is_finished = 10;</code>
      * @return The isFinished.
      */
     boolean getIsFinished();
   }
   /**
+   * <pre>
+   * Obf: JHMBENBNPBH
+   * </pre>
+   *
    * Protobuf type {@code ExpeditionChallengeInfo}
    */
   public static final class ExpeditionChallengeInfo extends
@@ -81,17 +85,17 @@ public final class ExpeditionChallengeInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 88: {
+            case 16: {
 
               openTime_ = input.readUInt32();
               break;
             }
-            case 104: {
+            case 32: {
 
               id_ = input.readUInt32();
               break;
             }
-            case 120: {
+            case 80: {
 
               isFinished_ = input.readBool();
               break;
@@ -128,10 +132,10 @@ public final class ExpeditionChallengeInfoOuterClass {
               emu.grasscutter.net.proto.ExpeditionChallengeInfoOuterClass.ExpeditionChallengeInfo.class, emu.grasscutter.net.proto.ExpeditionChallengeInfoOuterClass.ExpeditionChallengeInfo.Builder.class);
     }
 
-    public static final int OPENTIME_FIELD_NUMBER = 11;
+    public static final int OPEN_TIME_FIELD_NUMBER = 2;
     private int openTime_;
     /**
-     * <code>uint32 openTime = 11;</code>
+     * <code>uint32 open_time = 2;</code>
      * @return The openTime.
      */
     @java.lang.Override
@@ -139,10 +143,10 @@ public final class ExpeditionChallengeInfoOuterClass {
       return openTime_;
     }
 
-    public static final int ID_FIELD_NUMBER = 13;
+    public static final int ID_FIELD_NUMBER = 4;
     private int id_;
     /**
-     * <code>uint32 id = 13;</code>
+     * <code>uint32 id = 4;</code>
      * @return The id.
      */
     @java.lang.Override
@@ -150,10 +154,10 @@ public final class ExpeditionChallengeInfoOuterClass {
       return id_;
     }
 
-    public static final int ISFINISHED_FIELD_NUMBER = 15;
+    public static final int IS_FINISHED_FIELD_NUMBER = 10;
     private boolean isFinished_;
     /**
-     * <code>bool isFinished = 15;</code>
+     * <code>bool is_finished = 10;</code>
      * @return The isFinished.
      */
     @java.lang.Override
@@ -176,13 +180,13 @@ public final class ExpeditionChallengeInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (openTime_ != 0) {
-        output.writeUInt32(11, openTime_);
+        output.writeUInt32(2, openTime_);
       }
       if (id_ != 0) {
-        output.writeUInt32(13, id_);
+        output.writeUInt32(4, id_);
       }
       if (isFinished_ != false) {
-        output.writeBool(15, isFinished_);
+        output.writeBool(10, isFinished_);
       }
       unknownFields.writeTo(output);
     }
@@ -195,15 +199,15 @@ public final class ExpeditionChallengeInfoOuterClass {
       size = 0;
       if (openTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, openTime_);
+          .computeUInt32Size(2, openTime_);
       }
       if (id_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, id_);
+          .computeUInt32Size(4, id_);
       }
       if (isFinished_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(15, isFinished_);
+          .computeBoolSize(10, isFinished_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -237,11 +241,11 @@ public final class ExpeditionChallengeInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + OPENTIME_FIELD_NUMBER;
+      hash = (37 * hash) + OPEN_TIME_FIELD_NUMBER;
       hash = (53 * hash) + getOpenTime();
       hash = (37 * hash) + ID_FIELD_NUMBER;
       hash = (53 * hash) + getId();
-      hash = (37 * hash) + ISFINISHED_FIELD_NUMBER;
+      hash = (37 * hash) + IS_FINISHED_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsFinished());
       hash = (29 * hash) + unknownFields.hashCode();
@@ -340,6 +344,10 @@ public final class ExpeditionChallengeInfoOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Obf: JHMBENBNPBH
+     * </pre>
+     *
      * Protobuf type {@code ExpeditionChallengeInfo}
      */
     public static final class Builder extends
@@ -500,7 +508,7 @@ public final class ExpeditionChallengeInfoOuterClass {
 
       private int openTime_ ;
       /**
-       * <code>uint32 openTime = 11;</code>
+       * <code>uint32 open_time = 2;</code>
        * @return The openTime.
        */
       @java.lang.Override
@@ -508,7 +516,7 @@ public final class ExpeditionChallengeInfoOuterClass {
         return openTime_;
       }
       /**
-       * <code>uint32 openTime = 11;</code>
+       * <code>uint32 open_time = 2;</code>
        * @param value The openTime to set.
        * @return This builder for chaining.
        */
@@ -519,7 +527,7 @@ public final class ExpeditionChallengeInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 openTime = 11;</code>
+       * <code>uint32 open_time = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearOpenTime() {
@@ -531,7 +539,7 @@ public final class ExpeditionChallengeInfoOuterClass {
 
       private int id_ ;
       /**
-       * <code>uint32 id = 13;</code>
+       * <code>uint32 id = 4;</code>
        * @return The id.
        */
       @java.lang.Override
@@ -539,7 +547,7 @@ public final class ExpeditionChallengeInfoOuterClass {
         return id_;
       }
       /**
-       * <code>uint32 id = 13;</code>
+       * <code>uint32 id = 4;</code>
        * @param value The id to set.
        * @return This builder for chaining.
        */
@@ -550,7 +558,7 @@ public final class ExpeditionChallengeInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 id = 13;</code>
+       * <code>uint32 id = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearId() {
@@ -562,7 +570,7 @@ public final class ExpeditionChallengeInfoOuterClass {
 
       private boolean isFinished_ ;
       /**
-       * <code>bool isFinished = 15;</code>
+       * <code>bool is_finished = 10;</code>
        * @return The isFinished.
        */
       @java.lang.Override
@@ -570,7 +578,7 @@ public final class ExpeditionChallengeInfoOuterClass {
         return isFinished_;
       }
       /**
-       * <code>bool isFinished = 15;</code>
+       * <code>bool is_finished = 10;</code>
        * @param value The isFinished to set.
        * @return This builder for chaining.
        */
@@ -581,7 +589,7 @@ public final class ExpeditionChallengeInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool isFinished = 15;</code>
+       * <code>bool is_finished = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsFinished() {
@@ -657,10 +665,10 @@ public final class ExpeditionChallengeInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\035ExpeditionChallengeInfo.proto\"K\n\027Exped" +
-      "itionChallengeInfo\022\020\n\010openTime\030\013 \001(\r\022\n\n\002" +
-      "id\030\r \001(\r\022\022\n\nisFinished\030\017 \001(\010B\033\n\031emu.gras" +
-      "scutter.net.protob\006proto3"
+      "\n\035ExpeditionChallengeInfo.proto\"M\n\027Exped" +
+      "itionChallengeInfo\022\021\n\topen_time\030\002 \001(\r\022\n\n" +
+      "\002id\030\004 \001(\r\022\023\n\013is_finished\030\n \001(\010B\033\n\031emu.gr" +
+      "asscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

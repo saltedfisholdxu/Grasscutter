@@ -1,13 +1,12 @@
 package emu.grasscutter.data.excels;
 
-import emu.grasscutter.data.GameResource;
-import emu.grasscutter.data.ResourceType;
+import emu.grasscutter.data.*;
 import lombok.Getter;
 
 @ResourceType(name = "NpcExcelConfigData.json")
 @Getter
 public class NpcData extends GameResource {
-    @Getter(onMethod = @__(@Override))
+    @Getter(onMethod_ = @Override)
     private int id;
 
     private String jsonName;
